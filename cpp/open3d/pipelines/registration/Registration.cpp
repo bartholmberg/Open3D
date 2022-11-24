@@ -123,7 +123,14 @@ RegistrationResult EvaluateRegistration(
     return GetRegistrationResultAndCorrespondences(
             pcd, target, kdtree, max_correspondence_distance, transformation);
 }
-
+//BAH, add Aprikus call here
+// NOTE: to attach debugger
+// go to Debug ➡️ 📎 attach  to process 
+// 👉🏽 native code
+// Also, start python o3d(python310) vm at 
+// seperate command line. Run python test scipt 
+// that calls  o3d.pipelines.registration.registration_icp(...)
+// there should be TestAprikus.py (open3d\build)
 RegistrationResult RegistrationICP(
         const geometry::PointCloud &source,
         const geometry::PointCloud &target,
