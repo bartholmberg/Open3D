@@ -53,6 +53,8 @@ struct PLYReaderState {
     long normal_num;
     long color_index;
     long color_num;
+    long intensity_index;
+    long intensity_num;
 };
 
 int ReadVertexCallback(p_ply_argument argument) {
@@ -91,7 +93,24 @@ int ReadNormalCallback(p_ply_argument argument) {
     }
     return 1;
 }
+// BAH, modify to add intensity PLY pnt clouds
+int ReadIntensityCallback(p_ply_argument argument) {
+    PLYReaderState *state_ptr;
+    long index;
+    ply_get_argument_user_data(argument, reinterpret_cast<void **>(&state_ptr),
+                               &index);
+    if (state_ptr->intensity_index >= state_ptr->intensity_num) {
+        return 0;
+    }
 
+    double value = ply_get_argument_value(argument);
+    state_ptr->pointcloud_ptr->colors_[state_ptr->intensity_index](index) =
+            value;
+    if (index == 0) {  // reading intensity'
+        state_ptr->intensity_index++;
+    }
+    return 1;
+}
 int ReadColorCallback(p_ply_argument argument) {
     PLYReaderState *state_ptr;
     long index;
@@ -393,7 +412,11 @@ FileGeometry ReadFileGeometryTypePLY(const std::string &path) {
     }
     return FileGeometry(contents);
 }
-
+// BAH, modify to add intensity PLY pnt clouds
+//      NOTE- intensity values  reuse pnt cld colors_.
+//            So no changes to pnt cloud structure.
+//   test with PLY from: 
+//   https://github.com/bartholmberg/phaser/tree/master/phaser_test_data/test_clouds/os0
 bool ReadPointCloudFromPLY(const std::string &filename,
                            geometry::PointCloud &pointcloud,
                            const ReadPointCloudOption &params) {
@@ -423,10 +446,13 @@ bool ReadPointCloudFromPLY(const std::string &filename,
     ply_set_read_cb(ply_file, "vertex", "ny", ReadNormalCallback, &state, 1);
     ply_set_read_cb(ply_file, "vertex", "nz", ReadNormalCallback, &state, 2);
 
-    state.color_num = ply_set_read_cb(ply_file, "vertex", "red",
-                                      ReadColorCallback, &state, 0);
-    ply_set_read_cb(ply_file, "vertex", "green", ReadColorCallback, &state, 1);
-    ply_set_read_cb(ply_file, "vertex", "blue", ReadColorCallback, &state, 2);
+    if (params.format == "XYZI") {
+        state.intensity_num = ply_set_read_cb(ply_file, "vertex", "intensity",ReadIntensityCallback, &state, 0);
+    } else {
+        state.color_num =ply_set_read_cb(ply_file, "vertex", "red", ReadColorCallback, &state, 0);
+        ply_set_read_cb(ply_file, "vertex", "green", ReadColorCallback, &state,1);
+        ply_set_read_cb(ply_file, "vertex", "blue", ReadColorCallback, &state, 2);
+    }
 
     if (state.vertex_num <= 0) {
         utility::LogWarning("Read PLY failed: number of vertex <= 0.");
@@ -436,12 +462,15 @@ bool ReadPointCloudFromPLY(const std::string &filename,
 
     state.vertex_index = 0;
     state.normal_index = 0;
-    state.color_index = 0;
+    state.intensity_index = 0;
 
     pointcloud.Clear();
     pointcloud.points_.resize(state.vertex_num);
     pointcloud.normals_.resize(state.normal_num);
-    pointcloud.colors_.resize(state.color_num);
+    if (params.format == "XYZI") 
+        pointcloud.colors_.resize(state.intensity_num);
+    else
+        pointcloud.colors_.resize(state.color_num);
 
     utility::CountingProgressReporter reporter(params.update_progress);
     reporter.SetTotal(state.vertex_num);

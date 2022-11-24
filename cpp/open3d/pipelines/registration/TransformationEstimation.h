@@ -51,6 +51,7 @@ enum class TransformationEstimationType {
     PointToPlane = 2,
     ColoredICP = 3,
     GeneralizedICP = 4,
+    Phaser=5 //Aprikus version of phaser
 };
 
 /// \class TransformationEstimation
