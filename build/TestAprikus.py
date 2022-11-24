@@ -200,7 +200,8 @@ def main():
     #Translate = np.eye(4)
     RyCw75[:3,:3] = o3d.geometry.PointCloud().get_rotation_matrix_from_xyz( (0,75.0*np.pi/180.0, 0) )
     #index = [8,22]
-    index = [22,8]
+    #index = [22,8]
+    index = [13,6]
     #index=[42,35]
     #index=[39,1]
     #index=[0,3]
