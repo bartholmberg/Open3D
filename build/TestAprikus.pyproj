@@ -12,6 +12,8 @@
     <RootNamespace>TestAprikus</RootNamespace>
     <TestFramework>Pytest</TestFramework>
     <InterpreterId>Global|VisualStudio|o3d (Python 3.10 (64-bit))</InterpreterId>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>

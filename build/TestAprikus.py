@@ -87,7 +87,34 @@ def  KnnPair(pcS=o3d.geometry.PointCloud(), pcT=o3d.geometry.PointCloud() ,error
     return d0
    
 
-
+def pairwise_registration(source=o3d.geometry.PointCloud(),target=o3d.geometry.PointCloud(),init=np.identity(4), coarse_max=60, fine_max=30, max_iteration=3):
+    #print("Apply point-to-plane ICP")
+    #icp_coarse = o3d.pipelines.registration.registration_icp( source, target, coarse_max, init, o3d.pipelines.registration.TransformationEstimationPointToPlane() )
+    #icp_fine = o3d.pipelines.registration.registration_icp( source, target, fine_max,icp_coarse.transformation,o3d.pipelines.registration.TransformationEstimationPointToPlane() )
+    cc=o3d.pipelines.registration.ICPConvergenceCriteria(relative_fitness=1e-18,
+                                                          relative_rmse=1e-18,
+                                                          max_iteration=max_iteration)
+    icp_coarse = o3d.pipelines.registration.registration_icp( source, target, coarse_max, init, o3d.pipelines.registration.TransformationEstimationPointToPlane(),cc )
+    icp_fine = o3d.pipelines.registration.registration_icp( source, target, fine_max,icp_coarse.transformation,o3d.pipelines.registration.TransformationEstimationPointToPlane(),cc )
+    
+    aaa=o3d.pipelines.registration.evaluate_registration(source,target,fine_max,icp_fine.transformation)
+    corr=np.asarray(aaa.correspondence_set);
+    #print("icp fine: " ,icp_fine)
+    transformation_icp = icp_fine.transformation
+    information_icp = o3d.pipelines.registration.get_information_matrix_from_point_clouds( source, target, fine_max,icp_fine.transformation )
+    #draw_registration_result(source, target, icp_fine.transformation)
+    #return transformation_icp, information_icp
+    return icp_fine,corr
+def sparse_registration(pcds,init,coarse_max, fine_max, max_iteration):
+    icptList=[]
+    corrList=[]
+    for sid in range(0,len(pcds)-1):
+        dist=np.asarray( pcds[sid].compute_point_cloud_distance(pcds[sid+1]) )
+        [icpT,corr] = pairwise_registration( pcds[sid], pcds[sid+1],init,coarse_max,fine_max,max_iteration )
+        #print("mean,std,max dist between clouds:", np.mean(dist),np.sqrt(np.var(dist)), np.max(dist) ) 
+        icptList.append(icpT)
+        corrList.append(corr)
+    return icptList,corrList
 
 def GetPair( index = [1,2] ):
     FlipX = np.eye(4)
@@ -173,7 +200,8 @@ def main():
     #Translate = np.eye(4)
     RyCw75[:3,:3] = o3d.geometry.PointCloud().get_rotation_matrix_from_xyz( (0,75.0*np.pi/180.0, 0) )
     #index = [8,22]
-    index=[42,35]
+    index = [22,8]
+    #index=[42,35]
     #index=[39,1]
     #index=[0,3]
     pcld = GetPair(index)
