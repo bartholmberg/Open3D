@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\e14f3db07d47a3918c63370217338888\ext_vtk-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\e14f3db07d47a3918c63370217338888\ext_vtk-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\e14f3db07d47a3918c63370217338888\ext_vtk-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\e14f3db07d47a3918c63370217338888\ext_vtk-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\e14f3db07d47a3918c63370217338888\ext_vtk-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\e14f3db07d47a3918c63370217338888\ext_vtk-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\e14f3db07d47a3918c63370217338888\ext_vtk-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\4840a6b4ae87246733559dce5e59ce0e\ext_vtk-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\e01d9e02bbdcb0329c917774f30b697f\ext_vtk.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\repo\Open3D\build\CMakeFiles\ext_vtk" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{DC42490E-CEC7-39BD-B33D-51D277B283D7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

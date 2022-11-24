@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\632c256d87138c760034b958d37bf543\ext_poisson-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\632c256d87138c760034b958d37bf543\ext_poisson-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\632c256d87138c760034b958d37bf543\ext_poisson-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\632c256d87138c760034b958d37bf543\ext_poisson-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\632c256d87138c760034b958d37bf543\ext_poisson-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\632c256d87138c760034b958d37bf543\ext_poisson-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\632c256d87138c760034b958d37bf543\ext_poisson-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\4840a6b4ae87246733559dce5e59ce0e\ext_poisson-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\e01d9e02bbdcb0329c917774f30b697f\ext_poisson.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\repo\Open3D\build\CMakeFiles\ext_poisson" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{DC42490E-CEC7-39BD-B33D-51D277B283D7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

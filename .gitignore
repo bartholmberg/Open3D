@@ -1,5 +1,8 @@
 *.whl
-
+!*.vcxproj
+!*.sln
+!*.filters
+*.cmake
 # Docker build artifacts (wheel, dev package, ccache)
 docker/*.tar.gz
 docker/*.tar.xz
@@ -21,7 +24,43 @@ CMakeSettings.json
 
 # Temp directories
 3rdparty_downloads
-build*/
+# build*/
+3rdparty*/
+_deps*/
+assimp*/
+bin*/
+bor*/
+civ*/
+cmake*/
+cpp*/
+curl*/
+eigen*/
+doc*/
+embree*/
+examples*/
+filament*/
+fmt*/
+imgui*/
+ippicv*/
+jsoncpp*/
+lib*/
+mkl*/
+msg*/
+nano*/
+Open3D*/
+parallelstl*/
+poisson*/
+qhull*/
+tbb*/
+tiny*/
+turbo*/
+uvatlas*/
+vtk*/
+webrtc*/
+x64*/
+zero*/
+zlib*/
+Offline*/
 cmake-build-debug/
 cmake-build-release/
 util/pip_package/dist/

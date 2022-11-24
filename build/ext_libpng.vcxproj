@@ -1,0 +1,853 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{887B4B84-4C88-3CD4-A2A2-6DA1130D3255}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ext_libpng</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\84cf7f3ea86ab96ba5799382dbcff497\ext_libpng-mkdir.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Creating directories for 'ext_libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\CMake\bin\cmake.exe -Dcfgdir=/Debug -P C:/repo/Open3D/build/libpng/tmp/ext_libpng-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch C:/repo/Open3D/build/libpng/src/ext_libpng-stamp/Debug/ext_libpng-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\Debug\ext_libpng-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Creating directories for 'ext_libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\CMake\bin\cmake.exe -Dcfgdir=/Release -P C:/repo/Open3D/build/libpng/tmp/ext_libpng-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch C:/repo/Open3D/build/libpng/src/ext_libpng-stamp/Release/ext_libpng-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\Release\ext_libpng-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Creating directories for 'ext_libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\CMake\bin\cmake.exe -Dcfgdir=/MinSizeRel -P C:/repo/Open3D/build/libpng/tmp/ext_libpng-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch C:/repo/Open3D/build/libpng/src/ext_libpng-stamp/MinSizeRel/ext_libpng-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\MinSizeRel\ext_libpng-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Creating directories for 'ext_libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\CMake\bin\cmake.exe -Dcfgdir=/RelWithDebInfo -P C:/repo/Open3D/build/libpng/tmp/ext_libpng-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch C:/repo/Open3D/build/libpng/src/ext_libpng-stamp/RelWithDebInfo/ext_libpng-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\RelWithDebInfo\ext_libpng-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\84cf7f3ea86ab96ba5799382dbcff497\ext_libpng-download.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing download step (download, verify and extract) for 'ext_libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\repo\Open3D\build\libpng\src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -P C:/repo/Open3D/build/libpng/src/ext_libpng-stamp/download-ext_libpng.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -P C:/repo/Open3D/build/libpng/src/ext_libpng-stamp/verify-ext_libpng.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -P C:/repo/Open3D/build/libpng/src/ext_libpng-stamp/extract-ext_libpng.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch C:/repo/Open3D/build/libpng/src/ext_libpng-stamp/Debug/ext_libpng-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\download-ext_libpng.cmake;C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\ext_libpng-urlinfo.txt;C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\Debug\ext_libpng-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\Debug\ext_libpng-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing download step (download, verify and extract) for 'ext_libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\repo\Open3D\build\libpng\src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -P C:/repo/Open3D/build/libpng/src/ext_libpng-stamp/download-ext_libpng.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -P C:/repo/Open3D/build/libpng/src/ext_libpng-stamp/verify-ext_libpng.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -P C:/repo/Open3D/build/libpng/src/ext_libpng-stamp/extract-ext_libpng.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch C:/repo/Open3D/build/libpng/src/ext_libpng-stamp/Release/ext_libpng-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\download-ext_libpng.cmake;C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\ext_libpng-urlinfo.txt;C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\Release\ext_libpng-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\Release\ext_libpng-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing download step (download, verify and extract) for 'ext_libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\repo\Open3D\build\libpng\src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -P C:/repo/Open3D/build/libpng/src/ext_libpng-stamp/download-ext_libpng.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -P C:/repo/Open3D/build/libpng/src/ext_libpng-stamp/verify-ext_libpng.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -P C:/repo/Open3D/build/libpng/src/ext_libpng-stamp/extract-ext_libpng.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch C:/repo/Open3D/build/libpng/src/ext_libpng-stamp/MinSizeRel/ext_libpng-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\download-ext_libpng.cmake;C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\ext_libpng-urlinfo.txt;C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\MinSizeRel\ext_libpng-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\MinSizeRel\ext_libpng-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing download step (download, verify and extract) for 'ext_libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\repo\Open3D\build\libpng\src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -P C:/repo/Open3D/build/libpng/src/ext_libpng-stamp/download-ext_libpng.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -P C:/repo/Open3D/build/libpng/src/ext_libpng-stamp/verify-ext_libpng.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -P C:/repo/Open3D/build/libpng/src/ext_libpng-stamp/extract-ext_libpng.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch C:/repo/Open3D/build/libpng/src/ext_libpng-stamp/RelWithDebInfo/ext_libpng-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\download-ext_libpng.cmake;C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\ext_libpng-urlinfo.txt;C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\RelWithDebInfo\ext_libpng-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\RelWithDebInfo\ext_libpng-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\84cf7f3ea86ab96ba5799382dbcff497\ext_libpng-update.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No update step for 'ext_libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\repo\Open3D\build\libpng\src\ext_libpng
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch C:/repo/Open3D/build/libpng/src/ext_libpng-stamp/Debug/ext_libpng-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\Debug\ext_libpng-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\Debug\ext_libpng-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No update step for 'ext_libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\repo\Open3D\build\libpng\src\ext_libpng
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch C:/repo/Open3D/build/libpng/src/ext_libpng-stamp/Release/ext_libpng-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\Release\ext_libpng-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\Release\ext_libpng-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No update step for 'ext_libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\repo\Open3D\build\libpng\src\ext_libpng
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch C:/repo/Open3D/build/libpng/src/ext_libpng-stamp/MinSizeRel/ext_libpng-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\MinSizeRel\ext_libpng-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\MinSizeRel\ext_libpng-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No update step for 'ext_libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\repo\Open3D\build\libpng\src\ext_libpng
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch C:/repo/Open3D/build/libpng/src/ext_libpng-stamp/RelWithDebInfo/ext_libpng-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\RelWithDebInfo\ext_libpng-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\RelWithDebInfo\ext_libpng-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\84cf7f3ea86ab96ba5799382dbcff497\ext_libpng-patch.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No patch step for 'ext_libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch C:/repo/Open3D/build/libpng/src/ext_libpng-stamp/Debug/ext_libpng-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\Debug\ext_libpng-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\Debug\ext_libpng-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No patch step for 'ext_libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch C:/repo/Open3D/build/libpng/src/ext_libpng-stamp/Release/ext_libpng-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\Release\ext_libpng-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\Release\ext_libpng-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No patch step for 'ext_libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch C:/repo/Open3D/build/libpng/src/ext_libpng-stamp/MinSizeRel/ext_libpng-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\MinSizeRel\ext_libpng-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\MinSizeRel\ext_libpng-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No patch step for 'ext_libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch C:/repo/Open3D/build/libpng/src/ext_libpng-stamp/RelWithDebInfo/ext_libpng-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\RelWithDebInfo\ext_libpng-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\RelWithDebInfo\ext_libpng-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\84cf7f3ea86ab96ba5799382dbcff497\ext_libpng-configure.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing configure step for 'ext_libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\repo\Open3D\build\libpng\src\ext_libpng-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -DCMAKE_INSTALL_PREFIX=C:/repo/Open3D/build/libpng -DPNG_SHARED=OFF -DPNG_EXECUTABLES=OFF -DPNG_TESTS=OFF -DPNG_BUILD_ZLIB=ON -DZLIB_INCLUDE_DIR=C:/repo/Open3D/build/zlib/include/ -DPNG_ARM_NEON=off "-DCMAKE_C_COMPILER=C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.34.31933/bin/Hostx64/x64/cl.exe" "-DCMAKE_CXX_COMPILER=C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.34.31933/bin/Hostx64/x64/cl.exe" -DCMAKE_CUDA_COMPILER= -DCMAKE_C_COMPILER_LAUNCHER= -DCMAKE_CXX_COMPILER_LAUNCHER= -DCMAKE_CUDA_COMPILER_LAUNCHER= -DCMAKE_OSX_DEPLOYMENT_TARGET= -DCMAKE_SYSTEM_VERSION=10.0.19044 -DCMAKE_INSTALL_LIBDIR=lib -DCMAKE_BUILD_TYPE=Release -DCMAKE_POLICY_DEFAULT_CMP0091:STRING=NEW -DCMAKE_MSVC_RUNTIME_LIBRARY:STRING=MultiThreadedDebug -DCMAKE_POSITION_INDEPENDENT_CODE=ON -DCMAKE_POLICY_DEFAULT_CMP0063:STRING=NEW -DCMAKE_CXX_VISIBILITY_PRESET=hidden -DCMAKE_CUDA_VISIBILITY_PRESET=hidden -DCMAKE_C_VISIBILITY_PRESET=hidden -DCMAKE_VISIBILITY_INLINES_HIDDEN=ON "-GVisual Studio 17 2022" -Ax64 "-DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files/Microsoft Visual Studio/2022/Community" C:/repo/Open3D/build/libpng/src/ext_libpng
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch C:/repo/Open3D/build/libpng/src/ext_libpng-stamp/Debug/ext_libpng-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\libpng\tmp\ext_libpng-cfgcmd.txt;C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\Debug\ext_libpng-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\Debug\ext_libpng-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing configure step for 'ext_libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\repo\Open3D\build\libpng\src\ext_libpng-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -DCMAKE_INSTALL_PREFIX=C:/repo/Open3D/build/libpng -DPNG_SHARED=OFF -DPNG_EXECUTABLES=OFF -DPNG_TESTS=OFF -DPNG_BUILD_ZLIB=ON -DZLIB_INCLUDE_DIR=C:/repo/Open3D/build/zlib/include/ -DPNG_ARM_NEON=off "-DCMAKE_C_COMPILER=C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.34.31933/bin/Hostx64/x64/cl.exe" "-DCMAKE_CXX_COMPILER=C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.34.31933/bin/Hostx64/x64/cl.exe" -DCMAKE_CUDA_COMPILER= -DCMAKE_C_COMPILER_LAUNCHER= -DCMAKE_CXX_COMPILER_LAUNCHER= -DCMAKE_CUDA_COMPILER_LAUNCHER= -DCMAKE_OSX_DEPLOYMENT_TARGET= -DCMAKE_SYSTEM_VERSION=10.0.19044 -DCMAKE_INSTALL_LIBDIR=lib -DCMAKE_BUILD_TYPE=Release -DCMAKE_POLICY_DEFAULT_CMP0091:STRING=NEW -DCMAKE_MSVC_RUNTIME_LIBRARY:STRING=MultiThreaded -DCMAKE_POSITION_INDEPENDENT_CODE=ON -DCMAKE_POLICY_DEFAULT_CMP0063:STRING=NEW -DCMAKE_CXX_VISIBILITY_PRESET=hidden -DCMAKE_CUDA_VISIBILITY_PRESET=hidden -DCMAKE_C_VISIBILITY_PRESET=hidden -DCMAKE_VISIBILITY_INLINES_HIDDEN=ON "-GVisual Studio 17 2022" -Ax64 "-DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files/Microsoft Visual Studio/2022/Community" C:/repo/Open3D/build/libpng/src/ext_libpng
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch C:/repo/Open3D/build/libpng/src/ext_libpng-stamp/Release/ext_libpng-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\libpng\tmp\ext_libpng-cfgcmd.txt;C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\Release\ext_libpng-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\Release\ext_libpng-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing configure step for 'ext_libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\repo\Open3D\build\libpng\src\ext_libpng-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -DCMAKE_INSTALL_PREFIX=C:/repo/Open3D/build/libpng -DPNG_SHARED=OFF -DPNG_EXECUTABLES=OFF -DPNG_TESTS=OFF -DPNG_BUILD_ZLIB=ON -DZLIB_INCLUDE_DIR=C:/repo/Open3D/build/zlib/include/ -DPNG_ARM_NEON=off "-DCMAKE_C_COMPILER=C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.34.31933/bin/Hostx64/x64/cl.exe" "-DCMAKE_CXX_COMPILER=C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.34.31933/bin/Hostx64/x64/cl.exe" -DCMAKE_CUDA_COMPILER= -DCMAKE_C_COMPILER_LAUNCHER= -DCMAKE_CXX_COMPILER_LAUNCHER= -DCMAKE_CUDA_COMPILER_LAUNCHER= -DCMAKE_OSX_DEPLOYMENT_TARGET= -DCMAKE_SYSTEM_VERSION=10.0.19044 -DCMAKE_INSTALL_LIBDIR=lib -DCMAKE_BUILD_TYPE=Release -DCMAKE_POLICY_DEFAULT_CMP0091:STRING=NEW -DCMAKE_MSVC_RUNTIME_LIBRARY:STRING=MultiThreaded -DCMAKE_POSITION_INDEPENDENT_CODE=ON -DCMAKE_POLICY_DEFAULT_CMP0063:STRING=NEW -DCMAKE_CXX_VISIBILITY_PRESET=hidden -DCMAKE_CUDA_VISIBILITY_PRESET=hidden -DCMAKE_C_VISIBILITY_PRESET=hidden -DCMAKE_VISIBILITY_INLINES_HIDDEN=ON "-GVisual Studio 17 2022" -Ax64 "-DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files/Microsoft Visual Studio/2022/Community" C:/repo/Open3D/build/libpng/src/ext_libpng
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch C:/repo/Open3D/build/libpng/src/ext_libpng-stamp/MinSizeRel/ext_libpng-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\libpng\tmp\ext_libpng-cfgcmd.txt;C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\MinSizeRel\ext_libpng-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\MinSizeRel\ext_libpng-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing configure step for 'ext_libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\repo\Open3D\build\libpng\src\ext_libpng-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -DCMAKE_INSTALL_PREFIX=C:/repo/Open3D/build/libpng -DPNG_SHARED=OFF -DPNG_EXECUTABLES=OFF -DPNG_TESTS=OFF -DPNG_BUILD_ZLIB=ON -DZLIB_INCLUDE_DIR=C:/repo/Open3D/build/zlib/include/ -DPNG_ARM_NEON=off "-DCMAKE_C_COMPILER=C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.34.31933/bin/Hostx64/x64/cl.exe" "-DCMAKE_CXX_COMPILER=C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.34.31933/bin/Hostx64/x64/cl.exe" -DCMAKE_CUDA_COMPILER= -DCMAKE_C_COMPILER_LAUNCHER= -DCMAKE_CXX_COMPILER_LAUNCHER= -DCMAKE_CUDA_COMPILER_LAUNCHER= -DCMAKE_OSX_DEPLOYMENT_TARGET= -DCMAKE_SYSTEM_VERSION=10.0.19044 -DCMAKE_INSTALL_LIBDIR=lib -DCMAKE_BUILD_TYPE=Release -DCMAKE_POLICY_DEFAULT_CMP0091:STRING=NEW -DCMAKE_MSVC_RUNTIME_LIBRARY:STRING=MultiThreaded -DCMAKE_POSITION_INDEPENDENT_CODE=ON -DCMAKE_POLICY_DEFAULT_CMP0063:STRING=NEW -DCMAKE_CXX_VISIBILITY_PRESET=hidden -DCMAKE_CUDA_VISIBILITY_PRESET=hidden -DCMAKE_C_VISIBILITY_PRESET=hidden -DCMAKE_VISIBILITY_INLINES_HIDDEN=ON "-GVisual Studio 17 2022" -Ax64 "-DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files/Microsoft Visual Studio/2022/Community" C:/repo/Open3D/build/libpng/src/ext_libpng
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch C:/repo/Open3D/build/libpng/src/ext_libpng-stamp/RelWithDebInfo/ext_libpng-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\libpng\tmp\ext_libpng-cfgcmd.txt;C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\RelWithDebInfo\ext_libpng-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\RelWithDebInfo\ext_libpng-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\84cf7f3ea86ab96ba5799382dbcff497\ext_libpng-build.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing build step for 'ext_libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\repo\Open3D\build\libpng\src\ext_libpng-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe --build . --config Debug
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch C:/repo/Open3D/build/libpng/src/ext_libpng-stamp/Debug/ext_libpng-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\Debug\ext_libpng-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\Debug\ext_libpng-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing build step for 'ext_libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\repo\Open3D\build\libpng\src\ext_libpng-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe --build . --config Release
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch C:/repo/Open3D/build/libpng/src/ext_libpng-stamp/Release/ext_libpng-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\Release\ext_libpng-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\Release\ext_libpng-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing build step for 'ext_libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\repo\Open3D\build\libpng\src\ext_libpng-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe --build . --config MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch C:/repo/Open3D/build/libpng/src/ext_libpng-stamp/MinSizeRel/ext_libpng-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\MinSizeRel\ext_libpng-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\MinSizeRel\ext_libpng-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing build step for 'ext_libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\repo\Open3D\build\libpng\src\ext_libpng-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe --build . --config RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch C:/repo/Open3D/build/libpng/src/ext_libpng-stamp/RelWithDebInfo/ext_libpng-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\RelWithDebInfo\ext_libpng-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\RelWithDebInfo\ext_libpng-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\84cf7f3ea86ab96ba5799382dbcff497\ext_libpng-install.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing install step for 'ext_libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\repo\Open3D\build\libpng\src\ext_libpng-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe --install . --config Debug
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch C:/repo/Open3D/build/libpng/src/ext_libpng-stamp/Debug/ext_libpng-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\Debug\ext_libpng-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\Debug\ext_libpng-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing install step for 'ext_libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\repo\Open3D\build\libpng\src\ext_libpng-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe --install . --config Release
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch C:/repo/Open3D/build/libpng/src/ext_libpng-stamp/Release/ext_libpng-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\Release\ext_libpng-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\Release\ext_libpng-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing install step for 'ext_libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\repo\Open3D\build\libpng\src\ext_libpng-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe --install . --config MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch C:/repo/Open3D/build/libpng/src/ext_libpng-stamp/MinSizeRel/ext_libpng-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\MinSizeRel\ext_libpng-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\MinSizeRel\ext_libpng-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing install step for 'ext_libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\repo\Open3D\build\libpng\src\ext_libpng-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe --install . --config RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch C:/repo/Open3D/build/libpng/src/ext_libpng-stamp/RelWithDebInfo/ext_libpng-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\RelWithDebInfo\ext_libpng-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\RelWithDebInfo\ext_libpng-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\4840a6b4ae87246733559dce5e59ce0e\ext_libpng-complete.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Completed 'ext_libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\CMake\bin\cmake.exe -E make_directory C:/repo/Open3D/build/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch C:/repo/Open3D/build/CMakeFiles/Debug/ext_libpng-complete
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch C:/repo/Open3D/build/libpng/src/ext_libpng-stamp/Debug/ext_libpng-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\Debug\ext_libpng-install;C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\Debug\ext_libpng-mkdir;C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\Debug\ext_libpng-download;C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\Debug\ext_libpng-update;C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\Debug\ext_libpng-patch;C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\Debug\ext_libpng-configure;C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\Debug\ext_libpng-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\CMakeFiles\Debug\ext_libpng-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Completed 'ext_libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\CMake\bin\cmake.exe -E make_directory C:/repo/Open3D/build/CMakeFiles/Release
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch C:/repo/Open3D/build/CMakeFiles/Release/ext_libpng-complete
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch C:/repo/Open3D/build/libpng/src/ext_libpng-stamp/Release/ext_libpng-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\Release\ext_libpng-install;C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\Release\ext_libpng-mkdir;C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\Release\ext_libpng-download;C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\Release\ext_libpng-update;C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\Release\ext_libpng-patch;C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\Release\ext_libpng-configure;C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\Release\ext_libpng-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\CMakeFiles\Release\ext_libpng-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Completed 'ext_libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\CMake\bin\cmake.exe -E make_directory C:/repo/Open3D/build/CMakeFiles/MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch C:/repo/Open3D/build/CMakeFiles/MinSizeRel/ext_libpng-complete
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch C:/repo/Open3D/build/libpng/src/ext_libpng-stamp/MinSizeRel/ext_libpng-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\MinSizeRel\ext_libpng-install;C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\MinSizeRel\ext_libpng-mkdir;C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\MinSizeRel\ext_libpng-download;C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\MinSizeRel\ext_libpng-update;C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\MinSizeRel\ext_libpng-patch;C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\MinSizeRel\ext_libpng-configure;C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\MinSizeRel\ext_libpng-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\CMakeFiles\MinSizeRel\ext_libpng-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Completed 'ext_libpng'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\CMake\bin\cmake.exe -E make_directory C:/repo/Open3D/build/CMakeFiles/RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch C:/repo/Open3D/build/CMakeFiles/RelWithDebInfo/ext_libpng-complete
+if %errorlevel% neq 0 goto :cmEnd
+C:\CMake\bin\cmake.exe -E touch C:/repo/Open3D/build/libpng/src/ext_libpng-stamp/RelWithDebInfo/ext_libpng-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\RelWithDebInfo\ext_libpng-install;C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\RelWithDebInfo\ext_libpng-mkdir;C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\RelWithDebInfo\ext_libpng-download;C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\RelWithDebInfo\ext_libpng-update;C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\RelWithDebInfo\ext_libpng-patch;C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\RelWithDebInfo\ext_libpng-configure;C:\repo\Open3D\build\libpng\src\ext_libpng-stamp\RelWithDebInfo\ext_libpng-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\CMakeFiles\RelWithDebInfo\ext_libpng-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\e01d9e02bbdcb0329c917774f30b697f\ext_libpng.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\CMakeFiles\Debug\ext_libpng-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\CMakeFiles\ext_libpng</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\CMakeFiles\Release\ext_libpng-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\CMakeFiles\ext_libpng</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\CMakeFiles\MinSizeRel\ext_libpng-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\CMakeFiles\ext_libpng</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\CMakeFiles\RelWithDebInfo\ext_libpng-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\CMakeFiles\ext_libpng</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\repo\Open3D\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/repo/Open3D/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\CMake\bin\cmake.exe -SC:/repo/Open3D -BC:/repo/Open3D/build --check-stamp-file C:/repo/Open3D/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\CMake\share\cmake-3.25\Modules\CMakeCCompiler.cmake.in;C:\CMake\share\cmake-3.25\Modules\CMakeCCompilerABI.c;C:\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeCXXCompiler.cmake.in;C:\CMake\share\cmake-3.25\Modules\CMakeCXXCompilerABI.cpp;C:\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeCompilerIdDetection.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeDependentOption.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeDetermineCCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeDetermineCXXCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeDetermineCompileFeatures.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeDetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeDetermineCompilerABI.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeDetermineCompilerId.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeDetermineRCCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeDetermineSystem.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeFindBinUtils.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeParseImplicitLinkInfo.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeParseLibraryArchitecture.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeRCCompiler.cmake.in;C:\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeSystem.cmake.in;C:\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeTestCCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeTestCXXCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeTestCompilerCommon.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeTestRCCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\CPack.cmake;C:\CMake\share\cmake-3.25\Modules\CPackComponent.cmake;C:\CMake\share\cmake-3.25\Modules\CheckCSourceCompiles.cmake;C:\CMake\share\cmake-3.25\Modules\CheckCXXCompilerFlag.cmake;C:\CMake\share\cmake-3.25\Modules\CheckCXXSourceCompiles.cmake;C:\CMake\share\cmake-3.25\Modules\CheckCXXSymbolExists.cmake;C:\CMake\share\cmake-3.25\Modules\CheckIncludeFile.cmake;C:\CMake\share\cmake-3.25\Modules\CheckLanguage.cmake;C:\CMake\share\cmake-3.25\Modules\CheckLibraryExists.cmake;C:\CMake\share\cmake-3.25\Modules\CheckLinkerFlag.cmake;C:\CMake\share\cmake-3.25\Modules\CheckSymbolExists.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\TI-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\CompilerId\VS-10.vcxproj.in;C:\CMake\share\cmake-3.25\Modules\ExternalProject.cmake;C:\CMake\share\cmake-3.25\Modules\ExternalProject\RepositoryInfo.txt.in;C:\CMake\share\cmake-3.25\Modules\ExternalProject\cfgcmd.txt.in;C:\CMake\share\cmake-3.25\Modules\ExternalProject\download.cmake.in;C:\CMake\share\cmake-3.25\Modules\ExternalProject\extractfile.cmake.in;C:\CMake\share\cmake-3.25\Modules\ExternalProject\gitclone.cmake.in;C:\CMake\share\cmake-3.25\Modules\ExternalProject\mkdirs.cmake.in;C:\CMake\share\cmake-3.25\Modules\FetchContent.cmake;C:\CMake\share\cmake-3.25\Modules\FetchContent\CMakeLists.cmake.in;C:\CMake\share\cmake-3.25\Modules\FindGit.cmake;C:\CMake\share\cmake-3.25\Modules\FindOpenGL.cmake;C:\CMake\share\cmake-3.25\Modules\FindOpenMP.cmake;C:\CMake\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake;C:\CMake\share\cmake-3.25\Modules\FindPackageMessage.cmake;C:\CMake\share\cmake-3.25\Modules\FindPkgConfig.cmake;C:\CMake\share\cmake-3.25\Modules\FindPython\Support.cmake;C:\CMake\share\cmake-3.25\Modules\FindPython3.cmake;C:\CMake\share\cmake-3.25\Modules\FindThreads.cmake;C:\CMake\share\cmake-3.25\Modules\Internal\CheckCompilerFlag.cmake;C:\CMake\share\cmake-3.25\Modules\Internal\CheckFlagCommonConfig.cmake;C:\CMake\share\cmake-3.25\Modules\Internal\CheckLinkerFlag.cmake;C:\CMake\share\cmake-3.25\Modules\Internal\CheckSourceCompiles.cmake;C:\CMake\share\cmake-3.25\Modules\Internal\FeatureTesting.cmake;C:\CMake\share\cmake-3.25\Modules\Platform\Windows-Determine-CXX.cmake;C:\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;C:\CMake\share\cmake-3.25\Modules\ProcessorCount.cmake;C:\CMake\share\cmake-3.25\Templates\CPackConfig.cmake.in;C:\repo\Open3D\3rdparty\assimp\assimp.cmake;C:\repo\Open3D\3rdparty\boringssl\boringssl.cmake;C:\repo\Open3D\3rdparty\civetweb\civetweb.cmake;C:\repo\Open3D\3rdparty\curl\curl.cmake;C:\repo\Open3D\3rdparty\eigen\eigen.cmake;C:\repo\Open3D\3rdparty\embree\embree.cmake;C:\repo\Open3D\3rdparty\filament\filament_download.cmake;C:\repo\Open3D\3rdparty\find_dependencies.cmake;C:\repo\Open3D\3rdparty\fmt\fmt.cmake;C:\repo\Open3D\3rdparty\imgui\imgui.cmake;C:\repo\Open3D\3rdparty\ippicv\ippicv.cmake;C:\repo\Open3D\3rdparty\jsoncpp\jsoncpp.cmake;C:\repo\Open3D\3rdparty\libjpeg-turbo\libjpeg-turbo.cmake;C:\repo\Open3D\3rdparty\libpng\libpng.cmake;C:\repo\Open3D\3rdparty\mkl\mkl.cmake;C:\repo\Open3D\3rdparty\mkl\tbb.cmake;C:\repo\Open3D\3rdparty\msgpack\msgpack_build.cmake;C:\repo\Open3D\3rdparty\nanoflann\nanoflann.cmake;C:\repo\Open3D\3rdparty\parallelstl\parallelstl.cmake;C:\repo\Open3D\3rdparty\possionrecon\possionrecon.cmake;C:\repo\Open3D\3rdparty\pybind11\pybind11.cmake;C:\repo\Open3D\3rdparty\qhull\qhull.cmake;C:\repo\Open3D\3rdparty\tinygltf\tinygltf.cmake;C:\repo\Open3D\3rdparty\tinyobjloader\tinyobjloader.cmake;C:\repo\Open3D\3rdparty\uvatlas\uvatlas.cmake;C:\repo\Open3D\3rdparty\vtk\vtk_build.cmake;C:\repo\Open3D\3rdparty\webrtc\webrtc_download.cmake;C:\repo\Open3D\3rdparty\zeromq\zeromq_build.cmake;C:\repo\Open3D\3rdparty\zlib\zlib.cmake;C:\repo\Open3D\build\CMakeFiles\3.25.0-rc2\CMakeCCompiler.cmake;C:\repo\Open3D\build\CMakeFiles\3.25.0-rc2\CMakeCXXCompiler.cmake;C:\repo\Open3D\build\CMakeFiles\3.25.0-rc2\CMakeRCCompiler.cmake;C:\repo\Open3D\build\CMakeFiles\3.25.0-rc2\CMakeSystem.cmake;C:\repo\Open3D\build\assimp\tmp\ext_assimp-mkdirs.cmake;C:\repo\Open3D\build\boringssl\tmp\ext_boringssl-mkdirs.cmake;C:\repo\Open3D\build\civetweb\tmp\ext_civetweb-mkdirs.cmake;C:\repo\Open3D\build\curl\tmp\ext_curl-mkdirs.cmake;C:\repo\Open3D\build\eigen\tmp\ext_eigen-mkdirs.cmake;C:\repo\Open3D\build\embree\tmp\ext_embree-mkdirs.cmake;C:\repo\Open3D\build\filament\tmp\ext_filament-mkdirs.cmake;C:\repo\Open3D\build\fmt\tmp\ext_fmt-mkdirs.cmake;C:\repo\Open3D\build\imgui\tmp\ext_imgui-mkdirs.cmake;C:\repo\Open3D\build\ippicv\tmp\ext_ippicv-mkdirs.cmake;C:\repo\Open3D\build\jsoncpp\tmp\ext_jsoncpp-mkdirs.cmake;C:\repo\Open3D\build\libpng\tmp\ext_libpng-mkdirs.cmake;C:\repo\Open3D\build\mkl\tmp\ext_mkl-mkdirs.cmake;C:\repo\Open3D\build\mkl_include\tmp\ext_mkl_include-mkdirs.cmake;C:\repo\Open3D\build\msgpack-c\tmp\ext_msgpack-c-mkdirs.cmake;C:\repo\Open3D\build\nanoflann\tmp\ext_nanoflann-mkdirs.cmake;C:\repo\Open3D\build\parallelstl\tmp\ext_parallelstl-mkdirs.cmake;C:\repo\Open3D\build\poisson\tmp\ext_poisson-mkdirs.cmake;C:\repo\Open3D\build\qhull\tmp\ext_qhull-mkdirs.cmake;C:\repo\Open3D\build\tbb\tmp\ext_tbb-mkdirs.cmake;C:\repo\Open3D\build\tinygltf\tmp\ext_tinygltf-mkdirs.cmake;C:\repo\Open3D\build\tinyobjloader\tmp\ext_tinyobjloader-mkdirs.cmake;C:\repo\Open3D\build\turbojpeg\tmp\ext_turbojpeg-mkdirs.cmake;C:\repo\Open3D\build\uvatlas\tmp\ext_directxheaders-mkdirs.cmake;C:\repo\Open3D\build\uvatlas\tmp\ext_directxmath-mkdirs.cmake;C:\repo\Open3D\build\uvatlas\tmp\ext_uvatlas-mkdirs.cmake;C:\repo\Open3D\build\vtk\tmp\ext_vtk-mkdirs.cmake;C:\repo\Open3D\build\webrtc\tmp\ext_webrtc-mkdirs.cmake;C:\repo\Open3D\build\zeromq\tmp\ext_cppzmq-mkdirs.cmake;C:\repo\Open3D\build\zeromq\tmp\ext_zeromq-mkdirs.cmake;C:\repo\Open3D\build\zlib\tmp\ext_zlib-mkdirs.cmake;C:\repo\Open3D\cmake\Open3DFetchISPCCompiler.cmake;C:\repo\Open3D\cmake\Open3DISPC.cmake;C:\repo\Open3D\cmake\Open3DLink3rdpartyLibraries.cmake;C:\repo\Open3D\cmake\Open3DMakeHardeningFlags.cmake;C:\repo\Open3D\cmake\Open3DMakeISPCInstructionSets.cmake;C:\repo\Open3D\cmake\Open3DPackaging.cmake;C:\repo\Open3D\cmake\Open3DPrintConfigurationSummary.cmake;C:\repo\Open3D\cmake\Open3DSYCLTargetSources.cmake;C:\repo\Open3D\cmake\Open3DSetGlobalProperties.cmake;C:\repo\Open3D\cmake\Open3DShowAndAbortOnWarning.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/repo/Open3D/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\CMake\bin\cmake.exe -SC:/repo/Open3D -BC:/repo/Open3D/build --check-stamp-file C:/repo/Open3D/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\CMake\share\cmake-3.25\Modules\CMakeCCompiler.cmake.in;C:\CMake\share\cmake-3.25\Modules\CMakeCCompilerABI.c;C:\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeCXXCompiler.cmake.in;C:\CMake\share\cmake-3.25\Modules\CMakeCXXCompilerABI.cpp;C:\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeCompilerIdDetection.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeDependentOption.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeDetermineCCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeDetermineCXXCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeDetermineCompileFeatures.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeDetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeDetermineCompilerABI.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeDetermineCompilerId.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeDetermineRCCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeDetermineSystem.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeFindBinUtils.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeParseImplicitLinkInfo.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeParseLibraryArchitecture.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeRCCompiler.cmake.in;C:\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeSystem.cmake.in;C:\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeTestCCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeTestCXXCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeTestCompilerCommon.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeTestRCCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\CPack.cmake;C:\CMake\share\cmake-3.25\Modules\CPackComponent.cmake;C:\CMake\share\cmake-3.25\Modules\CheckCSourceCompiles.cmake;C:\CMake\share\cmake-3.25\Modules\CheckCXXCompilerFlag.cmake;C:\CMake\share\cmake-3.25\Modules\CheckCXXSourceCompiles.cmake;C:\CMake\share\cmake-3.25\Modules\CheckCXXSymbolExists.cmake;C:\CMake\share\cmake-3.25\Modules\CheckIncludeFile.cmake;C:\CMake\share\cmake-3.25\Modules\CheckLanguage.cmake;C:\CMake\share\cmake-3.25\Modules\CheckLibraryExists.cmake;C:\CMake\share\cmake-3.25\Modules\CheckLinkerFlag.cmake;C:\CMake\share\cmake-3.25\Modules\CheckSymbolExists.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\TI-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\CompilerId\VS-10.vcxproj.in;C:\CMake\share\cmake-3.25\Modules\ExternalProject.cmake;C:\CMake\share\cmake-3.25\Modules\ExternalProject\RepositoryInfo.txt.in;C:\CMake\share\cmake-3.25\Modules\ExternalProject\cfgcmd.txt.in;C:\CMake\share\cmake-3.25\Modules\ExternalProject\download.cmake.in;C:\CMake\share\cmake-3.25\Modules\ExternalProject\extractfile.cmake.in;C:\CMake\share\cmake-3.25\Modules\ExternalProject\gitclone.cmake.in;C:\CMake\share\cmake-3.25\Modules\ExternalProject\mkdirs.cmake.in;C:\CMake\share\cmake-3.25\Modules\FetchContent.cmake;C:\CMake\share\cmake-3.25\Modules\FetchContent\CMakeLists.cmake.in;C:\CMake\share\cmake-3.25\Modules\FindGit.cmake;C:\CMake\share\cmake-3.25\Modules\FindOpenGL.cmake;C:\CMake\share\cmake-3.25\Modules\FindOpenMP.cmake;C:\CMake\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake;C:\CMake\share\cmake-3.25\Modules\FindPackageMessage.cmake;C:\CMake\share\cmake-3.25\Modules\FindPkgConfig.cmake;C:\CMake\share\cmake-3.25\Modules\FindPython\Support.cmake;C:\CMake\share\cmake-3.25\Modules\FindPython3.cmake;C:\CMake\share\cmake-3.25\Modules\FindThreads.cmake;C:\CMake\share\cmake-3.25\Modules\Internal\CheckCompilerFlag.cmake;C:\CMake\share\cmake-3.25\Modules\Internal\CheckFlagCommonConfig.cmake;C:\CMake\share\cmake-3.25\Modules\Internal\CheckLinkerFlag.cmake;C:\CMake\share\cmake-3.25\Modules\Internal\CheckSourceCompiles.cmake;C:\CMake\share\cmake-3.25\Modules\Internal\FeatureTesting.cmake;C:\CMake\share\cmake-3.25\Modules\Platform\Windows-Determine-CXX.cmake;C:\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;C:\CMake\share\cmake-3.25\Modules\ProcessorCount.cmake;C:\CMake\share\cmake-3.25\Templates\CPackConfig.cmake.in;C:\repo\Open3D\3rdparty\assimp\assimp.cmake;C:\repo\Open3D\3rdparty\boringssl\boringssl.cmake;C:\repo\Open3D\3rdparty\civetweb\civetweb.cmake;C:\repo\Open3D\3rdparty\curl\curl.cmake;C:\repo\Open3D\3rdparty\eigen\eigen.cmake;C:\repo\Open3D\3rdparty\embree\embree.cmake;C:\repo\Open3D\3rdparty\filament\filament_download.cmake;C:\repo\Open3D\3rdparty\find_dependencies.cmake;C:\repo\Open3D\3rdparty\fmt\fmt.cmake;C:\repo\Open3D\3rdparty\imgui\imgui.cmake;C:\repo\Open3D\3rdparty\ippicv\ippicv.cmake;C:\repo\Open3D\3rdparty\jsoncpp\jsoncpp.cmake;C:\repo\Open3D\3rdparty\libjpeg-turbo\libjpeg-turbo.cmake;C:\repo\Open3D\3rdparty\libpng\libpng.cmake;C:\repo\Open3D\3rdparty\mkl\mkl.cmake;C:\repo\Open3D\3rdparty\mkl\tbb.cmake;C:\repo\Open3D\3rdparty\msgpack\msgpack_build.cmake;C:\repo\Open3D\3rdparty\nanoflann\nanoflann.cmake;C:\repo\Open3D\3rdparty\parallelstl\parallelstl.cmake;C:\repo\Open3D\3rdparty\possionrecon\possionrecon.cmake;C:\repo\Open3D\3rdparty\pybind11\pybind11.cmake;C:\repo\Open3D\3rdparty\qhull\qhull.cmake;C:\repo\Open3D\3rdparty\tinygltf\tinygltf.cmake;C:\repo\Open3D\3rdparty\tinyobjloader\tinyobjloader.cmake;C:\repo\Open3D\3rdparty\uvatlas\uvatlas.cmake;C:\repo\Open3D\3rdparty\vtk\vtk_build.cmake;C:\repo\Open3D\3rdparty\webrtc\webrtc_download.cmake;C:\repo\Open3D\3rdparty\zeromq\zeromq_build.cmake;C:\repo\Open3D\3rdparty\zlib\zlib.cmake;C:\repo\Open3D\build\CMakeFiles\3.25.0-rc2\CMakeCCompiler.cmake;C:\repo\Open3D\build\CMakeFiles\3.25.0-rc2\CMakeCXXCompiler.cmake;C:\repo\Open3D\build\CMakeFiles\3.25.0-rc2\CMakeRCCompiler.cmake;C:\repo\Open3D\build\CMakeFiles\3.25.0-rc2\CMakeSystem.cmake;C:\repo\Open3D\build\assimp\tmp\ext_assimp-mkdirs.cmake;C:\repo\Open3D\build\boringssl\tmp\ext_boringssl-mkdirs.cmake;C:\repo\Open3D\build\civetweb\tmp\ext_civetweb-mkdirs.cmake;C:\repo\Open3D\build\curl\tmp\ext_curl-mkdirs.cmake;C:\repo\Open3D\build\eigen\tmp\ext_eigen-mkdirs.cmake;C:\repo\Open3D\build\embree\tmp\ext_embree-mkdirs.cmake;C:\repo\Open3D\build\filament\tmp\ext_filament-mkdirs.cmake;C:\repo\Open3D\build\fmt\tmp\ext_fmt-mkdirs.cmake;C:\repo\Open3D\build\imgui\tmp\ext_imgui-mkdirs.cmake;C:\repo\Open3D\build\ippicv\tmp\ext_ippicv-mkdirs.cmake;C:\repo\Open3D\build\jsoncpp\tmp\ext_jsoncpp-mkdirs.cmake;C:\repo\Open3D\build\libpng\tmp\ext_libpng-mkdirs.cmake;C:\repo\Open3D\build\mkl\tmp\ext_mkl-mkdirs.cmake;C:\repo\Open3D\build\mkl_include\tmp\ext_mkl_include-mkdirs.cmake;C:\repo\Open3D\build\msgpack-c\tmp\ext_msgpack-c-mkdirs.cmake;C:\repo\Open3D\build\nanoflann\tmp\ext_nanoflann-mkdirs.cmake;C:\repo\Open3D\build\parallelstl\tmp\ext_parallelstl-mkdirs.cmake;C:\repo\Open3D\build\poisson\tmp\ext_poisson-mkdirs.cmake;C:\repo\Open3D\build\qhull\tmp\ext_qhull-mkdirs.cmake;C:\repo\Open3D\build\tbb\tmp\ext_tbb-mkdirs.cmake;C:\repo\Open3D\build\tinygltf\tmp\ext_tinygltf-mkdirs.cmake;C:\repo\Open3D\build\tinyobjloader\tmp\ext_tinyobjloader-mkdirs.cmake;C:\repo\Open3D\build\turbojpeg\tmp\ext_turbojpeg-mkdirs.cmake;C:\repo\Open3D\build\uvatlas\tmp\ext_directxheaders-mkdirs.cmake;C:\repo\Open3D\build\uvatlas\tmp\ext_directxmath-mkdirs.cmake;C:\repo\Open3D\build\uvatlas\tmp\ext_uvatlas-mkdirs.cmake;C:\repo\Open3D\build\vtk\tmp\ext_vtk-mkdirs.cmake;C:\repo\Open3D\build\webrtc\tmp\ext_webrtc-mkdirs.cmake;C:\repo\Open3D\build\zeromq\tmp\ext_cppzmq-mkdirs.cmake;C:\repo\Open3D\build\zeromq\tmp\ext_zeromq-mkdirs.cmake;C:\repo\Open3D\build\zlib\tmp\ext_zlib-mkdirs.cmake;C:\repo\Open3D\cmake\Open3DFetchISPCCompiler.cmake;C:\repo\Open3D\cmake\Open3DISPC.cmake;C:\repo\Open3D\cmake\Open3DLink3rdpartyLibraries.cmake;C:\repo\Open3D\cmake\Open3DMakeHardeningFlags.cmake;C:\repo\Open3D\cmake\Open3DMakeISPCInstructionSets.cmake;C:\repo\Open3D\cmake\Open3DPackaging.cmake;C:\repo\Open3D\cmake\Open3DPrintConfigurationSummary.cmake;C:\repo\Open3D\cmake\Open3DSYCLTargetSources.cmake;C:\repo\Open3D\cmake\Open3DSetGlobalProperties.cmake;C:\repo\Open3D\cmake\Open3DShowAndAbortOnWarning.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/repo/Open3D/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\CMake\bin\cmake.exe -SC:/repo/Open3D -BC:/repo/Open3D/build --check-stamp-file C:/repo/Open3D/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\CMake\share\cmake-3.25\Modules\CMakeCCompiler.cmake.in;C:\CMake\share\cmake-3.25\Modules\CMakeCCompilerABI.c;C:\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeCXXCompiler.cmake.in;C:\CMake\share\cmake-3.25\Modules\CMakeCXXCompilerABI.cpp;C:\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeCompilerIdDetection.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeDependentOption.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeDetermineCCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeDetermineCXXCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeDetermineCompileFeatures.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeDetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeDetermineCompilerABI.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeDetermineCompilerId.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeDetermineRCCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeDetermineSystem.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeFindBinUtils.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeParseImplicitLinkInfo.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeParseLibraryArchitecture.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeRCCompiler.cmake.in;C:\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeSystem.cmake.in;C:\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeTestCCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeTestCXXCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeTestCompilerCommon.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeTestRCCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\CPack.cmake;C:\CMake\share\cmake-3.25\Modules\CPackComponent.cmake;C:\CMake\share\cmake-3.25\Modules\CheckCSourceCompiles.cmake;C:\CMake\share\cmake-3.25\Modules\CheckCXXCompilerFlag.cmake;C:\CMake\share\cmake-3.25\Modules\CheckCXXSourceCompiles.cmake;C:\CMake\share\cmake-3.25\Modules\CheckCXXSymbolExists.cmake;C:\CMake\share\cmake-3.25\Modules\CheckIncludeFile.cmake;C:\CMake\share\cmake-3.25\Modules\CheckLanguage.cmake;C:\CMake\share\cmake-3.25\Modules\CheckLibraryExists.cmake;C:\CMake\share\cmake-3.25\Modules\CheckLinkerFlag.cmake;C:\CMake\share\cmake-3.25\Modules\CheckSymbolExists.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\TI-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\CompilerId\VS-10.vcxproj.in;C:\CMake\share\cmake-3.25\Modules\ExternalProject.cmake;C:\CMake\share\cmake-3.25\Modules\ExternalProject\RepositoryInfo.txt.in;C:\CMake\share\cmake-3.25\Modules\ExternalProject\cfgcmd.txt.in;C:\CMake\share\cmake-3.25\Modules\ExternalProject\download.cmake.in;C:\CMake\share\cmake-3.25\Modules\ExternalProject\extractfile.cmake.in;C:\CMake\share\cmake-3.25\Modules\ExternalProject\gitclone.cmake.in;C:\CMake\share\cmake-3.25\Modules\ExternalProject\mkdirs.cmake.in;C:\CMake\share\cmake-3.25\Modules\FetchContent.cmake;C:\CMake\share\cmake-3.25\Modules\FetchContent\CMakeLists.cmake.in;C:\CMake\share\cmake-3.25\Modules\FindGit.cmake;C:\CMake\share\cmake-3.25\Modules\FindOpenGL.cmake;C:\CMake\share\cmake-3.25\Modules\FindOpenMP.cmake;C:\CMake\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake;C:\CMake\share\cmake-3.25\Modules\FindPackageMessage.cmake;C:\CMake\share\cmake-3.25\Modules\FindPkgConfig.cmake;C:\CMake\share\cmake-3.25\Modules\FindPython\Support.cmake;C:\CMake\share\cmake-3.25\Modules\FindPython3.cmake;C:\CMake\share\cmake-3.25\Modules\FindThreads.cmake;C:\CMake\share\cmake-3.25\Modules\Internal\CheckCompilerFlag.cmake;C:\CMake\share\cmake-3.25\Modules\Internal\CheckFlagCommonConfig.cmake;C:\CMake\share\cmake-3.25\Modules\Internal\CheckLinkerFlag.cmake;C:\CMake\share\cmake-3.25\Modules\Internal\CheckSourceCompiles.cmake;C:\CMake\share\cmake-3.25\Modules\Internal\FeatureTesting.cmake;C:\CMake\share\cmake-3.25\Modules\Platform\Windows-Determine-CXX.cmake;C:\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;C:\CMake\share\cmake-3.25\Modules\ProcessorCount.cmake;C:\CMake\share\cmake-3.25\Templates\CPackConfig.cmake.in;C:\repo\Open3D\3rdparty\assimp\assimp.cmake;C:\repo\Open3D\3rdparty\boringssl\boringssl.cmake;C:\repo\Open3D\3rdparty\civetweb\civetweb.cmake;C:\repo\Open3D\3rdparty\curl\curl.cmake;C:\repo\Open3D\3rdparty\eigen\eigen.cmake;C:\repo\Open3D\3rdparty\embree\embree.cmake;C:\repo\Open3D\3rdparty\filament\filament_download.cmake;C:\repo\Open3D\3rdparty\find_dependencies.cmake;C:\repo\Open3D\3rdparty\fmt\fmt.cmake;C:\repo\Open3D\3rdparty\imgui\imgui.cmake;C:\repo\Open3D\3rdparty\ippicv\ippicv.cmake;C:\repo\Open3D\3rdparty\jsoncpp\jsoncpp.cmake;C:\repo\Open3D\3rdparty\libjpeg-turbo\libjpeg-turbo.cmake;C:\repo\Open3D\3rdparty\libpng\libpng.cmake;C:\repo\Open3D\3rdparty\mkl\mkl.cmake;C:\repo\Open3D\3rdparty\mkl\tbb.cmake;C:\repo\Open3D\3rdparty\msgpack\msgpack_build.cmake;C:\repo\Open3D\3rdparty\nanoflann\nanoflann.cmake;C:\repo\Open3D\3rdparty\parallelstl\parallelstl.cmake;C:\repo\Open3D\3rdparty\possionrecon\possionrecon.cmake;C:\repo\Open3D\3rdparty\pybind11\pybind11.cmake;C:\repo\Open3D\3rdparty\qhull\qhull.cmake;C:\repo\Open3D\3rdparty\tinygltf\tinygltf.cmake;C:\repo\Open3D\3rdparty\tinyobjloader\tinyobjloader.cmake;C:\repo\Open3D\3rdparty\uvatlas\uvatlas.cmake;C:\repo\Open3D\3rdparty\vtk\vtk_build.cmake;C:\repo\Open3D\3rdparty\webrtc\webrtc_download.cmake;C:\repo\Open3D\3rdparty\zeromq\zeromq_build.cmake;C:\repo\Open3D\3rdparty\zlib\zlib.cmake;C:\repo\Open3D\build\CMakeFiles\3.25.0-rc2\CMakeCCompiler.cmake;C:\repo\Open3D\build\CMakeFiles\3.25.0-rc2\CMakeCXXCompiler.cmake;C:\repo\Open3D\build\CMakeFiles\3.25.0-rc2\CMakeRCCompiler.cmake;C:\repo\Open3D\build\CMakeFiles\3.25.0-rc2\CMakeSystem.cmake;C:\repo\Open3D\build\assimp\tmp\ext_assimp-mkdirs.cmake;C:\repo\Open3D\build\boringssl\tmp\ext_boringssl-mkdirs.cmake;C:\repo\Open3D\build\civetweb\tmp\ext_civetweb-mkdirs.cmake;C:\repo\Open3D\build\curl\tmp\ext_curl-mkdirs.cmake;C:\repo\Open3D\build\eigen\tmp\ext_eigen-mkdirs.cmake;C:\repo\Open3D\build\embree\tmp\ext_embree-mkdirs.cmake;C:\repo\Open3D\build\filament\tmp\ext_filament-mkdirs.cmake;C:\repo\Open3D\build\fmt\tmp\ext_fmt-mkdirs.cmake;C:\repo\Open3D\build\imgui\tmp\ext_imgui-mkdirs.cmake;C:\repo\Open3D\build\ippicv\tmp\ext_ippicv-mkdirs.cmake;C:\repo\Open3D\build\jsoncpp\tmp\ext_jsoncpp-mkdirs.cmake;C:\repo\Open3D\build\libpng\tmp\ext_libpng-mkdirs.cmake;C:\repo\Open3D\build\mkl\tmp\ext_mkl-mkdirs.cmake;C:\repo\Open3D\build\mkl_include\tmp\ext_mkl_include-mkdirs.cmake;C:\repo\Open3D\build\msgpack-c\tmp\ext_msgpack-c-mkdirs.cmake;C:\repo\Open3D\build\nanoflann\tmp\ext_nanoflann-mkdirs.cmake;C:\repo\Open3D\build\parallelstl\tmp\ext_parallelstl-mkdirs.cmake;C:\repo\Open3D\build\poisson\tmp\ext_poisson-mkdirs.cmake;C:\repo\Open3D\build\qhull\tmp\ext_qhull-mkdirs.cmake;C:\repo\Open3D\build\tbb\tmp\ext_tbb-mkdirs.cmake;C:\repo\Open3D\build\tinygltf\tmp\ext_tinygltf-mkdirs.cmake;C:\repo\Open3D\build\tinyobjloader\tmp\ext_tinyobjloader-mkdirs.cmake;C:\repo\Open3D\build\turbojpeg\tmp\ext_turbojpeg-mkdirs.cmake;C:\repo\Open3D\build\uvatlas\tmp\ext_directxheaders-mkdirs.cmake;C:\repo\Open3D\build\uvatlas\tmp\ext_directxmath-mkdirs.cmake;C:\repo\Open3D\build\uvatlas\tmp\ext_uvatlas-mkdirs.cmake;C:\repo\Open3D\build\vtk\tmp\ext_vtk-mkdirs.cmake;C:\repo\Open3D\build\webrtc\tmp\ext_webrtc-mkdirs.cmake;C:\repo\Open3D\build\zeromq\tmp\ext_cppzmq-mkdirs.cmake;C:\repo\Open3D\build\zeromq\tmp\ext_zeromq-mkdirs.cmake;C:\repo\Open3D\build\zlib\tmp\ext_zlib-mkdirs.cmake;C:\repo\Open3D\cmake\Open3DFetchISPCCompiler.cmake;C:\repo\Open3D\cmake\Open3DISPC.cmake;C:\repo\Open3D\cmake\Open3DLink3rdpartyLibraries.cmake;C:\repo\Open3D\cmake\Open3DMakeHardeningFlags.cmake;C:\repo\Open3D\cmake\Open3DMakeISPCInstructionSets.cmake;C:\repo\Open3D\cmake\Open3DPackaging.cmake;C:\repo\Open3D\cmake\Open3DPrintConfigurationSummary.cmake;C:\repo\Open3D\cmake\Open3DSYCLTargetSources.cmake;C:\repo\Open3D\cmake\Open3DSetGlobalProperties.cmake;C:\repo\Open3D\cmake\Open3DShowAndAbortOnWarning.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/repo/Open3D/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\CMake\bin\cmake.exe -SC:/repo/Open3D -BC:/repo/Open3D/build --check-stamp-file C:/repo/Open3D/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\CMake\share\cmake-3.25\Modules\CMakeCCompiler.cmake.in;C:\CMake\share\cmake-3.25\Modules\CMakeCCompilerABI.c;C:\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeCXXCompiler.cmake.in;C:\CMake\share\cmake-3.25\Modules\CMakeCXXCompilerABI.cpp;C:\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeCompilerIdDetection.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeDependentOption.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeDetermineCCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeDetermineCXXCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeDetermineCompileFeatures.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeDetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeDetermineCompilerABI.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeDetermineCompilerId.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeDetermineRCCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeDetermineSystem.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeFindBinUtils.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeParseImplicitLinkInfo.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeParseLibraryArchitecture.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeRCCompiler.cmake.in;C:\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeSystem.cmake.in;C:\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeTestCCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeTestCXXCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeTestCompilerCommon.cmake;C:\CMake\share\cmake-3.25\Modules\CMakeTestRCCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\CPack.cmake;C:\CMake\share\cmake-3.25\Modules\CPackComponent.cmake;C:\CMake\share\cmake-3.25\Modules\CheckCSourceCompiles.cmake;C:\CMake\share\cmake-3.25\Modules\CheckCXXCompilerFlag.cmake;C:\CMake\share\cmake-3.25\Modules\CheckCXXSourceCompiles.cmake;C:\CMake\share\cmake-3.25\Modules\CheckCXXSymbolExists.cmake;C:\CMake\share\cmake-3.25\Modules\CheckIncludeFile.cmake;C:\CMake\share\cmake-3.25\Modules\CheckLanguage.cmake;C:\CMake\share\cmake-3.25\Modules\CheckLibraryExists.cmake;C:\CMake\share\cmake-3.25\Modules\CheckLinkerFlag.cmake;C:\CMake\share\cmake-3.25\Modules\CheckSymbolExists.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\TI-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\CMake\share\cmake-3.25\Modules\CompilerId\VS-10.vcxproj.in;C:\CMake\share\cmake-3.25\Modules\ExternalProject.cmake;C:\CMake\share\cmake-3.25\Modules\ExternalProject\RepositoryInfo.txt.in;C:\CMake\share\cmake-3.25\Modules\ExternalProject\cfgcmd.txt.in;C:\CMake\share\cmake-3.25\Modules\ExternalProject\download.cmake.in;C:\CMake\share\cmake-3.25\Modules\ExternalProject\extractfile.cmake.in;C:\CMake\share\cmake-3.25\Modules\ExternalProject\gitclone.cmake.in;C:\CMake\share\cmake-3.25\Modules\ExternalProject\mkdirs.cmake.in;C:\CMake\share\cmake-3.25\Modules\FetchContent.cmake;C:\CMake\share\cmake-3.25\Modules\FetchContent\CMakeLists.cmake.in;C:\CMake\share\cmake-3.25\Modules\FindGit.cmake;C:\CMake\share\cmake-3.25\Modules\FindOpenGL.cmake;C:\CMake\share\cmake-3.25\Modules\FindOpenMP.cmake;C:\CMake\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake;C:\CMake\share\cmake-3.25\Modules\FindPackageMessage.cmake;C:\CMake\share\cmake-3.25\Modules\FindPkgConfig.cmake;C:\CMake\share\cmake-3.25\Modules\FindPython\Support.cmake;C:\CMake\share\cmake-3.25\Modules\FindPython3.cmake;C:\CMake\share\cmake-3.25\Modules\FindThreads.cmake;C:\CMake\share\cmake-3.25\Modules\Internal\CheckCompilerFlag.cmake;C:\CMake\share\cmake-3.25\Modules\Internal\CheckFlagCommonConfig.cmake;C:\CMake\share\cmake-3.25\Modules\Internal\CheckLinkerFlag.cmake;C:\CMake\share\cmake-3.25\Modules\Internal\CheckSourceCompiles.cmake;C:\CMake\share\cmake-3.25\Modules\Internal\FeatureTesting.cmake;C:\CMake\share\cmake-3.25\Modules\Platform\Windows-Determine-CXX.cmake;C:\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;C:\CMake\share\cmake-3.25\Modules\ProcessorCount.cmake;C:\CMake\share\cmake-3.25\Templates\CPackConfig.cmake.in;C:\repo\Open3D\3rdparty\assimp\assimp.cmake;C:\repo\Open3D\3rdparty\boringssl\boringssl.cmake;C:\repo\Open3D\3rdparty\civetweb\civetweb.cmake;C:\repo\Open3D\3rdparty\curl\curl.cmake;C:\repo\Open3D\3rdparty\eigen\eigen.cmake;C:\repo\Open3D\3rdparty\embree\embree.cmake;C:\repo\Open3D\3rdparty\filament\filament_download.cmake;C:\repo\Open3D\3rdparty\find_dependencies.cmake;C:\repo\Open3D\3rdparty\fmt\fmt.cmake;C:\repo\Open3D\3rdparty\imgui\imgui.cmake;C:\repo\Open3D\3rdparty\ippicv\ippicv.cmake;C:\repo\Open3D\3rdparty\jsoncpp\jsoncpp.cmake;C:\repo\Open3D\3rdparty\libjpeg-turbo\libjpeg-turbo.cmake;C:\repo\Open3D\3rdparty\libpng\libpng.cmake;C:\repo\Open3D\3rdparty\mkl\mkl.cmake;C:\repo\Open3D\3rdparty\mkl\tbb.cmake;C:\repo\Open3D\3rdparty\msgpack\msgpack_build.cmake;C:\repo\Open3D\3rdparty\nanoflann\nanoflann.cmake;C:\repo\Open3D\3rdparty\parallelstl\parallelstl.cmake;C:\repo\Open3D\3rdparty\possionrecon\possionrecon.cmake;C:\repo\Open3D\3rdparty\pybind11\pybind11.cmake;C:\repo\Open3D\3rdparty\qhull\qhull.cmake;C:\repo\Open3D\3rdparty\tinygltf\tinygltf.cmake;C:\repo\Open3D\3rdparty\tinyobjloader\tinyobjloader.cmake;C:\repo\Open3D\3rdparty\uvatlas\uvatlas.cmake;C:\repo\Open3D\3rdparty\vtk\vtk_build.cmake;C:\repo\Open3D\3rdparty\webrtc\webrtc_download.cmake;C:\repo\Open3D\3rdparty\zeromq\zeromq_build.cmake;C:\repo\Open3D\3rdparty\zlib\zlib.cmake;C:\repo\Open3D\build\CMakeFiles\3.25.0-rc2\CMakeCCompiler.cmake;C:\repo\Open3D\build\CMakeFiles\3.25.0-rc2\CMakeCXXCompiler.cmake;C:\repo\Open3D\build\CMakeFiles\3.25.0-rc2\CMakeRCCompiler.cmake;C:\repo\Open3D\build\CMakeFiles\3.25.0-rc2\CMakeSystem.cmake;C:\repo\Open3D\build\assimp\tmp\ext_assimp-mkdirs.cmake;C:\repo\Open3D\build\boringssl\tmp\ext_boringssl-mkdirs.cmake;C:\repo\Open3D\build\civetweb\tmp\ext_civetweb-mkdirs.cmake;C:\repo\Open3D\build\curl\tmp\ext_curl-mkdirs.cmake;C:\repo\Open3D\build\eigen\tmp\ext_eigen-mkdirs.cmake;C:\repo\Open3D\build\embree\tmp\ext_embree-mkdirs.cmake;C:\repo\Open3D\build\filament\tmp\ext_filament-mkdirs.cmake;C:\repo\Open3D\build\fmt\tmp\ext_fmt-mkdirs.cmake;C:\repo\Open3D\build\imgui\tmp\ext_imgui-mkdirs.cmake;C:\repo\Open3D\build\ippicv\tmp\ext_ippicv-mkdirs.cmake;C:\repo\Open3D\build\jsoncpp\tmp\ext_jsoncpp-mkdirs.cmake;C:\repo\Open3D\build\libpng\tmp\ext_libpng-mkdirs.cmake;C:\repo\Open3D\build\mkl\tmp\ext_mkl-mkdirs.cmake;C:\repo\Open3D\build\mkl_include\tmp\ext_mkl_include-mkdirs.cmake;C:\repo\Open3D\build\msgpack-c\tmp\ext_msgpack-c-mkdirs.cmake;C:\repo\Open3D\build\nanoflann\tmp\ext_nanoflann-mkdirs.cmake;C:\repo\Open3D\build\parallelstl\tmp\ext_parallelstl-mkdirs.cmake;C:\repo\Open3D\build\poisson\tmp\ext_poisson-mkdirs.cmake;C:\repo\Open3D\build\qhull\tmp\ext_qhull-mkdirs.cmake;C:\repo\Open3D\build\tbb\tmp\ext_tbb-mkdirs.cmake;C:\repo\Open3D\build\tinygltf\tmp\ext_tinygltf-mkdirs.cmake;C:\repo\Open3D\build\tinyobjloader\tmp\ext_tinyobjloader-mkdirs.cmake;C:\repo\Open3D\build\turbojpeg\tmp\ext_turbojpeg-mkdirs.cmake;C:\repo\Open3D\build\uvatlas\tmp\ext_directxheaders-mkdirs.cmake;C:\repo\Open3D\build\uvatlas\tmp\ext_directxmath-mkdirs.cmake;C:\repo\Open3D\build\uvatlas\tmp\ext_uvatlas-mkdirs.cmake;C:\repo\Open3D\build\vtk\tmp\ext_vtk-mkdirs.cmake;C:\repo\Open3D\build\webrtc\tmp\ext_webrtc-mkdirs.cmake;C:\repo\Open3D\build\zeromq\tmp\ext_cppzmq-mkdirs.cmake;C:\repo\Open3D\build\zeromq\tmp\ext_zeromq-mkdirs.cmake;C:\repo\Open3D\build\zlib\tmp\ext_zlib-mkdirs.cmake;C:\repo\Open3D\cmake\Open3DFetchISPCCompiler.cmake;C:\repo\Open3D\cmake\Open3DISPC.cmake;C:\repo\Open3D\cmake\Open3DLink3rdpartyLibraries.cmake;C:\repo\Open3D\cmake\Open3DMakeHardeningFlags.cmake;C:\repo\Open3D\cmake\Open3DMakeISPCInstructionSets.cmake;C:\repo\Open3D\cmake\Open3DPackaging.cmake;C:\repo\Open3D\cmake\Open3DPrintConfigurationSummary.cmake;C:\repo\Open3D\cmake\Open3DSYCLTargetSources.cmake;C:\repo\Open3D\cmake\Open3DSetGlobalProperties.cmake;C:\repo\Open3D\cmake\Open3DShowAndAbortOnWarning.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\repo\Open3D\build\CMakeFiles\ext_libpng">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\repo\Open3D\build\ZERO_CHECK.vcxproj">
+      <Project>{CFD9CD55-F5BE-3C9B-95DA-872EE2A8BFC5}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\repo\Open3D\build\ext_zlib.vcxproj">
+      <Project>{72780BE6-1295-38A5-95AB-F4313D2D153D}</Project>
+      <Name>ext_zlib</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

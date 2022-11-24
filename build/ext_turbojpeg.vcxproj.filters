@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\3de029448279aec52278ee5317801b4b\ext_turbojpeg-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\3de029448279aec52278ee5317801b4b\ext_turbojpeg-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\3de029448279aec52278ee5317801b4b\ext_turbojpeg-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\3de029448279aec52278ee5317801b4b\ext_turbojpeg-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\3de029448279aec52278ee5317801b4b\ext_turbojpeg-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\3de029448279aec52278ee5317801b4b\ext_turbojpeg-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\3de029448279aec52278ee5317801b4b\ext_turbojpeg-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\4840a6b4ae87246733559dce5e59ce0e\ext_turbojpeg-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\e01d9e02bbdcb0329c917774f30b697f\ext_turbojpeg.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\repo\Open3D\build\CMakeFiles\ext_turbojpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{DC42490E-CEC7-39BD-B33D-51D277B283D7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

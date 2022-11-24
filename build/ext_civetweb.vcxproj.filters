@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\8bfd5456e48b95dcc4ead7c29b6e96bd\ext_civetweb-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\8bfd5456e48b95dcc4ead7c29b6e96bd\ext_civetweb-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\8bfd5456e48b95dcc4ead7c29b6e96bd\ext_civetweb-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\8bfd5456e48b95dcc4ead7c29b6e96bd\ext_civetweb-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\8bfd5456e48b95dcc4ead7c29b6e96bd\ext_civetweb-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\8bfd5456e48b95dcc4ead7c29b6e96bd\ext_civetweb-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\8bfd5456e48b95dcc4ead7c29b6e96bd\ext_civetweb-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\4840a6b4ae87246733559dce5e59ce0e\ext_civetweb-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\e01d9e02bbdcb0329c917774f30b697f\ext_civetweb.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\repo\Open3D\build\CMakeFiles\ext_civetweb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{DC42490E-CEC7-39BD-B33D-51D277B283D7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
