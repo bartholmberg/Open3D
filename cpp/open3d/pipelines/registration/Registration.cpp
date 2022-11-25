@@ -113,11 +113,11 @@ geom::PointCloud &FixUpO3dColors(geom::PointCloud &pntCld) {
     return pntCld;
 }
 
-model::PointCloudPtr MakeModelCloud(geom::PointCloud gcld,
+model::PointCloudPtr MakeModelCloud(geom::PointCloud agcld,
                                     double voxelSize = -1) {
 
-
-    common::PointCloud_tPtr pntCldPntr(&FixUpO3dColors(gcld));
+    geom::PointCloud *gcld = new geom::PointCloud(agcld);
+    common::PointCloud_tPtr pntCldPntr(&FixUpO3dColors(*gcld));
 
     // BAH, original test program did NOT have downsample.  So
     //  call MakeModelCloud withOUT voxelsize parameter,
@@ -279,13 +279,14 @@ RegistrationResult RegistrationICP(
         pcd.Transform(init);
     }
     auto ctrl = std::make_unique<phaser_core::CloudController>("sph-opt");
-
-      
-   // model::RegistrationResult res0 =
-   //         ctrl->registerPointCloud(MakeModelCloud(target), MakeModelCloud(pcd));
+    model::PointCloudPtr s0 = MakeModelCloud(pcd);
+    model::PointCloudPtr t0 = MakeModelCloud(target);  
+    model::RegistrationResult res0 =
+            ctrl->registerPointCloud(t0, s0);
 
     std::cout << "Registration: " << std::endl;
     RegistrationResult result;
+    return result;
     result = GetRegistrationResultAndCorrespondences(
             pcd, target, kdtree, max_correspondence_distance, transformation);
     for (int i = 0; i < criteria.max_iteration_; i++) {
