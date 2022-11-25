@@ -168,8 +168,9 @@ def  GetTheta( rangeTheta,pcld):
     bestTheta=fitList[maxInd]
 
     # max_iteration works typically at 3.  However for significan rotation about z (in addition to y), need 40
-    #
-    [icptList,corrList] = sparse_registration(pcld,bestTheta[3],coarse_max=coursemax,fine_max=coursemin,max_iteration=40)
+    #np.identity(4)
+    #[icptList,corrList] = sparse_registration(pcld,bestTheta[3],coarse_max=coursemax,fine_max=coursemin,max_iteration=40)
+    [icptList,corrList] = sparse_registration(pcld,np.identity(4),coarse_max=coursemax,fine_max=coursemin,max_iteration=40)
 
 
     actualTheta =np.arcsin(bestTheta[3][2][0])
@@ -201,7 +202,7 @@ def main():
     RyCw75[:3,:3] = o3d.geometry.PointCloud().get_rotation_matrix_from_xyz( (0,75.0*np.pi/180.0, 0) )
     #index = [8,22]
     #index = [22,8]
-    index = [8,6]
+    index = [7,8]
     #index=[42,35]
     #index=[39,1]
     #index=[0,3]
