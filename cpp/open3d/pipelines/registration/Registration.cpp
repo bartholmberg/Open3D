@@ -33,6 +33,7 @@
 #include "open3d/utility/Parallel.h"
 #include "open3d/utility/Random.h"
 #include "iostream"
+
 #include <Eigen/Dense>
 //#include <filesystem>
 #include <fmt/format.h>
@@ -93,6 +94,7 @@ DEFINE_int32(phaser_core_spatial_low_pass_lower_bound, 85, "");
 DEFINE_int32(phaser_core_spatial_low_pass_upper_bound, 115, "");
 // namespace phaser_core
 }  // namespace phaser_core
+
 namespace open3d {
 namespace pipelines {
 namespace registration {
@@ -136,6 +138,7 @@ model::PointCloudPtr MakeModelCloud(geom::PointCloud gcld,
    
     return mCldPtr;
 }
+
 static RegistrationResult GetRegistrationResultAndCorrespondences(
         const geometry::PointCloud &source,
         const geometry::PointCloud &target,
@@ -230,6 +233,10 @@ RegistrationResult EvaluateRegistration(
 // seperate command line. Run python test scipt 
 // that calls  o3d.pipelines.registration.registration_icp(...)
 // there should be TestAprikus.py (open3d\build)
+// NOTE:  w/Aprikus linked in- Make Sure you have all the dll
+//        either in same dir (e.g.- vm site-packages/open3d)
+//        or added to the system path 
+//        ( fftw3.dll, libfftw3-3.dll,libcrypto-3-x64.dll,\zlib1.dll,libssl-3-x64.dll,nlopt.dll,opencv_core3.dll)
 RegistrationResult RegistrationICP(
         const geometry::PointCloud &source,
         const geometry::PointCloud &target,
@@ -273,7 +280,7 @@ RegistrationResult RegistrationICP(
     }
     auto ctrl = std::make_unique<phaser_core::CloudController>("sph-opt");
 
-    //  
+      
    // model::RegistrationResult res0 =
    //         ctrl->registerPointCloud(MakeModelCloud(target), MakeModelCloud(pcd));
 

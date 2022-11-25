@@ -3,6 +3,7 @@
 !*.sln
 !*.filters
 *.cmake
+
 # Docker build artifacts (wheel, dev package, ccache)
 docker/*.tar.gz
 docker/*.tar.xz
@@ -25,6 +26,7 @@ CMakeSettings.json
 # Temp directories
 3rdparty_downloads
 # build*/
+build/a🪁_toPyd/*
 3rdparty*/
 _deps*/
 assimp*/
