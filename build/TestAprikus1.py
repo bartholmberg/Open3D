@@ -97,24 +97,26 @@ def GetPair( index = [1,2] ):
     pcld = []
     pcr=[o3d.geometry.PointCloud(),o3d.geometry.PointCloud(),o3d.geometry.PointCloud()]
 
-    dataDir='C://repo//bart//demo//room3//' 
+    dataDir='C://repo//apricus//phaser_test_data//test_clouds//os0'
+    #dataDir='C://repo//bart//demo//room3//' 
     #dataDir='C://repo//bart//demo//room4//'
     for i in  index:
-        pc=o3d.io.read_point_cloud(dataDir + 'pc_' + str(i).zfill(4)+'.pcd')
-        pcd=o3d.io.read_point_cloud(dataDir + 'pcd_' + str(i).zfill(4)+'.pcd')
-        pcd.transform(FlipZ)
-        pcd.transform(FlipY)
-        pcl.append(pc)
-        pcld.append(pcd)
+        pcs=o3d.io.read_point_cloud(dataDir + 'source_' + str(i).zfill(4)+'.ply')
+        pct=o3d.io.read_point_cloud(dataDir + 'target_' + str(i).zfill(4)+'.ply')
+        #pcd.transform(FlipZ)
+        #pcd.transform(FlipY)
+        pcld.append(pcs)
+        pcld.append(pct)
     return pcld
 
 def main():
     RyCw75 = np.eye(4)
 
+
     RyCw75[:3,:3] = o3d.geometry.PointCloud().get_rotation_matrix_from_xyz( (0,75.0*np.pi/180.0, 0) )
 
     #index = [22,8]
-    index = [7,8]
+    index = [1,2]
     coursemax=60.0
     coursemin= 30.0
     pcld = GetPair(index)
