@@ -445,8 +445,9 @@ bool ReadPointCloudFromPLY(const std::string &filename,
                                        ReadNormalCallback, &state, 0);
     ply_set_read_cb(ply_file, "vertex", "ny", ReadNormalCallback, &state, 1);
     ply_set_read_cb(ply_file, "vertex", "nz", ReadNormalCallback, &state, 2);
-
-    if (params.format == "XYZI") {
+    //BAH,  add the case where we call from python (not C++)
+    //      the filetype is inferred so this causes some confusion 👀
+    if ( (params.format == "XYZI") || (params.format=="ply") ) {
         state.intensity_num = ply_set_read_cb(ply_file, "vertex", "intensity",ReadIntensityCallback, &state, 0);
     } else {
         state.color_num =ply_set_read_cb(ply_file, "vertex", "red", ReadColorCallback, &state, 0);
@@ -467,7 +468,7 @@ bool ReadPointCloudFromPLY(const std::string &filename,
     pointcloud.Clear();
     pointcloud.points_.resize(state.vertex_num);
     pointcloud.normals_.resize(state.normal_num);
-    if (params.format == "XYZI") 
+    if ( (params.format == "XYZI") || (params.format == "ply") )
         pointcloud.colors_.resize(state.intensity_num);
     else
         pointcloud.colors_.resize(state.color_num);
