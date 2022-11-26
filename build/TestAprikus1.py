@@ -97,12 +97,14 @@ def GetPair( index = [1,2] ):
     pcld = []
     pcr=[o3d.geometry.PointCloud(),o3d.geometry.PointCloud(),o3d.geometry.PointCloud()]
 
-    dataDir='C://repo//apricus//phaser_test_data//test_clouds//os0'
+    dataDir='C://repo//apricus//phaser_test_data//test_clouds//os0//'
     #dataDir='C://repo//bart//demo//room3//' 
     #dataDir='C://repo//bart//demo//room4//'
     for i in  index:
-        pcs=o3d.io.read_point_cloud(dataDir + 'source_' + str(i).zfill(4)+'.ply')
-        pct=o3d.io.read_point_cloud(dataDir + 'target_' + str(i).zfill(4)+'.ply')
+        pcs=o3d.io.read_point_cloud(dataDir + 'source_' + str(i).zfill(1)+'.ply')
+        pcs.estimate_normals(o3d.geometry.KDTreeSearchParamKNN( knn=10))
+        pct=o3d.io.read_point_cloud(dataDir + 'target_' + str(i).zfill(1)+'.ply')
+        pct.estimate_normals(o3d.geometry.KDTreeSearchParamKNN( knn=10))
         #pcd.transform(FlipZ)
         #pcd.transform(FlipY)
         pcld.append(pcs)

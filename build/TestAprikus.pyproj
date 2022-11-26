@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>5e6c74f4-bc58-432e-aaf1-926fa7bf9a42</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>TestAprikus0.py</StartupFile>
+    <StartupFile>TestAprikus1.py</StartupFile>
     <SearchPath>..\..\bart;..\..\bart\ProjectSuraNovi\O3dCeres;..\examples\python\reconstruction_system;..\examples\python\visualization;..\examples\python\utility;..\..\bart\ProjectSuraNovi\residual</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
