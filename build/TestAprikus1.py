@@ -127,7 +127,7 @@ def main():
 
     pcld = GetPair(index)
 
-    [icpT,corr] = pairwise_registration( pcld[0], pcld[1],init=np.eye(4),coarse_max=60.0,fine_max=30.0,max_iteration=1 )
+    [icpT,corr] = pairwise_registration( pcld[0], pcld[1],init=np.eye(4),coarse_max=60.0,fine_max=30.0,max_iteration=1,RegType=regType )
     pcld[0].paint_uniform_color([1, 0.706, 0])
     pcld[1].paint_uniform_color([00.2, 0.2, 0.2])
     #[icptList,corrList] = sparse_registration(pcld,np.identity(4),coarse_max=coursemax,fine_max=coursemin,max_iteration=40)
