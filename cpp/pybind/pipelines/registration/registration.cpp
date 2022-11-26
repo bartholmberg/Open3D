@@ -221,7 +221,34 @@ The homogeneous transformation is given by
 
 Sets :math:`c = 1` if ``with_scaling`` is ``False``.
 )");
-
+    // open3d.registration.TransformationEstimationPhaser:
+    // TransformationEstimation
+    /// BAH, bind in phaser registration 
+    py::class_<TransformationEstimationPhaser,
+               PyTransformationEstimation<TransformationEstimationPhaser>,
+               TransformationEstimation>
+            te_phaser(m, "TransformationEstimationPhaser",
+                   "Class to estimate a transformation Phaser "
+                   "distance.");
+    py::detail::bind_copy_functions<TransformationEstimationPhaser>(
+            te_phaser);
+    te_phaser.def(py::init([](bool with_scaling) {
+                   return new TransformationEstimationPhaser(
+                           with_scaling);
+               }),
+               "with_scaling"_a = false)
+            .def("__repr__",
+                 [](const TransformationEstimationPhaser &te) {
+                     return std::string(
+                                    "TransformationEstimationPhaser ") +
+                            (te.with_scaling_
+                                     ? std::string("with scaling.")
+                                     : std::string("without scaling."));
+                 })
+            .def_readwrite(
+                    "with_scaling",
+                    &TransformationEstimationPhaser::with_scaling_,
+                    R"(Set to True to estimate scaling, False to force scaling to be 1)");
     // open3d.registration.TransformationEstimationPointToPlane:
     // TransformationEstimation
     py::class_<TransformationEstimationPointToPlane,

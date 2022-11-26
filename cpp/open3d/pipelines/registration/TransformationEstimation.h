@@ -166,6 +166,46 @@ private:
             TransformationEstimationType::PointToPlane;
 };
 
+/// BAH, Place holder and here only to Phaser registration types.
+///      For now all computation is done in Aprikus code base. 
+///      No known requirement to support _kernel
+class TransformationEstimationPhaser : public TransformationEstimation {
+public:
+    /// \brief Parameterized Constructor.
+    ///
+    /// \param with_scaling Set to True to estimate scaling, False to force
+    /// scaling to be 1.
+    TransformationEstimationPhaser(bool with_scaling = false)
+        : with_scaling_(with_scaling) {}
+    ~TransformationEstimationPhaser() override {}
+
+public:
+    TransformationEstimationType GetTransformationEstimationType()
+            const override {
+        return type_;
+    };
+    double ComputeRMSE(const geometry::PointCloud &source,
+                       const geometry::PointCloud &target,
+                       const CorrespondenceSet &corres) const override;
+    Eigen::Matrix4d ComputeTransformation(
+            const geometry::PointCloud &source,
+            const geometry::PointCloud &target,
+            const CorrespondenceSet &corres) const override;
+
+public:
+    /// \brief Set to True to estimate scaling, False to force scaling to be 1.
+    ///
+    /// The homogeneous transformation is given by\n
+    /// T = [ cR t]\n
+    ///    [0   1]\n
+    /// Sets 𝑐=1 if with_scaling is False.
+    bool with_scaling_ = false;
+
+private:
+    const TransformationEstimationType type_ =
+            TransformationEstimationType::Phaser;
+
+};
 }  // namespace registration
 }  // namespace pipelines
 }  // namespace open3d

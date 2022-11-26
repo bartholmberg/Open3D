@@ -242,10 +242,8 @@ RegistrationResult RegistrationICP(
         const geometry::PointCloud &target,
         double max_correspondence_distance,
         const Eigen::Matrix4d &init /* = Eigen::Matrix4d::Identity()*/,
-        const TransformationEstimation &estimation
-        /* = TransformationEstimationPointToPoint(false)*/,
-        const ICPConvergenceCriteria
-                &criteria /* = ICPConvergenceCriteria()*/) {
+        const TransformationEstimation &estimation ,
+        const ICPConvergenceCriteria &criteria   ) {
     if (max_correspondence_distance <= 0.0) {
         utility::LogError("Invalid max_correspondence_distance.");
     }

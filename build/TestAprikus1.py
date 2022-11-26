@@ -121,6 +121,10 @@ def main():
     index = [1,2]
     coursemax=60.0
     coursemin= 30.0
+    regType=o3d.pipelines.registration.TransformationEstimationPointToPlane()
+    
+    regType=o3d.pipelines.registration.TransformationEstimationPhaser()
+
     pcld = GetPair(index)
 
     [icpT,corr] = pairwise_registration( pcld[0], pcld[1],init=np.eye(4),coarse_max=60.0,fine_max=30.0,max_iteration=1 )
