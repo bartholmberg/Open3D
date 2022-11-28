@@ -61,6 +61,31 @@ Eigen::Matrix4d TransformationEstimationPointToPoint::ComputeTransformation(
     return Eigen::umeyama(source_mat, target_mat, with_scaling_);
 }
 
+// BAH, stub out for out for now. Calling phaser registration directly.
+//      TODO:  move direct call to here
+Eigen::Matrix4d TransformationEstimationPhaser::ComputeTransformation(
+        const geometry::PointCloud &source,
+        const geometry::PointCloud &target,
+        const CorrespondenceSet &corres) const {
+    return Eigen::Matrix4d::Identity();
+}
+//  BAH, copy ICP version, should work fine for PHASER
+//       TODO: verify
+double TransformationEstimationPhaser::ComputeRMSE(
+        const geometry::PointCloud &source,
+        const geometry::PointCloud &target,
+        const CorrespondenceSet &corres) const {
+    if (corres.empty() || !target.HasNormals()) return 0.0;
+    double err = 0.0, r;
+    for (const auto &c : corres) {
+        r = (source.points_[c[0]] - target.points_[c[1]])
+                    .dot(target.normals_[c[1]]);
+        err += r * r;
+    }
+    return std::sqrt(err / (double)corres.size());
+}
+
+
 double TransformationEstimationPointToPlane::ComputeRMSE(
         const geometry::PointCloud &source,
         const geometry::PointCloud &target,
