@@ -30,11 +30,108 @@
 
 #include "open3d/geometry/PointCloud.h"
 #include "open3d/utility/Eigen.h"
+#include "iostream"
+
+#include <Eigen/Dense>
+// #include <filesystem>
+#include <fmt/format.h>
+#include <open3d/Open3D.h>
+#include <open3d/geometry/PointCloud.h>
+#include <phaser/common/point-types.h>
+
+#include <Eigen/Core>  // for MatrixMap
+#include <algorithm>   // for copy_n, fill_n
+#include <cstdint>     // for uint8_t, uint32_t
+#include <iostream>    // for ostream, operator<<
+#include <memory>
+#include <type_traits>  // for enable_if_t
+
+#include "open3d/Open3D.h"
+#include "open3d/geometry/Geometry3D.h"
+#include "open3d/geometry/KDTreeSearchParam.h"
+#include "open3d/utility/Optional.h"
+#include "phaser/backend/registration/sph-opt-registration.h"
+#include "phaser/controller/cloud-controller.h"
+
+namespace phaser_core {
+
+DEFINE_string(
+        target_cloud,
+        "c:\\repo\\apricus\\phaser_test_data\\test_clouds\\os0\\target_4.ply",
+        "Defines the path to the target cloud.");
+DEFINE_string(
+        source_cloud,
+        "c:\\repo\\apricus\\phaser_test_data\\test_clouds\\os0\\source_4.ply",
+        "Defines the path to the source cloud.");
+DEFINE_string(reg_cloud,
+              "c:\\repo\\apricus\\phaser_core\\reg_4.ply",
+              "Defines the path to the registered cloud.");
+
+// BAH, TBD:set these values to good defaults,
+//          similarly(not identical) named inputs _spherical_bandwidth
+//          in phaser core lib source, why?
+DEFINE_int32(phaser_core_spherical_bandwidth,
+             150,
+             "spherical bandwidth");  // 150 original
+DEFINE_int32(phaser_core_spherical_zero_padding, 10, "zero pad");
+DEFINE_int32(phaser_core_spherical_low_pass_lower_bound,
+             0,
+             "low pass - lower band");
+DEFINE_int32(phaser_core_spherical_low_pass_upper_bound,
+             10000,
+             "low pass - upper band");
+
+DEFINE_int32(phaser_core_spatial_n_voxels, 201, "");
+DEFINE_int32(phaser_core_spatial_discretize_lower, -50, "");
+DEFINE_int32(phaser_core_spatial_discretize_upper, 50, "");
+DEFINE_int32(phaser_core_spatial_zero_padding, 0, "");
+DEFINE_int32(phaser_core_spatial_low_pass_lower_bound, 85, "");
+DEFINE_int32(phaser_core_spatial_low_pass_upper_bound, 115, "");
+// namespace phaser_core
+}  // namespace phaser_core
 
 namespace open3d {
 namespace pipelines {
 namespace registration {
+// BAH, TODO, move next two helper functions to library.
+// copied from 👉🏽 aprikus project PointCloud.cpp
+//
 
+geom::PointCloud &FixUpO3dColors(geom::PointCloud &pntCld) {
+    double Scale = 1.0;
+    for (auto &clr : pntCld.colors_) {
+        double r = clr(0) * Scale;
+        clr(1) = r;
+        clr(2) = r;
+        clr(0) = r;
+    }
+    return pntCld;
+}
+
+model::PointCloudPtr MakeModelCloud(geom::PointCloud agcld,
+                                    double voxelSize = -1) {
+    geom::PointCloud *gcld = new geom::PointCloud(agcld);
+    common::PointCloud_tPtr pntCldPntr(&FixUpO3dColors(*gcld));
+
+    // BAH, original test program did NOT have downsample.  So
+    //  call MakeModelCloud withOUT voxelsize parameter,
+
+    if (voxelSize > 0) pntCldPntr = pntCldPntr->VoxelDownSample(voxelSize);
+    model::PointCloud *mCld = new model::PointCloud(pntCldPntr);
+
+    model::PointCloudPtr mCldPtr(mCld);
+    if (!mCldPtr->getRawCloud()->HasNormals()) {
+        utility::ScopeTimer timer("Normal estimation with KNN10");
+        for (int i = 0; i < 10; i++) {
+            mCldPtr->getRawCloud()->EstimateNormals(
+                    geom::KDTreeSearchParamKNN(10));
+            mCldPtr->getRawCloud()->EstimateNormals(
+                    geom::KDTreeSearchParamKNN(10));
+        }
+    }
+
+    return mCldPtr;
+}
 double TransformationEstimationPointToPoint::ComputeRMSE(
         const geometry::PointCloud &source,
         const geometry::PointCloud &target,
@@ -60,13 +157,43 @@ Eigen::Matrix4d TransformationEstimationPointToPoint::ComputeTransformation(
     }
     return Eigen::umeyama(source_mat, target_mat, with_scaling_);
 }
+// BAH, OLD NOTES move comments from Registration.cpp to here with the code.
+//      keep for update plan.
 
-// BAH, stub out for out for now. Calling phaser registration directly.
-//      TODO:  move direct call to here
+// BAH, add Aprikus call here
+//  NOTE: to attach debugger
+//  go to Debug ➡️ 📎 attach  to process
+//  👉🏽 native code
+//  Also, start python o3d(python310) vm at
+//  seperate command line. Run python test scipt
+//  that calls  o3d.pipelines.registration.registration_icp(...)
+//  there should be TestAprikus.py (open3d\build)
+//  NOTE:  w/Aprikus linked in- Make Sure you have all the dll
+//         either in same dir (e.g.- vm site-packages/open3d)
+//         or added to the system path
+//         ( fftw3.dll,
+//         libfftw3-3.dll,libcrypto-3-x64.dll,\zlib1.dll,libssl-3-x64.dll,nlopt.dll,opencv_core3.dll)
+//  NOTE: UPDATE, phaser moved to standard compute function in
+//  TransformationEstimation.cpp// BAH, stub out for out for now. Calling phaser registration directly.
+// 
+//      BAH, NEW NOTES add Aprikus call here
 Eigen::Matrix4d TransformationEstimationPhaser::ComputeTransformation(
         const geometry::PointCloud &source,
         const geometry::PointCloud &target,
         const CorrespondenceSet &corres) const {
+
+
+    auto ctrl = std::make_unique<phaser_core::CloudController>("sph-opt");
+    model::PointCloudPtr s0 = MakeModelCloud(source);
+    model::PointCloudPtr t0 = MakeModelCloud(target);
+    model::RegistrationResult res0 = ctrl->registerPointCloud(t0, s0);
+
+    std::cout << "Registration: " << std::endl;
+    auto a = res0.getRegisteredCloud();
+    // BAH, TODO , returns identity currenlty. 
+    // Need to convert model::PointCloudPtr to Eigen::Matrix4d
+    // and return actual registered cloud instead.
+    //return (Eigen::Matrix4d)a;
     return Eigen::Matrix4d::Identity();
 }
 //  BAH, copy ICP version, should work fine for PHASER
