@@ -189,12 +189,14 @@ Eigen::Matrix4d TransformationEstimationPhaser::ComputeTransformation(
     model::RegistrationResult res0 = ctrl->registerPointCloud(t0, s0);
 
     std::cout << "Registration: " << std::endl;
-    auto a = res0.getRegisteredCloud();
-    // BAH, TODO , returns identity currenlty. 
-    // Need to convert model::PointCloudPtr to Eigen::Matrix4d
-    // and return actual registered cloud instead.
-    //return (Eigen::Matrix4d)a;
-    return Eigen::Matrix4d::Identity();
+    common::PointCloud_tPtr b = res0.getRegisteredCloud()->getRawCloud();
+    int N=b->points_.size();
+    Eigen::MatrixXd resmat(3, N);
+    for (size_t i = 0; i < N; i++) {
+        resmat.block<3, 1>(0, i) = b->points_[i];
+    } 
+    return resmat;
+    //return Eigen::Matrix4d::Identity();
 }
 //  BAH, copy ICP version, should work fine for PHASER
 //       TODO: verify
