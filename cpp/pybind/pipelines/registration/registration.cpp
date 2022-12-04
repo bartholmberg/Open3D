@@ -640,6 +640,18 @@ void pybind_registration_methods(py::module &m) {
           "transformation"_a = Eigen::Matrix4d::Identity());
     docstring::FunctionDocInject(m, "evaluate_registration",
                                  map_shared_argument_docstrings);
+    //
+    //BAH, add phaser in as global registration method
+    //
+    m.def("registration_phaser", &RegistrationGlobal,
+          py::call_guard<py::gil_scoped_release>(),
+          "Function for Phaser registration", "source"_a, "target"_a,
+          "max_correspondence_distance"_a,
+          "init"_a = Eigen::Matrix4d::Identity(),
+          "estimation_method"_a = TransformationEstimationPhaser(false),
+          "criteria"_a = ICPConvergenceCriteria());
+    docstring::FunctionDocInject(m, "registration_icp",
+                                 map_shared_argument_docstrings);
 
     m.def("registration_icp", &RegistrationICP,
           py::call_guard<py::gil_scoped_release>(),

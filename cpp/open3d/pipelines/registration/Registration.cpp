@@ -125,6 +125,19 @@ RegistrationResult EvaluateRegistration(
     return GetRegistrationResultAndCorrespondences(
             pcd, target, kdtree, max_correspondence_distance, transformation);
 }
+//BAH, add in Global registration implementation here
+RegistrationResult RegistrationGlobal(
+        const geometry::PointCloud &source,
+        const geometry::PointCloud &target,
+        double max_correspondence_distance,
+        const Eigen::Matrix4d &init /* = Eigen::Matrix4d::Identity()*/,
+        const TransformationEstimation &estimation,
+        const ICPConvergenceCriteria &criteria){
+
+    RegistrationResult result;
+    return result;
+};
+
 
 RegistrationResult RegistrationICP(
         const geometry::PointCloud &source,
