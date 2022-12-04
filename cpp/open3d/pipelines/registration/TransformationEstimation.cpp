@@ -183,6 +183,8 @@ Eigen::Matrix4d TransformationEstimationPhaser::ComputeTransformation(
         const CorrespondenceSet &corres) const {
 
 
+    // BAH, 12/4 got a crash here instantiating the CloudController
+    //      ??? .  Pick it up here after making chili
     auto ctrl = std::make_unique<phaser_core::CloudController>("sph-opt");
     model::PointCloudPtr s0 = MakeModelCloud(source);
     model::PointCloudPtr t0 = MakeModelCloud(target);

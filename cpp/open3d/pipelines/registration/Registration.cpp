@@ -133,8 +133,18 @@ RegistrationResult RegistrationGlobal(
         const Eigen::Matrix4d &init /* = Eigen::Matrix4d::Identity()*/,
         const TransformationEstimation &estimation,
         const ICPConvergenceCriteria &criteria){
+    /*
+    auto ctrl = std::make_unique<phaser_core::CloudController>("sph-opt");
+    model::PointCloudPtr s0 = MakeModelCloud(pcd);
+    model::PointCloudPtr t0 = MakeModelCloud(target);
+    model::RegistrationResult res0 =
+            ctrl->registerPointCloud(t0, s0);
 
+    std::cout << "Registration: " << std::endl;
+    */
     RegistrationResult result;
+    Eigen::Matrix4d update = estimation.ComputeTransformation(
+            source, target, result.correspondence_set_);
     return result;
 };
 
@@ -180,17 +190,9 @@ RegistrationResult RegistrationICP(
     if (!init.isIdentity()) {
         pcd.Transform(init);
     }
-    /*
-    auto ctrl = std::make_unique<phaser_core::CloudController>("sph-opt");
-    model::PointCloudPtr s0 = MakeModelCloud(pcd);
-    model::PointCloudPtr t0 = MakeModelCloud(target);  
-    model::RegistrationResult res0 =
-            ctrl->registerPointCloud(t0, s0);
-
-    std::cout << "Registration: " << std::endl;
-    */
+    
+    //RegistrationResult result;
     RegistrationResult result;
- 
     result = GetRegistrationResultAndCorrespondences(
             pcd, target, kdtree, max_correspondence_distance, transformation);
 

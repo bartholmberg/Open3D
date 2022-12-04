@@ -650,7 +650,7 @@ void pybind_registration_methods(py::module &m) {
           "init"_a = Eigen::Matrix4d::Identity(),
           "estimation_method"_a = TransformationEstimationPhaser(false),
           "criteria"_a = ICPConvergenceCriteria());
-    docstring::FunctionDocInject(m, "registration_icp",
+    docstring::FunctionDocInject(m, "registration_phaser",
                                  map_shared_argument_docstrings);
 
     m.def("registration_icp", &RegistrationICP,
