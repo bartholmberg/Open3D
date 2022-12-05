@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\repo\Open3D\cpp\apps\OfflineReconstruction\OfflineReconstruction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\repo\Open3D\cpp\apps\OfflineReconstruction\Config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\repo\Open3D\cpp\apps\OfflineReconstruction\DebugUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\repo\Open3D\cpp\apps\OfflineReconstruction\FileSystemUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\repo\Open3D\cpp\apps\OfflineReconstruction\LegacyReconstructionUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\repo\Open3D\cpp\apps\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{B5F29FAC-7709-3120-A8B6-248518CA27A3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{5F8B045E-4C33-37F0-B645-6EDC94A227E1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

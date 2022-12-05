@@ -2,8 +2,13 @@
 !*.vcxproj
 !*.sln
 !*.filters
+!cpp/pybind/pybind*/
 *.cmake
-
+*.obj
+*.tlog
+*.log
+*.pdb
+*.recipe
 # Docker build artifacts (wheel, dev package, ccache)
 docker/*.tar.gz
 docker/*.tar.xz
@@ -34,7 +39,7 @@ bin*/
 bor*/
 civ*/
 cmake*/
-cpp*/
+#cpp*/
 curl*/
 eigen*/
 doc*/
@@ -90,7 +95,7 @@ __pycache__
 .idea
 *.egg-info/
 *.ipynb_checkpoints/
-*.py[cod]
+# *.py[cod]
 *.bak
 node_modules/
 static/
@@ -131,3 +136,10 @@ docs/Doxyfile
 docs/getting_started.rst
 docs/docker.rst
 docs/tensorboard.md
+build/cpp/tools/ViewGeometry.dir/RelWithDebInfo/ViewGeometry.vcxproj.FileListAbsolute.txt
+build/cpp/tools/MergeMesh.dir/RelWithDebInfo/MergeMesh.vcxproj.FileListAbsolute.txt
+build/cpp/tools/ConvertPointCloud.dir/RelWithDebInfo/ConvertPointCloud.vcxproj.FileListAbsolute.txt
+build/cpp/pybind/pybind.dir/RelWithDebInfo/pybind.vcxproj.FileListAbsolute.txt
+build/cpp/tools/GLInfo.dir/RelWithDebInfo/GLInfo.vcxproj.FileListAbsolute.txt
+build/cpp/tools/ManuallyCropGeometry.dir/RelWithDebInfo/ManuallyCropGeometry.vcxproj.FileListAbsolute.txt
+build/cpp/pybind/pyd.md

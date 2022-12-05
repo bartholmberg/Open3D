@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\camera\camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\core\blob.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\core\core.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\core\cuda_utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\core\device.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\core\dtype.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\core\hashmap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\core\kernel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\core\linalg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\core\scalar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\core\size_vector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\core\sycl_utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\core\tensor_accessor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\core\tensor_converter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\core\tensor_function.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\core\tensor_type_caster.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\core\tensor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\core\nns\nearest_neighbor_search.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\data\dataset.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\geometry\boundingvolume.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\geometry\geometry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\geometry\halfedgetrianglemesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\geometry\image.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\geometry\kdtreeflann.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\geometry\keypoint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\geometry\lineset.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\geometry\meshbase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\geometry\octree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\geometry\pointcloud.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\geometry\tetramesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\geometry\trianglemesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\geometry\voxelgrid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\io\class_io.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\io\io.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\io\rpc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\ml\ml.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\ml\contrib\contrib_subsample.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\ml\contrib\contrib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\ml\contrib\iou.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\pipelines\pipelines.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\pipelines\color_map\color_map.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\pipelines\integration\integration.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\pipelines\odometry\odometry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\pipelines\registration\feature.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\pipelines\registration\global_optimization.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\pipelines\registration\registration.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\pipelines\registration\robust_kernels.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\t\t.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\t\geometry\geometry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\t\geometry\drawablegeometry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\t\geometry\image.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\t\geometry\lineset.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\t\geometry\pointcloud.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\t\geometry\boundingvolume.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\t\geometry\raycasting_scene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\t\geometry\tensormap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\t\geometry\trianglemesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\t\geometry\voxel_block_grid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\t\io\class_io.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\t\io\io.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\t\io\sensor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\t\pipelines\pipelines.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\t\pipelines\odometry\odometry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\t\pipelines\registration\feature.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\t\pipelines\registration\registration.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\t\pipelines\registration\robust_kernel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\t\pipelines\slac\slac.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\t\pipelines\slam\slam.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\utility\eigen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\utility\logging.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\utility\random.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\utility\utility.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\visualization\renderoption.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\visualization\utility.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\visualization\viewcontrol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\visualization\visualization.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\visualization\visualizer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\visualization\rendering\material.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\visualization\o3dvisualizer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\visualization\app\viewer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\visualization\gui\events.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\visualization\gui\gui.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\visualization\rendering\rendering.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\visualization\webrtc_server\webrtc_window_system.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\docstring.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\open3d_pybind.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\pybind\pybind_utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\repo\Open3D\cpp\pybind\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{5F8B045E-4C33-37F0-B645-6EDC94A227E1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
