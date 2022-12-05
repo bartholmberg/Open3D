@@ -1,0 +1,1000 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F92A0AB8-7276-34AE-9BEA-D54F8AF1D406}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>Open3D</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\lib\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Open3D.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Open3D</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\lib\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Open3D.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Open3D</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\lib\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Open3D.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Open3D</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\lib\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Open3D.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Open3D</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\repo\Open3D\cpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/repo/Open3D/build/assimp/include" /external:I "C:/repo/Open3D/3rdparty/dirent" /external:I "C:/repo/Open3D/build/nanoflann/src/ext_nanoflann/include" /external:I "C:/repo/Open3D/build/turbojpeg/include" /external:I "C:/repo/Open3D/build/jsoncpp/include" /external:I "C:/repo/Open3D/3rdparty/liblzf" /external:I "C:/repo/Open3D/3rdparty/tomasakeninemoeller/include" /external:I "C:/repo/Open3D/build/curl/include" /external:I "C:/repo/Open3D/build/boringssl/src/ext_boringssl/Debug/include" /external:I "C:/repo/Open3D/build/libpng/include" /external:I "C:/repo/Open3D/build/zlib/include" /external:I "C:/repo/Open3D/3rdparty/rply/rply" /external:I "C:/repo/Open3D/3rdparty/tinyfiledialogs/include" /external:I "C:/repo/Open3D/build/tinygltf/src/ext_tinygltf" /external:I "C:/repo/Open3D/build/tinyobjloader/src/ext_tinyobjloader" /external:I "C:/repo/Open3D/build/qhull/src/ext_qhull/src" /external:I "C:/repo/Open3D/build/poisson/src/ext_poisson" /external:I "C:/repo/Open3D/build/imgui/src/ext_imgui" /external:I "C:/repo/Open3D/build/zeromq/include" /external:I "C:/repo/Open3D/build/zeromq/src/ext_cppzmq" /external:I "C:/repo/Open3D/build/msgpack-c/src/ext_msgpack-c/include" /external:I "C:/repo/Open3D/build/vtk/src/ext_vtk/include/vtk-9.1" /external:I "C:/repo/Open3D/build/uvatlas/include/DirectXMath" /external:I "C:/repo/Open3D/build/uvatlas/include" /external:I "C:/repo/Open3D/build/mkl_install/include" /external:I "C:/repo/Open3D/build/embree/include" /external:I "C:/repo/Open3D/build/embree/src/ext_embree" /external:I "C:/repo/Open3D/build/webrtc/src/ext_webrtc/Debug/include" /external:I "C:/repo/Open3D/build/webrtc/src/ext_webrtc/Debug/include/third_party/abseil-cpp" /external:I "C:/repo/Open3D/build/webrtc/src/ext_webrtc/Debug/include/third_party/jsoncpp/source/include" /external:I "C:/repo/Open3D/build/webrtc/src/ext_webrtc/Debug/include/third_party/jsoncpp/generated" /external:I "C:/repo/Open3D/build/webrtc/src/ext_webrtc/Debug/include/third_party/libyuv/include" /external:I "C:/repo/Open3D/build/civetweb/include" /external:I "C:/repo/Open3D/build/ippicv/include/icv" /external:I "C:/repo/Open3D/build/ippicv/include" /external:I "C:/repo/Open3D/build/eigen/src/ext_eigen" /external:I "C:/repo/Open3D/build/parallelstl/src/ext_parallelstl/include" /external:I "C:/repo/Open3D/3rdparty/glew/include" /external:I "C:/repo/Open3D/3rdparty/glfw/include" /external:I "C:/repo/Open3D/build/fmt/include" /external:I "C:/repo/Open3D/build/filament/src/ext_filament/include" /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <ControlFlowGuard>Guard</ControlFlowGuard>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4201;4310;4505;4127;4146;4189;4324;4706;4100;4702;4244;4245;4267;4305;4819</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <SDLCheck>true</SDLCheck>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <WarningVersion>18</WarningVersion>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;OPEN3D_CXX_STANDARD="14";OPEN3D_CXX_COMPILER_ID="MSVC";OPEN3D_CXX_COMPILER_VERSION="19.34.31933.0";OPEN3D_CUDA_COMPILER_ID="";OPEN3D_CUDA_COMPILER_VERSION="";ZMQ_STATIC;BUILD_ISPC_MODULE;BUILD_GUI;BUILD_WEBRTC;WITH_IPPICV;_GLIBCXX_USE_CXX11_ABI=0;WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NOMINMAX;_USE_MATH_DEFINES;_ENABLE_EXTENDED_ALIGNED_STORAGE;__TBB_LIB_NAME=tbb_static;OPEN3D_STATIC;OPEN3D_ENABLE_DLL_EXPORTS;TINYGLTF_IMPLEMENTATION;STB_IMAGE_IMPLEMENTATION;STB_IMAGE_WRITE_IMPLEMENTATION;TINYOBJLOADER_IMPLEMENTATION;MKL_ILP64;GLEW_STATIC;FMT_HEADER_ONLY=0;FMT_USE_WINDOWS_H=0;FMT_STRING_ALIAS=1;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;OPEN3D_CXX_STANDARD=\"14\";OPEN3D_CXX_COMPILER_ID=\"MSVC\";OPEN3D_CXX_COMPILER_VERSION=\"19.34.31933.0\";OPEN3D_CUDA_COMPILER_ID=\"\";OPEN3D_CUDA_COMPILER_VERSION=\"\";ZMQ_STATIC;BUILD_ISPC_MODULE;BUILD_GUI;BUILD_WEBRTC;WITH_IPPICV;_GLIBCXX_USE_CXX11_ABI=0;WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NOMINMAX;_USE_MATH_DEFINES;_ENABLE_EXTENDED_ALIGNED_STORAGE;__TBB_LIB_NAME=tbb_static;OPEN3D_STATIC;OPEN3D_ENABLE_DLL_EXPORTS;TINYGLTF_IMPLEMENTATION;STB_IMAGE_IMPLEMENTATION;STB_IMAGE_WRITE_IMPLEMENTATION;TINYOBJLOADER_IMPLEMENTATION;MKL_ILP64;GLEW_STATIC;FMT_HEADER_ONLY=0;FMT_USE_WINDOWS_H=0;FMT_STRING_ALIAS=1;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\repo\Open3D\cpp;C:\repo\Open3D\build\assimp\include;C:\repo\Open3D\3rdparty\dirent;C:\repo\Open3D\build\nanoflann\src\ext_nanoflann\include;C:\repo\Open3D\build\turbojpeg\include;C:\repo\Open3D\build\jsoncpp\include;C:\repo\Open3D\3rdparty\liblzf;C:\repo\Open3D\3rdparty\tomasakeninemoeller\include;C:\repo\Open3D\build\curl\include;C:\repo\Open3D\build\boringssl\src\ext_boringssl\Debug\include;C:\repo\Open3D\build\libpng\include;C:\repo\Open3D\build\zlib\include;C:\repo\Open3D\3rdparty\rply\rply;C:\repo\Open3D\3rdparty\tinyfiledialogs\include;C:\repo\Open3D\build\tinygltf\src\ext_tinygltf;C:\repo\Open3D\build\tinyobjloader\src\ext_tinyobjloader;C:\repo\Open3D\build\qhull\src\ext_qhull\src;C:\repo\Open3D\build\poisson\src\ext_poisson;C:\repo\Open3D\build\imgui\src\ext_imgui;C:\repo\Open3D\build\zeromq\include;C:\repo\Open3D\build\zeromq\src\ext_cppzmq;C:\repo\Open3D\build\msgpack-c\src\ext_msgpack-c\include;C:\repo\Open3D\build\vtk\src\ext_vtk\include\vtk-9.1;C:\repo\Open3D\build\uvatlas\include\DirectXMath;C:\repo\Open3D\build\uvatlas\include;C:\repo\Open3D\build\mkl_install\include;C:\repo\Open3D\build\embree\include;C:\repo\Open3D\build\embree\src\ext_embree;C:\repo\Open3D\build\webrtc\src\ext_webrtc\Debug\include;C:\repo\Open3D\build\webrtc\src\ext_webrtc\Debug\include\third_party\abseil-cpp;C:\repo\Open3D\build\webrtc\src\ext_webrtc\Debug\include\third_party\jsoncpp\source\include;C:\repo\Open3D\build\webrtc\src\ext_webrtc\Debug\include\third_party\jsoncpp\generated;C:\repo\Open3D\build\webrtc\src\ext_webrtc\Debug\include\third_party\libyuv\include;C:\repo\Open3D\build\civetweb\include;C:\repo\Open3D\build\ippicv\include\icv;C:\repo\Open3D\build\ippicv\include;C:\repo\Open3D\build\eigen\src\ext_eigen;C:\repo\Open3D\build\parallelstl\src\ext_parallelstl\include;C:\repo\Open3D\3rdparty\glew\include;C:\repo\Open3D\3rdparty\glfw\include;C:\repo\Open3D\build\fmt\include;C:\repo\Open3D\build\filament\src\ext_filament\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\repo\Open3D\cpp;C:\repo\Open3D\build\assimp\include;C:\repo\Open3D\3rdparty\dirent;C:\repo\Open3D\build\nanoflann\src\ext_nanoflann\include;C:\repo\Open3D\build\turbojpeg\include;C:\repo\Open3D\build\jsoncpp\include;C:\repo\Open3D\3rdparty\liblzf;C:\repo\Open3D\3rdparty\tomasakeninemoeller\include;C:\repo\Open3D\build\curl\include;C:\repo\Open3D\build\boringssl\src\ext_boringssl\Debug\include;C:\repo\Open3D\build\libpng\include;C:\repo\Open3D\build\zlib\include;C:\repo\Open3D\3rdparty\rply\rply;C:\repo\Open3D\3rdparty\tinyfiledialogs\include;C:\repo\Open3D\build\tinygltf\src\ext_tinygltf;C:\repo\Open3D\build\tinyobjloader\src\ext_tinyobjloader;C:\repo\Open3D\build\qhull\src\ext_qhull\src;C:\repo\Open3D\build\poisson\src\ext_poisson;C:\repo\Open3D\build\imgui\src\ext_imgui;C:\repo\Open3D\build\zeromq\include;C:\repo\Open3D\build\zeromq\src\ext_cppzmq;C:\repo\Open3D\build\msgpack-c\src\ext_msgpack-c\include;C:\repo\Open3D\build\vtk\src\ext_vtk\include\vtk-9.1;C:\repo\Open3D\build\uvatlas\include\DirectXMath;C:\repo\Open3D\build\uvatlas\include;C:\repo\Open3D\build\mkl_install\include;C:\repo\Open3D\build\embree\include;C:\repo\Open3D\build\embree\src\ext_embree;C:\repo\Open3D\build\webrtc\src\ext_webrtc\Debug\include;C:\repo\Open3D\build\webrtc\src\ext_webrtc\Debug\include\third_party\abseil-cpp;C:\repo\Open3D\build\webrtc\src\ext_webrtc\Debug\include\third_party\jsoncpp\source\include;C:\repo\Open3D\build\webrtc\src\ext_webrtc\Debug\include\third_party\jsoncpp\generated;C:\repo\Open3D\build\webrtc\src\ext_webrtc\Debug\include\third_party\libyuv\include;C:\repo\Open3D\build\civetweb\include;C:\repo\Open3D\build\ippicv\include\icv;C:\repo\Open3D\build\ippicv\include;C:\repo\Open3D\build\eigen\src\ext_eigen;C:\repo\Open3D\build\parallelstl\src\ext_parallelstl\include;C:\repo\Open3D\3rdparty\glew\include;C:\repo\Open3D\3rdparty\glfw\include;C:\repo\Open3D\build\fmt\include;C:\repo\Open3D\build\filament\src\ext_filament\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\repo\Open3D\cpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/repo/Open3D/build/assimp/include" /external:I "C:/repo/Open3D/3rdparty/dirent" /external:I "C:/repo/Open3D/build/nanoflann/src/ext_nanoflann/include" /external:I "C:/repo/Open3D/build/turbojpeg/include" /external:I "C:/repo/Open3D/build/jsoncpp/include" /external:I "C:/repo/Open3D/3rdparty/liblzf" /external:I "C:/repo/Open3D/3rdparty/tomasakeninemoeller/include" /external:I "C:/repo/Open3D/build/curl/include" /external:I "C:/repo/Open3D/build/boringssl/src/ext_boringssl/Release/include" /external:I "C:/repo/Open3D/build/libpng/include" /external:I "C:/repo/Open3D/build/zlib/include" /external:I "C:/repo/Open3D/3rdparty/rply/rply" /external:I "C:/repo/Open3D/3rdparty/tinyfiledialogs/include" /external:I "C:/repo/Open3D/build/tinygltf/src/ext_tinygltf" /external:I "C:/repo/Open3D/build/tinyobjloader/src/ext_tinyobjloader" /external:I "C:/repo/Open3D/build/qhull/src/ext_qhull/src" /external:I "C:/repo/Open3D/build/poisson/src/ext_poisson" /external:I "C:/repo/Open3D/build/imgui/src/ext_imgui" /external:I "C:/repo/Open3D/build/zeromq/include" /external:I "C:/repo/Open3D/build/zeromq/src/ext_cppzmq" /external:I "C:/repo/Open3D/build/msgpack-c/src/ext_msgpack-c/include" /external:I "C:/repo/Open3D/build/vtk/src/ext_vtk/include/vtk-9.1" /external:I "C:/repo/Open3D/build/uvatlas/include/DirectXMath" /external:I "C:/repo/Open3D/build/uvatlas/include" /external:I "C:/repo/Open3D/build/mkl_install/include" /external:I "C:/repo/Open3D/build/embree/include" /external:I "C:/repo/Open3D/build/embree/src/ext_embree" /external:I "C:/repo/Open3D/build/webrtc/src/ext_webrtc/Release/include" /external:I "C:/repo/Open3D/build/webrtc/src/ext_webrtc/Release/include/third_party/abseil-cpp" /external:I "C:/repo/Open3D/build/webrtc/src/ext_webrtc/Release/include/third_party/jsoncpp/source/include" /external:I "C:/repo/Open3D/build/webrtc/src/ext_webrtc/Release/include/third_party/jsoncpp/generated" /external:I "C:/repo/Open3D/build/webrtc/src/ext_webrtc/Release/include/third_party/libyuv/include" /external:I "C:/repo/Open3D/build/civetweb/include" /external:I "C:/repo/Open3D/build/ippicv/include/icv" /external:I "C:/repo/Open3D/build/ippicv/include" /external:I "C:/repo/Open3D/build/eigen/src/ext_eigen" /external:I "C:/repo/Open3D/build/parallelstl/src/ext_parallelstl/include" /external:I "C:/repo/Open3D/3rdparty/glew/include" /external:I "C:/repo/Open3D/3rdparty/glfw/include" /external:I "C:/repo/Open3D/build/fmt/include" /external:I "C:/repo/Open3D/build/filament/src/ext_filament/include" /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <ControlFlowGuard>Guard</ControlFlowGuard>
+      <DisableSpecificWarnings>4201;4310;4505;4127;4146;4189;4324;4706;4100;4702;4244;4245;4267;4305;4819</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <SDLCheck>true</SDLCheck>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <WarningVersion>18</WarningVersion>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;NDEBUG;OPEN3D_CXX_STANDARD="14";OPEN3D_CXX_COMPILER_ID="MSVC";OPEN3D_CXX_COMPILER_VERSION="19.34.31933.0";OPEN3D_CUDA_COMPILER_ID="";OPEN3D_CUDA_COMPILER_VERSION="";ZMQ_STATIC;BUILD_ISPC_MODULE;BUILD_GUI;BUILD_WEBRTC;WITH_IPPICV;_GLIBCXX_USE_CXX11_ABI=0;WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NOMINMAX;_USE_MATH_DEFINES;_ENABLE_EXTENDED_ALIGNED_STORAGE;__TBB_LIB_NAME=tbb_static;OPEN3D_STATIC;OPEN3D_ENABLE_DLL_EXPORTS;TINYGLTF_IMPLEMENTATION;STB_IMAGE_IMPLEMENTATION;STB_IMAGE_WRITE_IMPLEMENTATION;TINYOBJLOADER_IMPLEMENTATION;MKL_ILP64;GLEW_STATIC;FMT_HEADER_ONLY=0;FMT_USE_WINDOWS_H=0;FMT_STRING_ALIAS=1;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;NDEBUG;OPEN3D_CXX_STANDARD=\"14\";OPEN3D_CXX_COMPILER_ID=\"MSVC\";OPEN3D_CXX_COMPILER_VERSION=\"19.34.31933.0\";OPEN3D_CUDA_COMPILER_ID=\"\";OPEN3D_CUDA_COMPILER_VERSION=\"\";ZMQ_STATIC;BUILD_ISPC_MODULE;BUILD_GUI;BUILD_WEBRTC;WITH_IPPICV;_GLIBCXX_USE_CXX11_ABI=0;WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NOMINMAX;_USE_MATH_DEFINES;_ENABLE_EXTENDED_ALIGNED_STORAGE;__TBB_LIB_NAME=tbb_static;OPEN3D_STATIC;OPEN3D_ENABLE_DLL_EXPORTS;TINYGLTF_IMPLEMENTATION;STB_IMAGE_IMPLEMENTATION;STB_IMAGE_WRITE_IMPLEMENTATION;TINYOBJLOADER_IMPLEMENTATION;MKL_ILP64;GLEW_STATIC;FMT_HEADER_ONLY=0;FMT_USE_WINDOWS_H=0;FMT_STRING_ALIAS=1;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\repo\Open3D\cpp;C:\repo\Open3D\build\assimp\include;C:\repo\Open3D\3rdparty\dirent;C:\repo\Open3D\build\nanoflann\src\ext_nanoflann\include;C:\repo\Open3D\build\turbojpeg\include;C:\repo\Open3D\build\jsoncpp\include;C:\repo\Open3D\3rdparty\liblzf;C:\repo\Open3D\3rdparty\tomasakeninemoeller\include;C:\repo\Open3D\build\curl\include;C:\repo\Open3D\build\boringssl\src\ext_boringssl\Release\include;C:\repo\Open3D\build\libpng\include;C:\repo\Open3D\build\zlib\include;C:\repo\Open3D\3rdparty\rply\rply;C:\repo\Open3D\3rdparty\tinyfiledialogs\include;C:\repo\Open3D\build\tinygltf\src\ext_tinygltf;C:\repo\Open3D\build\tinyobjloader\src\ext_tinyobjloader;C:\repo\Open3D\build\qhull\src\ext_qhull\src;C:\repo\Open3D\build\poisson\src\ext_poisson;C:\repo\Open3D\build\imgui\src\ext_imgui;C:\repo\Open3D\build\zeromq\include;C:\repo\Open3D\build\zeromq\src\ext_cppzmq;C:\repo\Open3D\build\msgpack-c\src\ext_msgpack-c\include;C:\repo\Open3D\build\vtk\src\ext_vtk\include\vtk-9.1;C:\repo\Open3D\build\uvatlas\include\DirectXMath;C:\repo\Open3D\build\uvatlas\include;C:\repo\Open3D\build\mkl_install\include;C:\repo\Open3D\build\embree\include;C:\repo\Open3D\build\embree\src\ext_embree;C:\repo\Open3D\build\webrtc\src\ext_webrtc\Release\include;C:\repo\Open3D\build\webrtc\src\ext_webrtc\Release\include\third_party\abseil-cpp;C:\repo\Open3D\build\webrtc\src\ext_webrtc\Release\include\third_party\jsoncpp\source\include;C:\repo\Open3D\build\webrtc\src\ext_webrtc\Release\include\third_party\jsoncpp\generated;C:\repo\Open3D\build\webrtc\src\ext_webrtc\Release\include\third_party\libyuv\include;C:\repo\Open3D\build\civetweb\include;C:\repo\Open3D\build\ippicv\include\icv;C:\repo\Open3D\build\ippicv\include;C:\repo\Open3D\build\eigen\src\ext_eigen;C:\repo\Open3D\build\parallelstl\src\ext_parallelstl\include;C:\repo\Open3D\3rdparty\glew\include;C:\repo\Open3D\3rdparty\glfw\include;C:\repo\Open3D\build\fmt\include;C:\repo\Open3D\build\filament\src\ext_filament\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\repo\Open3D\cpp;C:\repo\Open3D\build\assimp\include;C:\repo\Open3D\3rdparty\dirent;C:\repo\Open3D\build\nanoflann\src\ext_nanoflann\include;C:\repo\Open3D\build\turbojpeg\include;C:\repo\Open3D\build\jsoncpp\include;C:\repo\Open3D\3rdparty\liblzf;C:\repo\Open3D\3rdparty\tomasakeninemoeller\include;C:\repo\Open3D\build\curl\include;C:\repo\Open3D\build\boringssl\src\ext_boringssl\Release\include;C:\repo\Open3D\build\libpng\include;C:\repo\Open3D\build\zlib\include;C:\repo\Open3D\3rdparty\rply\rply;C:\repo\Open3D\3rdparty\tinyfiledialogs\include;C:\repo\Open3D\build\tinygltf\src\ext_tinygltf;C:\repo\Open3D\build\tinyobjloader\src\ext_tinyobjloader;C:\repo\Open3D\build\qhull\src\ext_qhull\src;C:\repo\Open3D\build\poisson\src\ext_poisson;C:\repo\Open3D\build\imgui\src\ext_imgui;C:\repo\Open3D\build\zeromq\include;C:\repo\Open3D\build\zeromq\src\ext_cppzmq;C:\repo\Open3D\build\msgpack-c\src\ext_msgpack-c\include;C:\repo\Open3D\build\vtk\src\ext_vtk\include\vtk-9.1;C:\repo\Open3D\build\uvatlas\include\DirectXMath;C:\repo\Open3D\build\uvatlas\include;C:\repo\Open3D\build\mkl_install\include;C:\repo\Open3D\build\embree\include;C:\repo\Open3D\build\embree\src\ext_embree;C:\repo\Open3D\build\webrtc\src\ext_webrtc\Release\include;C:\repo\Open3D\build\webrtc\src\ext_webrtc\Release\include\third_party\abseil-cpp;C:\repo\Open3D\build\webrtc\src\ext_webrtc\Release\include\third_party\jsoncpp\source\include;C:\repo\Open3D\build\webrtc\src\ext_webrtc\Release\include\third_party\jsoncpp\generated;C:\repo\Open3D\build\webrtc\src\ext_webrtc\Release\include\third_party\libyuv\include;C:\repo\Open3D\build\civetweb\include;C:\repo\Open3D\build\ippicv\include\icv;C:\repo\Open3D\build\ippicv\include;C:\repo\Open3D\build\eigen\src\ext_eigen;C:\repo\Open3D\build\parallelstl\src\ext_parallelstl\include;C:\repo\Open3D\3rdparty\glew\include;C:\repo\Open3D\3rdparty\glfw\include;C:\repo\Open3D\build\fmt\include;C:\repo\Open3D\build\filament\src\ext_filament\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\repo\Open3D\cpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/repo/Open3D/build/assimp/include" /external:I "C:/repo/Open3D/3rdparty/dirent" /external:I "C:/repo/Open3D/build/nanoflann/src/ext_nanoflann/include" /external:I "C:/repo/Open3D/build/turbojpeg/include" /external:I "C:/repo/Open3D/build/jsoncpp/include" /external:I "C:/repo/Open3D/3rdparty/liblzf" /external:I "C:/repo/Open3D/3rdparty/tomasakeninemoeller/include" /external:I "C:/repo/Open3D/build/curl/include" /external:I "C:/repo/Open3D/build/boringssl/src/ext_boringssl/Release/include" /external:I "C:/repo/Open3D/build/libpng/include" /external:I "C:/repo/Open3D/build/zlib/include" /external:I "C:/repo/Open3D/3rdparty/rply/rply" /external:I "C:/repo/Open3D/3rdparty/tinyfiledialogs/include" /external:I "C:/repo/Open3D/build/tinygltf/src/ext_tinygltf" /external:I "C:/repo/Open3D/build/tinyobjloader/src/ext_tinyobjloader" /external:I "C:/repo/Open3D/build/qhull/src/ext_qhull/src" /external:I "C:/repo/Open3D/build/poisson/src/ext_poisson" /external:I "C:/repo/Open3D/build/imgui/src/ext_imgui" /external:I "C:/repo/Open3D/build/zeromq/include" /external:I "C:/repo/Open3D/build/zeromq/src/ext_cppzmq" /external:I "C:/repo/Open3D/build/msgpack-c/src/ext_msgpack-c/include" /external:I "C:/repo/Open3D/build/vtk/src/ext_vtk/include/vtk-9.1" /external:I "C:/repo/Open3D/build/uvatlas/include/DirectXMath" /external:I "C:/repo/Open3D/build/uvatlas/include" /external:I "C:/repo/Open3D/build/mkl_install/include" /external:I "C:/repo/Open3D/build/embree/include" /external:I "C:/repo/Open3D/build/embree/src/ext_embree" /external:I "C:/repo/Open3D/build/webrtc/src/ext_webrtc/Release/include" /external:I "C:/repo/Open3D/build/webrtc/src/ext_webrtc/Release/include/third_party/abseil-cpp" /external:I "C:/repo/Open3D/build/webrtc/src/ext_webrtc/Release/include/third_party/jsoncpp/source/include" /external:I "C:/repo/Open3D/build/webrtc/src/ext_webrtc/Release/include/third_party/jsoncpp/generated" /external:I "C:/repo/Open3D/build/webrtc/src/ext_webrtc/Release/include/third_party/libyuv/include" /external:I "C:/repo/Open3D/build/civetweb/include" /external:I "C:/repo/Open3D/build/ippicv/include/icv" /external:I "C:/repo/Open3D/build/ippicv/include" /external:I "C:/repo/Open3D/build/eigen/src/ext_eigen" /external:I "C:/repo/Open3D/build/parallelstl/src/ext_parallelstl/include" /external:I "C:/repo/Open3D/3rdparty/glew/include" /external:I "C:/repo/Open3D/3rdparty/glfw/include" /external:I "C:/repo/Open3D/build/fmt/include" /external:I "C:/repo/Open3D/build/filament/src/ext_filament/include" /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <ControlFlowGuard>Guard</ControlFlowGuard>
+      <DisableSpecificWarnings>4201;4310;4505;4127;4146;4189;4324;4706;4100;4702;4244;4245;4267;4305;4819</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <SDLCheck>true</SDLCheck>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <WarningVersion>18</WarningVersion>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;NDEBUG;OPEN3D_CXX_STANDARD="14";OPEN3D_CXX_COMPILER_ID="MSVC";OPEN3D_CXX_COMPILER_VERSION="19.34.31933.0";OPEN3D_CUDA_COMPILER_ID="";OPEN3D_CUDA_COMPILER_VERSION="";ZMQ_STATIC;BUILD_ISPC_MODULE;BUILD_GUI;BUILD_WEBRTC;WITH_IPPICV;_GLIBCXX_USE_CXX11_ABI=0;WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NOMINMAX;_USE_MATH_DEFINES;_ENABLE_EXTENDED_ALIGNED_STORAGE;__TBB_LIB_NAME=tbb_static;OPEN3D_STATIC;OPEN3D_ENABLE_DLL_EXPORTS;TINYGLTF_IMPLEMENTATION;STB_IMAGE_IMPLEMENTATION;STB_IMAGE_WRITE_IMPLEMENTATION;TINYOBJLOADER_IMPLEMENTATION;MKL_ILP64;GLEW_STATIC;FMT_HEADER_ONLY=0;FMT_USE_WINDOWS_H=0;FMT_STRING_ALIAS=1;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;NDEBUG;OPEN3D_CXX_STANDARD=\"14\";OPEN3D_CXX_COMPILER_ID=\"MSVC\";OPEN3D_CXX_COMPILER_VERSION=\"19.34.31933.0\";OPEN3D_CUDA_COMPILER_ID=\"\";OPEN3D_CUDA_COMPILER_VERSION=\"\";ZMQ_STATIC;BUILD_ISPC_MODULE;BUILD_GUI;BUILD_WEBRTC;WITH_IPPICV;_GLIBCXX_USE_CXX11_ABI=0;WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NOMINMAX;_USE_MATH_DEFINES;_ENABLE_EXTENDED_ALIGNED_STORAGE;__TBB_LIB_NAME=tbb_static;OPEN3D_STATIC;OPEN3D_ENABLE_DLL_EXPORTS;TINYGLTF_IMPLEMENTATION;STB_IMAGE_IMPLEMENTATION;STB_IMAGE_WRITE_IMPLEMENTATION;TINYOBJLOADER_IMPLEMENTATION;MKL_ILP64;GLEW_STATIC;FMT_HEADER_ONLY=0;FMT_USE_WINDOWS_H=0;FMT_STRING_ALIAS=1;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\repo\Open3D\cpp;C:\repo\Open3D\build\assimp\include;C:\repo\Open3D\3rdparty\dirent;C:\repo\Open3D\build\nanoflann\src\ext_nanoflann\include;C:\repo\Open3D\build\turbojpeg\include;C:\repo\Open3D\build\jsoncpp\include;C:\repo\Open3D\3rdparty\liblzf;C:\repo\Open3D\3rdparty\tomasakeninemoeller\include;C:\repo\Open3D\build\curl\include;C:\repo\Open3D\build\boringssl\src\ext_boringssl\Release\include;C:\repo\Open3D\build\libpng\include;C:\repo\Open3D\build\zlib\include;C:\repo\Open3D\3rdparty\rply\rply;C:\repo\Open3D\3rdparty\tinyfiledialogs\include;C:\repo\Open3D\build\tinygltf\src\ext_tinygltf;C:\repo\Open3D\build\tinyobjloader\src\ext_tinyobjloader;C:\repo\Open3D\build\qhull\src\ext_qhull\src;C:\repo\Open3D\build\poisson\src\ext_poisson;C:\repo\Open3D\build\imgui\src\ext_imgui;C:\repo\Open3D\build\zeromq\include;C:\repo\Open3D\build\zeromq\src\ext_cppzmq;C:\repo\Open3D\build\msgpack-c\src\ext_msgpack-c\include;C:\repo\Open3D\build\vtk\src\ext_vtk\include\vtk-9.1;C:\repo\Open3D\build\uvatlas\include\DirectXMath;C:\repo\Open3D\build\uvatlas\include;C:\repo\Open3D\build\mkl_install\include;C:\repo\Open3D\build\embree\include;C:\repo\Open3D\build\embree\src\ext_embree;C:\repo\Open3D\build\webrtc\src\ext_webrtc\Release\include;C:\repo\Open3D\build\webrtc\src\ext_webrtc\Release\include\third_party\abseil-cpp;C:\repo\Open3D\build\webrtc\src\ext_webrtc\Release\include\third_party\jsoncpp\source\include;C:\repo\Open3D\build\webrtc\src\ext_webrtc\Release\include\third_party\jsoncpp\generated;C:\repo\Open3D\build\webrtc\src\ext_webrtc\Release\include\third_party\libyuv\include;C:\repo\Open3D\build\civetweb\include;C:\repo\Open3D\build\ippicv\include\icv;C:\repo\Open3D\build\ippicv\include;C:\repo\Open3D\build\eigen\src\ext_eigen;C:\repo\Open3D\build\parallelstl\src\ext_parallelstl\include;C:\repo\Open3D\3rdparty\glew\include;C:\repo\Open3D\3rdparty\glfw\include;C:\repo\Open3D\build\fmt\include;C:\repo\Open3D\build\filament\src\ext_filament\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\repo\Open3D\cpp;C:\repo\Open3D\build\assimp\include;C:\repo\Open3D\3rdparty\dirent;C:\repo\Open3D\build\nanoflann\src\ext_nanoflann\include;C:\repo\Open3D\build\turbojpeg\include;C:\repo\Open3D\build\jsoncpp\include;C:\repo\Open3D\3rdparty\liblzf;C:\repo\Open3D\3rdparty\tomasakeninemoeller\include;C:\repo\Open3D\build\curl\include;C:\repo\Open3D\build\boringssl\src\ext_boringssl\Release\include;C:\repo\Open3D\build\libpng\include;C:\repo\Open3D\build\zlib\include;C:\repo\Open3D\3rdparty\rply\rply;C:\repo\Open3D\3rdparty\tinyfiledialogs\include;C:\repo\Open3D\build\tinygltf\src\ext_tinygltf;C:\repo\Open3D\build\tinyobjloader\src\ext_tinyobjloader;C:\repo\Open3D\build\qhull\src\ext_qhull\src;C:\repo\Open3D\build\poisson\src\ext_poisson;C:\repo\Open3D\build\imgui\src\ext_imgui;C:\repo\Open3D\build\zeromq\include;C:\repo\Open3D\build\zeromq\src\ext_cppzmq;C:\repo\Open3D\build\msgpack-c\src\ext_msgpack-c\include;C:\repo\Open3D\build\vtk\src\ext_vtk\include\vtk-9.1;C:\repo\Open3D\build\uvatlas\include\DirectXMath;C:\repo\Open3D\build\uvatlas\include;C:\repo\Open3D\build\mkl_install\include;C:\repo\Open3D\build\embree\include;C:\repo\Open3D\build\embree\src\ext_embree;C:\repo\Open3D\build\webrtc\src\ext_webrtc\Release\include;C:\repo\Open3D\build\webrtc\src\ext_webrtc\Release\include\third_party\abseil-cpp;C:\repo\Open3D\build\webrtc\src\ext_webrtc\Release\include\third_party\jsoncpp\source\include;C:\repo\Open3D\build\webrtc\src\ext_webrtc\Release\include\third_party\jsoncpp\generated;C:\repo\Open3D\build\webrtc\src\ext_webrtc\Release\include\third_party\libyuv\include;C:\repo\Open3D\build\civetweb\include;C:\repo\Open3D\build\ippicv\include\icv;C:\repo\Open3D\build\ippicv\include;C:\repo\Open3D\build\eigen\src\ext_eigen;C:\repo\Open3D\build\parallelstl\src\ext_parallelstl\include;C:\repo\Open3D\3rdparty\glew\include;C:\repo\Open3D\3rdparty\glfw\include;C:\repo\Open3D\build\fmt\include;C:\repo\Open3D\build\filament\src\ext_filament\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\repo\Open3D\cpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/repo/Open3D/build/assimp/include" /external:I "C:/repo/Open3D/3rdparty/dirent" /external:I "C:/repo/Open3D/build/nanoflann/src/ext_nanoflann/include" /external:I "C:/repo/Open3D/build/turbojpeg/include" /external:I "C:/repo/Open3D/build/jsoncpp/include" /external:I "C:/repo/Open3D/3rdparty/liblzf" /external:I "C:/repo/Open3D/3rdparty/tomasakeninemoeller/include" /external:I "C:/repo/Open3D/build/curl/include" /external:I "C:/repo/Open3D/build/boringssl/src/ext_boringssl/Release/include" /external:I "C:/repo/Open3D/build/libpng/include" /external:I "C:/repo/Open3D/build/zlib/include" /external:I "C:/repo/Open3D/3rdparty/rply/rply" /external:I "C:/repo/Open3D/3rdparty/tinyfiledialogs/include" /external:I "C:/repo/Open3D/build/tinygltf/src/ext_tinygltf" /external:I "C:/repo/Open3D/build/tinyobjloader/src/ext_tinyobjloader" /external:I "C:/repo/Open3D/build/qhull/src/ext_qhull/src" /external:I "C:/repo/Open3D/build/poisson/src/ext_poisson" /external:I "C:/repo/Open3D/build/imgui/src/ext_imgui" /external:I "C:/repo/Open3D/build/zeromq/include" /external:I "C:/repo/Open3D/build/zeromq/src/ext_cppzmq" /external:I "C:/repo/Open3D/build/msgpack-c/src/ext_msgpack-c/include" /external:I "C:/repo/Open3D/build/vtk/src/ext_vtk/include/vtk-9.1" /external:I "C:/repo/Open3D/build/uvatlas/include/DirectXMath" /external:I "C:/repo/Open3D/build/uvatlas/include" /external:I "C:/repo/Open3D/build/mkl_install/include" /external:I "C:/repo/Open3D/build/embree/include" /external:I "C:/repo/Open3D/build/embree/src/ext_embree" /external:I "C:/repo/Open3D/build/webrtc/src/ext_webrtc/Release/include" /external:I "C:/repo/Open3D/build/webrtc/src/ext_webrtc/Release/include/third_party/abseil-cpp" /external:I "C:/repo/Open3D/build/webrtc/src/ext_webrtc/Release/include/third_party/jsoncpp/source/include" /external:I "C:/repo/Open3D/build/webrtc/src/ext_webrtc/Release/include/third_party/jsoncpp/generated" /external:I "C:/repo/Open3D/build/webrtc/src/ext_webrtc/Release/include/third_party/libyuv/include" /external:I "C:/repo/Open3D/build/civetweb/include" /external:I "C:/repo/Open3D/build/ippicv/include/icv" /external:I "C:/repo/Open3D/build/ippicv/include" /external:I "C:/repo/Open3D/build/eigen/src/ext_eigen" /external:I "C:/repo/Open3D/build/parallelstl/src/ext_parallelstl/include" /external:I "C:/repo/Open3D/3rdparty/glew/include" /external:I "C:/repo/Open3D/3rdparty/glfw/include" /external:I "C:/repo/Open3D/build/fmt/include" /external:I "C:/repo/Open3D/build/filament/src/ext_filament/include" /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <ControlFlowGuard>Guard</ControlFlowGuard>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4201;4310;4505;4127;4146;4189;4324;4706;4100;4702;4244;4245;4267;4305;4819</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <SDLCheck>true</SDLCheck>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <WarningVersion>18</WarningVersion>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;NDEBUG;OPEN3D_CXX_STANDARD="14";OPEN3D_CXX_COMPILER_ID="MSVC";OPEN3D_CXX_COMPILER_VERSION="19.34.31933.0";OPEN3D_CUDA_COMPILER_ID="";OPEN3D_CUDA_COMPILER_VERSION="";ZMQ_STATIC;BUILD_ISPC_MODULE;BUILD_GUI;BUILD_WEBRTC;WITH_IPPICV;_GLIBCXX_USE_CXX11_ABI=0;WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NOMINMAX;_USE_MATH_DEFINES;_ENABLE_EXTENDED_ALIGNED_STORAGE;__TBB_LIB_NAME=tbb_static;OPEN3D_STATIC;OPEN3D_ENABLE_DLL_EXPORTS;TINYGLTF_IMPLEMENTATION;STB_IMAGE_IMPLEMENTATION;STB_IMAGE_WRITE_IMPLEMENTATION;TINYOBJLOADER_IMPLEMENTATION;MKL_ILP64;GLEW_STATIC;FMT_HEADER_ONLY=0;FMT_USE_WINDOWS_H=0;FMT_STRING_ALIAS=1;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;NDEBUG;OPEN3D_CXX_STANDARD=\"14\";OPEN3D_CXX_COMPILER_ID=\"MSVC\";OPEN3D_CXX_COMPILER_VERSION=\"19.34.31933.0\";OPEN3D_CUDA_COMPILER_ID=\"\";OPEN3D_CUDA_COMPILER_VERSION=\"\";ZMQ_STATIC;BUILD_ISPC_MODULE;BUILD_GUI;BUILD_WEBRTC;WITH_IPPICV;_GLIBCXX_USE_CXX11_ABI=0;WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NOMINMAX;_USE_MATH_DEFINES;_ENABLE_EXTENDED_ALIGNED_STORAGE;__TBB_LIB_NAME=tbb_static;OPEN3D_STATIC;OPEN3D_ENABLE_DLL_EXPORTS;TINYGLTF_IMPLEMENTATION;STB_IMAGE_IMPLEMENTATION;STB_IMAGE_WRITE_IMPLEMENTATION;TINYOBJLOADER_IMPLEMENTATION;MKL_ILP64;GLEW_STATIC;FMT_HEADER_ONLY=0;FMT_USE_WINDOWS_H=0;FMT_STRING_ALIAS=1;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\repo\Open3D\cpp;C:\repo\Open3D\build\assimp\include;C:\repo\Open3D\3rdparty\dirent;C:\repo\Open3D\build\nanoflann\src\ext_nanoflann\include;C:\repo\Open3D\build\turbojpeg\include;C:\repo\Open3D\build\jsoncpp\include;C:\repo\Open3D\3rdparty\liblzf;C:\repo\Open3D\3rdparty\tomasakeninemoeller\include;C:\repo\Open3D\build\curl\include;C:\repo\Open3D\build\boringssl\src\ext_boringssl\Release\include;C:\repo\Open3D\build\libpng\include;C:\repo\Open3D\build\zlib\include;C:\repo\Open3D\3rdparty\rply\rply;C:\repo\Open3D\3rdparty\tinyfiledialogs\include;C:\repo\Open3D\build\tinygltf\src\ext_tinygltf;C:\repo\Open3D\build\tinyobjloader\src\ext_tinyobjloader;C:\repo\Open3D\build\qhull\src\ext_qhull\src;C:\repo\Open3D\build\poisson\src\ext_poisson;C:\repo\Open3D\build\imgui\src\ext_imgui;C:\repo\Open3D\build\zeromq\include;C:\repo\Open3D\build\zeromq\src\ext_cppzmq;C:\repo\Open3D\build\msgpack-c\src\ext_msgpack-c\include;C:\repo\Open3D\build\vtk\src\ext_vtk\include\vtk-9.1;C:\repo\Open3D\build\uvatlas\include\DirectXMath;C:\repo\Open3D\build\uvatlas\include;C:\repo\Open3D\build\mkl_install\include;C:\repo\Open3D\build\embree\include;C:\repo\Open3D\build\embree\src\ext_embree;C:\repo\Open3D\build\webrtc\src\ext_webrtc\Release\include;C:\repo\Open3D\build\webrtc\src\ext_webrtc\Release\include\third_party\abseil-cpp;C:\repo\Open3D\build\webrtc\src\ext_webrtc\Release\include\third_party\jsoncpp\source\include;C:\repo\Open3D\build\webrtc\src\ext_webrtc\Release\include\third_party\jsoncpp\generated;C:\repo\Open3D\build\webrtc\src\ext_webrtc\Release\include\third_party\libyuv\include;C:\repo\Open3D\build\civetweb\include;C:\repo\Open3D\build\ippicv\include\icv;C:\repo\Open3D\build\ippicv\include;C:\repo\Open3D\build\eigen\src\ext_eigen;C:\repo\Open3D\build\parallelstl\src\ext_parallelstl\include;C:\repo\Open3D\3rdparty\glew\include;C:\repo\Open3D\3rdparty\glfw\include;C:\repo\Open3D\build\fmt\include;C:\repo\Open3D\build\filament\src\ext_filament\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\repo\Open3D\cpp;C:\repo\Open3D\build\assimp\include;C:\repo\Open3D\3rdparty\dirent;C:\repo\Open3D\build\nanoflann\src\ext_nanoflann\include;C:\repo\Open3D\build\turbojpeg\include;C:\repo\Open3D\build\jsoncpp\include;C:\repo\Open3D\3rdparty\liblzf;C:\repo\Open3D\3rdparty\tomasakeninemoeller\include;C:\repo\Open3D\build\curl\include;C:\repo\Open3D\build\boringssl\src\ext_boringssl\Release\include;C:\repo\Open3D\build\libpng\include;C:\repo\Open3D\build\zlib\include;C:\repo\Open3D\3rdparty\rply\rply;C:\repo\Open3D\3rdparty\tinyfiledialogs\include;C:\repo\Open3D\build\tinygltf\src\ext_tinygltf;C:\repo\Open3D\build\tinyobjloader\src\ext_tinyobjloader;C:\repo\Open3D\build\qhull\src\ext_qhull\src;C:\repo\Open3D\build\poisson\src\ext_poisson;C:\repo\Open3D\build\imgui\src\ext_imgui;C:\repo\Open3D\build\zeromq\include;C:\repo\Open3D\build\zeromq\src\ext_cppzmq;C:\repo\Open3D\build\msgpack-c\src\ext_msgpack-c\include;C:\repo\Open3D\build\vtk\src\ext_vtk\include\vtk-9.1;C:\repo\Open3D\build\uvatlas\include\DirectXMath;C:\repo\Open3D\build\uvatlas\include;C:\repo\Open3D\build\mkl_install\include;C:\repo\Open3D\build\embree\include;C:\repo\Open3D\build\embree\src\ext_embree;C:\repo\Open3D\build\webrtc\src\ext_webrtc\Release\include;C:\repo\Open3D\build\webrtc\src\ext_webrtc\Release\include\third_party\abseil-cpp;C:\repo\Open3D\build\webrtc\src\ext_webrtc\Release\include\third_party\jsoncpp\source\include;C:\repo\Open3D\build\webrtc\src\ext_webrtc\Release\include\third_party\jsoncpp\generated;C:\repo\Open3D\build\webrtc\src\ext_webrtc\Release\include\third_party\libyuv\include;C:\repo\Open3D\build\civetweb\include;C:\repo\Open3D\build\ippicv\include\icv;C:\repo\Open3D\build\ippicv\include;C:\repo\Open3D\build\eigen\src\ext_eigen;C:\repo\Open3D\build\parallelstl\src\ext_parallelstl\include;C:\repo\Open3D\3rdparty\glew\include;C:\repo\Open3D\3rdparty\glfw\include;C:\repo\Open3D\build\fmt\include;C:\repo\Open3D\build\filament\src\ext_filament\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\repo\Open3D\cpp\open3d\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/repo/Open3D/cpp/open3d/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\CMake\bin\cmake.exe -SC:/repo/Open3D -BC:/repo/Open3D/build --check-stamp-file C:/repo/Open3D/build/cpp/open3d/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\CMake\share\cmake-3.25\Modules\BasicConfigVersion-ExactVersion.cmake.in;C:\CMake\share\cmake-3.25\Modules\CMakePackageConfigHelpers.cmake;C:\CMake\share\cmake-3.25\Modules\WriteBasicConfigVersionFile.cmake;C:\repo\Open3D\cpp\open3d\Open3D.h.in;C:\repo\Open3D\cpp\open3d\Open3DConfig.cmake.in;C:\repo\Open3D\cpp\open3d\Open3DConfig.h.in;C:\repo\Open3D\cpp\open3d\cmake_uninstall.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\cpp\open3d\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/repo/Open3D/cpp/open3d/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\CMake\bin\cmake.exe -SC:/repo/Open3D -BC:/repo/Open3D/build --check-stamp-file C:/repo/Open3D/build/cpp/open3d/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\CMake\share\cmake-3.25\Modules\BasicConfigVersion-ExactVersion.cmake.in;C:\CMake\share\cmake-3.25\Modules\CMakePackageConfigHelpers.cmake;C:\CMake\share\cmake-3.25\Modules\WriteBasicConfigVersionFile.cmake;C:\repo\Open3D\cpp\open3d\Open3D.h.in;C:\repo\Open3D\cpp\open3d\Open3DConfig.cmake.in;C:\repo\Open3D\cpp\open3d\Open3DConfig.h.in;C:\repo\Open3D\cpp\open3d\cmake_uninstall.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\cpp\open3d\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/repo/Open3D/cpp/open3d/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\CMake\bin\cmake.exe -SC:/repo/Open3D -BC:/repo/Open3D/build --check-stamp-file C:/repo/Open3D/build/cpp/open3d/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\CMake\share\cmake-3.25\Modules\BasicConfigVersion-ExactVersion.cmake.in;C:\CMake\share\cmake-3.25\Modules\CMakePackageConfigHelpers.cmake;C:\CMake\share\cmake-3.25\Modules\WriteBasicConfigVersionFile.cmake;C:\repo\Open3D\cpp\open3d\Open3D.h.in;C:\repo\Open3D\cpp\open3d\Open3DConfig.cmake.in;C:\repo\Open3D\cpp\open3d\Open3DConfig.h.in;C:\repo\Open3D\cpp\open3d\cmake_uninstall.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\cpp\open3d\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/repo/Open3D/cpp/open3d/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\CMake\bin\cmake.exe -SC:/repo/Open3D -BC:/repo/Open3D/build --check-stamp-file C:/repo/Open3D/build/cpp/open3d/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\CMake\share\cmake-3.25\Modules\BasicConfigVersion-ExactVersion.cmake.in;C:\CMake\share\cmake-3.25\Modules\CMakePackageConfigHelpers.cmake;C:\CMake\share\cmake-3.25\Modules\WriteBasicConfigVersionFile.cmake;C:\repo\Open3D\cpp\open3d\Open3D.h.in;C:\repo\Open3D\cpp\open3d\Open3DConfig.cmake.in;C:\repo\Open3D\cpp\open3d\Open3DConfig.h.in;C:\repo\Open3D\cpp\open3d\cmake_uninstall.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\cpp\open3d\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\Open3DConfig.cpp" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\camera\camera.dir\$(Configuration)\PinholeCameraIntrinsic.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\camera\camera.dir\$(Configuration)\PinholeCameraParameters.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\camera\camera.dir\$(Configuration)\PinholeCameraTrajectory.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\AdvancedIndexing.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\CUDAUtils.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\Device.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\Dtype.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\EigenConverter.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\Indexer.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\MemoryManager.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\MemoryManagerCached.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\MemoryManagerCPU.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\MemoryManagerStatistic.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\ShapeUtil.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\SizeVector.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\SmallVector.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\Tensor.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\TensorCheck.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\TensorFunction.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\TensorKey.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\TensorList.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\SYCLUtils.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\CPUHashBackendBuffer.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\CreateCPUHashBackend.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\DeviceHashBackend.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\HashBackendBuffer.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\HashMap.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\HashSet.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\Arange.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\ArangeCPU.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\BinaryEW.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\BinaryEWCPU.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\IndexGetSet.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\IndexGetSetCPU.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\Kernel.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\NonZero.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\NonZeroCPU.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\Reduction.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\ReductionCPU.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\UnaryEW.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\UnaryEWCPU.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\AddMM.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\AddMMCPU.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\Det.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\Inverse.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\InverseCPU.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\LeastSquares.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\LeastSquaresCPU.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\LU.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\LUCPU.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\Matmul.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\MatmulCPU.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\Solve.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\SolveCPU.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\SVD.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\SVDCPU.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\Tri.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\TriCPU.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\FixedRadiusIndex.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\FixedRadiusSearchOps.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\KnnIndex.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\NanoFlannIndex.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\NearestNeighborSearch.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\NNSIndex.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\Dataset.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\ArmadilloMesh.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\AvocadoModel.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\BedroomRGBDImages.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\BunnyMesh.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\CrateModel.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\DamagedHelmetModel.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\DemoColoredICPPointClouds.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\DemoCropPointCloud.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\DemoCustomVisualization.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\DemoFeatureMatchingPointClouds.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\DemoICPPointClouds.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\DemoPoseGraphOptimization.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\EaglePointCloud.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\FlightHelmetModel.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\JackJackL515Bag.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\JuneauImage.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\KnotMesh.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\LivingRoomPointClouds.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\LoungeRGBDImages.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\MetalTexture.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\MonkeyModel.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\OfficePointClouds.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\PaintedPlasterTexture.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\PCDPointCloud.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\PLYPointCloud.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\PTSPointCloud.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\RedwoodIndoorLivingRoom1.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\RedwoodIndoorLivingRoom2.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\RedwoodIndoorOffice1.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\RedwoodIndoorOffice2.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\SampleFountainRGBDImages.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\SampleL515Bag.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\SampleNYURGBDImage.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\SampleRedwoodRGBDImages.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\SampleSUNRGBDImage.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\SampleTUMRGBDImage.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\SwordModel.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\TerrazzoTexture.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\TilesTexture.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\WoodFloorTexture.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\WoodTexture.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\BoundingVolume.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\EstimateNormals.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\Geometry3D.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\HalfEdgeTriangleMesh.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\Image.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\ImageFactory.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\IntersectionTest.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\ISSKeypoints.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\KDTreeFlann.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\Line3D.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\LineSet.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\LineSetFactory.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\MeshBase.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\Octree.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\PointCloud.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\PointCloudCluster.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\PointCloudFactory.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\PointCloudSegmentation.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\Qhull.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\RGBDImage.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\RGBDImageFactory.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\SurfaceReconstructionAlphaShape.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\SurfaceReconstructionBallPivoting.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\SurfaceReconstructionPoisson.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\TetraMesh.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\TetraMeshFactory.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\TriangleMesh.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\TriangleMeshDeformation.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\TriangleMeshFactory.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\TriangleMeshSimplification.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\TriangleMeshSubdivide.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\VoxelGrid.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\VoxelGridFactory.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\geometry\tgeometry.dir\$(Configuration)\Image.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\geometry\tgeometry.dir\$(Configuration)\LineSet.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\geometry\tgeometry.dir\$(Configuration)\BoundingVolume.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\geometry\tgeometry.dir\$(Configuration)\PointCloud.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\geometry\tgeometry.dir\$(Configuration)\RaycastingScene.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\geometry\tgeometry.dir\$(Configuration)\RGBDImage.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\geometry\tgeometry.dir\$(Configuration)\TensorMap.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\geometry\tgeometry.dir\$(Configuration)\TriangleMesh.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\geometry\tgeometry.dir\$(Configuration)\TriangleMeshFactory.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\geometry\tgeometry.dir\$(Configuration)\VoxelBlockGrid.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\geometry\tgeometry.dir\$(Configuration)\VtkUtils.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\geometry\kernel\tgeometry_kernel.dir\$(Configuration)\Image.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\geometry\kernel\tgeometry_kernel.dir\$(Configuration)\ImageCPU.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\geometry\kernel\tgeometry_kernel.dir\$(Configuration)\PointCloud.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\geometry\kernel\tgeometry_kernel.dir\$(Configuration)\PointCloudCPU.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\geometry\kernel\tgeometry_kernel.dir\$(Configuration)\TriangleMesh.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\geometry\kernel\tgeometry_kernel.dir\$(Configuration)\TriangleMeshCPU.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\geometry\kernel\tgeometry_kernel.dir\$(Configuration)\Transform.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\geometry\kernel\tgeometry_kernel.dir\$(Configuration)\TransformCPU.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\geometry\kernel\tgeometry_kernel.dir\$(Configuration)\UVUnwrapping.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\geometry\kernel\tgeometry_kernel.dir\$(Configuration)\VoxelBlockGrid.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\geometry\kernel\tgeometry_kernel.dir\$(Configuration)\VoxelBlockGridCPU.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\geometry\kernel\tgeometry_kernel.dir\$(Configuration)\IPPImage.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\FeatureIO.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\FileFormatIO.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\IJsonConvertibleIO.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\ImageIO.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\ImageWarpingFieldIO.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\LineSetIO.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\ModelIO.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\OctreeIO.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\PinholeCameraTrajectoryIO.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\PointCloudIO.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\PoseGraphIO.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\TriangleMeshIO.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\VoxelGridIO.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\FileASSIMP.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\FileBIN.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\FileGLTF.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\FileJPG.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\FileJSON.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\FileLOG.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\FileOBJ.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\FileOFF.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\FilePCD.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\FilePLY.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\FilePNG.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\FilePTS.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\FileSTL.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\FileTUM.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\FileXYZ.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\FileXYZN.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\FileXYZRGB.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\BufferConnection.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\Connection.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\DummyReceiver.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\MessageProcessorBase.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\MessageUtils.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\RemoteFunctions.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\ZMQContext.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\ZMQReceiver.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\io\tio.dir\$(Configuration)\ImageIO.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\io\tio.dir\$(Configuration)\NumpyIO.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\io\tio.dir\$(Configuration)\HashMapIO.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\io\tio.dir\$(Configuration)\PointCloudIO.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\io\tio.dir\$(Configuration)\TriangleMeshIO.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\io\tio.dir\$(Configuration)\FileASSIMP.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\io\tio.dir\$(Configuration)\FileJPG.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\io\tio.dir\$(Configuration)\FilePCD.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\io\tio.dir\$(Configuration)\FilePLY.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\io\tio.dir\$(Configuration)\FilePNG.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\io\tio.dir\$(Configuration)\FilePTS.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\io\tio.dir\$(Configuration)\FileTXT.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\io\tio.dir\$(Configuration)\RGBDVideoMetadata.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\io\tio.dir\$(Configuration)\RGBDVideoReader.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\ml\contrib\ml_contrib.dir\$(Configuration)\Cloud.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\ml\contrib\ml_contrib.dir\$(Configuration)\GridSubsampling.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\ml\contrib\ml_contrib.dir\$(Configuration)\IoU.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\pipelines\pipelines.dir\$(Configuration)\ColorMapUtils.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\pipelines\pipelines.dir\$(Configuration)\ImageWarpingField.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\pipelines\pipelines.dir\$(Configuration)\NonRigidOptimizer.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\pipelines\pipelines.dir\$(Configuration)\RigidOptimizer.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\pipelines\pipelines.dir\$(Configuration)\ScalableTSDFVolume.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\pipelines\pipelines.dir\$(Configuration)\UniformTSDFVolume.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\pipelines\pipelines.dir\$(Configuration)\Odometry.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\pipelines\pipelines.dir\$(Configuration)\RGBDOdometryJacobian.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\pipelines\pipelines.dir\$(Configuration)\ColoredICP.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\pipelines\pipelines.dir\$(Configuration)\CorrespondenceChecker.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\pipelines\pipelines.dir\$(Configuration)\FastGlobalRegistration.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\pipelines\pipelines.dir\$(Configuration)\Feature.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\pipelines\pipelines.dir\$(Configuration)\GeneralizedICP.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\pipelines\pipelines.dir\$(Configuration)\GlobalOptimization.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\pipelines\pipelines.dir\$(Configuration)\PoseGraph.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\pipelines\pipelines.dir\$(Configuration)\Registration.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\pipelines\pipelines.dir\$(Configuration)\RobustKernel.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\pipelines\pipelines.dir\$(Configuration)\TransformationEstimation.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\pipelines\tpipelines.dir\$(Configuration)\RGBDOdometry.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\pipelines\tpipelines.dir\$(Configuration)\Registration.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\pipelines\tpipelines.dir\$(Configuration)\TransformationEstimation.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\pipelines\tpipelines.dir\$(Configuration)\Feature.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\pipelines\tpipelines.dir\$(Configuration)\ControlGrid.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\pipelines\tpipelines.dir\$(Configuration)\SLACOptimizer.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\pipelines\tpipelines.dir\$(Configuration)\Visualization.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\pipelines\tpipelines.dir\$(Configuration)\Model.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\pipelines\kernel\tpipelines_kernel.dir\$(Configuration)\Registration.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\pipelines\kernel\tpipelines_kernel.dir\$(Configuration)\RegistrationCPU.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\pipelines\kernel\tpipelines_kernel.dir\$(Configuration)\FillInLinearSystem.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\pipelines\kernel\tpipelines_kernel.dir\$(Configuration)\FillInLinearSystemCPU.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\pipelines\kernel\tpipelines_kernel.dir\$(Configuration)\RGBDOdometry.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\pipelines\kernel\tpipelines_kernel.dir\$(Configuration)\RGBDOdometryCPU.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\pipelines\kernel\tpipelines_kernel.dir\$(Configuration)\TransformationConverter.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\pipelines\kernel\tpipelines_kernel.dir\$(Configuration)\Feature.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\pipelines\kernel\tpipelines_kernel.dir\$(Configuration)\FeatureCPU.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\utility\utility.dir\$(Configuration)\CompilerInfo.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\utility\utility.dir\$(Configuration)\Console.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\utility\utility.dir\$(Configuration)\CPUInfo.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\utility\utility.dir\$(Configuration)\Download.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\utility\utility.dir\$(Configuration)\Eigen.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\utility\utility.dir\$(Configuration)\Extract.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\utility\utility.dir\$(Configuration)\ExtractZIP.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\utility\utility.dir\$(Configuration)\FileSystem.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\utility\utility.dir\$(Configuration)\Helper.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\utility\utility.dir\$(Configuration)\IJsonConvertible.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\utility\utility.dir\$(Configuration)\ISAInfo.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\utility\utility.dir\$(Configuration)\Logging.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\utility\utility.dir\$(Configuration)\Parallel.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\utility\utility.dir\$(Configuration)\ProgressBar.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\utility\utility.dir\$(Configuration)\Random.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\utility\utility.dir\$(Configuration)\Timer.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\GeometryRenderer.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\ImageMaskShader.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\ImageShader.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\NormalShader.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\PhongShader.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\PickingShader.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\RGBDImageShader.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\ShaderWrapper.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\Simple2DShader.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\SimpleBlackShader.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\SimpleShader.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\TexturePhongShader.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\TextureSimpleShader.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\ColorMap.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\DrawGeometry.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\GLHelper.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\PointCloudPicker.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\SelectionPolygon.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\SelectionPolygonVolume.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\RenderOption.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\RenderOptionWithEditing.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\ViewControl.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\ViewControlWithCustomAnimation.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\ViewControlWithEditing.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\ViewParameters.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\ViewTrajectory.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\Visualizer.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\VisualizerCallback.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\VisualizerRender.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\VisualizerWithCustomAnimation.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\VisualizerWithEditing.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\VisualizerWithKeyCallback.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\VisualizerWithVertexSelection.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\Material.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\Camera.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\CameraInteractorLogic.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\CameraSphereInteractorLogic.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\ColorGrading.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\Gradient.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\IBLRotationInteractorLogic.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\LightDirectionInteractorLogic.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\MaterialModifier.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\MatrixInteractorLogic.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\ModelInteractorLogic.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\Open3DScene.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\Renderer.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\RendererHandle.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\RotationInteractorLogic.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\FilamentCamera.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\FilamentEngine.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\FilamentEntitiesMods.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\FilamentGeometryBuffersBuilder.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\FilamentRenderer.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\FilamentRenderToBuffer.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\FilamentResourceManager.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\FilamentScene.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\FilamentView.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\LineSetBuffers.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\PointCloudBuffers.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\TriangleMeshBuffers.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\Draw.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\MessageProcessor.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\GuiSettingsModel.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\GuiSettingsView.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\GuiVisualizer.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\GuiWidgets.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\O3DVisualizer.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\O3DVisualizerSelections.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\Viewer.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\CMakeFiles\core.dir\Indexer.ispc.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\CMakeFiles\core.dir\kernel\BinaryEWCPU.ispc.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\CMakeFiles\core.dir\kernel\UnaryEWCPU.ispc.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\utility\CMakeFiles\utility.dir\ISAInfo.ispc.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\Application.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\BitmapWindowSystem.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\Button.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\Checkbox.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\Color.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\ColorEdit.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\Combobox.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\Dialog.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\Events.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\FileDialog.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\FileDialogNative.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\Font.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\GLFWWindowSystem.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\Gui.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\ImageWidget.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\ImguiFilamentBridge.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\Label.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\Label3D.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\Layout.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\ListView.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\Menu.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\MenuImgui.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\NumberEdit.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\RadioButton.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\PickPointsInteractor.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\ProgressBar.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\SceneWidget.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\Slider.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\StackedWidget.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\TabControl.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\Task.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\TextEdit.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\Theme.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\ToggleSwitch.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\TreeView.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\UIImage.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\Util.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\VectorEdit.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\Widget.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\WidgetProxy.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\WidgetStack.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\Window.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\NativeWin32.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\webrtc_server\webrtc_server.dir\$(Configuration)\BitmapTrackSource.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\webrtc_server\webrtc_server.dir\$(Configuration)\HttpServerRequestHandler.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\webrtc_server\webrtc_server.dir\$(Configuration)\ImageCapturer.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\webrtc_server\webrtc_server.dir\$(Configuration)\PeerConnectionManager.obj" />
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\webrtc_server\webrtc_server.dir\$(Configuration)\WebRTCWindowSystem.obj" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\repo\Open3D\build\ZERO_CHECK.vcxproj">
+      <Project>{CFD9CD55-F5BE-3C9B-95DA-872EE2A8BFC5}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\repo\Open3D\build\3rdparty_glew.vcxproj">
+      <Project>{1BBC3303-BBEB-3A0A-B1AE-19F3401218F8}</Project>
+      <Name>3rdparty_glew</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\repo\Open3D\build\3rdparty_imgui.vcxproj">
+      <Project>{CD8AAF1F-3F51-3EA5-A762-4E23CC9D9EE4}</Project>
+      <Name>3rdparty_imgui</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\repo\Open3D\build\3rdparty_liblzf.vcxproj">
+      <Project>{C5ABFCE4-9B50-358A-9C55-25C0F8F5A835}</Project>
+      <Name>3rdparty_liblzf</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\repo\Open3D\build\3rdparty_qhull_r.vcxproj">
+      <Project>{8AA0C619-6779-3B19-A767-628B019F4F27}</Project>
+      <Name>3rdparty_qhull_r</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\repo\Open3D\build\3rdparty_qhullcpp.vcxproj">
+      <Project>{5AA516CC-9694-320B-97F7-944AE86410F4}</Project>
+      <Name>3rdparty_qhullcpp</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\repo\Open3D\build\3rdparty_rply.vcxproj">
+      <Project>{4AF47EFF-3C68-3523-A127-13C9061B069D}</Project>
+      <Name>3rdparty_rply</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\repo\Open3D\build\3rdparty_tinyfiledialogs.vcxproj">
+      <Project>{6B227B63-8D93-3120-BEBC-93F214D94CDA}</Project>
+      <Name>3rdparty_tinyfiledialogs</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.vcxproj">
+      <Project>{37E9D074-357D-3AE0-AA8A-BD1FB28D85FA}</Project>
+      <Name>GUI</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\repo\Open3D\build\cpp\open3d\camera\camera.vcxproj">
+      <Project>{6138BB0F-9958-3870-B3C1-2617F6AEB249}</Project>
+      <Name>camera</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\repo\Open3D\build\cpp\open3d\core\core.vcxproj">
+      <Project>{C82123B7-E78A-321A-A4B8-C0B5C96762D9}</Project>
+      <Name>core</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\repo\Open3D\build\cpp\open3d\data\data.vcxproj">
+      <Project>{98A3806C-AE40-37F4-ADE3-510A9C702FEB}</Project>
+      <Name>data</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\repo\Open3D\build\ext_assimp.vcxproj">
+      <Project>{135F87A8-B7EA-3932-ABB0-C4515B680F52}</Project>
+      <Name>ext_assimp</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\repo\Open3D\build\ext_boringssl.vcxproj">
+      <Project>{86D46B06-869B-3398-A8A8-9950292E7700}</Project>
+      <Name>ext_boringssl</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\repo\Open3D\build\ext_civetweb.vcxproj">
+      <Project>{17C363EE-5FB3-3A90-909D-F3209E1AAAD9}</Project>
+      <Name>ext_civetweb</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\repo\Open3D\build\ext_cppzmq.vcxproj">
+      <Project>{0537FDBE-8E0D-3A52-B83E-45632ED67C78}</Project>
+      <Name>ext_cppzmq</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\repo\Open3D\build\ext_curl.vcxproj">
+      <Project>{AC12E308-C9D7-36EB-94D1-D2A6C76A9B80}</Project>
+      <Name>ext_curl</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\repo\Open3D\build\ext_eigen.vcxproj">
+      <Project>{B7194758-A59E-328F-9B7D-044302464D50}</Project>
+      <Name>ext_eigen</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\repo\Open3D\build\ext_embree.vcxproj">
+      <Project>{F1A91E51-BFF0-3494-8140-079BD6831AD3}</Project>
+      <Name>ext_embree</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\repo\Open3D\build\ext_filament.vcxproj">
+      <Project>{C722865E-3384-3723-86AE-3C074DF1DFC9}</Project>
+      <Name>ext_filament</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\repo\Open3D\build\ext_fmt.vcxproj">
+      <Project>{67B84016-D303-3B99-882E-AD67890F8B21}</Project>
+      <Name>ext_fmt</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\repo\Open3D\build\ext_ippicv.vcxproj">
+      <Project>{FF7F86D8-C1A4-335B-B440-0D8CF20B3C95}</Project>
+      <Name>ext_ippicv</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\repo\Open3D\build\ext_jsoncpp.vcxproj">
+      <Project>{44CA2924-2B00-366B-B7BB-5EF680E48B3F}</Project>
+      <Name>ext_jsoncpp</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\repo\Open3D\build\ext_libpng.vcxproj">
+      <Project>{887B4B84-4C88-3CD4-A2A2-6DA1130D3255}</Project>
+      <Name>ext_libpng</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\repo\Open3D\build\ext_mkl.vcxproj">
+      <Project>{64C1E3E6-5FF8-3045-924F-A2843D65341C}</Project>
+      <Name>ext_mkl</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\repo\Open3D\build\ext_mkl_include.vcxproj">
+      <Project>{3DD3E4B1-6470-314E-8BA0-107BF0E5E74D}</Project>
+      <Name>ext_mkl_include</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\repo\Open3D\build\ext_msgpack-c.vcxproj">
+      <Project>{8CA1C383-0CEB-3225-B152-C91FD92E0F19}</Project>
+      <Name>ext_msgpack-c</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\repo\Open3D\build\ext_nanoflann.vcxproj">
+      <Project>{3635F5D2-CF54-3C97-8290-E360B9543A96}</Project>
+      <Name>ext_nanoflann</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\repo\Open3D\build\ext_parallelstl.vcxproj">
+      <Project>{8E78D648-30F8-3CD4-A886-C7003C208775}</Project>
+      <Name>ext_parallelstl</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\repo\Open3D\build\ext_poisson.vcxproj">
+      <Project>{1F697EC0-4D73-3A5B-8206-3012932E6F8D}</Project>
+      <Name>ext_poisson</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\repo\Open3D\build\ext_tbb.vcxproj">
+      <Project>{8787970B-C36C-3E53-8A5D-51C3EC59CEDE}</Project>
+      <Name>ext_tbb</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\repo\Open3D\build\ext_tinygltf.vcxproj">
+      <Project>{8F81E7FA-37D4-3213-B176-7BC97F3839C3}</Project>
+      <Name>ext_tinygltf</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\repo\Open3D\build\ext_tinyobjloader.vcxproj">
+      <Project>{C22ED030-495E-3EC5-9F61-7A8E9A207043}</Project>
+      <Name>ext_tinyobjloader</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\repo\Open3D\build\ext_turbojpeg.vcxproj">
+      <Project>{6CFCE88E-AF68-305F-AEDF-8EC2326E4DEE}</Project>
+      <Name>ext_turbojpeg</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\repo\Open3D\build\ext_uvatlas.vcxproj">
+      <Project>{84E0EF28-0E67-341B-A4F0-79747D6AB616}</Project>
+      <Name>ext_uvatlas</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\repo\Open3D\build\ext_vtk.vcxproj">
+      <Project>{2B3379B7-209A-3A2E-BA1F-7E288375EE79}</Project>
+      <Name>ext_vtk</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\repo\Open3D\build\ext_webrtc_all.vcxproj">
+      <Project>{7BE2BD51-1718-3B35-A914-ED07BC42DC1F}</Project>
+      <Name>ext_webrtc_all</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\repo\Open3D\build\ext_zeromq.vcxproj">
+      <Project>{01FBA82A-C5D4-3E1E-BD44-982B168F87B4}</Project>
+      <Name>ext_zeromq</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\repo\Open3D\build\ext_zlib.vcxproj">
+      <Project>{72780BE6-1295-38A5-95AB-F4313D2D153D}</Project>
+      <Name>ext_zlib</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.vcxproj">
+      <Project>{1895513F-6F54-391F-A8D5-BD6485379D32}</Project>
+      <Name>geometry</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\repo\Open3D\build\3rdparty\glfw\src\glfw.vcxproj">
+      <Project>{DCFC4F33-D3E4-3B92-A027-346844D6AD99}</Project>
+      <Name>glfw</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\repo\Open3D\build\cpp\open3d\io\io.vcxproj">
+      <Project>{79D2467F-4569-3BC0-A4B0-4A177F3D2C99}</Project>
+      <Name>io</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\repo\Open3D\build\cpp\open3d\ml\contrib\ml_contrib.vcxproj">
+      <Project>{EAF76C73-8217-34D0-90A0-73E96C0AC19B}</Project>
+      <Name>ml_contrib</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\repo\Open3D\build\cpp\open3d\pipelines\pipelines.vcxproj">
+      <Project>{9238B88E-3EFB-3F1B-8736-EAC02B17BA74}</Project>
+      <Name>pipelines</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\repo\Open3D\build\cpp\open3d\t\geometry\tgeometry.vcxproj">
+      <Project>{648ACC56-8D3A-3AD5-BEEC-45DB7BF1A1B2}</Project>
+      <Name>tgeometry</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\repo\Open3D\build\cpp\open3d\t\geometry\kernel\tgeometry_kernel.vcxproj">
+      <Project>{56501839-AAE0-340F-8CF8-46898D748FDA}</Project>
+      <Name>tgeometry_kernel</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\repo\Open3D\build\cpp\open3d\t\io\tio.vcxproj">
+      <Project>{A5DB4904-BBC2-345E-8E18-1BE6B23A8DCD}</Project>
+      <Name>tio</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\repo\Open3D\build\cpp\open3d\t\pipelines\tpipelines.vcxproj">
+      <Project>{50B30628-DA9C-3A5E-B5B2-043447023DBA}</Project>
+      <Name>tpipelines</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\repo\Open3D\build\cpp\open3d\t\pipelines\kernel\tpipelines_kernel.vcxproj">
+      <Project>{386AFB0B-926D-3432-BB9B-D011D0457A15}</Project>
+      <Name>tpipelines_kernel</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\repo\Open3D\build\cpp\open3d\utility\utility.vcxproj">
+      <Project>{53F14E88-EDB1-35F6-AE98-EA87C0A35E17}</Project>
+      <Name>utility</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.vcxproj">
+      <Project>{46C81D8A-484A-3ED8-807F-83BB42B65738}</Project>
+      <Name>visualization</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\repo\Open3D\build\cpp\open3d\visualization\webrtc_server\webrtc_server.vcxproj">
+      <Project>{79964FEC-7299-3F9C-B823-680475A9D078}</Project>
+      <Name>webrtc_server</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

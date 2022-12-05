@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\repo\Open3D\cpp\open3d\visualization\shader\glsl\ImageFragmentShader.glsl">
+      <Filter>Source Files\Shader\GLSL</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\cpp\open3d\visualization\shader\glsl\ImageMaskFragmentShader.glsl">
+      <Filter>Source Files\Shader\GLSL</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\cpp\open3d\visualization\shader\glsl\ImageMaskVertexShader.glsl">
+      <Filter>Source Files\Shader\GLSL</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\cpp\open3d\visualization\shader\glsl\ImageVertexShader.glsl">
+      <Filter>Source Files\Shader\GLSL</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\cpp\open3d\visualization\shader\glsl\NormalFragmentShader.glsl">
+      <Filter>Source Files\Shader\GLSL</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\cpp\open3d\visualization\shader\glsl\NormalVertexShader.glsl">
+      <Filter>Source Files\Shader\GLSL</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\cpp\open3d\visualization\shader\glsl\PhongFragmentShader.glsl">
+      <Filter>Source Files\Shader\GLSL</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\cpp\open3d\visualization\shader\glsl\PhongVertexShader.glsl">
+      <Filter>Source Files\Shader\GLSL</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\cpp\open3d\visualization\shader\glsl\PickingFragmentShader.glsl">
+      <Filter>Source Files\Shader\GLSL</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\cpp\open3d\visualization\shader\glsl\PickingVertexShader.glsl">
+      <Filter>Source Files\Shader\GLSL</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\cpp\open3d\visualization\shader\glsl\RGBDImageFragmentShader.glsl">
+      <Filter>Source Files\Shader\GLSL</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\cpp\open3d\visualization\shader\glsl\Simple2DFragmentShader.glsl">
+      <Filter>Source Files\Shader\GLSL</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\cpp\open3d\visualization\shader\glsl\Simple2DVertexShader.glsl">
+      <Filter>Source Files\Shader\GLSL</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\cpp\open3d\visualization\shader\glsl\SimpleBlackFragmentShader.glsl">
+      <Filter>Source Files\Shader\GLSL</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\cpp\open3d\visualization\shader\glsl\SimpleBlackVertexShader.glsl">
+      <Filter>Source Files\Shader\GLSL</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\cpp\open3d\visualization\shader\glsl\SimpleFragmentShader.glsl">
+      <Filter>Source Files\Shader\GLSL</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\cpp\open3d\visualization\shader\glsl\SimpleVertexShader.glsl">
+      <Filter>Source Files\Shader\GLSL</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\cpp\open3d\visualization\shader\glsl\TexturePhongFragmentShader.glsl">
+      <Filter>Source Files\Shader\GLSL</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\cpp\open3d\visualization\shader\glsl\TexturePhongVertexShader.glsl">
+      <Filter>Source Files\Shader\GLSL</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\cpp\open3d\visualization\shader\glsl\TextureSimpleFragmentShader.glsl">
+      <Filter>Source Files\Shader\GLSL</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\cpp\open3d\visualization\shader\glsl\TextureSimpleVertexShader.glsl">
+      <Filter>Source Files\Shader\GLSL</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\6e788466a3df9538f6e931ab0954fd30\Shader.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\a5bf254e99e8d1a51231b36b7588ec27\shader.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\repo\Open3D\cpp\open3d\visualization\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\repo\Open3D\build\cpp\open3d\visualization\CMakeFiles\shader" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{DC42490E-CEC7-39BD-B33D-51D277B283D7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{5F8B045E-4C33-37F0-B645-6EDC94A227E1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Shader">
+      <UniqueIdentifier>{14E560B5-D844-321A-ABBC-566283126CD6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Shader\GLSL">
+      <UniqueIdentifier>{8CB447C1-03E2-3921-8EB8-25EE8E8B10BC}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

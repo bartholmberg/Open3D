@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\pipelines\color_map\ColorMapUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\pipelines\color_map\ImageWarpingField.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\pipelines\color_map\NonRigidOptimizer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\pipelines\color_map\RigidOptimizer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\pipelines\integration\ScalableTSDFVolume.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\pipelines\integration\UniformTSDFVolume.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\pipelines\odometry\Odometry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\pipelines\odometry\RGBDOdometryJacobian.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\pipelines\registration\ColoredICP.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\pipelines\registration\CorrespondenceChecker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\pipelines\registration\FastGlobalRegistration.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\pipelines\registration\Feature.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\pipelines\registration\GeneralizedICP.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\pipelines\registration\GlobalOptimization.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\pipelines\registration\PoseGraph.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\pipelines\registration\Registration.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\pipelines\registration\RobustKernel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\pipelines\registration\TransformationEstimation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\repo\Open3D\cpp\open3d\pipelines\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{5F8B045E-4C33-37F0-B645-6EDC94A227E1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

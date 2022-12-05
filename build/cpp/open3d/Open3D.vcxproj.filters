@@ -1,0 +1,1191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\Open3DConfig.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\repo\Open3D\cpp\open3d\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\camera\camera.dir\$(Configuration)\PinholeCameraIntrinsic.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\camera\camera.dir\$(Configuration)\PinholeCameraParameters.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\camera\camera.dir\$(Configuration)\PinholeCameraTrajectory.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\AdvancedIndexing.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\CUDAUtils.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\Device.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\Dtype.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\EigenConverter.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\Indexer.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\MemoryManager.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\MemoryManagerCached.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\MemoryManagerCPU.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\MemoryManagerStatistic.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\ShapeUtil.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\SizeVector.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\SmallVector.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\Tensor.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\TensorCheck.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\TensorFunction.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\TensorKey.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\TensorList.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\SYCLUtils.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\CPUHashBackendBuffer.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\CreateCPUHashBackend.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\DeviceHashBackend.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\HashBackendBuffer.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\HashMap.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\HashSet.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\Arange.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\ArangeCPU.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\BinaryEW.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\BinaryEWCPU.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\IndexGetSet.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\IndexGetSetCPU.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\Kernel.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\NonZero.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\NonZeroCPU.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\Reduction.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\ReductionCPU.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\UnaryEW.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\UnaryEWCPU.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\AddMM.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\AddMMCPU.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\Det.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\Inverse.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\InverseCPU.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\LeastSquares.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\LeastSquaresCPU.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\LU.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\LUCPU.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\Matmul.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\MatmulCPU.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\Solve.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\SolveCPU.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\SVD.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\SVDCPU.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\Tri.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\TriCPU.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\FixedRadiusIndex.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\FixedRadiusSearchOps.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\KnnIndex.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\NanoFlannIndex.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\NearestNeighborSearch.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\core.dir\$(Configuration)\NNSIndex.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\Dataset.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\ArmadilloMesh.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\AvocadoModel.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\BedroomRGBDImages.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\BunnyMesh.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\CrateModel.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\DamagedHelmetModel.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\DemoColoredICPPointClouds.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\DemoCropPointCloud.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\DemoCustomVisualization.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\DemoFeatureMatchingPointClouds.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\DemoICPPointClouds.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\DemoPoseGraphOptimization.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\EaglePointCloud.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\FlightHelmetModel.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\JackJackL515Bag.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\JuneauImage.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\KnotMesh.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\LivingRoomPointClouds.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\LoungeRGBDImages.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\MetalTexture.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\MonkeyModel.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\OfficePointClouds.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\PaintedPlasterTexture.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\PCDPointCloud.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\PLYPointCloud.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\PTSPointCloud.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\RedwoodIndoorLivingRoom1.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\RedwoodIndoorLivingRoom2.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\RedwoodIndoorOffice1.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\RedwoodIndoorOffice2.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\SampleFountainRGBDImages.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\SampleL515Bag.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\SampleNYURGBDImage.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\SampleRedwoodRGBDImages.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\SampleSUNRGBDImage.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\SampleTUMRGBDImage.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\SwordModel.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\TerrazzoTexture.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\TilesTexture.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\WoodFloorTexture.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\data\data.dir\$(Configuration)\WoodTexture.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\BoundingVolume.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\EstimateNormals.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\Geometry3D.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\HalfEdgeTriangleMesh.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\Image.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\ImageFactory.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\IntersectionTest.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\ISSKeypoints.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\KDTreeFlann.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\Line3D.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\LineSet.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\LineSetFactory.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\MeshBase.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\Octree.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\PointCloud.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\PointCloudCluster.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\PointCloudFactory.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\PointCloudSegmentation.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\Qhull.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\RGBDImage.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\RGBDImageFactory.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\SurfaceReconstructionAlphaShape.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\SurfaceReconstructionBallPivoting.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\SurfaceReconstructionPoisson.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\TetraMesh.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\TetraMeshFactory.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\TriangleMesh.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\TriangleMeshDeformation.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\TriangleMeshFactory.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\TriangleMeshSimplification.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\TriangleMeshSubdivide.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\VoxelGrid.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\geometry\geometry.dir\$(Configuration)\VoxelGridFactory.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\geometry\tgeometry.dir\$(Configuration)\Image.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\geometry\tgeometry.dir\$(Configuration)\LineSet.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\geometry\tgeometry.dir\$(Configuration)\BoundingVolume.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\geometry\tgeometry.dir\$(Configuration)\PointCloud.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\geometry\tgeometry.dir\$(Configuration)\RaycastingScene.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\geometry\tgeometry.dir\$(Configuration)\RGBDImage.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\geometry\tgeometry.dir\$(Configuration)\TensorMap.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\geometry\tgeometry.dir\$(Configuration)\TriangleMesh.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\geometry\tgeometry.dir\$(Configuration)\TriangleMeshFactory.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\geometry\tgeometry.dir\$(Configuration)\VoxelBlockGrid.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\geometry\tgeometry.dir\$(Configuration)\VtkUtils.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\geometry\kernel\tgeometry_kernel.dir\$(Configuration)\Image.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\geometry\kernel\tgeometry_kernel.dir\$(Configuration)\ImageCPU.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\geometry\kernel\tgeometry_kernel.dir\$(Configuration)\PointCloud.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\geometry\kernel\tgeometry_kernel.dir\$(Configuration)\PointCloudCPU.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\geometry\kernel\tgeometry_kernel.dir\$(Configuration)\TriangleMesh.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\geometry\kernel\tgeometry_kernel.dir\$(Configuration)\TriangleMeshCPU.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\geometry\kernel\tgeometry_kernel.dir\$(Configuration)\Transform.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\geometry\kernel\tgeometry_kernel.dir\$(Configuration)\TransformCPU.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\geometry\kernel\tgeometry_kernel.dir\$(Configuration)\UVUnwrapping.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\geometry\kernel\tgeometry_kernel.dir\$(Configuration)\VoxelBlockGrid.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\geometry\kernel\tgeometry_kernel.dir\$(Configuration)\VoxelBlockGridCPU.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\geometry\kernel\tgeometry_kernel.dir\$(Configuration)\IPPImage.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\FeatureIO.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\FileFormatIO.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\IJsonConvertibleIO.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\ImageIO.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\ImageWarpingFieldIO.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\LineSetIO.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\ModelIO.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\OctreeIO.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\PinholeCameraTrajectoryIO.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\PointCloudIO.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\PoseGraphIO.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\TriangleMeshIO.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\VoxelGridIO.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\FileASSIMP.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\FileBIN.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\FileGLTF.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\FileJPG.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\FileJSON.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\FileLOG.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\FileOBJ.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\FileOFF.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\FilePCD.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\FilePLY.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\FilePNG.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\FilePTS.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\FileSTL.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\FileTUM.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\FileXYZ.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\FileXYZN.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\FileXYZRGB.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\BufferConnection.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\Connection.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\DummyReceiver.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\MessageProcessorBase.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\MessageUtils.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\RemoteFunctions.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\ZMQContext.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\io\io.dir\$(Configuration)\ZMQReceiver.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\io\tio.dir\$(Configuration)\ImageIO.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\io\tio.dir\$(Configuration)\NumpyIO.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\io\tio.dir\$(Configuration)\HashMapIO.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\io\tio.dir\$(Configuration)\PointCloudIO.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\io\tio.dir\$(Configuration)\TriangleMeshIO.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\io\tio.dir\$(Configuration)\FileASSIMP.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\io\tio.dir\$(Configuration)\FileJPG.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\io\tio.dir\$(Configuration)\FilePCD.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\io\tio.dir\$(Configuration)\FilePLY.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\io\tio.dir\$(Configuration)\FilePNG.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\io\tio.dir\$(Configuration)\FilePTS.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\io\tio.dir\$(Configuration)\FileTXT.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\io\tio.dir\$(Configuration)\RGBDVideoMetadata.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\io\tio.dir\$(Configuration)\RGBDVideoReader.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\ml\contrib\ml_contrib.dir\$(Configuration)\Cloud.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\ml\contrib\ml_contrib.dir\$(Configuration)\GridSubsampling.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\ml\contrib\ml_contrib.dir\$(Configuration)\IoU.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\pipelines\pipelines.dir\$(Configuration)\ColorMapUtils.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\pipelines\pipelines.dir\$(Configuration)\ImageWarpingField.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\pipelines\pipelines.dir\$(Configuration)\NonRigidOptimizer.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\pipelines\pipelines.dir\$(Configuration)\RigidOptimizer.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\pipelines\pipelines.dir\$(Configuration)\ScalableTSDFVolume.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\pipelines\pipelines.dir\$(Configuration)\UniformTSDFVolume.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\pipelines\pipelines.dir\$(Configuration)\Odometry.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\pipelines\pipelines.dir\$(Configuration)\RGBDOdometryJacobian.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\pipelines\pipelines.dir\$(Configuration)\ColoredICP.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\pipelines\pipelines.dir\$(Configuration)\CorrespondenceChecker.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\pipelines\pipelines.dir\$(Configuration)\FastGlobalRegistration.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\pipelines\pipelines.dir\$(Configuration)\Feature.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\pipelines\pipelines.dir\$(Configuration)\GeneralizedICP.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\pipelines\pipelines.dir\$(Configuration)\GlobalOptimization.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\pipelines\pipelines.dir\$(Configuration)\PoseGraph.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\pipelines\pipelines.dir\$(Configuration)\Registration.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\pipelines\pipelines.dir\$(Configuration)\RobustKernel.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\pipelines\pipelines.dir\$(Configuration)\TransformationEstimation.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\pipelines\tpipelines.dir\$(Configuration)\RGBDOdometry.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\pipelines\tpipelines.dir\$(Configuration)\Registration.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\pipelines\tpipelines.dir\$(Configuration)\TransformationEstimation.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\pipelines\tpipelines.dir\$(Configuration)\Feature.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\pipelines\tpipelines.dir\$(Configuration)\ControlGrid.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\pipelines\tpipelines.dir\$(Configuration)\SLACOptimizer.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\pipelines\tpipelines.dir\$(Configuration)\Visualization.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\pipelines\tpipelines.dir\$(Configuration)\Model.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\pipelines\kernel\tpipelines_kernel.dir\$(Configuration)\Registration.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\pipelines\kernel\tpipelines_kernel.dir\$(Configuration)\RegistrationCPU.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\pipelines\kernel\tpipelines_kernel.dir\$(Configuration)\FillInLinearSystem.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\pipelines\kernel\tpipelines_kernel.dir\$(Configuration)\FillInLinearSystemCPU.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\pipelines\kernel\tpipelines_kernel.dir\$(Configuration)\RGBDOdometry.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\pipelines\kernel\tpipelines_kernel.dir\$(Configuration)\RGBDOdometryCPU.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\pipelines\kernel\tpipelines_kernel.dir\$(Configuration)\TransformationConverter.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\pipelines\kernel\tpipelines_kernel.dir\$(Configuration)\Feature.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\t\pipelines\kernel\tpipelines_kernel.dir\$(Configuration)\FeatureCPU.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\utility\utility.dir\$(Configuration)\CompilerInfo.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\utility\utility.dir\$(Configuration)\Console.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\utility\utility.dir\$(Configuration)\CPUInfo.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\utility\utility.dir\$(Configuration)\Download.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\utility\utility.dir\$(Configuration)\Eigen.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\utility\utility.dir\$(Configuration)\Extract.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\utility\utility.dir\$(Configuration)\ExtractZIP.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\utility\utility.dir\$(Configuration)\FileSystem.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\utility\utility.dir\$(Configuration)\Helper.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\utility\utility.dir\$(Configuration)\IJsonConvertible.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\utility\utility.dir\$(Configuration)\ISAInfo.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\utility\utility.dir\$(Configuration)\Logging.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\utility\utility.dir\$(Configuration)\Parallel.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\utility\utility.dir\$(Configuration)\ProgressBar.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\utility\utility.dir\$(Configuration)\Random.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\utility\utility.dir\$(Configuration)\Timer.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\GeometryRenderer.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\ImageMaskShader.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\ImageShader.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\NormalShader.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\PhongShader.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\PickingShader.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\RGBDImageShader.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\ShaderWrapper.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\Simple2DShader.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\SimpleBlackShader.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\SimpleShader.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\TexturePhongShader.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\TextureSimpleShader.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\ColorMap.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\DrawGeometry.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\GLHelper.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\PointCloudPicker.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\SelectionPolygon.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\SelectionPolygonVolume.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\RenderOption.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\RenderOptionWithEditing.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\ViewControl.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\ViewControlWithCustomAnimation.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\ViewControlWithEditing.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\ViewParameters.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\ViewTrajectory.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\Visualizer.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\VisualizerCallback.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\VisualizerRender.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\VisualizerWithCustomAnimation.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\VisualizerWithEditing.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\VisualizerWithKeyCallback.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\VisualizerWithVertexSelection.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\Material.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\Camera.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\CameraInteractorLogic.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\CameraSphereInteractorLogic.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\ColorGrading.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\Gradient.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\IBLRotationInteractorLogic.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\LightDirectionInteractorLogic.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\MaterialModifier.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\MatrixInteractorLogic.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\ModelInteractorLogic.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\Open3DScene.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\Renderer.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\RendererHandle.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\RotationInteractorLogic.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\FilamentCamera.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\FilamentEngine.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\FilamentEntitiesMods.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\FilamentGeometryBuffersBuilder.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\FilamentRenderer.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\FilamentRenderToBuffer.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\FilamentResourceManager.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\FilamentScene.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\FilamentView.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\LineSetBuffers.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\PointCloudBuffers.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\TriangleMeshBuffers.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\Draw.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\MessageProcessor.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\GuiSettingsModel.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\GuiSettingsView.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\GuiVisualizer.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\GuiWidgets.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\O3DVisualizer.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\O3DVisualizerSelections.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\visualization.dir\$(Configuration)\Viewer.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\CMakeFiles\core.dir\Indexer.ispc.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\CMakeFiles\core.dir\kernel\BinaryEWCPU.ispc.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\core\CMakeFiles\core.dir\kernel\UnaryEWCPU.ispc.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\utility\CMakeFiles\utility.dir\ISAInfo.ispc.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\Application.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\BitmapWindowSystem.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\Button.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\Checkbox.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\Color.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\ColorEdit.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\Combobox.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\Dialog.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\Events.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\FileDialog.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\FileDialogNative.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\Font.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\GLFWWindowSystem.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\Gui.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\ImageWidget.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\ImguiFilamentBridge.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\Label.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\Label3D.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\Layout.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\ListView.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\Menu.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\MenuImgui.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\NumberEdit.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\RadioButton.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\PickPointsInteractor.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\ProgressBar.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\SceneWidget.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\Slider.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\StackedWidget.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\TabControl.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\Task.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\TextEdit.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\Theme.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\ToggleSwitch.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\TreeView.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\UIImage.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\Util.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\VectorEdit.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\Widget.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\WidgetProxy.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\WidgetStack.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\Window.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\gui\GUI.dir\$(Configuration)\NativeWin32.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\webrtc_server\webrtc_server.dir\$(Configuration)\BitmapTrackSource.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\webrtc_server\webrtc_server.dir\$(Configuration)\HttpServerRequestHandler.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\webrtc_server\webrtc_server.dir\$(Configuration)\ImageCapturer.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\webrtc_server\webrtc_server.dir\$(Configuration)\PeerConnectionManager.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\repo\Open3D\build\cpp\open3d\visualization\webrtc_server\webrtc_server.dir\$(Configuration)\WebRTCWindowSystem.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Object Files">
+      <UniqueIdentifier>{9F5A3788-99E0-3E68-A4A0-EB4825233758}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object Libraries">
+      <UniqueIdentifier>{0D0DA321-AFC9-3EDA-A794-C2BD0890BFDD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{5F8B045E-4C33-37F0-B645-6EDC94A227E1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

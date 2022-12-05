@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\data\Dataset.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\data\dataset\ArmadilloMesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\data\dataset\AvocadoModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\data\dataset\BedroomRGBDImages.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\data\dataset\BunnyMesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\data\dataset\CrateModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\data\dataset\DamagedHelmetModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\data\dataset\DemoColoredICPPointClouds.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\data\dataset\DemoCropPointCloud.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\data\dataset\DemoCustomVisualization.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\data\dataset\DemoFeatureMatchingPointClouds.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\data\dataset\DemoICPPointClouds.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\data\dataset\DemoPoseGraphOptimization.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\data\dataset\EaglePointCloud.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\data\dataset\FlightHelmetModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\data\dataset\JackJackL515Bag.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\data\dataset\JuneauImage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\data\dataset\KnotMesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\data\dataset\LivingRoomPointClouds.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\data\dataset\LoungeRGBDImages.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\data\dataset\MetalTexture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\data\dataset\MonkeyModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\data\dataset\OfficePointClouds.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\data\dataset\PaintedPlasterTexture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\data\dataset\PCDPointCloud.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\data\dataset\PLYPointCloud.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\data\dataset\PTSPointCloud.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\data\dataset\RedwoodIndoorLivingRoom1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\data\dataset\RedwoodIndoorLivingRoom2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\data\dataset\RedwoodIndoorOffice1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\data\dataset\RedwoodIndoorOffice2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\data\dataset\SampleFountainRGBDImages.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\data\dataset\SampleL515Bag.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\data\dataset\SampleNYURGBDImage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\data\dataset\SampleRedwoodRGBDImages.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\data\dataset\SampleSUNRGBDImage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\data\dataset\SampleTUMRGBDImage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\data\dataset\SwordModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\data\dataset\TerrazzoTexture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\data\dataset\TilesTexture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\data\dataset\WoodFloorTexture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\data\dataset\WoodTexture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\repo\Open3D\cpp\open3d\data\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{5F8B045E-4C33-37F0-B645-6EDC94A227E1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

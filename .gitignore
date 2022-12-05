@@ -3,6 +3,7 @@
 !*.sln
 !*.filters
 !cpp/pybind/pybind*/
+!cpp/open3d/pipelines*/
 *.cmake
 *.obj
 *.tlog
@@ -54,7 +55,7 @@ lib*/
 mkl*/
 msg*/
 nano*/
-Open3D*/
+#Open3D*/
 parallelstl*/
 poisson*/
 qhull*/

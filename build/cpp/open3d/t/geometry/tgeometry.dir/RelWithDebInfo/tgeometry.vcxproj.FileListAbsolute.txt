@@ -1,0 +1,1 @@
+C:\repo\Open3D\build\cpp\open3d\t\geometry\tgeometry.dir\RelWithDebInfo\tgeometry.lib

@@ -1,0 +1,1471 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1BD6EC96-9E63-34AB-89B4-FB06EBA2CCB8}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>shader</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\repo\Open3D\cpp\open3d\visualization\shader\glsl\ImageFragmentShader.glsl">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Encoded Shader object ImageFragmentShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\..\bin\Debug\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/ImageFragmentShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/ImageFragmentShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\bin\Debug\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\ImageFragmentShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Encoded Shader object ImageFragmentShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\..\bin\Release\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/ImageFragmentShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/ImageFragmentShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\bin\Release\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\ImageFragmentShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Encoded Shader object ImageFragmentShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\..\..\bin\MinSizeRel\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/ImageFragmentShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/ImageFragmentShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\bin\MinSizeRel\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\ImageFragmentShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Encoded Shader object ImageFragmentShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\..\..\bin\RelWithDebInfo\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/ImageFragmentShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/ImageFragmentShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\bin\RelWithDebInfo\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\ImageFragmentShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\repo\Open3D\cpp\open3d\visualization\shader\glsl\ImageMaskFragmentShader.glsl">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Encoded Shader object ImageMaskFragmentShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\..\bin\Debug\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/ImageMaskFragmentShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/ImageMaskFragmentShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\bin\Debug\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\ImageMaskFragmentShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Encoded Shader object ImageMaskFragmentShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\..\bin\Release\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/ImageMaskFragmentShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/ImageMaskFragmentShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\bin\Release\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\ImageMaskFragmentShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Encoded Shader object ImageMaskFragmentShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\..\..\bin\MinSizeRel\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/ImageMaskFragmentShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/ImageMaskFragmentShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\bin\MinSizeRel\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\ImageMaskFragmentShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Encoded Shader object ImageMaskFragmentShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\..\..\bin\RelWithDebInfo\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/ImageMaskFragmentShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/ImageMaskFragmentShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\bin\RelWithDebInfo\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\ImageMaskFragmentShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\repo\Open3D\cpp\open3d\visualization\shader\glsl\ImageMaskVertexShader.glsl">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Encoded Shader object ImageMaskVertexShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\..\bin\Debug\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/ImageMaskVertexShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/ImageMaskVertexShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\bin\Debug\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\ImageMaskVertexShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Encoded Shader object ImageMaskVertexShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\..\bin\Release\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/ImageMaskVertexShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/ImageMaskVertexShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\bin\Release\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\ImageMaskVertexShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Encoded Shader object ImageMaskVertexShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\..\..\bin\MinSizeRel\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/ImageMaskVertexShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/ImageMaskVertexShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\bin\MinSizeRel\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\ImageMaskVertexShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Encoded Shader object ImageMaskVertexShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\..\..\bin\RelWithDebInfo\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/ImageMaskVertexShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/ImageMaskVertexShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\bin\RelWithDebInfo\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\ImageMaskVertexShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\repo\Open3D\cpp\open3d\visualization\shader\glsl\ImageVertexShader.glsl">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Encoded Shader object ImageVertexShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\..\bin\Debug\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/ImageVertexShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/ImageVertexShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\bin\Debug\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\ImageVertexShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Encoded Shader object ImageVertexShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\..\bin\Release\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/ImageVertexShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/ImageVertexShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\bin\Release\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\ImageVertexShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Encoded Shader object ImageVertexShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\..\..\bin\MinSizeRel\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/ImageVertexShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/ImageVertexShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\bin\MinSizeRel\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\ImageVertexShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Encoded Shader object ImageVertexShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\..\..\bin\RelWithDebInfo\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/ImageVertexShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/ImageVertexShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\bin\RelWithDebInfo\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\ImageVertexShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\repo\Open3D\cpp\open3d\visualization\shader\glsl\NormalFragmentShader.glsl">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Encoded Shader object NormalFragmentShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\..\bin\Debug\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/NormalFragmentShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/NormalFragmentShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\bin\Debug\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\NormalFragmentShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Encoded Shader object NormalFragmentShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\..\bin\Release\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/NormalFragmentShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/NormalFragmentShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\bin\Release\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\NormalFragmentShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Encoded Shader object NormalFragmentShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\..\..\bin\MinSizeRel\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/NormalFragmentShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/NormalFragmentShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\bin\MinSizeRel\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\NormalFragmentShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Encoded Shader object NormalFragmentShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\..\..\bin\RelWithDebInfo\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/NormalFragmentShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/NormalFragmentShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\bin\RelWithDebInfo\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\NormalFragmentShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\repo\Open3D\cpp\open3d\visualization\shader\glsl\NormalVertexShader.glsl">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Encoded Shader object NormalVertexShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\..\bin\Debug\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/NormalVertexShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/NormalVertexShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\bin\Debug\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\NormalVertexShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Encoded Shader object NormalVertexShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\..\bin\Release\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/NormalVertexShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/NormalVertexShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\bin\Release\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\NormalVertexShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Encoded Shader object NormalVertexShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\..\..\bin\MinSizeRel\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/NormalVertexShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/NormalVertexShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\bin\MinSizeRel\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\NormalVertexShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Encoded Shader object NormalVertexShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\..\..\bin\RelWithDebInfo\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/NormalVertexShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/NormalVertexShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\bin\RelWithDebInfo\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\NormalVertexShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\repo\Open3D\cpp\open3d\visualization\shader\glsl\PhongFragmentShader.glsl">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Encoded Shader object PhongFragmentShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\..\bin\Debug\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/PhongFragmentShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/PhongFragmentShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\bin\Debug\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\PhongFragmentShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Encoded Shader object PhongFragmentShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\..\bin\Release\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/PhongFragmentShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/PhongFragmentShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\bin\Release\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\PhongFragmentShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Encoded Shader object PhongFragmentShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\..\..\bin\MinSizeRel\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/PhongFragmentShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/PhongFragmentShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\bin\MinSizeRel\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\PhongFragmentShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Encoded Shader object PhongFragmentShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\..\..\bin\RelWithDebInfo\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/PhongFragmentShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/PhongFragmentShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\bin\RelWithDebInfo\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\PhongFragmentShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\repo\Open3D\cpp\open3d\visualization\shader\glsl\PhongVertexShader.glsl">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Encoded Shader object PhongVertexShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\..\bin\Debug\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/PhongVertexShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/PhongVertexShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\bin\Debug\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\PhongVertexShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Encoded Shader object PhongVertexShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\..\bin\Release\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/PhongVertexShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/PhongVertexShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\bin\Release\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\PhongVertexShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Encoded Shader object PhongVertexShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\..\..\bin\MinSizeRel\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/PhongVertexShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/PhongVertexShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\bin\MinSizeRel\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\PhongVertexShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Encoded Shader object PhongVertexShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\..\..\bin\RelWithDebInfo\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/PhongVertexShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/PhongVertexShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\bin\RelWithDebInfo\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\PhongVertexShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\repo\Open3D\cpp\open3d\visualization\shader\glsl\PickingFragmentShader.glsl">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Encoded Shader object PickingFragmentShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\..\bin\Debug\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/PickingFragmentShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/PickingFragmentShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\bin\Debug\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\PickingFragmentShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Encoded Shader object PickingFragmentShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\..\bin\Release\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/PickingFragmentShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/PickingFragmentShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\bin\Release\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\PickingFragmentShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Encoded Shader object PickingFragmentShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\..\..\bin\MinSizeRel\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/PickingFragmentShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/PickingFragmentShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\bin\MinSizeRel\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\PickingFragmentShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Encoded Shader object PickingFragmentShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\..\..\bin\RelWithDebInfo\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/PickingFragmentShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/PickingFragmentShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\bin\RelWithDebInfo\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\PickingFragmentShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\repo\Open3D\cpp\open3d\visualization\shader\glsl\PickingVertexShader.glsl">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Encoded Shader object PickingVertexShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\..\bin\Debug\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/PickingVertexShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/PickingVertexShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\bin\Debug\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\PickingVertexShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Encoded Shader object PickingVertexShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\..\bin\Release\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/PickingVertexShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/PickingVertexShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\bin\Release\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\PickingVertexShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Encoded Shader object PickingVertexShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\..\..\bin\MinSizeRel\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/PickingVertexShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/PickingVertexShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\bin\MinSizeRel\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\PickingVertexShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Encoded Shader object PickingVertexShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\..\..\bin\RelWithDebInfo\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/PickingVertexShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/PickingVertexShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\bin\RelWithDebInfo\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\PickingVertexShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\repo\Open3D\cpp\open3d\visualization\shader\glsl\RGBDImageFragmentShader.glsl">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Encoded Shader object RGBDImageFragmentShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\..\bin\Debug\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/RGBDImageFragmentShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/RGBDImageFragmentShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\bin\Debug\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\RGBDImageFragmentShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Encoded Shader object RGBDImageFragmentShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\..\bin\Release\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/RGBDImageFragmentShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/RGBDImageFragmentShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\bin\Release\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\RGBDImageFragmentShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Encoded Shader object RGBDImageFragmentShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\..\..\bin\MinSizeRel\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/RGBDImageFragmentShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/RGBDImageFragmentShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\bin\MinSizeRel\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\RGBDImageFragmentShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Encoded Shader object RGBDImageFragmentShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\..\..\bin\RelWithDebInfo\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/RGBDImageFragmentShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/RGBDImageFragmentShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\bin\RelWithDebInfo\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\RGBDImageFragmentShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\repo\Open3D\cpp\open3d\visualization\shader\glsl\Simple2DFragmentShader.glsl">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Encoded Shader object Simple2DFragmentShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\..\bin\Debug\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/Simple2DFragmentShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/Simple2DFragmentShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\bin\Debug\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\Simple2DFragmentShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Encoded Shader object Simple2DFragmentShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\..\bin\Release\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/Simple2DFragmentShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/Simple2DFragmentShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\bin\Release\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\Simple2DFragmentShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Encoded Shader object Simple2DFragmentShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\..\..\bin\MinSizeRel\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/Simple2DFragmentShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/Simple2DFragmentShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\bin\MinSizeRel\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\Simple2DFragmentShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Encoded Shader object Simple2DFragmentShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\..\..\bin\RelWithDebInfo\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/Simple2DFragmentShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/Simple2DFragmentShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\bin\RelWithDebInfo\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\Simple2DFragmentShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\repo\Open3D\cpp\open3d\visualization\shader\glsl\Simple2DVertexShader.glsl">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Encoded Shader object Simple2DVertexShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\..\bin\Debug\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/Simple2DVertexShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/Simple2DVertexShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\bin\Debug\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\Simple2DVertexShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Encoded Shader object Simple2DVertexShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\..\bin\Release\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/Simple2DVertexShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/Simple2DVertexShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\bin\Release\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\Simple2DVertexShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Encoded Shader object Simple2DVertexShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\..\..\bin\MinSizeRel\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/Simple2DVertexShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/Simple2DVertexShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\bin\MinSizeRel\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\Simple2DVertexShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Encoded Shader object Simple2DVertexShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\..\..\bin\RelWithDebInfo\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/Simple2DVertexShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/Simple2DVertexShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\bin\RelWithDebInfo\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\Simple2DVertexShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\repo\Open3D\cpp\open3d\visualization\shader\glsl\SimpleBlackFragmentShader.glsl">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Encoded Shader object SimpleBlackFragmentShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\..\bin\Debug\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/SimpleBlackFragmentShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/SimpleBlackFragmentShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\bin\Debug\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\SimpleBlackFragmentShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Encoded Shader object SimpleBlackFragmentShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\..\bin\Release\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/SimpleBlackFragmentShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/SimpleBlackFragmentShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\bin\Release\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\SimpleBlackFragmentShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Encoded Shader object SimpleBlackFragmentShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\..\..\bin\MinSizeRel\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/SimpleBlackFragmentShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/SimpleBlackFragmentShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\bin\MinSizeRel\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\SimpleBlackFragmentShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Encoded Shader object SimpleBlackFragmentShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\..\..\bin\RelWithDebInfo\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/SimpleBlackFragmentShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/SimpleBlackFragmentShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\bin\RelWithDebInfo\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\SimpleBlackFragmentShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\repo\Open3D\cpp\open3d\visualization\shader\glsl\SimpleBlackVertexShader.glsl">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Encoded Shader object SimpleBlackVertexShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\..\bin\Debug\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/SimpleBlackVertexShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/SimpleBlackVertexShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\bin\Debug\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\SimpleBlackVertexShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Encoded Shader object SimpleBlackVertexShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\..\bin\Release\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/SimpleBlackVertexShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/SimpleBlackVertexShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\bin\Release\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\SimpleBlackVertexShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Encoded Shader object SimpleBlackVertexShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\..\..\bin\MinSizeRel\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/SimpleBlackVertexShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/SimpleBlackVertexShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\bin\MinSizeRel\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\SimpleBlackVertexShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Encoded Shader object SimpleBlackVertexShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\..\..\bin\RelWithDebInfo\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/SimpleBlackVertexShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/SimpleBlackVertexShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\bin\RelWithDebInfo\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\SimpleBlackVertexShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\repo\Open3D\cpp\open3d\visualization\shader\glsl\SimpleFragmentShader.glsl">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Encoded Shader object SimpleFragmentShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\..\bin\Debug\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/SimpleFragmentShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/SimpleFragmentShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\bin\Debug\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\SimpleFragmentShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Encoded Shader object SimpleFragmentShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\..\bin\Release\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/SimpleFragmentShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/SimpleFragmentShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\bin\Release\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\SimpleFragmentShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Encoded Shader object SimpleFragmentShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\..\..\bin\MinSizeRel\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/SimpleFragmentShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/SimpleFragmentShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\bin\MinSizeRel\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\SimpleFragmentShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Encoded Shader object SimpleFragmentShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\..\..\bin\RelWithDebInfo\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/SimpleFragmentShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/SimpleFragmentShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\bin\RelWithDebInfo\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\SimpleFragmentShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\repo\Open3D\cpp\open3d\visualization\shader\glsl\SimpleVertexShader.glsl">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Encoded Shader object SimpleVertexShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\..\bin\Debug\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/SimpleVertexShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/SimpleVertexShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\bin\Debug\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\SimpleVertexShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Encoded Shader object SimpleVertexShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\..\bin\Release\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/SimpleVertexShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/SimpleVertexShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\bin\Release\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\SimpleVertexShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Encoded Shader object SimpleVertexShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\..\..\bin\MinSizeRel\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/SimpleVertexShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/SimpleVertexShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\bin\MinSizeRel\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\SimpleVertexShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Encoded Shader object SimpleVertexShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\..\..\bin\RelWithDebInfo\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/SimpleVertexShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/SimpleVertexShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\bin\RelWithDebInfo\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\SimpleVertexShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\repo\Open3D\cpp\open3d\visualization\shader\glsl\TexturePhongFragmentShader.glsl">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Encoded Shader object TexturePhongFragmentShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\..\bin\Debug\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/TexturePhongFragmentShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/TexturePhongFragmentShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\bin\Debug\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\TexturePhongFragmentShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Encoded Shader object TexturePhongFragmentShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\..\bin\Release\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/TexturePhongFragmentShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/TexturePhongFragmentShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\bin\Release\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\TexturePhongFragmentShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Encoded Shader object TexturePhongFragmentShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\..\..\bin\MinSizeRel\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/TexturePhongFragmentShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/TexturePhongFragmentShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\bin\MinSizeRel\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\TexturePhongFragmentShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Encoded Shader object TexturePhongFragmentShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\..\..\bin\RelWithDebInfo\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/TexturePhongFragmentShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/TexturePhongFragmentShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\bin\RelWithDebInfo\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\TexturePhongFragmentShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\repo\Open3D\cpp\open3d\visualization\shader\glsl\TexturePhongVertexShader.glsl">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Encoded Shader object TexturePhongVertexShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\..\bin\Debug\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/TexturePhongVertexShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/TexturePhongVertexShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\bin\Debug\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\TexturePhongVertexShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Encoded Shader object TexturePhongVertexShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\..\bin\Release\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/TexturePhongVertexShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/TexturePhongVertexShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\bin\Release\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\TexturePhongVertexShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Encoded Shader object TexturePhongVertexShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\..\..\bin\MinSizeRel\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/TexturePhongVertexShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/TexturePhongVertexShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\bin\MinSizeRel\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\TexturePhongVertexShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Encoded Shader object TexturePhongVertexShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\..\..\bin\RelWithDebInfo\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/TexturePhongVertexShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/TexturePhongVertexShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\bin\RelWithDebInfo\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\TexturePhongVertexShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\repo\Open3D\cpp\open3d\visualization\shader\glsl\TextureSimpleFragmentShader.glsl">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Encoded Shader object TextureSimpleFragmentShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\..\bin\Debug\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/TextureSimpleFragmentShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/TextureSimpleFragmentShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\bin\Debug\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\TextureSimpleFragmentShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Encoded Shader object TextureSimpleFragmentShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\..\bin\Release\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/TextureSimpleFragmentShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/TextureSimpleFragmentShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\bin\Release\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\TextureSimpleFragmentShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Encoded Shader object TextureSimpleFragmentShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\..\..\bin\MinSizeRel\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/TextureSimpleFragmentShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/TextureSimpleFragmentShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\bin\MinSizeRel\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\TextureSimpleFragmentShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Encoded Shader object TextureSimpleFragmentShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\..\..\bin\RelWithDebInfo\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/TextureSimpleFragmentShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/TextureSimpleFragmentShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\bin\RelWithDebInfo\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\TextureSimpleFragmentShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\repo\Open3D\cpp\open3d\visualization\shader\glsl\TextureSimpleVertexShader.glsl">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Encoded Shader object TextureSimpleVertexShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\..\bin\Debug\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/TextureSimpleVertexShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/TextureSimpleVertexShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\bin\Debug\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\TextureSimpleVertexShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Encoded Shader object TextureSimpleVertexShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\..\bin\Release\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/TextureSimpleVertexShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/TextureSimpleVertexShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\bin\Release\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\TextureSimpleVertexShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Encoded Shader object TextureSimpleVertexShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\..\..\bin\MinSizeRel\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/TextureSimpleVertexShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/TextureSimpleVertexShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\bin\MinSizeRel\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\TextureSimpleVertexShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Encoded Shader object TextureSimpleVertexShader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\..\..\bin\RelWithDebInfo\ShaderEncoder.exe C:/repo/Open3D/build/cpp/open3d/visualization/TextureSimpleVertexShader.h C:/repo/Open3D/cpp/open3d/visualization/shader/glsl/TextureSimpleVertexShader.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\bin\RelWithDebInfo\ShaderEncoder.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\TextureSimpleVertexShader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\6e788466a3df9538f6e931ab0954fd30\Shader.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Linking Encoded Shader header ../../../../cpp/open3d/visualization/shader/Shader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\..\bin\Debug\ShaderLinker.exe C:/repo/Open3D/cpp/open3d/visualization/shader/Shader.h C:/repo/Open3D/build/cpp/open3d/visualization/ImageFragmentShader.h C:/repo/Open3D/build/cpp/open3d/visualization/ImageMaskFragmentShader.h C:/repo/Open3D/build/cpp/open3d/visualization/ImageMaskVertexShader.h C:/repo/Open3D/build/cpp/open3d/visualization/ImageVertexShader.h C:/repo/Open3D/build/cpp/open3d/visualization/NormalFragmentShader.h C:/repo/Open3D/build/cpp/open3d/visualization/NormalVertexShader.h C:/repo/Open3D/build/cpp/open3d/visualization/PhongFragmentShader.h C:/repo/Open3D/build/cpp/open3d/visualization/PhongVertexShader.h C:/repo/Open3D/build/cpp/open3d/visualization/PickingFragmentShader.h C:/repo/Open3D/build/cpp/open3d/visualization/PickingVertexShader.h C:/repo/Open3D/build/cpp/open3d/visualization/RGBDImageFragmentShader.h C:/repo/Open3D/build/cpp/open3d/visualization/Simple2DFragmentShader.h C:/repo/Open3D/build/cpp/open3d/visualization/Simple2DVertexShader.h C:/repo/Open3D/build/cpp/open3d/visualization/SimpleBlackFragmentShader.h C:/repo/Open3D/build/cpp/open3d/visualization/SimpleBlackVertexShader.h C:/repo/Open3D/build/cpp/open3d/visualization/SimpleFragmentShader.h C:/repo/Open3D/build/cpp/open3d/visualization/SimpleVertexShader.h C:/repo/Open3D/build/cpp/open3d/visualization/TexturePhongFragmentShader.h C:/repo/Open3D/build/cpp/open3d/visualization/TexturePhongVertexShader.h C:/repo/Open3D/build/cpp/open3d/visualization/TextureSimpleFragmentShader.h C:/repo/Open3D/build/cpp/open3d/visualization/TextureSimpleVertexShader.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\ImageFragmentShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\ImageMaskFragmentShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\ImageMaskVertexShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\ImageVertexShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\NormalFragmentShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\NormalVertexShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\PhongFragmentShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\PhongVertexShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\PickingFragmentShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\PickingVertexShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\RGBDImageFragmentShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\Simple2DFragmentShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\Simple2DVertexShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\SimpleBlackFragmentShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\SimpleBlackVertexShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\SimpleFragmentShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\SimpleVertexShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\TexturePhongFragmentShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\TexturePhongVertexShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\TextureSimpleFragmentShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\TextureSimpleVertexShader.h;C:\repo\Open3D\build\bin\Debug\ShaderLinker.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\cpp\open3d\visualization\shader\Shader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Linking Encoded Shader header ../../../../cpp/open3d/visualization/shader/Shader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\..\bin\Release\ShaderLinker.exe C:/repo/Open3D/cpp/open3d/visualization/shader/Shader.h C:/repo/Open3D/build/cpp/open3d/visualization/ImageFragmentShader.h C:/repo/Open3D/build/cpp/open3d/visualization/ImageMaskFragmentShader.h C:/repo/Open3D/build/cpp/open3d/visualization/ImageMaskVertexShader.h C:/repo/Open3D/build/cpp/open3d/visualization/ImageVertexShader.h C:/repo/Open3D/build/cpp/open3d/visualization/NormalFragmentShader.h C:/repo/Open3D/build/cpp/open3d/visualization/NormalVertexShader.h C:/repo/Open3D/build/cpp/open3d/visualization/PhongFragmentShader.h C:/repo/Open3D/build/cpp/open3d/visualization/PhongVertexShader.h C:/repo/Open3D/build/cpp/open3d/visualization/PickingFragmentShader.h C:/repo/Open3D/build/cpp/open3d/visualization/PickingVertexShader.h C:/repo/Open3D/build/cpp/open3d/visualization/RGBDImageFragmentShader.h C:/repo/Open3D/build/cpp/open3d/visualization/Simple2DFragmentShader.h C:/repo/Open3D/build/cpp/open3d/visualization/Simple2DVertexShader.h C:/repo/Open3D/build/cpp/open3d/visualization/SimpleBlackFragmentShader.h C:/repo/Open3D/build/cpp/open3d/visualization/SimpleBlackVertexShader.h C:/repo/Open3D/build/cpp/open3d/visualization/SimpleFragmentShader.h C:/repo/Open3D/build/cpp/open3d/visualization/SimpleVertexShader.h C:/repo/Open3D/build/cpp/open3d/visualization/TexturePhongFragmentShader.h C:/repo/Open3D/build/cpp/open3d/visualization/TexturePhongVertexShader.h C:/repo/Open3D/build/cpp/open3d/visualization/TextureSimpleFragmentShader.h C:/repo/Open3D/build/cpp/open3d/visualization/TextureSimpleVertexShader.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\ImageFragmentShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\ImageMaskFragmentShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\ImageMaskVertexShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\ImageVertexShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\NormalFragmentShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\NormalVertexShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\PhongFragmentShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\PhongVertexShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\PickingFragmentShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\PickingVertexShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\RGBDImageFragmentShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\Simple2DFragmentShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\Simple2DVertexShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\SimpleBlackFragmentShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\SimpleBlackVertexShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\SimpleFragmentShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\SimpleVertexShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\TexturePhongFragmentShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\TexturePhongVertexShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\TextureSimpleFragmentShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\TextureSimpleVertexShader.h;C:\repo\Open3D\build\bin\Release\ShaderLinker.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\cpp\open3d\visualization\shader\Shader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Linking Encoded Shader header ../../../../cpp/open3d/visualization/shader/Shader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\..\..\bin\MinSizeRel\ShaderLinker.exe C:/repo/Open3D/cpp/open3d/visualization/shader/Shader.h C:/repo/Open3D/build/cpp/open3d/visualization/ImageFragmentShader.h C:/repo/Open3D/build/cpp/open3d/visualization/ImageMaskFragmentShader.h C:/repo/Open3D/build/cpp/open3d/visualization/ImageMaskVertexShader.h C:/repo/Open3D/build/cpp/open3d/visualization/ImageVertexShader.h C:/repo/Open3D/build/cpp/open3d/visualization/NormalFragmentShader.h C:/repo/Open3D/build/cpp/open3d/visualization/NormalVertexShader.h C:/repo/Open3D/build/cpp/open3d/visualization/PhongFragmentShader.h C:/repo/Open3D/build/cpp/open3d/visualization/PhongVertexShader.h C:/repo/Open3D/build/cpp/open3d/visualization/PickingFragmentShader.h C:/repo/Open3D/build/cpp/open3d/visualization/PickingVertexShader.h C:/repo/Open3D/build/cpp/open3d/visualization/RGBDImageFragmentShader.h C:/repo/Open3D/build/cpp/open3d/visualization/Simple2DFragmentShader.h C:/repo/Open3D/build/cpp/open3d/visualization/Simple2DVertexShader.h C:/repo/Open3D/build/cpp/open3d/visualization/SimpleBlackFragmentShader.h C:/repo/Open3D/build/cpp/open3d/visualization/SimpleBlackVertexShader.h C:/repo/Open3D/build/cpp/open3d/visualization/SimpleFragmentShader.h C:/repo/Open3D/build/cpp/open3d/visualization/SimpleVertexShader.h C:/repo/Open3D/build/cpp/open3d/visualization/TexturePhongFragmentShader.h C:/repo/Open3D/build/cpp/open3d/visualization/TexturePhongVertexShader.h C:/repo/Open3D/build/cpp/open3d/visualization/TextureSimpleFragmentShader.h C:/repo/Open3D/build/cpp/open3d/visualization/TextureSimpleVertexShader.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\ImageFragmentShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\ImageMaskFragmentShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\ImageMaskVertexShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\ImageVertexShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\NormalFragmentShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\NormalVertexShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\PhongFragmentShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\PhongVertexShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\PickingFragmentShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\PickingVertexShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\RGBDImageFragmentShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\Simple2DFragmentShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\Simple2DVertexShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\SimpleBlackFragmentShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\SimpleBlackVertexShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\SimpleFragmentShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\SimpleVertexShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\TexturePhongFragmentShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\TexturePhongVertexShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\TextureSimpleFragmentShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\TextureSimpleVertexShader.h;C:\repo\Open3D\build\bin\MinSizeRel\ShaderLinker.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\cpp\open3d\visualization\shader\Shader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Linking Encoded Shader header ../../../../cpp/open3d/visualization/shader/Shader.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\..\..\bin\RelWithDebInfo\ShaderLinker.exe C:/repo/Open3D/cpp/open3d/visualization/shader/Shader.h C:/repo/Open3D/build/cpp/open3d/visualization/ImageFragmentShader.h C:/repo/Open3D/build/cpp/open3d/visualization/ImageMaskFragmentShader.h C:/repo/Open3D/build/cpp/open3d/visualization/ImageMaskVertexShader.h C:/repo/Open3D/build/cpp/open3d/visualization/ImageVertexShader.h C:/repo/Open3D/build/cpp/open3d/visualization/NormalFragmentShader.h C:/repo/Open3D/build/cpp/open3d/visualization/NormalVertexShader.h C:/repo/Open3D/build/cpp/open3d/visualization/PhongFragmentShader.h C:/repo/Open3D/build/cpp/open3d/visualization/PhongVertexShader.h C:/repo/Open3D/build/cpp/open3d/visualization/PickingFragmentShader.h C:/repo/Open3D/build/cpp/open3d/visualization/PickingVertexShader.h C:/repo/Open3D/build/cpp/open3d/visualization/RGBDImageFragmentShader.h C:/repo/Open3D/build/cpp/open3d/visualization/Simple2DFragmentShader.h C:/repo/Open3D/build/cpp/open3d/visualization/Simple2DVertexShader.h C:/repo/Open3D/build/cpp/open3d/visualization/SimpleBlackFragmentShader.h C:/repo/Open3D/build/cpp/open3d/visualization/SimpleBlackVertexShader.h C:/repo/Open3D/build/cpp/open3d/visualization/SimpleFragmentShader.h C:/repo/Open3D/build/cpp/open3d/visualization/SimpleVertexShader.h C:/repo/Open3D/build/cpp/open3d/visualization/TexturePhongFragmentShader.h C:/repo/Open3D/build/cpp/open3d/visualization/TexturePhongVertexShader.h C:/repo/Open3D/build/cpp/open3d/visualization/TextureSimpleFragmentShader.h C:/repo/Open3D/build/cpp/open3d/visualization/TextureSimpleVertexShader.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\ImageFragmentShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\ImageMaskFragmentShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\ImageMaskVertexShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\ImageVertexShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\NormalFragmentShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\NormalVertexShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\PhongFragmentShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\PhongVertexShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\PickingFragmentShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\PickingVertexShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\RGBDImageFragmentShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\Simple2DFragmentShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\Simple2DVertexShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\SimpleBlackFragmentShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\SimpleBlackVertexShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\SimpleFragmentShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\SimpleVertexShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\TexturePhongFragmentShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\TexturePhongVertexShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\TextureSimpleFragmentShader.h;C:\repo\Open3D\build\cpp\open3d\visualization\TextureSimpleVertexShader.h;C:\repo\Open3D\build\bin\RelWithDebInfo\ShaderLinker.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\cpp\open3d\visualization\shader\Shader.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\a5bf254e99e8d1a51231b36b7588ec27\shader.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\cpp\open3d\visualization\shader\Shader.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\CMakeFiles\shader</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\cpp\open3d\visualization\shader\Shader.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\CMakeFiles\shader</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\cpp\open3d\visualization\shader\Shader.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\CMakeFiles\shader</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\cpp\open3d\visualization\shader\Shader.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\CMakeFiles\shader</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\repo\Open3D\cpp\open3d\visualization\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/repo/Open3D/cpp/open3d/visualization/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\CMake\bin\cmake.exe -SC:/repo/Open3D -BC:/repo/Open3D/build --check-stamp-file C:/repo/Open3D/build/cpp/open3d/visualization/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\cmake\Open3DAddEncodedShader.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/repo/Open3D/cpp/open3d/visualization/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\CMake\bin\cmake.exe -SC:/repo/Open3D -BC:/repo/Open3D/build --check-stamp-file C:/repo/Open3D/build/cpp/open3d/visualization/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\cmake\Open3DAddEncodedShader.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/repo/Open3D/cpp/open3d/visualization/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\CMake\bin\cmake.exe -SC:/repo/Open3D -BC:/repo/Open3D/build --check-stamp-file C:/repo/Open3D/build/cpp/open3d/visualization/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\cmake\Open3DAddEncodedShader.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/repo/Open3D/cpp/open3d/visualization/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\CMake\bin\cmake.exe -SC:/repo/Open3D -BC:/repo/Open3D/build --check-stamp-file C:/repo/Open3D/build/cpp/open3d/visualization/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\cmake\Open3DAddEncodedShader.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\cpp\open3d\visualization\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\repo\Open3D\build\cpp\open3d\visualization\CMakeFiles\shader">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\repo\Open3D\build\ZERO_CHECK.vcxproj">
+      <Project>{CFD9CD55-F5BE-3C9B-95DA-872EE2A8BFC5}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\repo\Open3D\build\cpp\open3d\visualization\ShaderEncoder.vcxproj">
+      <Project>{526DB5B2-A1F4-3672-8AC0-68C4E17E51D5}</Project>
+      <Name>ShaderEncoder</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\repo\Open3D\build\cpp\open3d\visualization\ShaderLinker.vcxproj">
+      <Project>{731718D3-44B9-341D-95E2-AD957A3240B1}</Project>
+      <Name>ShaderLinker</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
