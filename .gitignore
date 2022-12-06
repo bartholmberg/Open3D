@@ -9,7 +9,9 @@
 *.tlog
 *.log
 *.pdb
+*.txt
 *.recipe
+#*.lib
 # Docker build artifacts (wheel, dev package, ccache)
 docker/*.tar.gz
 docker/*.tar.xz
@@ -55,7 +57,7 @@ lib*/
 mkl*/
 msg*/
 nano*/
-#Open3D*/
+Open3D*/
 parallelstl*/
 poisson*/
 qhull*/
@@ -144,3 +146,6 @@ build/cpp/pybind/pybind.dir/RelWithDebInfo/pybind.vcxproj.FileListAbsolute.txt
 build/cpp/tools/GLInfo.dir/RelWithDebInfo/GLInfo.vcxproj.FileListAbsolute.txt
 build/cpp/tools/ManuallyCropGeometry.dir/RelWithDebInfo/ManuallyCropGeometry.vcxproj.FileListAbsolute.txt
 build/cpp/pybind/pyd.md
+build/cpp/open3d/t/io/tio.dir/RelWithDebInfo/tio.vcxproj.FileListAbsolute.txt
+build/cpp/open3d/t/io/tio.dir/RelWithDebInfo/tio.vcxproj.FileListAbsolute.txt
+build/cpp/open3d/data/data.dir/RelWithDebInfo/data.lib
