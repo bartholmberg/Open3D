@@ -648,8 +648,7 @@ void pybind_registration_methods(py::module &m) {
           "Function for Phaser registration", "source"_a, "target"_a,
           "max_correspondence_distance"_a,
           "init"_a = Eigen::Matrix4d::Identity(),
-          "estimation_method"_a = TransformationEstimationPhaser(false),
-          "criteria"_a = ICPConvergenceCriteria());
+          "estimation_method"_a = TransformationEstimationPhaser(false) );
     docstring::FunctionDocInject(m, "registration_phaser",
                                  map_shared_argument_docstrings);
 

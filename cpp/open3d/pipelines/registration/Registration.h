@@ -165,8 +165,8 @@ RegistrationResult RegistrationGlobal(
         double max_correspondence_distance,
         const Eigen::Matrix4d &init = Eigen::Matrix4d::Identity(),
         const TransformationEstimation &estimation =
-                TransformationEstimationPointToPoint(false),
-        const ICPConvergenceCriteria &criteria = ICPConvergenceCriteria());
+                TransformationEstimationPointToPoint(false)); 
+//        const ICPConvergenceCriteria &criteria = ICPConvergenceCriteria());
 /// \brief Functions for ICP registration.
 ///
 /// \param source The source point cloud.

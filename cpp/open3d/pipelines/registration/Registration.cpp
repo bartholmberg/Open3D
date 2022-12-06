@@ -131,8 +131,8 @@ RegistrationResult RegistrationGlobal(
         const geometry::PointCloud &target,
         double max_correspondence_distance,
         const Eigen::Matrix4d &init /* = Eigen::Matrix4d::Identity()*/,
-        const TransformationEstimation &estimation,
-        const ICPConvergenceCriteria &criteria){
+        const TransformationEstimation &estimation){
+  //      const ICPConvergenceCriteria &criteria){
     /*
     auto ctrl = std::make_unique<phaser_core::CloudController>("sph-opt");
     model::PointCloudPtr s0 = MakeModelCloud(pcd);
