@@ -1,28 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\cf4dd8e548900a7f484b1db086014e91\ext_tinyobjloader-mkdir.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\06f649807df14516a6a37215f84d6558\ext_tinyobjloader-mkdir.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\cf4dd8e548900a7f484b1db086014e91\ext_tinyobjloader-download.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\06f649807df14516a6a37215f84d6558\ext_tinyobjloader-download.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\cf4dd8e548900a7f484b1db086014e91\ext_tinyobjloader-update.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\06f649807df14516a6a37215f84d6558\ext_tinyobjloader-update.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\cf4dd8e548900a7f484b1db086014e91\ext_tinyobjloader-patch.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\06f649807df14516a6a37215f84d6558\ext_tinyobjloader-patch.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\cf4dd8e548900a7f484b1db086014e91\ext_tinyobjloader-configure.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\06f649807df14516a6a37215f84d6558\ext_tinyobjloader-configure.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\cf4dd8e548900a7f484b1db086014e91\ext_tinyobjloader-build.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\06f649807df14516a6a37215f84d6558\ext_tinyobjloader-build.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\cf4dd8e548900a7f484b1db086014e91\ext_tinyobjloader-install.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\06f649807df14516a6a37215f84d6558\ext_tinyobjloader-install.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\4840a6b4ae87246733559dce5e59ce0e\ext_tinyobjloader-complete.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\24c3742c5b1a8c0221d6860a689c241d\ext_tinyobjloader-complete.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
     <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\e01d9e02bbdcb0329c917774f30b697f\ext_tinyobjloader.rule">

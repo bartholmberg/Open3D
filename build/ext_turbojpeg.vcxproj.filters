@@ -1,37 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\3de029448279aec52278ee5317801b4b\ext_turbojpeg-mkdir.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\1c31374c2d3ce376f39d955546134b74\ext_turbojpeg-mkdir.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\3de029448279aec52278ee5317801b4b\ext_turbojpeg-download.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\1c31374c2d3ce376f39d955546134b74\ext_turbojpeg-download.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\3de029448279aec52278ee5317801b4b\ext_turbojpeg-update.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\1c31374c2d3ce376f39d955546134b74\ext_turbojpeg-update.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\3de029448279aec52278ee5317801b4b\ext_turbojpeg-patch.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\1c31374c2d3ce376f39d955546134b74\ext_turbojpeg-patch.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\3de029448279aec52278ee5317801b4b\ext_turbojpeg-configure.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\1c31374c2d3ce376f39d955546134b74\ext_turbojpeg-configure.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\3de029448279aec52278ee5317801b4b\ext_turbojpeg-build.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\1c31374c2d3ce376f39d955546134b74\ext_turbojpeg-build.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\3de029448279aec52278ee5317801b4b\ext_turbojpeg-install.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\1c31374c2d3ce376f39d955546134b74\ext_turbojpeg-install.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\4840a6b4ae87246733559dce5e59ce0e\ext_turbojpeg-complete.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\24c3742c5b1a8c0221d6860a689c241d\ext_turbojpeg-complete.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
     <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\e01d9e02bbdcb0329c917774f30b697f\ext_turbojpeg.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
     <CustomBuild Include="C:\repo\Open3D\CMakeLists.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="C:\repo\Open3D\build\CMakeFiles\ext_turbojpeg" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">

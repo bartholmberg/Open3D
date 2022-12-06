@@ -1,28 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\1491464d17b334bc276f90db956f3a60\ext_curl-mkdir.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\83e75e6c9f352916b17d53e836b7db60\ext_curl-mkdir.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\1491464d17b334bc276f90db956f3a60\ext_curl-download.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\83e75e6c9f352916b17d53e836b7db60\ext_curl-download.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\1491464d17b334bc276f90db956f3a60\ext_curl-update.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\83e75e6c9f352916b17d53e836b7db60\ext_curl-update.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\1491464d17b334bc276f90db956f3a60\ext_curl-patch.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\83e75e6c9f352916b17d53e836b7db60\ext_curl-patch.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\1491464d17b334bc276f90db956f3a60\ext_curl-configure.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\83e75e6c9f352916b17d53e836b7db60\ext_curl-configure.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\1491464d17b334bc276f90db956f3a60\ext_curl-build.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\83e75e6c9f352916b17d53e836b7db60\ext_curl-build.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\1491464d17b334bc276f90db956f3a60\ext_curl-install.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\83e75e6c9f352916b17d53e836b7db60\ext_curl-install.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\4840a6b4ae87246733559dce5e59ce0e\ext_curl-complete.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\24c3742c5b1a8c0221d6860a689c241d\ext_curl-complete.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
     <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\e01d9e02bbdcb0329c917774f30b697f\ext_curl.rule">

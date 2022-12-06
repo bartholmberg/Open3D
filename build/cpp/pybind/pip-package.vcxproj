@@ -23,8 +23,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{7CF760D8-5FA1-3E1E-921E-588BDC96C265}</ProjectGuid>
-    <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
     <ProjectName>pip-package</ProjectName>
     <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
@@ -52,6 +52,7 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
+    <Import Project="C:\repo\Open3D\build\cpp\pybind\pip-package.dir\nasm.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
@@ -201,7 +202,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\lib\_build_config.py.in;C:\repo\Open3D\cpp\pybind\_build_config.py.in;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\lib\_build_config.py.in;C:\repo\Open3D\cpp\pybind\_build_config.py.in;C:\CMake\share\cmake-3.22\Templates\MSBuild\nasm.props.in;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\cpp\pybind\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/repo/Open3D/cpp/pybind/CMakeLists.txt</Message>
@@ -214,7 +215,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\lib\_build_config.py.in;C:\repo\Open3D\cpp\pybind\_build_config.py.in;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\lib\_build_config.py.in;C:\repo\Open3D\cpp\pybind\_build_config.py.in;C:\CMake\share\cmake-3.22\Templates\MSBuild\nasm.props.in;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\cpp\pybind\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/repo/Open3D/cpp/pybind/CMakeLists.txt</Message>
@@ -227,7 +228,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\lib\_build_config.py.in;C:\repo\Open3D\cpp\pybind\_build_config.py.in;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\lib\_build_config.py.in;C:\repo\Open3D\cpp\pybind\_build_config.py.in;C:\CMake\share\cmake-3.22\Templates\MSBuild\nasm.props.in;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\cpp\pybind\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/repo/Open3D/cpp/pybind/CMakeLists.txt</Message>
@@ -240,7 +241,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\lib\_build_config.py.in;C:\repo\Open3D\cpp\pybind\_build_config.py.in;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\lib\_build_config.py.in;C:\repo\Open3D\cpp\pybind\_build_config.py.in;C:\CMake\share\cmake-3.22\Templates\MSBuild\nasm.props.in;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\cpp\pybind\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
@@ -265,5 +266,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
+    <Import Project="C:\CMake\share\cmake-3.22\Templates\MSBuild\nasm.targets" />
   </ImportGroup>
 </Project>

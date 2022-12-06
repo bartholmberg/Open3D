@@ -1,28 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\6f73d77a2d4c6a10c3cbe4eec6ff9a23\ext_tinygltf-mkdir.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\08a4ca52ae977ac044af479e6a74be15\ext_tinygltf-mkdir.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\6f73d77a2d4c6a10c3cbe4eec6ff9a23\ext_tinygltf-download.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\08a4ca52ae977ac044af479e6a74be15\ext_tinygltf-download.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\6f73d77a2d4c6a10c3cbe4eec6ff9a23\ext_tinygltf-update.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\08a4ca52ae977ac044af479e6a74be15\ext_tinygltf-update.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\6f73d77a2d4c6a10c3cbe4eec6ff9a23\ext_tinygltf-patch.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\08a4ca52ae977ac044af479e6a74be15\ext_tinygltf-patch.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\6f73d77a2d4c6a10c3cbe4eec6ff9a23\ext_tinygltf-configure.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\08a4ca52ae977ac044af479e6a74be15\ext_tinygltf-configure.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\6f73d77a2d4c6a10c3cbe4eec6ff9a23\ext_tinygltf-build.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\08a4ca52ae977ac044af479e6a74be15\ext_tinygltf-build.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\6f73d77a2d4c6a10c3cbe4eec6ff9a23\ext_tinygltf-install.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\08a4ca52ae977ac044af479e6a74be15\ext_tinygltf-install.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\4840a6b4ae87246733559dce5e59ce0e\ext_tinygltf-complete.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\24c3742c5b1a8c0221d6860a689c241d\ext_tinygltf-complete.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
     <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\e01d9e02bbdcb0329c917774f30b697f\ext_tinygltf.rule">

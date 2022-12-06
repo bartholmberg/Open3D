@@ -23,8 +23,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{CA58D25E-9E57-31AA-A806-8E6FF413FC66}</ProjectGuid>
-    <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
     <ProjectName>pybind</ProjectName>
     <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
@@ -52,6 +52,7 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
+    <Import Project="C:\repo\Open3D\build\cpp\pybind\pybind.dir\nasm.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
@@ -86,8 +87,8 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\repo\Open3D\cpp\pybind\..;C:\repo\Open3D\cpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/repo/Open3D/build/_deps/ext_pybind11-src/include" /external:I "C:/Python310/include" /external:I "C:/repo/Open3D/3rdparty/glew/include" /external:I "C:/repo/Open3D/3rdparty/glfw/include" /external:I "C:/repo/Open3D/build/fmt/include" /external:I "C:/repo/Open3D/build/filament/src/ext_filament/include" /external:I "C:/repo/Open3D/build/eigen/src/ext_eigen" /external:I "C:/repo/Open3D/build/parallelstl/src/ext_parallelstl/include" /bigobj</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\repo\Open3D\cpp\pybind\..;C:\repo\Open3D\cpp;C:\repo\Open3D\build\_deps\ext_pybind11-src\include;C:\Python310\include;C:\repo\Open3D\3rdparty\glew\include;C:\repo\Open3D\3rdparty\glfw\include;C:\repo\Open3D\build\fmt\include;C:\repo\Open3D\build\filament\src\ext_filament\include;C:\repo\Open3D\build\eigen\src\ext_eigen;C:\repo\Open3D\build\parallelstl\src\ext_parallelstl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <BufferSecurityCheck>true</BufferSecurityCheck>
@@ -95,9 +96,7 @@
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <DisableSpecificWarnings>4201;4310;4505;4127;4146;4189;4324;4706;4100;4702;4244;4245;4267;4305;4819</DisableSpecificWarnings>
       <ExceptionHandling>Sync</ExceptionHandling>
-      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
-      <LanguageStandard>stdcpp14</LanguageStandard>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <Optimization>Disabled</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
@@ -114,6 +113,11 @@
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;OPEN3D_CXX_STANDARD=\"14\";OPEN3D_CXX_COMPILER_ID=\"MSVC\";OPEN3D_CXX_COMPILER_VERSION=\"19.34.31933.0\";OPEN3D_CUDA_COMPILER_ID=\"\";OPEN3D_CUDA_COMPILER_VERSION=\"\";ZMQ_STATIC;BUILD_ISPC_MODULE;BUILD_GUI;BUILD_WEBRTC;WITH_IPPICV;_GLIBCXX_USE_CXX11_ABI=0;WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NOMINMAX;_USE_MATH_DEFINES;_ENABLE_EXTENDED_ALIGNED_STORAGE;__TBB_LIB_NAME=tbb_static;OPEN3D_STATIC;GLEW_STATIC;FMT_HEADER_ONLY=0;FMT_USE_WINDOWS_H=0;FMT_STRING_ALIAS=1;CMAKE_INTDIR=\"Debug\";pybind_EXPORTS</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>C:\repo\Open3D\cpp\pybind\..;C:\repo\Open3D\cpp;C:\repo\Open3D\build\_deps\ext_pybind11-src\include;C:\Python310\include;C:\repo\Open3D\3rdparty\glew\include;C:\repo\Open3D\3rdparty\glfw\include;C:\repo\Open3D\build\fmt\include;C:\repo\Open3D\build\filament\src\ext_filament\include;C:\repo\Open3D\build\eigen\src\ext_eigen;C:\repo\Open3D\build\parallelstl\src\ext_parallelstl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
+    <NASM>
+      <IncludePaths>C:\repo\Open3D\cpp\pybind\..\;C:\repo\Open3D\cpp\;C:\repo\Open3D\build\_deps\ext_pybind11-src\include\;C:\Python310\include\;C:\repo\Open3D\3rdparty\glew\include\;C:\repo\Open3D\3rdparty\glfw\include\;C:\repo\Open3D\build\fmt\include\;C:\repo\Open3D\build\filament\src\ext_filament\include\;C:\repo\Open3D\build\eigen\src\ext_eigen\;C:\repo\Open3D\build\parallelstl\src\ext_parallelstl\include\;%(IncludePaths)</IncludePaths>
+      <Outputswitch>1</Outputswitch>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;OPEN3D_CXX_STANDARD="14";OPEN3D_CXX_COMPILER_ID="MSVC";OPEN3D_CXX_COMPILER_VERSION="19.34.31933.0";OPEN3D_CUDA_COMPILER_ID="";OPEN3D_CUDA_COMPILER_VERSION="";ZMQ_STATIC;BUILD_ISPC_MODULE;BUILD_GUI;BUILD_WEBRTC;WITH_IPPICV;_GLIBCXX_USE_CXX11_ABI=0;WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NOMINMAX;_USE_MATH_DEFINES;_ENABLE_EXTENDED_ALIGNED_STORAGE;__TBB_LIB_NAME=tbb_static;OPEN3D_STATIC;GLEW_STATIC;FMT_HEADER_ONLY=0;FMT_USE_WINDOWS_H=0;FMT_STRING_ALIAS=1;CMAKE_INTDIR="Debug";pybind_EXPORTS</PreprocessorDefinitions>
+    </NASM>
     <Midl>
       <AdditionalIncludeDirectories>C:\repo\Open3D\cpp\pybind\..;C:\repo\Open3D\cpp;C:\repo\Open3D\build\_deps\ext_pybind11-src\include;C:\Python310\include;C:\repo\Open3D\3rdparty\glew\include;C:\repo\Open3D\3rdparty\glfw\include;C:\repo\Open3D\build\fmt\include;C:\repo\Open3D\build\filament\src\ext_filament\include;C:\repo\Open3D\build\eigen\src\ext_eigen;C:\repo\Open3D\build\parallelstl\src\ext_parallelstl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
@@ -123,7 +127,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>..\..\lib\Debug\Open3D.lib;C:\Python310\libs\python310_d.lib;..\..\assimp\lib\assimp-vc143-mt.lib;..\..\turbojpeg\lib\turbojpeg-static.lib;..\..\jsoncpp\lib\jsoncpp.lib;..\..\lib\Debug\Open3D_3rdparty_liblzf.lib;..\..\curl\lib\libcurl-d.lib;..\..\libpng\lib\libpng16_staticd.lib;..\..\zlib\lib\zlibstaticd.lib;..\..\lib\Debug\Open3D_3rdparty_rply.lib;..\..\lib\Debug\Open3D_3rdparty_tinyfiledialogs.lib;..\..\lib\Debug\Open3D_3rdparty_qhullcpp.lib;..\..\lib\Debug\Open3D_3rdparty_qhull_r.lib;..\..\lib\Debug\Open3D_3rdparty_imgui.lib;..\..\zeromq\lib\libzmq-v143-mt-sgd-4_3_3.lib;ws2_32.lib;rpcrt4.lib;iphlpapi.lib;..\..\vtk\src\ext_vtk\lib\vtkFiltersGeneral-9.1d.lib;..\..\vtk\src\ext_vtk\lib\vtkFiltersSources-9.1d.lib;..\..\vtk\src\ext_vtk\lib\vtkFiltersModeling-9.1d.lib;..\..\vtk\src\ext_vtk\lib\vtkFiltersCore-9.1d.lib;..\..\vtk\src\ext_vtk\lib\vtkCommonExecutionModel-9.1d.lib;..\..\vtk\src\ext_vtk\lib\vtkCommonDataModel-9.1d.lib;..\..\vtk\src\ext_vtk\lib\vtkCommonTransforms-9.1d.lib;..\..\vtk\src\ext_vtk\lib\vtkCommonMath-9.1d.lib;..\..\vtk\src\ext_vtk\lib\vtkCommonMisc-9.1d.lib;..\..\vtk\src\ext_vtk\lib\vtkCommonSystem-9.1d.lib;..\..\vtk\src\ext_vtk\lib\vtkCommonCore-9.1d.lib;..\..\vtk\src\ext_vtk\lib\vtkkissfft-9.1d.lib;..\..\vtk\src\ext_vtk\lib\vtkpugixml-9.1d.lib;..\..\vtk\src\ext_vtk\lib\vtksys-9.1d.lib;..\..\uvatlas\lib\UVAtlas.lib;..\..\mkl_install\lib\tbbmalloc_static.lib;..\..\mkl_install\lib\mkl_intel_ilp64.lib;..\..\mkl_install\lib\mkl_core.lib;..\..\mkl_install\lib\mkl_sequential.lib;..\..\mkl_install\lib\mkl_tbb_thread.lib;..\..\mkl_install\lib\tbb_static.lib;..\..\embree\lib\embree3.lib;..\..\embree\lib\embree_avx.lib;..\..\embree\lib\embree_avx2.lib;..\..\embree\lib\simd.lib;..\..\embree\lib\lexers.lib;..\..\embree\lib\sys.lib;..\..\embree\lib\math.lib;..\..\embree\lib\tasking.lib;..\..\webrtc\src\ext_webrtc\Debug\lib\webrtc.lib;..\..\webrtc\src\ext_webrtc\Debug\lib\webrtc_extra.lib;secur32.lib;winmm.lib;dmoguids.lib;wmcodecdspuuid.lib;msdmo.lib;strmiids.lib;..\..\civetweb\lib\civetweb.lib;..\..\civetweb\lib\civetweb-cpp.lib;..\..\ippicv\lib\ippiw.lib;..\..\ippicv\lib\ippicvmt.lib;..\..\lib\Debug\Open3D_3rdparty_glew.lib;..\..\lib\Debug\glfw3.lib;gdi32.lib;..\..\fmt\lib\fmtd.lib;..\..\filament\src\ext_filament\lib\x86_64\mtd\filameshio.lib;..\..\filament\src\ext_filament\lib\x86_64\mtd\filament.lib;..\..\filament\src\ext_filament\lib\x86_64\mtd\filamat_lite.lib;..\..\filament\src\ext_filament\lib\x86_64\mtd\filaflat.lib;..\..\filament\src\ext_filament\lib\x86_64\mtd\filabridge.lib;..\..\filament\src\ext_filament\lib\x86_64\mtd\geometry.lib;..\..\filament\src\ext_filament\lib\x86_64\mtd\backend.lib;..\..\filament\src\ext_filament\lib\x86_64\mtd\bluegl.lib;..\..\filament\src\ext_filament\lib\x86_64\mtd\bluevk.lib;..\..\filament\src\ext_filament\lib\x86_64\mtd\ibl.lib;..\..\filament\src\ext_filament\lib\x86_64\mtd\image.lib;..\..\filament\src\ext_filament\lib\x86_64\mtd\meshoptimizer.lib;..\..\filament\src\ext_filament\lib\x86_64\mtd\smol-v.lib;..\..\filament\src\ext_filament\lib\x86_64\mtd\utils.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>..\..\lib\Debug\Open3D.lib;C:\Python310\libs\python310.lib;..\..\assimp\lib\assimp-vc143-mt.lib;..\..\turbojpeg\lib\turbojpeg-static.lib;..\..\jsoncpp\lib\jsoncpp.lib;..\..\lib\Debug\Open3D_3rdparty_liblzf.lib;..\..\curl\lib\libcurl-d.lib;..\..\libpng\lib\libpng16_staticd.lib;..\..\zlib\lib\zlibstaticd.lib;..\..\lib\Debug\Open3D_3rdparty_rply.lib;..\..\lib\Debug\Open3D_3rdparty_tinyfiledialogs.lib;..\..\lib\Debug\Open3D_3rdparty_qhullcpp.lib;..\..\lib\Debug\Open3D_3rdparty_qhull_r.lib;..\..\lib\Debug\Open3D_3rdparty_imgui.lib;..\..\zeromq\lib\libzmq-v143-mt-sgd-4_3_3.lib;ws2_32.lib;rpcrt4.lib;iphlpapi.lib;..\..\vtk\src\ext_vtk\lib\vtkFiltersGeneral-9.1d.lib;..\..\vtk\src\ext_vtk\lib\vtkFiltersSources-9.1d.lib;..\..\vtk\src\ext_vtk\lib\vtkFiltersModeling-9.1d.lib;..\..\vtk\src\ext_vtk\lib\vtkFiltersCore-9.1d.lib;..\..\vtk\src\ext_vtk\lib\vtkCommonExecutionModel-9.1d.lib;..\..\vtk\src\ext_vtk\lib\vtkCommonDataModel-9.1d.lib;..\..\vtk\src\ext_vtk\lib\vtkCommonTransforms-9.1d.lib;..\..\vtk\src\ext_vtk\lib\vtkCommonMath-9.1d.lib;..\..\vtk\src\ext_vtk\lib\vtkCommonMisc-9.1d.lib;..\..\vtk\src\ext_vtk\lib\vtkCommonSystem-9.1d.lib;..\..\vtk\src\ext_vtk\lib\vtkCommonCore-9.1d.lib;..\..\vtk\src\ext_vtk\lib\vtkkissfft-9.1d.lib;..\..\vtk\src\ext_vtk\lib\vtkpugixml-9.1d.lib;..\..\vtk\src\ext_vtk\lib\vtksys-9.1d.lib;..\..\uvatlas\lib\UVAtlas.lib;..\..\mkl_install\lib\tbbmalloc_static.lib;..\..\mkl_install\lib\mkl_intel_ilp64.lib;..\..\mkl_install\lib\mkl_core.lib;..\..\mkl_install\lib\mkl_sequential.lib;..\..\mkl_install\lib\mkl_tbb_thread.lib;..\..\mkl_install\lib\tbb_static.lib;..\..\embree\lib\embree3.lib;..\..\embree\lib\embree_avx.lib;..\..\embree\lib\embree_avx2.lib;..\..\embree\lib\simd.lib;..\..\embree\lib\lexers.lib;..\..\embree\lib\sys.lib;..\..\embree\lib\math.lib;..\..\embree\lib\tasking.lib;..\..\webrtc\src\ext_webrtc\Debug\lib\webrtc.lib;..\..\webrtc\src\ext_webrtc\Debug\lib\webrtc_extra.lib;secur32.lib;winmm.lib;dmoguids.lib;wmcodecdspuuid.lib;msdmo.lib;strmiids.lib;..\..\civetweb\lib\civetweb.lib;..\..\civetweb\lib\civetweb-cpp.lib;..\..\ippicv\lib\ippiw.lib;..\..\ippicv\lib\ippicvmt.lib;..\..\lib\Debug\Open3D_3rdparty_glew.lib;..\..\lib\Debug\glfw3.lib;gdi32.lib;..\..\fmt\lib\fmtd.lib;..\..\filament\src\ext_filament\lib\x86_64\mtd\filameshio.lib;..\..\filament\src\ext_filament\lib\x86_64\mtd\filament.lib;..\..\filament\src\ext_filament\lib\x86_64\mtd\filamat_lite.lib;..\..\filament\src\ext_filament\lib\x86_64\mtd\filaflat.lib;..\..\filament\src\ext_filament\lib\x86_64\mtd\filabridge.lib;..\..\filament\src\ext_filament\lib\x86_64\mtd\geometry.lib;..\..\filament\src\ext_filament\lib\x86_64\mtd\backend.lib;..\..\filament\src\ext_filament\lib\x86_64\mtd\bluegl.lib;..\..\filament\src\ext_filament\lib\x86_64\mtd\bluevk.lib;..\..\filament\src\ext_filament\lib\x86_64\mtd\ibl.lib;..\..\filament\src\ext_filament\lib\x86_64\mtd\image.lib;..\..\filament\src\ext_filament\lib\x86_64\mtd\meshoptimizer.lib;..\..\filament\src\ext_filament\lib\x86_64\mtd\smol-v.lib;..\..\filament\src\ext_filament\lib\x86_64\mtd\utils.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64 /force:multiple /pdbcompress /HIGHENTROPYVA</AdditionalOptions>
       <DataExecutionPrevention>true</DataExecutionPrevention>
@@ -140,16 +144,14 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\repo\Open3D\cpp\pybind\..;C:\repo\Open3D\cpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/repo/Open3D/build/_deps/ext_pybind11-src/include" /external:I "C:/Python310/include" /external:I "C:/repo/Open3D/3rdparty/glew/include" /external:I "C:/repo/Open3D/3rdparty/glfw/include" /external:I "C:/repo/Open3D/build/fmt/include" /external:I "C:/repo/Open3D/build/filament/src/ext_filament/include" /external:I "C:/repo/Open3D/build/eigen/src/ext_eigen" /external:I "C:/repo/Open3D/build/parallelstl/src/ext_parallelstl/include" /bigobj</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\repo\Open3D\cpp\pybind\..;C:\repo\Open3D\cpp;C:\repo\Open3D\build\_deps\ext_pybind11-src\include;C:\Python310\include;C:\repo\Open3D\3rdparty\glew\include;C:\repo\Open3D\3rdparty\glfw\include;C:\repo\Open3D\build\fmt\include;C:\repo\Open3D\build\filament\src\ext_filament\include;C:\repo\Open3D\build\eigen\src\ext_eigen;C:\repo\Open3D\build\parallelstl\src\ext_parallelstl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BufferSecurityCheck>true</BufferSecurityCheck>
       <ControlFlowGuard>Guard</ControlFlowGuard>
       <DisableSpecificWarnings>4201;4310;4505;4127;4146;4189;4324;4706;4100;4702;4244;4245;4267;4305;4819</DisableSpecificWarnings>
       <ExceptionHandling>Sync</ExceptionHandling>
-      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
-      <LanguageStandard>stdcpp14</LanguageStandard>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
@@ -169,6 +171,11 @@
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;NDEBUG;OPEN3D_CXX_STANDARD=\"14\";OPEN3D_CXX_COMPILER_ID=\"MSVC\";OPEN3D_CXX_COMPILER_VERSION=\"19.34.31933.0\";OPEN3D_CUDA_COMPILER_ID=\"\";OPEN3D_CUDA_COMPILER_VERSION=\"\";ZMQ_STATIC;BUILD_ISPC_MODULE;BUILD_GUI;BUILD_WEBRTC;WITH_IPPICV;_GLIBCXX_USE_CXX11_ABI=0;WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NOMINMAX;_USE_MATH_DEFINES;_ENABLE_EXTENDED_ALIGNED_STORAGE;__TBB_LIB_NAME=tbb_static;OPEN3D_STATIC;GLEW_STATIC;FMT_HEADER_ONLY=0;FMT_USE_WINDOWS_H=0;FMT_STRING_ALIAS=1;CMAKE_INTDIR=\"Release\";pybind_EXPORTS</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>C:\repo\Open3D\cpp\pybind\..;C:\repo\Open3D\cpp;C:\repo\Open3D\build\_deps\ext_pybind11-src\include;C:\Python310\include;C:\repo\Open3D\3rdparty\glew\include;C:\repo\Open3D\3rdparty\glfw\include;C:\repo\Open3D\build\fmt\include;C:\repo\Open3D\build\filament\src\ext_filament\include;C:\repo\Open3D\build\eigen\src\ext_eigen;C:\repo\Open3D\build\parallelstl\src\ext_parallelstl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
+    <NASM>
+      <IncludePaths>C:\repo\Open3D\cpp\pybind\..\;C:\repo\Open3D\cpp\;C:\repo\Open3D\build\_deps\ext_pybind11-src\include\;C:\Python310\include\;C:\repo\Open3D\3rdparty\glew\include\;C:\repo\Open3D\3rdparty\glfw\include\;C:\repo\Open3D\build\fmt\include\;C:\repo\Open3D\build\filament\src\ext_filament\include\;C:\repo\Open3D\build\eigen\src\ext_eigen\;C:\repo\Open3D\build\parallelstl\src\ext_parallelstl\include\;%(IncludePaths)</IncludePaths>
+      <Outputswitch>1</Outputswitch>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;NDEBUG;OPEN3D_CXX_STANDARD="14";OPEN3D_CXX_COMPILER_ID="MSVC";OPEN3D_CXX_COMPILER_VERSION="19.34.31933.0";OPEN3D_CUDA_COMPILER_ID="";OPEN3D_CUDA_COMPILER_VERSION="";ZMQ_STATIC;BUILD_ISPC_MODULE;BUILD_GUI;BUILD_WEBRTC;WITH_IPPICV;_GLIBCXX_USE_CXX11_ABI=0;WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NOMINMAX;_USE_MATH_DEFINES;_ENABLE_EXTENDED_ALIGNED_STORAGE;__TBB_LIB_NAME=tbb_static;OPEN3D_STATIC;GLEW_STATIC;FMT_HEADER_ONLY=0;FMT_USE_WINDOWS_H=0;FMT_STRING_ALIAS=1;CMAKE_INTDIR="Release";pybind_EXPORTS</PreprocessorDefinitions>
+    </NASM>
     <Midl>
       <AdditionalIncludeDirectories>C:\repo\Open3D\cpp\pybind\..;C:\repo\Open3D\cpp;C:\repo\Open3D\build\_deps\ext_pybind11-src\include;C:\Python310\include;C:\repo\Open3D\3rdparty\glew\include;C:\repo\Open3D\3rdparty\glfw\include;C:\repo\Open3D\build\fmt\include;C:\repo\Open3D\build\filament\src\ext_filament\include;C:\repo\Open3D\build\eigen\src\ext_eigen;C:\repo\Open3D\build\parallelstl\src\ext_parallelstl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
@@ -196,16 +203,14 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\repo\Open3D\cpp\pybind\..;C:\repo\Open3D\cpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/repo/Open3D/build/_deps/ext_pybind11-src/include" /external:I "C:/Python310/include" /external:I "C:/repo/Open3D/3rdparty/glew/include" /external:I "C:/repo/Open3D/3rdparty/glfw/include" /external:I "C:/repo/Open3D/build/fmt/include" /external:I "C:/repo/Open3D/build/filament/src/ext_filament/include" /external:I "C:/repo/Open3D/build/eigen/src/ext_eigen" /external:I "C:/repo/Open3D/build/parallelstl/src/ext_parallelstl/include" /bigobj</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\repo\Open3D\cpp\pybind\..;C:\repo\Open3D\cpp;C:\repo\Open3D\build\_deps\ext_pybind11-src\include;C:\Python310\include;C:\repo\Open3D\3rdparty\glew\include;C:\repo\Open3D\3rdparty\glfw\include;C:\repo\Open3D\build\fmt\include;C:\repo\Open3D\build\filament\src\ext_filament\include;C:\repo\Open3D\build\eigen\src\ext_eigen;C:\repo\Open3D\build\parallelstl\src\ext_parallelstl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BufferSecurityCheck>true</BufferSecurityCheck>
       <ControlFlowGuard>Guard</ControlFlowGuard>
       <DisableSpecificWarnings>4201;4310;4505;4127;4146;4189;4324;4706;4100;4702;4244;4245;4267;4305;4819</DisableSpecificWarnings>
       <ExceptionHandling>Sync</ExceptionHandling>
-      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
-      <LanguageStandard>stdcpp14</LanguageStandard>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <Optimization>MinSpace</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
@@ -225,6 +230,11 @@
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;NDEBUG;OPEN3D_CXX_STANDARD=\"14\";OPEN3D_CXX_COMPILER_ID=\"MSVC\";OPEN3D_CXX_COMPILER_VERSION=\"19.34.31933.0\";OPEN3D_CUDA_COMPILER_ID=\"\";OPEN3D_CUDA_COMPILER_VERSION=\"\";ZMQ_STATIC;BUILD_ISPC_MODULE;BUILD_GUI;BUILD_WEBRTC;WITH_IPPICV;_GLIBCXX_USE_CXX11_ABI=0;WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NOMINMAX;_USE_MATH_DEFINES;_ENABLE_EXTENDED_ALIGNED_STORAGE;__TBB_LIB_NAME=tbb_static;OPEN3D_STATIC;GLEW_STATIC;FMT_HEADER_ONLY=0;FMT_USE_WINDOWS_H=0;FMT_STRING_ALIAS=1;CMAKE_INTDIR=\"MinSizeRel\";pybind_EXPORTS</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>C:\repo\Open3D\cpp\pybind\..;C:\repo\Open3D\cpp;C:\repo\Open3D\build\_deps\ext_pybind11-src\include;C:\Python310\include;C:\repo\Open3D\3rdparty\glew\include;C:\repo\Open3D\3rdparty\glfw\include;C:\repo\Open3D\build\fmt\include;C:\repo\Open3D\build\filament\src\ext_filament\include;C:\repo\Open3D\build\eigen\src\ext_eigen;C:\repo\Open3D\build\parallelstl\src\ext_parallelstl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
+    <NASM>
+      <IncludePaths>C:\repo\Open3D\cpp\pybind\..\;C:\repo\Open3D\cpp\;C:\repo\Open3D\build\_deps\ext_pybind11-src\include\;C:\Python310\include\;C:\repo\Open3D\3rdparty\glew\include\;C:\repo\Open3D\3rdparty\glfw\include\;C:\repo\Open3D\build\fmt\include\;C:\repo\Open3D\build\filament\src\ext_filament\include\;C:\repo\Open3D\build\eigen\src\ext_eigen\;C:\repo\Open3D\build\parallelstl\src\ext_parallelstl\include\;%(IncludePaths)</IncludePaths>
+      <Outputswitch>1</Outputswitch>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;NDEBUG;OPEN3D_CXX_STANDARD="14";OPEN3D_CXX_COMPILER_ID="MSVC";OPEN3D_CXX_COMPILER_VERSION="19.34.31933.0";OPEN3D_CUDA_COMPILER_ID="";OPEN3D_CUDA_COMPILER_VERSION="";ZMQ_STATIC;BUILD_ISPC_MODULE;BUILD_GUI;BUILD_WEBRTC;WITH_IPPICV;_GLIBCXX_USE_CXX11_ABI=0;WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NOMINMAX;_USE_MATH_DEFINES;_ENABLE_EXTENDED_ALIGNED_STORAGE;__TBB_LIB_NAME=tbb_static;OPEN3D_STATIC;GLEW_STATIC;FMT_HEADER_ONLY=0;FMT_USE_WINDOWS_H=0;FMT_STRING_ALIAS=1;CMAKE_INTDIR="MinSizeRel";pybind_EXPORTS</PreprocessorDefinitions>
+    </NASM>
     <Midl>
       <AdditionalIncludeDirectories>C:\repo\Open3D\cpp\pybind\..;C:\repo\Open3D\cpp;C:\repo\Open3D\build\_deps\ext_pybind11-src\include;C:\Python310\include;C:\repo\Open3D\3rdparty\glew\include;C:\repo\Open3D\3rdparty\glfw\include;C:\repo\Open3D\build\fmt\include;C:\repo\Open3D\build\filament\src\ext_filament\include;C:\repo\Open3D\build\eigen\src\ext_eigen;C:\repo\Open3D\build\parallelstl\src\ext_parallelstl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
@@ -252,17 +262,15 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\repo\Open3D\cpp\pybind\..;C:\repo\Open3D\cpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/repo/Open3D/build/_deps/ext_pybind11-src/include" /external:I "C:/Python310/include" /external:I "C:/repo/Open3D/3rdparty/glew/include" /external:I "C:/repo/Open3D/3rdparty/glfw/include" /external:I "C:/repo/Open3D/build/fmt/include" /external:I "C:/repo/Open3D/build/filament/src/ext_filament/include" /external:I "C:/repo/Open3D/build/eigen/src/ext_eigen" /external:I "C:/repo/Open3D/build/parallelstl/src/ext_parallelstl/include" /bigobj</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\repo\Open3D\cpp\pybind\..;C:\repo\Open3D\cpp;C:\repo\Open3D\build\_deps\ext_pybind11-src\include;C:\Python310\include;C:\repo\Open3D\3rdparty\glew\include;C:\repo\Open3D\3rdparty\glfw\include;C:\repo\Open3D\build\fmt\include;C:\repo\Open3D\build\filament\src\ext_filament\include;C:\repo\Open3D\build\eigen\src\ext_eigen;C:\repo\Open3D\build\parallelstl\src\ext_parallelstl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BufferSecurityCheck>true</BufferSecurityCheck>
       <ControlFlowGuard>Guard</ControlFlowGuard>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <DisableSpecificWarnings>4201;4310;4505;4127;4146;4189;4324;4706;4100;4702;4244;4245;4267;4305;4819</DisableSpecificWarnings>
       <ExceptionHandling>Sync</ExceptionHandling>
-      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
-      <LanguageStandard>stdcpp14</LanguageStandard>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
@@ -279,6 +287,11 @@
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;NDEBUG;OPEN3D_CXX_STANDARD=\"14\";OPEN3D_CXX_COMPILER_ID=\"MSVC\";OPEN3D_CXX_COMPILER_VERSION=\"19.34.31933.0\";OPEN3D_CUDA_COMPILER_ID=\"\";OPEN3D_CUDA_COMPILER_VERSION=\"\";ZMQ_STATIC;BUILD_ISPC_MODULE;BUILD_GUI;BUILD_WEBRTC;WITH_IPPICV;_GLIBCXX_USE_CXX11_ABI=0;WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NOMINMAX;_USE_MATH_DEFINES;_ENABLE_EXTENDED_ALIGNED_STORAGE;__TBB_LIB_NAME=tbb_static;OPEN3D_STATIC;GLEW_STATIC;FMT_HEADER_ONLY=0;FMT_USE_WINDOWS_H=0;FMT_STRING_ALIAS=1;CMAKE_INTDIR=\"RelWithDebInfo\";pybind_EXPORTS</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>C:\repo\Open3D\cpp\pybind\..;C:\repo\Open3D\cpp;C:\repo\Open3D\build\_deps\ext_pybind11-src\include;C:\Python310\include;C:\repo\Open3D\3rdparty\glew\include;C:\repo\Open3D\3rdparty\glfw\include;C:\repo\Open3D\build\fmt\include;C:\repo\Open3D\build\filament\src\ext_filament\include;C:\repo\Open3D\build\eigen\src\ext_eigen;C:\repo\Open3D\build\parallelstl\src\ext_parallelstl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
+    <NASM>
+      <IncludePaths>C:\repo\Open3D\cpp\pybind\..\;C:\repo\Open3D\cpp\;C:\repo\Open3D\build\_deps\ext_pybind11-src\include\;C:\Python310\include\;C:\repo\Open3D\3rdparty\glew\include\;C:\repo\Open3D\3rdparty\glfw\include\;C:\repo\Open3D\build\fmt\include\;C:\repo\Open3D\build\filament\src\ext_filament\include\;C:\repo\Open3D\build\eigen\src\ext_eigen\;C:\repo\Open3D\build\parallelstl\src\ext_parallelstl\include\;%(IncludePaths)</IncludePaths>
+      <Outputswitch>1</Outputswitch>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;NDEBUG;OPEN3D_CXX_STANDARD="14";OPEN3D_CXX_COMPILER_ID="MSVC";OPEN3D_CXX_COMPILER_VERSION="19.34.31933.0";OPEN3D_CUDA_COMPILER_ID="";OPEN3D_CUDA_COMPILER_VERSION="";ZMQ_STATIC;BUILD_ISPC_MODULE;BUILD_GUI;BUILD_WEBRTC;WITH_IPPICV;_GLIBCXX_USE_CXX11_ABI=0;WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NOMINMAX;_USE_MATH_DEFINES;_ENABLE_EXTENDED_ALIGNED_STORAGE;__TBB_LIB_NAME=tbb_static;OPEN3D_STATIC;GLEW_STATIC;FMT_HEADER_ONLY=0;FMT_USE_WINDOWS_H=0;FMT_STRING_ALIAS=1;CMAKE_INTDIR="RelWithDebInfo";pybind_EXPORTS</PreprocessorDefinitions>
+    </NASM>
     <Midl>
       <AdditionalIncludeDirectories>C:\repo\Open3D\cpp\pybind\..;C:\repo\Open3D\cpp;C:\repo\Open3D\build\_deps\ext_pybind11-src\include;C:\Python310\include;C:\repo\Open3D\3rdparty\glew\include;C:\repo\Open3D\3rdparty\glfw\include;C:\repo\Open3D\build\fmt\include;C:\repo\Open3D\build\filament\src\ext_filament\include;C:\repo\Open3D\build\eigen\src\ext_eigen;C:\repo\Open3D\build\parallelstl\src\ext_parallelstl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
@@ -298,10 +311,6 @@
       <ProgramDataBaseFile>C:/repo/Open3D/build/lib/RelWithDebInfo/Python/cpu/pybind.pdb</ProgramDataBaseFile>
       <RandomizedBaseAddress>true</RandomizedBaseAddress>
       <SubSystem>Console</SubSystem>
-      <GenerateMapFile>true</GenerateMapFile>
-      <MapFileName>pyd.md</MapFileName>
-      <MapExports>true</MapExports>
-      <ForceFileOutput>Enabled</ForceFileOutput>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
@@ -320,7 +329,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\lib\_build_config.py.in;C:\repo\Open3D\cpp\pybind\_build_config.py.in;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\lib\_build_config.py.in;C:\repo\Open3D\cpp\pybind\_build_config.py.in;C:\CMake\share\cmake-3.22\Templates\MSBuild\nasm.props.in;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\cpp\pybind\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/repo/Open3D/cpp/pybind/CMakeLists.txt</Message>
@@ -333,7 +342,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\lib\_build_config.py.in;C:\repo\Open3D\cpp\pybind\_build_config.py.in;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\lib\_build_config.py.in;C:\repo\Open3D\cpp\pybind\_build_config.py.in;C:\CMake\share\cmake-3.22\Templates\MSBuild\nasm.props.in;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\cpp\pybind\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/repo/Open3D/cpp/pybind/CMakeLists.txt</Message>
@@ -346,7 +355,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\lib\_build_config.py.in;C:\repo\Open3D\cpp\pybind\_build_config.py.in;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\lib\_build_config.py.in;C:\repo\Open3D\cpp\pybind\_build_config.py.in;C:\CMake\share\cmake-3.22\Templates\MSBuild\nasm.props.in;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\cpp\pybind\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/repo/Open3D/cpp/pybind/CMakeLists.txt</Message>
@@ -359,7 +368,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\lib\_build_config.py.in;C:\repo\Open3D\cpp\pybind\_build_config.py.in;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\lib\_build_config.py.in;C:\repo\Open3D\cpp\pybind\_build_config.py.in;C:\CMake\share\cmake-3.22\Templates\MSBuild\nasm.props.in;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\cpp\pybind\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
@@ -713,5 +722,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
+    <Import Project="C:\CMake\share\cmake-3.22\Templates\MSBuild\nasm.targets" />
   </ImportGroup>
 </Project>

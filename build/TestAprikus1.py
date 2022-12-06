@@ -126,7 +126,10 @@ def main():
     regType=o3d.pipelines.registration.TransformationEstimationPhaser()
 
     pcld = GetPair(index)
-
+    cc=o3d.pipelines.registration.ICPConvergenceCriteria(relative_fitness=1e-18,
+                                                          relative_rmse=1e-18)
+    #phaserReg = o3d.pipelines.registration.registration_phaser(pcld[0], pcld[1], coarse_max=60.0, init=np.eye(4) )
+    #return 
     [icpT,corr] = pairwise_registration( pcld[0], pcld[1],init=np.eye(4),coarse_max=60.0,fine_max=30.0,max_iteration=1,RegType=regType )
     pcld[0].paint_uniform_color([1, 0.706, 0])
     pcld[1].paint_uniform_color([00.2, 0.2, 0.2])

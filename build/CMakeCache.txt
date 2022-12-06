@@ -87,7 +87,22 @@ CCACHE:FILEPATH=CCACHE-NOTFOUND
 CMAKE_AR:FILEPATH=C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.34.31933/bin/Hostx64/x64/lib.exe
 
 //ASM_NASM compiler
-CMAKE_ASM_NASM_COMPILER:FILEPATH=NOTFOUND
+CMAKE_ASM_NASM_COMPILER:STRING=C:/Program Files/NASM/nasm.exe
+
+//Flags used by the ASM_NASM compiler during all build types.
+CMAKE_ASM_NASM_FLAGS:STRING=
+
+//Flags used by the ASM_NASM compiler during DEBUG builds.
+CMAKE_ASM_NASM_FLAGS_DEBUG:STRING=
+
+//Flags used by the ASM_NASM compiler during MINSIZEREL builds.
+CMAKE_ASM_NASM_FLAGS_MINSIZEREL:STRING=
+
+//Flags used by the ASM_NASM compiler during RELEASE builds.
+CMAKE_ASM_NASM_FLAGS_RELEASE:STRING=
+
+//Flags used by the ASM_NASM compiler during RELWITHDEBINFO builds.
+CMAKE_ASM_NASM_FLAGS_RELWITHDEBINFO:STRING=
 
 //Choose the type of build.
 CMAKE_BUILD_TYPE:STRING=Release
@@ -147,9 +162,6 @@ CMAKE_EXE_LINKER_FLAGS_RELEASE:STRING=/INCREMENTAL:NO
 
 //Flags used by the linker during RELWITHDEBINFO builds.
 CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=/debug /INCREMENTAL
-
-//Value Computed by CMake.
-CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=C:/repo/Open3D/build/CMakeFiles/pkgRedirects
 
 //User executables (bin)
 CMAKE_INSTALL_BINDIR:PATH=bin
@@ -449,7 +461,7 @@ OpenMP_C_LIB_NAMES:STRING=
 PKG_CONFIG_ARGN:STRING=
 
 //pkg-config executable
-PKG_CONFIG_EXECUTABLE:FILEPATH=PKG_CONFIG_EXECUTABLE-NOTFOUND
+PKG_CONFIG_EXECUTABLE:FILEPATH=C:/Strawberry/perl/bin/pkg-config.bat
 
 //Prefer Homebrew libs over frameworks
 PREFER_OSX_HOMEBREW:BOOL=ON
@@ -545,10 +557,10 @@ USE_SYSTEM_TINYOBJLOADER:BOOL=OFF
 USE_SYSTEM_ZEROMQ:BOOL=OFF
 
 //Path to a file.
-VULKAN_INCLUDE_DIR:PATH=VULKAN_INCLUDE_DIR-NOTFOUND
+VULKAN_INCLUDE_DIR:PATH=C:/VulkanSDK/Include
 
 //Path to a library.
-VULKAN_LIBRARY:FILEPATH=VULKAN_LIBRARY-NOTFOUND
+VULKAN_LIBRARY:FILEPATH=C:/VulkanSDK/Lib/vulkan-1.lib
 
 //Path to a library.
 VULKAN_STATIC_LIBRARY:FILEPATH=VULKAN_STATIC_LIBRARY-NOTFOUND
@@ -559,7 +571,7 @@ WITH_IPPICV:BOOL=ON
 //Use OpenMP multi-threading
 WITH_OPENMP:BOOL=ON
 
-WITH_SIMD:BOOL=OFF
+WITH_SIMD:BOOL=ON
 
 //Value Computed by CMake
 pybind11_BINARY_DIR:STATIC=C:/repo/Open3D/build/_deps/ext_pybind11-build
@@ -583,6 +595,17 @@ BUILD_WEBRTC_FROM_SOURCE-ADVANCED:INTERNAL=1
 CMAKE_AR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_ASM_NASM_COMPILER
 CMAKE_ASM_NASM_COMPILER-ADVANCED:INTERNAL=1
+CMAKE_ASM_NASM_COMPILER_WORKS:INTERNAL=1
+//ADVANCED property for variable: CMAKE_ASM_NASM_FLAGS
+CMAKE_ASM_NASM_FLAGS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_ASM_NASM_FLAGS_DEBUG
+CMAKE_ASM_NASM_FLAGS_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_ASM_NASM_FLAGS_MINSIZEREL
+CMAKE_ASM_NASM_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_ASM_NASM_FLAGS_RELEASE
+CMAKE_ASM_NASM_FLAGS_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_ASM_NASM_FLAGS_RELWITHDEBINFO
+CMAKE_ASM_NASM_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //STRINGS property for variable: CMAKE_BUILD_TYPE
 CMAKE_BUILD_TYPE-STRINGS:INTERNAL=Debug;Release;MinSizeRel;RelWithDebInfo
 //This is the directory where this CMakeCache.txt was created
@@ -590,9 +613,9 @@ CMAKE_CACHEFILE_DIR:INTERNAL=c:/repo/Open3D/build
 //Major version of cmake used to create the current loaded cache
 CMAKE_CACHE_MAJOR_VERSION:INTERNAL=3
 //Minor version of cmake used to create the current loaded cache
-CMAKE_CACHE_MINOR_VERSION:INTERNAL=25
+CMAKE_CACHE_MINOR_VERSION:INTERNAL=22
 //Patch version of cmake used to create the current loaded cache
-CMAKE_CACHE_PATCH_VERSION:INTERNAL=0
+CMAKE_CACHE_PATCH_VERSION:INTERNAL=1
 //Path to CMake executable.
 CMAKE_COMMAND:INTERNAL=C:/CMake/bin/cmake.exe
 //Path to cpack program executable.
@@ -645,12 +668,8 @@ CMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files/Microsoft Visual Studio/2022/
 CMAKE_GENERATOR_PLATFORM:INTERNAL=x64
 //Name of generator toolset.
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
-//Test CMAKE_HAVE_LIBC_PTHREAD
-CMAKE_HAVE_LIBC_PTHREAD:INTERNAL=
-//Have library pthreads
-CMAKE_HAVE_PTHREADS_CREATE:INTERNAL=
-//Have library pthread
-CMAKE_HAVE_PTHREAD_CREATE:INTERNAL=
+//Have include pthread.h
+CMAKE_HAVE_PTHREAD_H:INTERNAL=
 //Source directory with the top level CMakeLists.txt file for this
 // project
 CMAKE_HOME_DIRECTORY:INTERNAL=C:/repo/Open3D
@@ -720,7 +739,7 @@ CMAKE_RC_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_RC_FLAGS_RELWITHDEBINFO
 CMAKE_RC_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //Path to CMake installation.
-CMAKE_ROOT:INTERNAL=C:/CMake/share/cmake-3.25
+CMAKE_ROOT:INTERNAL=C:/CMake/share/cmake-3.22
 //ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS
 CMAKE_SHARED_LINKER_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS_DEBUG
@@ -760,9 +779,11 @@ FIND_PACKAGE_MESSAGE_DETAILS_OpenMP_C:INTERNAL=[-openmp][v2.0()]
 //Details about finding OpenMP_CXX
 FIND_PACKAGE_MESSAGE_DETAILS_OpenMP_CXX:INTERNAL=[-openmp][v2.0()]
 //Details about finding Python3
-FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[C:/venv2/o3d/Scripts/python.exe][optimized;C:/Python310/libs/python310.lib;debug;C:/Python310/libs/python310_d.lib][C:/Python310/include][cfound components: Interpreter Development Development.Module Development.Embed ][v3.10.8(3.6)]
+FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[C:/venv2/o3d/Scripts/python.exe][C:/Python310/libs/python310.lib][C:/Python310/include][cfound components: Interpreter Development Development.Module Development.Embed ][v3.10.8(3.6)]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
+//Details about finding Vulkan
+FIND_PACKAGE_MESSAGE_DETAILS_Vulkan:INTERNAL=[C:/VulkanSDK/Lib/vulkan-1.lib][C:/VulkanSDK/Include][v()]
 //Test FLAG_DYNAMICBASE
 FLAG_DYNAMICBASE:INTERNAL=1
 //Test FLAG_GS
@@ -837,8 +858,6 @@ VULKAN_STATIC_LIBRARY-ADVANCED:INTERNAL=1
 //CMAKE_INSTALL_PREFIX during last run
 _GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=C:/Program Files/Open3D
 _Python:INTERNAL=Python3
-//Compiler reason failure
-_Python3_Compiler_REASON_FAILURE:INTERNAL=
 _Python3_DEVELOPMENT_EMBED_SIGNATURE:INTERNAL=d4b6557229233a6f8541b9dcf5613b00
 _Python3_DEVELOPMENT_MODULE_SIGNATURE:INTERNAL=d4b6557229233a6f8541b9dcf5613b00
 //Path to a program.
@@ -849,13 +868,9 @@ _Python3_INCLUDE_DIR:INTERNAL=C:/Python310/include
 _Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;10;8;64;;cp310-win_amd64;C:\Python310\Lib;C:\Python310\Lib;C:\venv2\o3d\Lib\site-packages;C:\venv2\o3d\Lib\site-packages
 _Python3_INTERPRETER_SIGNATURE:INTERNAL=70b7005665ed6a0bd5f53351dd96c5d5
 //Path to a library.
-_Python3_LIBRARY_DEBUG:INTERNAL=C:/Python310/libs/python310_d.lib
+_Python3_LIBRARY_DEBUG:INTERNAL=_Python3_LIBRARY_DEBUG-NOTFOUND
 //Path to a library.
 _Python3_LIBRARY_RELEASE:INTERNAL=C:/Python310/libs/python310.lib
-//NumPy reason failure
-_Python3_NumPy_REASON_FAILURE:INTERNAL=
-//Path to a library.
-_Python3_RUNTIME_LIBRARY_DEBUG:INTERNAL=C:/Python310/python310_d.dll
 //Path to a library.
 _Python3_RUNTIME_LIBRARY_RELEASE:INTERNAL=C:/Python310/python310.dll
 //True if pybind11 and all required components found on the system

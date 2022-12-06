@@ -23,8 +23,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{05B9128C-248F-385C-9CD5-15580E670EF6}</ProjectGuid>
-    <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
     <ProjectName>ManuallyCropGeometry</ProjectName>
     <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
@@ -52,6 +52,7 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
+    <Import Project="C:\repo\Open3D\build\cpp\tools\ManuallyCropGeometry.dir\nasm.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
@@ -86,8 +87,8 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\repo\Open3D\cpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/repo/Open3D/3rdparty/glew/include" /external:I "C:/repo/Open3D/3rdparty/glfw/include" /external:I "C:/repo/Open3D/build/fmt/include" /external:I "C:/repo/Open3D/build/filament/src/ext_filament/include" /external:I "C:/repo/Open3D/build/eigen/src/ext_eigen" /external:I "C:/repo/Open3D/build/parallelstl/src/ext_parallelstl/include" /bigobj</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\repo\Open3D\cpp;C:\repo\Open3D\3rdparty\glew\include;C:\repo\Open3D\3rdparty\glfw\include;C:\repo\Open3D\build\fmt\include;C:\repo\Open3D\build\filament\src\ext_filament\include;C:\repo\Open3D\build\eigen\src\ext_eigen;C:\repo\Open3D\build\parallelstl\src\ext_parallelstl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <BufferSecurityCheck>true</BufferSecurityCheck>
@@ -95,9 +96,7 @@
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <DisableSpecificWarnings>4201;4310;4505;4127;4146;4189;4324;4706;4100;4702;4244;4245;4267;4305;4819</DisableSpecificWarnings>
       <ExceptionHandling>Sync</ExceptionHandling>
-      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
-      <LanguageStandard>stdcpp14</LanguageStandard>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <Optimization>Disabled</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
@@ -114,6 +113,11 @@
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;OPEN3D_CXX_STANDARD=\"14\";OPEN3D_CXX_COMPILER_ID=\"MSVC\";OPEN3D_CXX_COMPILER_VERSION=\"19.34.31933.0\";OPEN3D_CUDA_COMPILER_ID=\"\";OPEN3D_CUDA_COMPILER_VERSION=\"\";ZMQ_STATIC;BUILD_ISPC_MODULE;BUILD_GUI;BUILD_WEBRTC;WITH_IPPICV;_GLIBCXX_USE_CXX11_ABI=0;WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NOMINMAX;_USE_MATH_DEFINES;_ENABLE_EXTENDED_ALIGNED_STORAGE;__TBB_LIB_NAME=tbb_static;OPEN3D_STATIC;GLEW_STATIC;FMT_HEADER_ONLY=0;FMT_USE_WINDOWS_H=0;FMT_STRING_ALIAS=1;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>C:\repo\Open3D\cpp;C:\repo\Open3D\3rdparty\glew\include;C:\repo\Open3D\3rdparty\glfw\include;C:\repo\Open3D\build\fmt\include;C:\repo\Open3D\build\filament\src\ext_filament\include;C:\repo\Open3D\build\eigen\src\ext_eigen;C:\repo\Open3D\build\parallelstl\src\ext_parallelstl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
+    <NASM>
+      <IncludePaths>C:\repo\Open3D\cpp\;C:\repo\Open3D\3rdparty\glew\include\;C:\repo\Open3D\3rdparty\glfw\include\;C:\repo\Open3D\build\fmt\include\;C:\repo\Open3D\build\filament\src\ext_filament\include\;C:\repo\Open3D\build\eigen\src\ext_eigen\;C:\repo\Open3D\build\parallelstl\src\ext_parallelstl\include\;%(IncludePaths)</IncludePaths>
+      <Outputswitch>1</Outputswitch>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;OPEN3D_CXX_STANDARD="14";OPEN3D_CXX_COMPILER_ID="MSVC";OPEN3D_CXX_COMPILER_VERSION="19.34.31933.0";OPEN3D_CUDA_COMPILER_ID="";OPEN3D_CUDA_COMPILER_VERSION="";ZMQ_STATIC;BUILD_ISPC_MODULE;BUILD_GUI;BUILD_WEBRTC;WITH_IPPICV;_GLIBCXX_USE_CXX11_ABI=0;WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NOMINMAX;_USE_MATH_DEFINES;_ENABLE_EXTENDED_ALIGNED_STORAGE;__TBB_LIB_NAME=tbb_static;OPEN3D_STATIC;GLEW_STATIC;FMT_HEADER_ONLY=0;FMT_USE_WINDOWS_H=0;FMT_STRING_ALIAS=1;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+    </NASM>
     <Midl>
       <AdditionalIncludeDirectories>C:\repo\Open3D\cpp;C:\repo\Open3D\3rdparty\glew\include;C:\repo\Open3D\3rdparty\glfw\include;C:\repo\Open3D\build\fmt\include;C:\repo\Open3D\build\filament\src\ext_filament\include;C:\repo\Open3D\build\eigen\src\ext_eigen;C:\repo\Open3D\build\parallelstl\src\ext_parallelstl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
@@ -140,16 +144,14 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\repo\Open3D\cpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/repo/Open3D/3rdparty/glew/include" /external:I "C:/repo/Open3D/3rdparty/glfw/include" /external:I "C:/repo/Open3D/build/fmt/include" /external:I "C:/repo/Open3D/build/filament/src/ext_filament/include" /external:I "C:/repo/Open3D/build/eigen/src/ext_eigen" /external:I "C:/repo/Open3D/build/parallelstl/src/ext_parallelstl/include" /bigobj</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\repo\Open3D\cpp;C:\repo\Open3D\3rdparty\glew\include;C:\repo\Open3D\3rdparty\glfw\include;C:\repo\Open3D\build\fmt\include;C:\repo\Open3D\build\filament\src\ext_filament\include;C:\repo\Open3D\build\eigen\src\ext_eigen;C:\repo\Open3D\build\parallelstl\src\ext_parallelstl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BufferSecurityCheck>true</BufferSecurityCheck>
       <ControlFlowGuard>Guard</ControlFlowGuard>
       <DisableSpecificWarnings>4201;4310;4505;4127;4146;4189;4324;4706;4100;4702;4244;4245;4267;4305;4819</DisableSpecificWarnings>
       <ExceptionHandling>Sync</ExceptionHandling>
-      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
-      <LanguageStandard>stdcpp14</LanguageStandard>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
@@ -168,6 +170,11 @@
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;NDEBUG;OPEN3D_CXX_STANDARD=\"14\";OPEN3D_CXX_COMPILER_ID=\"MSVC\";OPEN3D_CXX_COMPILER_VERSION=\"19.34.31933.0\";OPEN3D_CUDA_COMPILER_ID=\"\";OPEN3D_CUDA_COMPILER_VERSION=\"\";ZMQ_STATIC;BUILD_ISPC_MODULE;BUILD_GUI;BUILD_WEBRTC;WITH_IPPICV;_GLIBCXX_USE_CXX11_ABI=0;WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NOMINMAX;_USE_MATH_DEFINES;_ENABLE_EXTENDED_ALIGNED_STORAGE;__TBB_LIB_NAME=tbb_static;OPEN3D_STATIC;GLEW_STATIC;FMT_HEADER_ONLY=0;FMT_USE_WINDOWS_H=0;FMT_STRING_ALIAS=1;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>C:\repo\Open3D\cpp;C:\repo\Open3D\3rdparty\glew\include;C:\repo\Open3D\3rdparty\glfw\include;C:\repo\Open3D\build\fmt\include;C:\repo\Open3D\build\filament\src\ext_filament\include;C:\repo\Open3D\build\eigen\src\ext_eigen;C:\repo\Open3D\build\parallelstl\src\ext_parallelstl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
+    <NASM>
+      <IncludePaths>C:\repo\Open3D\cpp\;C:\repo\Open3D\3rdparty\glew\include\;C:\repo\Open3D\3rdparty\glfw\include\;C:\repo\Open3D\build\fmt\include\;C:\repo\Open3D\build\filament\src\ext_filament\include\;C:\repo\Open3D\build\eigen\src\ext_eigen\;C:\repo\Open3D\build\parallelstl\src\ext_parallelstl\include\;%(IncludePaths)</IncludePaths>
+      <Outputswitch>1</Outputswitch>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;NDEBUG;OPEN3D_CXX_STANDARD="14";OPEN3D_CXX_COMPILER_ID="MSVC";OPEN3D_CXX_COMPILER_VERSION="19.34.31933.0";OPEN3D_CUDA_COMPILER_ID="";OPEN3D_CUDA_COMPILER_VERSION="";ZMQ_STATIC;BUILD_ISPC_MODULE;BUILD_GUI;BUILD_WEBRTC;WITH_IPPICV;_GLIBCXX_USE_CXX11_ABI=0;WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NOMINMAX;_USE_MATH_DEFINES;_ENABLE_EXTENDED_ALIGNED_STORAGE;__TBB_LIB_NAME=tbb_static;OPEN3D_STATIC;GLEW_STATIC;FMT_HEADER_ONLY=0;FMT_USE_WINDOWS_H=0;FMT_STRING_ALIAS=1;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+    </NASM>
     <Midl>
       <AdditionalIncludeDirectories>C:\repo\Open3D\cpp;C:\repo\Open3D\3rdparty\glew\include;C:\repo\Open3D\3rdparty\glfw\include;C:\repo\Open3D\build\fmt\include;C:\repo\Open3D\build\filament\src\ext_filament\include;C:\repo\Open3D\build\eigen\src\ext_eigen;C:\repo\Open3D\build\parallelstl\src\ext_parallelstl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
@@ -194,16 +201,14 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\repo\Open3D\cpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/repo/Open3D/3rdparty/glew/include" /external:I "C:/repo/Open3D/3rdparty/glfw/include" /external:I "C:/repo/Open3D/build/fmt/include" /external:I "C:/repo/Open3D/build/filament/src/ext_filament/include" /external:I "C:/repo/Open3D/build/eigen/src/ext_eigen" /external:I "C:/repo/Open3D/build/parallelstl/src/ext_parallelstl/include" /bigobj</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\repo\Open3D\cpp;C:\repo\Open3D\3rdparty\glew\include;C:\repo\Open3D\3rdparty\glfw\include;C:\repo\Open3D\build\fmt\include;C:\repo\Open3D\build\filament\src\ext_filament\include;C:\repo\Open3D\build\eigen\src\ext_eigen;C:\repo\Open3D\build\parallelstl\src\ext_parallelstl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BufferSecurityCheck>true</BufferSecurityCheck>
       <ControlFlowGuard>Guard</ControlFlowGuard>
       <DisableSpecificWarnings>4201;4310;4505;4127;4146;4189;4324;4706;4100;4702;4244;4245;4267;4305;4819</DisableSpecificWarnings>
       <ExceptionHandling>Sync</ExceptionHandling>
-      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
-      <LanguageStandard>stdcpp14</LanguageStandard>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <Optimization>MinSpace</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
@@ -222,6 +227,11 @@
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;NDEBUG;OPEN3D_CXX_STANDARD=\"14\";OPEN3D_CXX_COMPILER_ID=\"MSVC\";OPEN3D_CXX_COMPILER_VERSION=\"19.34.31933.0\";OPEN3D_CUDA_COMPILER_ID=\"\";OPEN3D_CUDA_COMPILER_VERSION=\"\";ZMQ_STATIC;BUILD_ISPC_MODULE;BUILD_GUI;BUILD_WEBRTC;WITH_IPPICV;_GLIBCXX_USE_CXX11_ABI=0;WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NOMINMAX;_USE_MATH_DEFINES;_ENABLE_EXTENDED_ALIGNED_STORAGE;__TBB_LIB_NAME=tbb_static;OPEN3D_STATIC;GLEW_STATIC;FMT_HEADER_ONLY=0;FMT_USE_WINDOWS_H=0;FMT_STRING_ALIAS=1;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>C:\repo\Open3D\cpp;C:\repo\Open3D\3rdparty\glew\include;C:\repo\Open3D\3rdparty\glfw\include;C:\repo\Open3D\build\fmt\include;C:\repo\Open3D\build\filament\src\ext_filament\include;C:\repo\Open3D\build\eigen\src\ext_eigen;C:\repo\Open3D\build\parallelstl\src\ext_parallelstl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
+    <NASM>
+      <IncludePaths>C:\repo\Open3D\cpp\;C:\repo\Open3D\3rdparty\glew\include\;C:\repo\Open3D\3rdparty\glfw\include\;C:\repo\Open3D\build\fmt\include\;C:\repo\Open3D\build\filament\src\ext_filament\include\;C:\repo\Open3D\build\eigen\src\ext_eigen\;C:\repo\Open3D\build\parallelstl\src\ext_parallelstl\include\;%(IncludePaths)</IncludePaths>
+      <Outputswitch>1</Outputswitch>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;NDEBUG;OPEN3D_CXX_STANDARD="14";OPEN3D_CXX_COMPILER_ID="MSVC";OPEN3D_CXX_COMPILER_VERSION="19.34.31933.0";OPEN3D_CUDA_COMPILER_ID="";OPEN3D_CUDA_COMPILER_VERSION="";ZMQ_STATIC;BUILD_ISPC_MODULE;BUILD_GUI;BUILD_WEBRTC;WITH_IPPICV;_GLIBCXX_USE_CXX11_ABI=0;WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NOMINMAX;_USE_MATH_DEFINES;_ENABLE_EXTENDED_ALIGNED_STORAGE;__TBB_LIB_NAME=tbb_static;OPEN3D_STATIC;GLEW_STATIC;FMT_HEADER_ONLY=0;FMT_USE_WINDOWS_H=0;FMT_STRING_ALIAS=1;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+    </NASM>
     <Midl>
       <AdditionalIncludeDirectories>C:\repo\Open3D\cpp;C:\repo\Open3D\3rdparty\glew\include;C:\repo\Open3D\3rdparty\glfw\include;C:\repo\Open3D\build\fmt\include;C:\repo\Open3D\build\filament\src\ext_filament\include;C:\repo\Open3D\build\eigen\src\ext_eigen;C:\repo\Open3D\build\parallelstl\src\ext_parallelstl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
@@ -248,17 +258,15 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\repo\Open3D\cpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/repo/Open3D/3rdparty/glew/include" /external:I "C:/repo/Open3D/3rdparty/glfw/include" /external:I "C:/repo/Open3D/build/fmt/include" /external:I "C:/repo/Open3D/build/filament/src/ext_filament/include" /external:I "C:/repo/Open3D/build/eigen/src/ext_eigen" /external:I "C:/repo/Open3D/build/parallelstl/src/ext_parallelstl/include" /bigobj</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\repo\Open3D\cpp;C:\repo\Open3D\3rdparty\glew\include;C:\repo\Open3D\3rdparty\glfw\include;C:\repo\Open3D\build\fmt\include;C:\repo\Open3D\build\filament\src\ext_filament\include;C:\repo\Open3D\build\eigen\src\ext_eigen;C:\repo\Open3D\build\parallelstl\src\ext_parallelstl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BufferSecurityCheck>true</BufferSecurityCheck>
       <ControlFlowGuard>Guard</ControlFlowGuard>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <DisableSpecificWarnings>4201;4310;4505;4127;4146;4189;4324;4706;4100;4702;4244;4245;4267;4305;4819</DisableSpecificWarnings>
       <ExceptionHandling>Sync</ExceptionHandling>
-      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
-      <LanguageStandard>stdcpp14</LanguageStandard>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
@@ -275,6 +283,11 @@
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;NDEBUG;OPEN3D_CXX_STANDARD=\"14\";OPEN3D_CXX_COMPILER_ID=\"MSVC\";OPEN3D_CXX_COMPILER_VERSION=\"19.34.31933.0\";OPEN3D_CUDA_COMPILER_ID=\"\";OPEN3D_CUDA_COMPILER_VERSION=\"\";ZMQ_STATIC;BUILD_ISPC_MODULE;BUILD_GUI;BUILD_WEBRTC;WITH_IPPICV;_GLIBCXX_USE_CXX11_ABI=0;WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NOMINMAX;_USE_MATH_DEFINES;_ENABLE_EXTENDED_ALIGNED_STORAGE;__TBB_LIB_NAME=tbb_static;OPEN3D_STATIC;GLEW_STATIC;FMT_HEADER_ONLY=0;FMT_USE_WINDOWS_H=0;FMT_STRING_ALIAS=1;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>C:\repo\Open3D\cpp;C:\repo\Open3D\3rdparty\glew\include;C:\repo\Open3D\3rdparty\glfw\include;C:\repo\Open3D\build\fmt\include;C:\repo\Open3D\build\filament\src\ext_filament\include;C:\repo\Open3D\build\eigen\src\ext_eigen;C:\repo\Open3D\build\parallelstl\src\ext_parallelstl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
+    <NASM>
+      <IncludePaths>C:\repo\Open3D\cpp\;C:\repo\Open3D\3rdparty\glew\include\;C:\repo\Open3D\3rdparty\glfw\include\;C:\repo\Open3D\build\fmt\include\;C:\repo\Open3D\build\filament\src\ext_filament\include\;C:\repo\Open3D\build\eigen\src\ext_eigen\;C:\repo\Open3D\build\parallelstl\src\ext_parallelstl\include\;%(IncludePaths)</IncludePaths>
+      <Outputswitch>1</Outputswitch>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;NDEBUG;OPEN3D_CXX_STANDARD="14";OPEN3D_CXX_COMPILER_ID="MSVC";OPEN3D_CXX_COMPILER_VERSION="19.34.31933.0";OPEN3D_CUDA_COMPILER_ID="";OPEN3D_CUDA_COMPILER_VERSION="";ZMQ_STATIC;BUILD_ISPC_MODULE;BUILD_GUI;BUILD_WEBRTC;WITH_IPPICV;_GLIBCXX_USE_CXX11_ABI=0;WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NOMINMAX;_USE_MATH_DEFINES;_ENABLE_EXTENDED_ALIGNED_STORAGE;__TBB_LIB_NAME=tbb_static;OPEN3D_STATIC;GLEW_STATIC;FMT_HEADER_ONLY=0;FMT_USE_WINDOWS_H=0;FMT_STRING_ALIAS=1;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+    </NASM>
     <Midl>
       <AdditionalIncludeDirectories>C:\repo\Open3D\cpp;C:\repo\Open3D\3rdparty\glew\include;C:\repo\Open3D\3rdparty\glfw\include;C:\repo\Open3D\build\fmt\include;C:\repo\Open3D\build\filament\src\ext_filament\include;C:\repo\Open3D\build\eigen\src\ext_eigen;C:\repo\Open3D\build\parallelstl\src\ext_parallelstl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
@@ -312,7 +325,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\CMake\share\cmake-3.22\Templates\MSBuild\nasm.props.in;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\cpp\tools\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/repo/Open3D/cpp/tools/CMakeLists.txt</Message>
@@ -325,7 +338,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\CMake\share\cmake-3.22\Templates\MSBuild\nasm.props.in;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\cpp\tools\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/repo/Open3D/cpp/tools/CMakeLists.txt</Message>
@@ -338,7 +351,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\CMake\share\cmake-3.22\Templates\MSBuild\nasm.props.in;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\cpp\tools\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/repo/Open3D/cpp/tools/CMakeLists.txt</Message>
@@ -351,7 +364,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\CMake\share\cmake-3.22\Templates\MSBuild\nasm.props.in;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\cpp\tools\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
@@ -567,5 +580,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
+    <Import Project="C:\CMake\share\cmake-3.22\Templates\MSBuild\nasm.targets" />
   </ImportGroup>
 </Project>
