@@ -1,28 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\c0aa92346613cb7af2d48042f914c657\ext_directxheaders-mkdir.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\44f97798661f74d4c07ff4853f3fe4d5\ext_directxheaders-mkdir.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\c0aa92346613cb7af2d48042f914c657\ext_directxheaders-download.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\44f97798661f74d4c07ff4853f3fe4d5\ext_directxheaders-download.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\c0aa92346613cb7af2d48042f914c657\ext_directxheaders-update.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\44f97798661f74d4c07ff4853f3fe4d5\ext_directxheaders-update.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\c0aa92346613cb7af2d48042f914c657\ext_directxheaders-patch.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\44f97798661f74d4c07ff4853f3fe4d5\ext_directxheaders-patch.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\c0aa92346613cb7af2d48042f914c657\ext_directxheaders-configure.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\44f97798661f74d4c07ff4853f3fe4d5\ext_directxheaders-configure.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\c0aa92346613cb7af2d48042f914c657\ext_directxheaders-build.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\44f97798661f74d4c07ff4853f3fe4d5\ext_directxheaders-build.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\c0aa92346613cb7af2d48042f914c657\ext_directxheaders-install.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\44f97798661f74d4c07ff4853f3fe4d5\ext_directxheaders-install.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\24c3742c5b1a8c0221d6860a689c241d\ext_directxheaders-complete.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\4840a6b4ae87246733559dce5e59ce0e\ext_directxheaders-complete.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
     <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\e01d9e02bbdcb0329c917774f30b697f\ext_directxheaders.rule">

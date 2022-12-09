@@ -1,28 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\27f4a2c22abed130ba2cf8002a3fda69\ext_libpng-mkdir.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\84cf7f3ea86ab96ba5799382dbcff497\ext_libpng-mkdir.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\27f4a2c22abed130ba2cf8002a3fda69\ext_libpng-download.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\84cf7f3ea86ab96ba5799382dbcff497\ext_libpng-download.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\27f4a2c22abed130ba2cf8002a3fda69\ext_libpng-update.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\84cf7f3ea86ab96ba5799382dbcff497\ext_libpng-update.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\27f4a2c22abed130ba2cf8002a3fda69\ext_libpng-patch.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\84cf7f3ea86ab96ba5799382dbcff497\ext_libpng-patch.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\27f4a2c22abed130ba2cf8002a3fda69\ext_libpng-configure.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\84cf7f3ea86ab96ba5799382dbcff497\ext_libpng-configure.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\27f4a2c22abed130ba2cf8002a3fda69\ext_libpng-build.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\84cf7f3ea86ab96ba5799382dbcff497\ext_libpng-build.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\27f4a2c22abed130ba2cf8002a3fda69\ext_libpng-install.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\84cf7f3ea86ab96ba5799382dbcff497\ext_libpng-install.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\24c3742c5b1a8c0221d6860a689c241d\ext_libpng-complete.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\4840a6b4ae87246733559dce5e59ce0e\ext_libpng-complete.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
     <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\e01d9e02bbdcb0329c917774f30b697f\ext_libpng.rule">

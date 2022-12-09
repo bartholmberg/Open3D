@@ -1,1 +1,1 @@
-C:\repo\Open3D\build\cpp\open3d\t\pipelines\kernel\tpipelines_kernel.dir\RelWithDebInfo\tpipelines_kernel.lib
+C:\repo\open3d\build\cpp\open3d\t\pipelines\kernel\tpipelines_kernel.dir\RelWithDebInfo\tpipelines_kernel.lib

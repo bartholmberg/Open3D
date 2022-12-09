@@ -1,1 +1,1 @@
-C:\repo\Open3D\build\cpp\open3d\t\io\tio.dir\RelWithDebInfo\tio.lib
+C:\repo\open3d\build\cpp\open3d\t\io\tio.dir\RelWithDebInfo\tio.lib

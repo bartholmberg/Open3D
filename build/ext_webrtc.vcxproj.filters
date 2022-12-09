@@ -1,28 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\48354fcbc6c904d8f245fbf248c4e547\ext_webrtc-mkdir.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\c6e334e96147e84add5a2220573dd989\ext_webrtc-mkdir.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\48354fcbc6c904d8f245fbf248c4e547\ext_webrtc-download.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\c6e334e96147e84add5a2220573dd989\ext_webrtc-download.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\48354fcbc6c904d8f245fbf248c4e547\ext_webrtc-update.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\c6e334e96147e84add5a2220573dd989\ext_webrtc-update.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\48354fcbc6c904d8f245fbf248c4e547\ext_webrtc-patch.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\c6e334e96147e84add5a2220573dd989\ext_webrtc-patch.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\48354fcbc6c904d8f245fbf248c4e547\ext_webrtc-configure.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\c6e334e96147e84add5a2220573dd989\ext_webrtc-configure.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\48354fcbc6c904d8f245fbf248c4e547\ext_webrtc-build.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\c6e334e96147e84add5a2220573dd989\ext_webrtc-build.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\48354fcbc6c904d8f245fbf248c4e547\ext_webrtc-install.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\c6e334e96147e84add5a2220573dd989\ext_webrtc-install.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\24c3742c5b1a8c0221d6860a689c241d\ext_webrtc-complete.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\4840a6b4ae87246733559dce5e59ce0e\ext_webrtc-complete.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
     <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\e01d9e02bbdcb0329c917774f30b697f\ext_webrtc.rule">

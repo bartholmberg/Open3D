@@ -23,8 +23,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{990ED0E6-D8EA-36B4-B28C-DFFD82F64D33}</ProjectGuid>
-    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
     <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
     <ProjectName>python-package</ProjectName>
     <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
@@ -109,7 +109,7 @@
     <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\b3d0d791c7fd006f8867cd79e651d36d\python-package.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-C:\CMake\bin\cmake.exe -DPYTHON_PACKAGE_SRC_DIR=C:/repo/Open3D/python -DPYTHON_PACKAGE_DST_DIR=C:/repo/Open3D/build/lib/python_package -DPYTHON_COMPILED_MODULE_DIR=C:/repo/Open3D/build/lib/Debug/Python/cpu -DPYTHON_VERSION=3.10 -DCOMPILED_MODULE_PATH_LIST=C:/repo/Open3D/build/lib/Debug/Python/cpu/pybind.cp310-win_amd64.pyd -DPYTHON_EXTRA_LIBRARIES= -DBUILD_JUPYTER_EXTENSION=OFF -DBUILD_TENSORFLOW_OPS=OFF -DBUILD_PYTORCH_OPS=OFF -DBUNDLE_OPEN3D_ML=OFF -DOPEN3D_ML_ROOT= -DBUILD_GUI=ON -DGUI_RESOURCE_DIR=C:/repo/Open3D/build/bin/resources -DPROJECT_EMAIL=info@open3d.org -DPROJECT_HOMEPAGE_URL=http://www.open3d.org -DPROJECT_DOCS=http://www.open3d.org/docs -DPROJECT_CODE=https://github.com/isl-org/Open3D -DPROJECT_ISSUES=https://github.com/isl-org/Open3D/issues -DPROJECT_VERSION=0.16.1+b6e3261d3 -DPROJECT_VERSION_THREE_NUMBER=0.16.1 -DPYPI_PACKAGE_NAME=open3d -P C:/repo/Open3D/cpp/pybind/make_python_package.cmake
+C:\CMake\bin\cmake.exe -DPYTHON_PACKAGE_SRC_DIR=C:/repo/Open3D/python -DPYTHON_PACKAGE_DST_DIR=C:/repo/Open3D/build/lib/python_package -DPYTHON_COMPILED_MODULE_DIR=C:/repo/Open3D/build/lib/Debug/Python/cpu -DPYTHON_VERSION=3.10 -DCOMPILED_MODULE_PATH_LIST=C:/repo/Open3D/build/lib/Debug/Python/cpu/pybind.cp310-win_amd64.pyd -DPYTHON_EXTRA_LIBRARIES= -DBUILD_JUPYTER_EXTENSION=OFF -DBUILD_TENSORFLOW_OPS=OFF -DBUILD_PYTORCH_OPS=OFF -DBUNDLE_OPEN3D_ML=OFF -DOPEN3D_ML_ROOT= -DBUILD_GUI=ON -DGUI_RESOURCE_DIR=C:/repo/Open3D/build/bin/resources -DPROJECT_EMAIL=info@open3d.org -DPROJECT_HOMEPAGE_URL=http://www.open3d.org -DPROJECT_DOCS=http://www.open3d.org/docs -DPROJECT_CODE=https://github.com/isl-org/Open3D -DPROJECT_ISSUES=https://github.com/isl-org/Open3D/issues -DPROJECT_VERSION=0.16.1+638838f66 -DPROJECT_VERSION_THREE_NUMBER=0.16.1 -DPYPI_PACKAGE_NAME=open3d -P C:/repo/Open3D/cpp/pybind/make_python_package.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -123,7 +123,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-C:\CMake\bin\cmake.exe -DPYTHON_PACKAGE_SRC_DIR=C:/repo/Open3D/python -DPYTHON_PACKAGE_DST_DIR=C:/repo/Open3D/build/lib/python_package -DPYTHON_COMPILED_MODULE_DIR=C:/repo/Open3D/build/lib/Release/Python/cpu -DPYTHON_VERSION=3.10 -DCOMPILED_MODULE_PATH_LIST=C:/repo/Open3D/build/lib/Release/Python/cpu/pybind.cp310-win_amd64.pyd -DPYTHON_EXTRA_LIBRARIES= -DBUILD_JUPYTER_EXTENSION=OFF -DBUILD_TENSORFLOW_OPS=OFF -DBUILD_PYTORCH_OPS=OFF -DBUNDLE_OPEN3D_ML=OFF -DOPEN3D_ML_ROOT= -DBUILD_GUI=ON -DGUI_RESOURCE_DIR=C:/repo/Open3D/build/bin/resources -DPROJECT_EMAIL=info@open3d.org -DPROJECT_HOMEPAGE_URL=http://www.open3d.org -DPROJECT_DOCS=http://www.open3d.org/docs -DPROJECT_CODE=https://github.com/isl-org/Open3D -DPROJECT_ISSUES=https://github.com/isl-org/Open3D/issues -DPROJECT_VERSION=0.16.1+b6e3261d3 -DPROJECT_VERSION_THREE_NUMBER=0.16.1 -DPYPI_PACKAGE_NAME=open3d -P C:/repo/Open3D/cpp/pybind/make_python_package.cmake
+C:\CMake\bin\cmake.exe -DPYTHON_PACKAGE_SRC_DIR=C:/repo/Open3D/python -DPYTHON_PACKAGE_DST_DIR=C:/repo/Open3D/build/lib/python_package -DPYTHON_COMPILED_MODULE_DIR=C:/repo/Open3D/build/lib/Release/Python/cpu -DPYTHON_VERSION=3.10 -DCOMPILED_MODULE_PATH_LIST=C:/repo/Open3D/build/lib/Release/Python/cpu/pybind.cp310-win_amd64.pyd -DPYTHON_EXTRA_LIBRARIES= -DBUILD_JUPYTER_EXTENSION=OFF -DBUILD_TENSORFLOW_OPS=OFF -DBUILD_PYTORCH_OPS=OFF -DBUNDLE_OPEN3D_ML=OFF -DOPEN3D_ML_ROOT= -DBUILD_GUI=ON -DGUI_RESOURCE_DIR=C:/repo/Open3D/build/bin/resources -DPROJECT_EMAIL=info@open3d.org -DPROJECT_HOMEPAGE_URL=http://www.open3d.org -DPROJECT_DOCS=http://www.open3d.org/docs -DPROJECT_CODE=https://github.com/isl-org/Open3D -DPROJECT_ISSUES=https://github.com/isl-org/Open3D/issues -DPROJECT_VERSION=0.16.1+638838f66 -DPROJECT_VERSION_THREE_NUMBER=0.16.1 -DPYPI_PACKAGE_NAME=open3d -P C:/repo/Open3D/cpp/pybind/make_python_package.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -137,7 +137,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-C:\CMake\bin\cmake.exe -DPYTHON_PACKAGE_SRC_DIR=C:/repo/Open3D/python -DPYTHON_PACKAGE_DST_DIR=C:/repo/Open3D/build/lib/python_package -DPYTHON_COMPILED_MODULE_DIR=C:/repo/Open3D/build/lib/MinSizeRel/Python/cpu -DPYTHON_VERSION=3.10 -DCOMPILED_MODULE_PATH_LIST=C:/repo/Open3D/build/lib/MinSizeRel/Python/cpu/pybind.cp310-win_amd64.pyd -DPYTHON_EXTRA_LIBRARIES= -DBUILD_JUPYTER_EXTENSION=OFF -DBUILD_TENSORFLOW_OPS=OFF -DBUILD_PYTORCH_OPS=OFF -DBUNDLE_OPEN3D_ML=OFF -DOPEN3D_ML_ROOT= -DBUILD_GUI=ON -DGUI_RESOURCE_DIR=C:/repo/Open3D/build/bin/resources -DPROJECT_EMAIL=info@open3d.org -DPROJECT_HOMEPAGE_URL=http://www.open3d.org -DPROJECT_DOCS=http://www.open3d.org/docs -DPROJECT_CODE=https://github.com/isl-org/Open3D -DPROJECT_ISSUES=https://github.com/isl-org/Open3D/issues -DPROJECT_VERSION=0.16.1+b6e3261d3 -DPROJECT_VERSION_THREE_NUMBER=0.16.1 -DPYPI_PACKAGE_NAME=open3d -P C:/repo/Open3D/cpp/pybind/make_python_package.cmake
+C:\CMake\bin\cmake.exe -DPYTHON_PACKAGE_SRC_DIR=C:/repo/Open3D/python -DPYTHON_PACKAGE_DST_DIR=C:/repo/Open3D/build/lib/python_package -DPYTHON_COMPILED_MODULE_DIR=C:/repo/Open3D/build/lib/MinSizeRel/Python/cpu -DPYTHON_VERSION=3.10 -DCOMPILED_MODULE_PATH_LIST=C:/repo/Open3D/build/lib/MinSizeRel/Python/cpu/pybind.cp310-win_amd64.pyd -DPYTHON_EXTRA_LIBRARIES= -DBUILD_JUPYTER_EXTENSION=OFF -DBUILD_TENSORFLOW_OPS=OFF -DBUILD_PYTORCH_OPS=OFF -DBUNDLE_OPEN3D_ML=OFF -DOPEN3D_ML_ROOT= -DBUILD_GUI=ON -DGUI_RESOURCE_DIR=C:/repo/Open3D/build/bin/resources -DPROJECT_EMAIL=info@open3d.org -DPROJECT_HOMEPAGE_URL=http://www.open3d.org -DPROJECT_DOCS=http://www.open3d.org/docs -DPROJECT_CODE=https://github.com/isl-org/Open3D -DPROJECT_ISSUES=https://github.com/isl-org/Open3D/issues -DPROJECT_VERSION=0.16.1+638838f66 -DPROJECT_VERSION_THREE_NUMBER=0.16.1 -DPYPI_PACKAGE_NAME=open3d -P C:/repo/Open3D/cpp/pybind/make_python_package.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -151,7 +151,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-C:\CMake\bin\cmake.exe -DPYTHON_PACKAGE_SRC_DIR=C:/repo/Open3D/python -DPYTHON_PACKAGE_DST_DIR=C:/repo/Open3D/build/lib/python_package -DPYTHON_COMPILED_MODULE_DIR=C:/repo/Open3D/build/lib/RelWithDebInfo/Python/cpu -DPYTHON_VERSION=3.10 -DCOMPILED_MODULE_PATH_LIST=C:/repo/Open3D/build/lib/RelWithDebInfo/Python/cpu/pybind.cp310-win_amd64.pyd -DPYTHON_EXTRA_LIBRARIES= -DBUILD_JUPYTER_EXTENSION=OFF -DBUILD_TENSORFLOW_OPS=OFF -DBUILD_PYTORCH_OPS=OFF -DBUNDLE_OPEN3D_ML=OFF -DOPEN3D_ML_ROOT= -DBUILD_GUI=ON -DGUI_RESOURCE_DIR=C:/repo/Open3D/build/bin/resources -DPROJECT_EMAIL=info@open3d.org -DPROJECT_HOMEPAGE_URL=http://www.open3d.org -DPROJECT_DOCS=http://www.open3d.org/docs -DPROJECT_CODE=https://github.com/isl-org/Open3D -DPROJECT_ISSUES=https://github.com/isl-org/Open3D/issues -DPROJECT_VERSION=0.16.1+b6e3261d3 -DPROJECT_VERSION_THREE_NUMBER=0.16.1 -DPYPI_PACKAGE_NAME=open3d -P C:/repo/Open3D/cpp/pybind/make_python_package.cmake
+C:\CMake\bin\cmake.exe -DPYTHON_PACKAGE_SRC_DIR=C:/repo/Open3D/python -DPYTHON_PACKAGE_DST_DIR=C:/repo/Open3D/build/lib/python_package -DPYTHON_COMPILED_MODULE_DIR=C:/repo/Open3D/build/lib/RelWithDebInfo/Python/cpu -DPYTHON_VERSION=3.10 -DCOMPILED_MODULE_PATH_LIST=C:/repo/Open3D/build/lib/RelWithDebInfo/Python/cpu/pybind.cp310-win_amd64.pyd -DPYTHON_EXTRA_LIBRARIES= -DBUILD_JUPYTER_EXTENSION=OFF -DBUILD_TENSORFLOW_OPS=OFF -DBUILD_PYTORCH_OPS=OFF -DBUNDLE_OPEN3D_ML=OFF -DOPEN3D_ML_ROOT= -DBUILD_GUI=ON -DGUI_RESOURCE_DIR=C:/repo/Open3D/build/bin/resources -DPROJECT_EMAIL=info@open3d.org -DPROJECT_HOMEPAGE_URL=http://www.open3d.org -DPROJECT_DOCS=http://www.open3d.org/docs -DPROJECT_CODE=https://github.com/isl-org/Open3D -DPROJECT_ISSUES=https://github.com/isl-org/Open3D/issues -DPROJECT_VERSION=0.16.1+638838f66 -DPROJECT_VERSION_THREE_NUMBER=0.16.1 -DPYPI_PACKAGE_NAME=open3d -P C:/repo/Open3D/cpp/pybind/make_python_package.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -178,7 +178,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\lib\_build_config.py.in;C:\repo\Open3D\cpp\pybind\_build_config.py.in;C:\CMake\share\cmake-3.22\Templates\MSBuild\nasm.props.in;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\lib\_build_config.py.in;C:\repo\Open3D\cpp\pybind\_build_config.py.in;C:\CMake\share\cmake-3.25\Templates\MSBuild\nasm.props.in;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\repo\Open3D\build\cpp\pybind\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/repo/Open3D/cpp/pybind/CMakeLists.txt</Message>
@@ -191,7 +191,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\lib\_build_config.py.in;C:\repo\Open3D\cpp\pybind\_build_config.py.in;C:\CMake\share\cmake-3.22\Templates\MSBuild\nasm.props.in;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\lib\_build_config.py.in;C:\repo\Open3D\cpp\pybind\_build_config.py.in;C:\CMake\share\cmake-3.25\Templates\MSBuild\nasm.props.in;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\repo\Open3D\build\cpp\pybind\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/repo/Open3D/cpp/pybind/CMakeLists.txt</Message>
@@ -204,7 +204,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\lib\_build_config.py.in;C:\repo\Open3D\cpp\pybind\_build_config.py.in;C:\CMake\share\cmake-3.22\Templates\MSBuild\nasm.props.in;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\lib\_build_config.py.in;C:\repo\Open3D\cpp\pybind\_build_config.py.in;C:\CMake\share\cmake-3.25\Templates\MSBuild\nasm.props.in;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\repo\Open3D\build\cpp\pybind\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/repo/Open3D/cpp/pybind/CMakeLists.txt</Message>
@@ -217,7 +217,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\lib\_build_config.py.in;C:\repo\Open3D\cpp\pybind\_build_config.py.in;C:\CMake\share\cmake-3.22\Templates\MSBuild\nasm.props.in;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\lib\_build_config.py.in;C:\repo\Open3D\cpp\pybind\_build_config.py.in;C:\CMake\share\cmake-3.25\Templates\MSBuild\nasm.props.in;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\repo\Open3D\build\cpp\pybind\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
@@ -242,6 +242,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
-    <Import Project="C:\CMake\share\cmake-3.22\Templates\MSBuild\nasm.targets" />
+    <Import Project="C:\CMake\share\cmake-3.25\Templates\MSBuild\nasm.targets" />
   </ImportGroup>
 </Project>

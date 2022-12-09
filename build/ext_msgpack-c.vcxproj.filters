@@ -1,28 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\fd5f40b5c4cd6d99d957c89774dadea3\ext_msgpack-c-mkdir.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\2d65ef7c2d2835e97e3bac255d8627b4\ext_msgpack-c-mkdir.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\fd5f40b5c4cd6d99d957c89774dadea3\ext_msgpack-c-download.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\2d65ef7c2d2835e97e3bac255d8627b4\ext_msgpack-c-download.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\fd5f40b5c4cd6d99d957c89774dadea3\ext_msgpack-c-update.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\2d65ef7c2d2835e97e3bac255d8627b4\ext_msgpack-c-update.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\fd5f40b5c4cd6d99d957c89774dadea3\ext_msgpack-c-patch.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\2d65ef7c2d2835e97e3bac255d8627b4\ext_msgpack-c-patch.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\fd5f40b5c4cd6d99d957c89774dadea3\ext_msgpack-c-configure.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\2d65ef7c2d2835e97e3bac255d8627b4\ext_msgpack-c-configure.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\fd5f40b5c4cd6d99d957c89774dadea3\ext_msgpack-c-build.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\2d65ef7c2d2835e97e3bac255d8627b4\ext_msgpack-c-build.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\fd5f40b5c4cd6d99d957c89774dadea3\ext_msgpack-c-install.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\2d65ef7c2d2835e97e3bac255d8627b4\ext_msgpack-c-install.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\24c3742c5b1a8c0221d6860a689c241d\ext_msgpack-c-complete.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\4840a6b4ae87246733559dce5e59ce0e\ext_msgpack-c-complete.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
     <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\e01d9e02bbdcb0329c917774f30b697f\ext_msgpack-c.rule">

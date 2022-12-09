@@ -1,28 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\a4dd0bfa5f495dbd936137012d3340b2\ext_directxmath-mkdir.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\e95cd96e5a1d3b1061e9661d95f2bafc\ext_directxmath-mkdir.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\a4dd0bfa5f495dbd936137012d3340b2\ext_directxmath-download.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\e95cd96e5a1d3b1061e9661d95f2bafc\ext_directxmath-download.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\a4dd0bfa5f495dbd936137012d3340b2\ext_directxmath-update.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\e95cd96e5a1d3b1061e9661d95f2bafc\ext_directxmath-update.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\a4dd0bfa5f495dbd936137012d3340b2\ext_directxmath-patch.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\e95cd96e5a1d3b1061e9661d95f2bafc\ext_directxmath-patch.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\a4dd0bfa5f495dbd936137012d3340b2\ext_directxmath-configure.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\e95cd96e5a1d3b1061e9661d95f2bafc\ext_directxmath-configure.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\a4dd0bfa5f495dbd936137012d3340b2\ext_directxmath-build.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\e95cd96e5a1d3b1061e9661d95f2bafc\ext_directxmath-build.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\a4dd0bfa5f495dbd936137012d3340b2\ext_directxmath-install.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\e95cd96e5a1d3b1061e9661d95f2bafc\ext_directxmath-install.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\24c3742c5b1a8c0221d6860a689c241d\ext_directxmath-complete.rule">
+    <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\4840a6b4ae87246733559dce5e59ce0e\ext_directxmath-complete.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
     <CustomBuild Include="C:\repo\Open3D\build\CMakeFiles\e01d9e02bbdcb0329c917774f30b697f\ext_directxmath.rule">
