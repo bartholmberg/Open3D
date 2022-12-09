@@ -51,6 +51,7 @@ enum class TransformationEstimationType {
     PointToPoint = 1,
     PointToPlane = 2,
     ColoredICP = 3,
+    Phaser=5
 };
 
 /// \class TransformationEstimation
@@ -285,7 +286,35 @@ private:
     const TransformationEstimationType type_ =
             TransformationEstimationType::ColoredICP;
 };
+/// BAH, Place holder and here only to tensor Phaser registration types.
+///      For now all computation is done in Aprikus code base.
+///      No known requirement to support _kernel
+class TransformationEstimationPhaser : public TransformationEstimation {
+public:
+    // TODO: support with_scaling.
+    TransformationEstimationPhaser() {}
+    ~TransformationEstimationPhaser() override {}
 
+public:
+    TransformationEstimationType GetTransformationEstimationType()
+            const override {
+        return type_;
+    };
+    
+    double ComputeRMSE(const geometry::PointCloud &source,
+                       const geometry::PointCloud &target,
+                       const core::Tensor &correspondences) const override;
+
+
+    core::Tensor ComputeTransformation(
+            const geometry::PointCloud &source,
+            const geometry::PointCloud &target,
+            const core::Tensor &correspondences) const override;
+
+private:
+    const TransformationEstimationType type_ =
+            TransformationEstimationType::Phaser;
+};
 }  // namespace registration
 }  // namespace pipelines
 }  // namespace t

@@ -157,15 +157,22 @@ RegistrationResult EvaluateRegistration(
         const Eigen::Matrix4d &transformation = Eigen::Matrix4d::Identity());
 
 
-//Global registration method (e.g. -phaser)
+/// \brief Global registration method (e.g. -phaser)
 //
+/// \param source The source point cloud.
+/// \param target The target point cloud.
+/// \param max_correspondence_distance Maximum correspondence points-pair
+/// distance. \param init Initial transformation estimation.
+///  Default value: array([[1., 0., 0., 0.], [0., 1., 0., 0.], [0., 0., 1., 0.],
+///  [0., 0., 0., 1.]])
+/// \param estimation Estimation method.
 RegistrationResult RegistrationGlobal(
         const geometry::PointCloud &source,
         const geometry::PointCloud &target,
         double max_correspondence_distance,
         const Eigen::Matrix4d &init = Eigen::Matrix4d::Identity(),
         const TransformationEstimation &estimation =
-                TransformationEstimationPointToPoint(false)); 
+                TransformationEstimationPhaser(false)); 
 //        const ICPConvergenceCriteria &criteria = ICPConvergenceCriteria());
 /// \brief Functions for ICP registration.
 ///

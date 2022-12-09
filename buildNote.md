@@ -1,9 +1,11 @@
 1) cd build
-2) cmake -G "Visual Studio 17 2022"  -DCMAKE_TOOLCHAIN_FILE=C:/repo/vcpkg/scripts/buildsystems/vcpkg.cmake  -A x64 ..
+2) cmake -G "Visual Studio 17 2022"  -DCMAKE_TOOLCHAIN_FILE=C:/repo/vcpkg/scripts/buildsystems/vcpkg.cmake -DCMAKE_BUILD_TYPE=RelWithDebInfo -A x64 ..
 3) devenv
 4) open open3d.sln in open3d/build
 5) undo checkout of pipeline and python projects
 6) rebuild 
+
+6a) *may have to rebuild zlib with force link option
 
 
 

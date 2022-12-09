@@ -176,13 +176,24 @@ void pybind_registration_classes(py::module &m) {
             te_p2p(m, "TransformationEstimationPointToPoint",
                    "Class to estimate a transformation for point to "
                    "point distance.");
-    py::detail::bind_copy_functions<TransformationEstimationPointToPoint>(
-            te_p2p);
+    py::detail::bind_copy_functions<TransformationEstimationPointToPoint>(te_p2p);
     te_p2p.def(py::init())
             .def("__repr__",
                  [](const TransformationEstimationPointToPoint &te) {
-                     return std::string("TransformationEstimationPointToPoint");
-                 });
+                     return std::string("TransformationEstimationPointToPoint"); });
+
+    // open3d.t.pipelines.registration.TransformationEstimationPhaser
+    // TransformationEstimation
+    py::class_<TransformationEstimationPhaser,
+               PyTransformationEstimation<TransformationEstimationPhaser>,
+               TransformationEstimation>
+            te_phaser(m, "TransformationEstimationPhaser",
+                   "Class to estimate a transformation using global estimation");
+    py::detail::bind_copy_functions<TransformationEstimationPhaser>(te_phaser);
+    te_phaser.def(py::init())
+            .def("__repr__", [](const TransformationEstimationPhaser &te) {
+                     return std::string("TransformationEstimationPhaser");});
+
 
     // open3d.t.pipelines.registration.TransformationEstimationPointToPlane
     // TransformationEstimation
