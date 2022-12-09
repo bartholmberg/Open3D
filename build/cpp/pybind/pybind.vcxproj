@@ -311,6 +311,7 @@
       <ProgramDataBaseFile>C:/repo/Open3D/build/lib/RelWithDebInfo/Python/cpu/pybind.pdb</ProgramDataBaseFile>
       <RandomizedBaseAddress>true</RandomizedBaseAddress>
       <SubSystem>Console</SubSystem>
+      <ForceFileOutput>Enabled</ForceFileOutput>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
