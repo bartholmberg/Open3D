@@ -197,8 +197,13 @@ Eigen::Matrix4d TransformationEstimationPhaser::ComputeTransformation(
     for (size_t i = 0; i < N; i++) {
         resmat.block<3, 1>(0, i) = b->points_[i];
     } 
-    return resmat;
-    //return Eigen::Matrix4d::Identity();
+    //return resmat;
+    // BAH, need to return the correct transform matrix here
+    // different than Apricus.... 
+    // return the 4x4 transformation matrix here
+    // need to reconstruct from Aprikus (XYZ, translation values)
+    // Should be existing o3d function
+    return Eigen::Matrix4d::Identity();
 }
 //  BAH, copy ICP version, should work fine for PHASER
 //       TODO: verify

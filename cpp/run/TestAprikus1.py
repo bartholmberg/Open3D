@@ -111,23 +111,18 @@ def GetPair( index = [1,2] ):
 		pcld.append(pct)
 	return pcld
 def regpair(source=o3d.geometry.PointCloud(),target=o3d.geometry.PointCloud(),init=np.identity(4), coarse_max=60, fine_max=30, max_iteration=3,RegType=o3d.pipelines.registration.TransformationEstimationPointToPlane()):
-    #print("Apply point-to-plane ICP")
-    #icp_coarse = o3d.pipelines.registration.registration_icp( source, target, coarse_max, init, o3d.pipelines.registration.TransformationEstimationPointToPlane() )
-    #icp_fine = o3d.pipelines.registration.registration_icp( source, target, fine_max,icp_coarse.transformation,o3d.pipelines.registration.TransformationEstimationPointToPlane() )
-    cc=o3d.pipelines.registration.ICPConvergenceCriteria(relative_fitness=1e-18,
-                                                          relative_rmse=1e-18,
-                                                          max_iteration=max_iteration)
-    #icp_fine = o3d.pipelines.registration.registration_icp( source, target, coarse_max, init, RegType,cc )
-    icp_fine = o3d.pipelines.registration.registration_phaser( source, target, coarse_max, init, RegType)
-    
-    aaa=o3d.pipelines.registration.evaluate_registration(source,target,fine_max,icp_fine.transformation)
-    corr=np.asarray(aaa.correspondence_set);
-    #print("icp fine: " ,icp_fine)
-    transformation_icp = icp_fine.transformation
-    information_icp = o3d.pipelines.registration.get_information_matrix_from_point_clouds( source, target, fine_max,icp_fine.transformation )
-    #draw_registration_result(source, target, icp_fine.transformation)
-    #return transformation_icp, information_icp
-    return icp_fine,corr
+	cc=o3d.pipelines.registration.ICPConvergenceCriteria(relative_fitness=1e-18,
+														  relative_rmse=1e-18,
+														  max_iteration=max_iteration)
+	icp_fine = o3d.pipelines.registration.registration_phaser( source, target, coarse_max, init, RegType)  
+	aaa=o3d.pipelines.registration.evaluate_registration(source,target,fine_max,icp_fine.transformation)
+	corr=np.asarray(aaa.correspondence_set);
+	#print("icp fine: " ,icp_fine)
+	transformation_icp = icp_fine.transformation
+	information_icp = o3d.pipelines.registration.get_information_matrix_from_point_clouds( source, target, fine_max,icp_fine.transformation )
+	#draw_registration_result(source, target, icp_fine.transformation)
+	#return transformation_icp, information_icp
+	return icp_fine,corr
 def main():
 	RyCw75 = np.eye(4)
 
@@ -135,22 +130,19 @@ def main():
 
 	#index = [22,8]
 	index = [1,2]
-	coursemax=60.0
-	coursemin= 30.0
-	regType=o3d.pipelines.registration.TransformationEstimationPointToPlane()
+
+	#regType=o3d.pipelines.registration.TransformationEstimationPointToPlane()
 	regType=o3d.pipelines.registration.TransformationEstimationPhaser()
 	pcld = GetPair(index)
 	[icpT,corr]=regpair(pcld[0], pcld[1],init=np.eye(4),coarse_max=60.0,fine_max=30.0,max_iteration=1,RegType=regType)
-	#icp_coarse = o3d.pipelines.registration.registration_phaser( source=pcld[0], target=pcld[1], max_correspondence_distance=60.0, init=np.eye(4), RegType=regType)
-	[icpT,corr] = pairwise_registration( pcld[0], pcld[1],init=np.eye(4),coarse_max=60.0,fine_max=30.0,max_iteration=1,RegType=regType )
 	pcld[0].paint_uniform_color([1, 0.706, 0])
-	pcld[1].paint_uniform_color([00.2, 0.2, 0.2])
+	pcld[1].paint_uniform_color([0.2, 0.2, 0.2])
 
 	#result = timeit.timeit('KnnPair(pcld[0], pcld[1],13.1)', globals=globals(), number=10)/10
 	#print(result )
 
-	d=KnnPair(pcld[0], pcld[1],13.1)
-
+	#d=KnnPair(pcld[0], pcld[1],13.1)
+	pcld[1] = pcld[1].transform(icpT.transformation)
   
 	o3d.visualization.draw_geometries(pcld[:2], zoom=1/10, front=[0.0, 0.0, 1.0], lookat=[0.0, 1.0, 0.0], up=[0.0, 1, 0])
 	#o3d.visualization.draw_geometries(pcr, zoom=1/10, front=[0.0, 0.0, 1.0], lookat=[0.0, 1.0, 0.0], up=[0.0, 1, 0])

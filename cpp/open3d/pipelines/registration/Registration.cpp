@@ -130,21 +130,42 @@ RegistrationResult RegistrationGlobal(
         const geometry::PointCloud &source,
         const geometry::PointCloud &target,
         double max_correspondence_distance,
-        const Eigen::Matrix4d &init /* = Eigen::Matrix4d::Identity()*/,
+        const Eigen::Matrix4d &init ,
         const TransformationEstimation &estimation){
-  //      const ICPConvergenceCriteria &criteria){
-    /*
-    auto ctrl = std::make_unique<phaser_core::CloudController>("sph-opt");
-    model::PointCloudPtr s0 = MakeModelCloud(pcd);
-    model::PointCloudPtr t0 = MakeModelCloud(target);
-    model::RegistrationResult res0 =
-            ctrl->registerPointCloud(t0, s0);
+    int iteration =1;
+    if (max_correspondence_distance <= 0.0) {
+        utility::LogError("Invalid max_correspondence_distance.");
+        }
+    if ( estimation.GetTransformationEstimationType() == TransformationEstimationType::Phaser ) {
+        std::cout << "phaser global registration method" << std::endl;
+        }
+    Eigen::Matrix4d transformation = init;
+    geometry::KDTreeFlann kdtree;
+    kdtree.SetGeometry(target);
+    geometry::PointCloud pcd = source;
+    if (!init.isIdentity()) {
+        pcd.Transform(init);
+    }
 
-    std::cout << "Registration: " << std::endl;
-    */
+    // RegistrationResult result;
     RegistrationResult result;
+    result = GetRegistrationResultAndCorrespondences(
+            pcd, target, kdtree, max_correspondence_distance, transformation);  
+    utility::LogDebug("ICP Iteration #{:d}: Fitness {:.4f}, RMSE {:.4f}", 
+                          result.fitness_, result.inlier_rmse_);
     Eigen::Matrix4d update = estimation.ComputeTransformation(
-            source, target, result.correspondence_set_);
+                pcd, target, result.correspondence_set_);
+    transformation = update * transformation;
+    pcd.Transform(update);
+    RegistrationResult backup = result;
+    result = GetRegistrationResultAndCorrespondences(
+                pcd, target, kdtree, max_correspondence_distance,
+                transformation);
+
+        
+    // Eigen::Matrix4d update = estimation.ComputeTransformation(
+    //            source, target, result.correspondence_set_);
+    //    return result;
     return result;
 };
 
