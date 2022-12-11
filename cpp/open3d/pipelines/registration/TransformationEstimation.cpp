@@ -205,13 +205,14 @@ Eigen::Matrix4d TransformationEstimationPhaser::ComputeTransformation(
     // Should be existing o3d function
     Eigen::Vector3d rota = res0.getRotation();
     Eigen::Vector3d trana = res0.getTranslation();
-    //Eigen::Matrix3d transform =
-    //        geometry::Geometry3D::GetRotationMatrixFromAxisAngle(rota) *
-    //        geometry::Geometry3D::GetRotationMatrixFromAxisAngle(trana);
+    //rota[0] = -rota[0];
+    //rota[1] = -rota[1];
+    //rota[2] = -rota[2];
     Eigen::Matrix4d trans4 = Eigen::Matrix4d::Identity();
     trans4.setIdentity();
     trans4.block<3, 3>(0, 0) =
-            geometry::Geometry3D::GetRotationMatrixFromAxisAngle(rota);
+            geometry::Geometry3D::GetRotationMatrixFromXYZ(rota);
+            //geometry::Geometry3D::GetRotationMatrixFromAxisAngle(rota);
     trans4.block<3, 1>(0, 3) =trana;
     return trans4;
     //Eigen::Matrix4d::Identity();
