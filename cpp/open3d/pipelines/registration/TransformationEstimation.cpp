@@ -197,17 +197,22 @@ Eigen::Matrix4d TransformationEstimationPhaser::ComputeTransformation(
     for (size_t i = 0; i < N; i++) {
         resmat.block<3, 1>(0, i) = b->points_[i];
     } 
-    //return resmat;
-    // BAH, need to return the correct transform matrix here
-    // different than Apricus.... 
-    // return the 4x4 transformation matrix here
-    // need to reconstruct from Aprikus (XYZ, translation values)
-    // Should be existing o3d function
+
     Eigen::Vector3d rota = res0.getRotation();
     Eigen::Vector3d trana = res0.getTranslation();
-    //rota[0] = -rota[0];
-    //rota[1] = -rota[1];
-    //rota[2] = -rota[2];
+// BAH, ⛏️ transformation (rot) matrix between Phaser and o3d(below) 
+//          is 📎 different (~1°) (with 
+//          same input (alpha, beta, gamma). 
+// Phaser uses ( from rotation-utils.cc in phaser_common\src\common)
+//    void RotationUtils::RotateAroundXYZ(
+//            model::PointCloudPtr cloud, const float alpha_rad,
+//            const float beta_rad, const float gamma_rad) {
+//        Eigen::Matrix4f T = createTransformationAroundX(alpha_rad) *
+//                            createTransformationAroundY(beta_rad) *
+//                            createTransformationAroundZ(gamma_rad);
+//        cloud->transformPointCloud(T);
+//    }
+//        **This is important difference, need to track down first thing**
     Eigen::Matrix4d trans4 = Eigen::Matrix4d::Identity();
     trans4.setIdentity();
     trans4.block<3, 3>(0, 0) =
