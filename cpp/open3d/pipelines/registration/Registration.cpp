@@ -162,7 +162,7 @@ RegistrationResult RegistrationGlobal(
                 pcd, target, kdtree, max_correspondence_distance,
                 transformation);
 
-        
+    result.transformation_ = transformation;    
     // Eigen::Matrix4d update = estimation.ComputeTransformation(
     //            source, target, result.correspondence_set_);
     //    return result;
