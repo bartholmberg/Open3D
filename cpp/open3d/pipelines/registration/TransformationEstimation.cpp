@@ -215,9 +215,9 @@ Eigen::Matrix4d TransformationEstimationPhaser::ComputeTransformation(
 //        **This is important difference, need to track down first thing**
     Eigen::Matrix4d trans4 = Eigen::Matrix4d::Identity();
     trans4.setIdentity();
+    rota[2] = -rota[2];
     trans4.block<3, 3>(0, 0) =
             geometry::Geometry3D::GetRotationMatrixFromXYZ(rota);
-            //geometry::Geometry3D::GetRotationMatrixFromAxisAngle(rota);
     std::cout << "\n 🐢 o3d Bingham rotation: " << rota.transpose() * 180.0 / M_PI << std::endl;
     trans4.block<3, 1>(0, 3) =trana;
     return trans4;

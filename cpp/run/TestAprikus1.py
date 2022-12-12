@@ -129,7 +129,7 @@ def main():
 	RyCw75[:3,:3] = o3d.geometry.PointCloud().get_rotation_matrix_from_xyz( (0,75.0*np.pi/180.0, 0) )
 
 	#index = [22,8]
-	index = [1,2]
+	index = [1,1]
 
 	#regType=o3d.pipelines.registration.TransformationEstimationPointToPlane()
 	regType=o3d.pipelines.registration.TransformationEstimationPhaser()
@@ -142,9 +142,9 @@ def main():
 	#print(result )
 
 	#d=KnnPair(pcld[0], pcld[1],13.1)
-	pcld[1] = pcld[1].transform(icpT.transformation)
+	pcld[0] = pcld[0].transform(icpT.transformation)
   
-	o3d.visualization.draw_geometries(pcld[:2], zoom=1/10, front=[0.0, 0.0, 1.0], lookat=[0.0, 1.0, 0.0], up=[0.0, 1, 0])
+	o3d.visualization.draw_geometries(pcld[:2], zoom=1/5, front=[0.0, 0.0, -1.0], lookat=[0.0, 1.0, 0.0], up=[0.0, -1, 0])
 	#o3d.visualization.draw_geometries(pcr, zoom=1/10, front=[0.0, 0.0, 1.0], lookat=[0.0, 1.0, 0.0], up=[0.0, 1, 0])
 
 	exit()

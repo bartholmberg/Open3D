@@ -13,7 +13,7 @@
     <IsWindowsApplication>False</IsWindowsApplication>
     <InterpreterId>Global|VisualStudio|o3d (Python 3.10 (64-bit))</InterpreterId>
     <LaunchProvider>Standard Python launcher</LaunchProvider>
-    <EnableNativeCodeDebugging>True</EnableNativeCodeDebugging>
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
     <TestFramework>Pytest</TestFramework>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
