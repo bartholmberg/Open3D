@@ -214,7 +214,7 @@ Eigen::Matrix4d TransformationEstimationPhaser::ComputeTransformation(
 //    }
 //        **This is important difference, need to track down first thing**
     Eigen::Matrix4d trans4 = Eigen::Matrix4d::Identity();
-    trans4.setIdentity();
+    //trans4.setIdentity();
     rota[2] = -rota[2];
     trans4.block<3, 3>(0, 0) =
             geometry::Geometry3D::GetRotationMatrixFromXYZ(rota);
