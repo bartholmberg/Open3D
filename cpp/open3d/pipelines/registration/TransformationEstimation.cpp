@@ -199,29 +199,13 @@ Eigen::Matrix4d TransformationEstimationPhaser::ComputeTransformation(
     } 
 
     Eigen::Vector3d rota = res0.getRotation();
-    Eigen::Vector3d trana = res0.getTranslation();
-// BAH, ⛏️ transformation (rot) matrix between Phaser and o3d(below) 
-//          is 📎 different (~1°) (with 
-//          same input (alpha, beta, gamma). 
-// Phaser uses ( from rotation-utils.cc in phaser_common\src\common)
-//    void RotationUtils::RotateAroundXYZ(
-//            model::PointCloudPtr cloud, const float alpha_rad,
-//            const float beta_rad, const float gamma_rad) {
-//        Eigen::Matrix4f T = createTransformationAroundX(alpha_rad) *
-//                            createTransformationAroundY(beta_rad) *
-//                            createTransformationAroundZ(gamma_rad);
-//        cloud->transformPointCloud(T);
-//    }
-//        **This is important difference, need to track down first thing**
-    Eigen::Matrix4d trans4 = Eigen::Matrix4d::Identity();
-    //trans4.setIdentity();
-    rota[2] = -rota[2];
-    trans4.block<3, 3>(0, 0) =
-            geometry::Geometry3D::GetRotationMatrixFromXYZ(rota);
+    // BAH, ⛏️ transformation (rot) matrix between Phaser and o3d(below) 
+    //          is 📎 different.  Sign difference in Tz
+    Eigen::Matrix4d T = Eigen::Matrix4d::Identity();
+    T.block<3, 3>(0, 0) = geometry::Geometry3D::GetRotationMatrixFromXYZ( {rota[0], rota[1], -rota[2]});
     std::cout << "\n 🐢 o3d Bingham rotation: " << rota.transpose() * 180.0 / M_PI << std::endl;
-    trans4.block<3, 1>(0, 3) =trana;
-    return trans4;
-    //Eigen::Matrix4d::Identity();
+    T.block<3, 1>(0, 3) = res0.getTranslation();
+    return T;
 }
 //  BAH, copy ICP version, should work fine for PHASER
 //       TODO: verify

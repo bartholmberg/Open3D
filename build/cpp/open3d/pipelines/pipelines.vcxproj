@@ -338,7 +338,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="C:\repo\Open3D\cpp\open3d\pipelines\registration\PoseGraph.cpp" />
     <ClCompile Include="C:\repo\Open3D\cpp\open3d\pipelines\registration\Registration.cpp" />
     <ClCompile Include="C:\repo\Open3D\cpp\open3d\pipelines\registration\RobustKernel.cpp" />
-    <ClCompile Include="C:\repo\Open3D\cpp\open3d\pipelines\registration\TransformationEstimation.cpp" />
+    <ClCompile Include="C:\repo\Open3D\cpp\open3d\pipelines\registration\TransformationEstimation.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Disabled</Optimization>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\repo\Open3D\build\ZERO_CHECK.vcxproj">
