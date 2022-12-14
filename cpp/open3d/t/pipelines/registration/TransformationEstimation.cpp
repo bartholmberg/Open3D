@@ -112,6 +112,65 @@ core::Tensor TransformationEstimationPointToPoint::ComputeTransformation(
     // device, from rotation {3, 3} and translation {3}.
     return t::pipelines::kernel::RtToTransformation(R, t);
 }
+///  Add stubs for phaser rmse and computeTransformatino
+
+double TransformationEstimationPhaser::ComputeRMSE(
+        const geometry::PointCloud &source,
+        const geometry::PointCloud &target,
+        const core::Tensor &correspondences) const {
+    if (!target.HasPointPositions() || !source.HasPointPositions()) {
+        utility::LogError("Source and/or Target pointcloud is empty.");
+    }
+
+    core::AssertTensorDtypes(source.GetPointPositions(),
+                             {core::Float64, core::Float32});
+    core::AssertTensorDtype(target.GetPointPositions(),
+                            source.GetPointPositions().GetDtype());
+    core::AssertTensorDevice(target.GetPointPositions(), source.GetDevice());
+
+    AssertValidCorrespondences(correspondences, source.GetPointPositions());
+
+    core::Tensor valid = correspondences.Ne(-1).Reshape({-1});
+    core::Tensor neighbour_indices =
+            correspondences.IndexGet({valid}).Reshape({-1});
+    core::Tensor source_points_indexed =
+            source.GetPointPositions().IndexGet({valid});
+    core::Tensor target_points_indexed =
+            target.GetPointPositions().IndexGet({neighbour_indices});
+
+    core::Tensor error_t = (source_points_indexed - target_points_indexed);
+    error_t.Mul_(error_t);
+    double error = error_t.Sum({0, 1}).To(core::Float64).Item<double>();
+    return std::sqrt(error /
+                     static_cast<double>(neighbour_indices.GetLength()));
+}
+
+core::Tensor TransformationEstimationPhaser::ComputeTransformation(
+        const geometry::PointCloud &source,
+        const geometry::PointCloud &target,
+        const core::Tensor &correspondences) const {
+    if (!target.HasPointPositions() || !source.HasPointPositions()) {
+        utility::LogError("Source and/or Target pointcloud is empty.");
+    }
+
+    core::AssertTensorDtypes(source.GetPointPositions(),
+                             {core::Float64, core::Float32});
+    core::AssertTensorDtype(target.GetPointPositions(),
+                            source.GetPointPositions().GetDtype());
+    core::AssertTensorDevice(target.GetPointPositions(), source.GetDevice());
+
+    AssertValidCorrespondences(correspondences, source.GetPointPositions());
+
+    core::Tensor R, t;
+   
+
+    // Get rigid transformation tensor of {4, 4} of type Float64 on CPU:0
+    // device, from rotation {3, 3} and translation {3}.
+    return t::pipelines::kernel::RtToTransformation(R, t);
+}
+
+
+///
 
 double TransformationEstimationPointToPlane::ComputeRMSE(
         const geometry::PointCloud &source,
