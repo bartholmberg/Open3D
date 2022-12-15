@@ -123,13 +123,20 @@ def regpair(source=o3d.geometry.PointCloud(),target=o3d.geometry.PointCloud(),in
 	#draw_registration_result(source, target, icp_fine.transformation)
 	#return transformation_icp, information_icp
 	return icp_fine,corr
+
+def foo( in0= int() ):
+	a= in0
+	if (in0==1):
+		a=[2.0 ,3.0]
+	return a
 def main():
+	aaa=foo(1)
 	RyCw75 = np.eye(4)
 
 	RyCw75[:3,:3] = o3d.geometry.PointCloud().get_rotation_matrix_from_xyz( (0,75.0*np.pi/180.0, 0) )
 
 	#index = [22,8]
-	index = [1,1]
+	index = [4,4]
 
 	#regType=o3d.pipelines.registration.TransformationEstimationPointToPlane()
 	regType=o3d.pipelines.registration.TransformationEstimationPhaser()

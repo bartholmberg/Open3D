@@ -188,8 +188,13 @@ Eigen::Matrix4d TransformationEstimationPhaser::ComputeTransformation(
     auto ctrl = std::make_unique<phaser_core::CloudController>("sph-opt");
     model::PointCloudPtr s0 = MakeModelCloud(source);
     model::PointCloudPtr t0 = MakeModelCloud(target);
-    model::RegistrationResult res0 = ctrl->registerPointCloud(t0, s0);
+   // model::RegistrationResult res0 = ctrl->registerPointCloud(t0, s0);
 
+    // BAH, add support for tap-off points to phaser.  Use variant return
+    // type,  and tap point selector input 
+    phaser_core::RegistrationResult vresult = ctrl->registerPointCloud(
+            t0, s0, phaser_core::TapPoint::fullRegistration);
+    auto res0 = std::get<model::RegistrationResult>(vresult);
     std::cout << "Registration: " << std::endl;
     common::PointCloud_tPtr b = res0.getRegisteredCloud()->getRawCloud();
     int N=b->points_.size();
