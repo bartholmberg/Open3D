@@ -8,7 +8,11 @@
 
 6a) *may have to rebuild zlib with force link option
 
-
+7) install.zip at Open3D\install , 
+   🤙🏽 for external builds ( open3d 16.1 /apkrikus branch )
+   🤙🏽 just here for convenience (avoid rebuild for 16.1)
+   🤙🏽 too big for git , so moved to D:\build
+   
 
 
 
