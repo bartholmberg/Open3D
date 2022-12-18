@@ -8,7 +8,7 @@
     <NASM>
       <OutputFormat>$(IntDir)%(FileName).obj</OutputFormat>
       <Outputswitch>0</Outputswitch>
-      <CompilerNasm>C:/repo/vcpkg/installed/x64-windows/tools/yasm/yasm.exe</CompilerNasm>
+      <CompilerNasm>C:/Program Files/NASM/nasm.exe</CompilerNasm>
       <PackAlignmentBoundary>0</PackAlignmentBoundary>
       <CommandLineTemplate>"%(CompilerNasm)" [AllOptions] [AdditionalOptions] "%(FullPath)"</CommandLineTemplate>
       <ExecutionDescription>Assembling %(Filename)%(Extension)</ExecutionDescription>

@@ -586,12 +586,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\repo\Open3D\build\ext_turbojpeg.vcxproj">
-      <Project>{6CFCE88E-AF68-305F-AEDF-8EC2326E4DEE}</Project>
-      <Name>ext_turbojpeg</Name>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </ProjectReference>
     <ProjectReference Include="C:\repo\Open3D\build\ext_uvatlas.vcxproj">
       <Project>{84E0EF28-0E67-341B-A4F0-79747D6AB616}</Project>
       <Name>ext_uvatlas</Name>

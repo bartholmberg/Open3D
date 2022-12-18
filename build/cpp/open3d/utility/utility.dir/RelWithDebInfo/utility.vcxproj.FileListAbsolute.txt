@@ -1,1 +1,1 @@
-C:\repo\open3d\build\cpp\open3d\utility\utility.dir\RelWithDebInfo\utility.lib
+C:\repo\Open3D\build\cpp\open3d\utility\utility.dir\RelWithDebInfo\utility.lib
