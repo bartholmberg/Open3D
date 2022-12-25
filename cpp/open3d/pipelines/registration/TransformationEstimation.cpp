@@ -50,9 +50,9 @@
 #include "open3d/geometry/Geometry3D.h"
 #include "open3d/geometry/KDTreeSearchParam.h"
 #include "open3d/utility/Optional.h"
-#include "phaser/backend/registration/sph-opt-registration.h"
+//#include "phaser/backend/registration/sph-opt-registration.h"
 #include "phaser/controller/cloud-controller.h"
-
+#include "phaser/controller/TapPoint.h"
 namespace phaser_core {
 
 DEFINE_string(
@@ -190,8 +190,8 @@ Eigen::Matrix4d TransformationEstimationPhaser::ComputeTransformation(
     model::PointCloudPtr t0 = MakeModelCloud(target);
    // model::RegistrationResult res0 = ctrl->registerPointCloud(t0, s0);
 
-    // BAH, add support for tap-off points to phaser.  Use variant return
-    // type,  and tap point selector input 
+    // BAH, 🎚️ 🛸 🍯 add support for tap-off points to phaser.  Use variant return
+    // type,  and tap point selector 🎚️ input 
     phaser_core::RegistrationResult vresult = ctrl->registerPointCloud(
             t0, s0, phaser_core::TapPoint::fullRegistration);
     auto res0 = std::get<model::RegistrationResult>(vresult);

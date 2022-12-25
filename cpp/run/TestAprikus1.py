@@ -128,6 +128,10 @@ def foo( in0= int() ):
 	a= in0
 	if (in0==1):
 		a=[2.0 ,3.0]
+	elif(in0==2):
+		a=True;
+	else:
+		a = "boop";
 	return a
 def main():
 	aaa=foo(1)
