@@ -33,7 +33,8 @@
 #include <vector>
 
 #include "open3d/pipelines/registration/RobustKernel.h"
-
+#include "phaser/controller/cloud-controller.h"
+#include "phaser/controller/TapPoint.h"
 namespace open3d {
 
 namespace geometry {
@@ -187,7 +188,7 @@ public:
     double ComputeRMSE(const geometry::PointCloud &source,
                        const geometry::PointCloud &target,
                        const CorrespondenceSet &corres) const override;
-    Eigen::Matrix4d ComputeTransformation(
+    phaser_core::RegistrationResult ComputeTransformation(
             const geometry::PointCloud &source,
             const geometry::PointCloud &target,
             const CorrespondenceSet &corres) const override;

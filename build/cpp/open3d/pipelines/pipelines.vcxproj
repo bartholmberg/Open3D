@@ -220,7 +220,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\repo\apricus\fftw3;C:\repo\apricus\phaser_core\include;C:\repo\apricus\phaser_pre\include;C:\repo\apricus\phaser_common\include;C:\repo\Open3D\3rdparty\glfw\include;C:\repo\Open3D\build\fmt\include;C:\repo\vcpkg\installed\x64-windows\include;C:\repo\Open3D\cpp;C:\repo\Open3D\cpp\build\cpp\open3d\pipelines\CMakeFiles\pipelines.dir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\repo\apricus\fftw3;C:\repo\apricus\phaser_core\include;C:\repo\apricus\phaser_pre\include;C:\repo\apricus\phaser_common\include;C:\repo\Open3D\3rdparty\glew\include;C:\repo\Open3D\3rdparty\glfw\include;C:\repo\Open3D\build\fmt\include;C:\repo\vcpkg\installed\x64-windows\include;C:\repo\Open3D\cpp;C:\repo\Open3D\cpp\build\cpp\open3d\pipelines\CMakeFiles\pipelines.dir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BufferSecurityCheck>true</BufferSecurityCheck>

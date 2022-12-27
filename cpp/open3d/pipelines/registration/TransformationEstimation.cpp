@@ -177,7 +177,7 @@ Eigen::Matrix4d TransformationEstimationPointToPoint::ComputeTransformation(
 //  TransformationEstimation.cpp// BAH, stub out for out for now. Calling phaser registration directly.
 // 
 //      BAH, NEW NOTES add Aprikus call here
-Eigen::Matrix4d TransformationEstimationPhaser::ComputeTransformation(
+phaser_core::RegistrationResult TransformationEstimationPhaser::ComputeTransformation(
         const geometry::PointCloud &source,
         const geometry::PointCloud &target,
         const CorrespondenceSet &corres) const {
@@ -210,7 +210,7 @@ Eigen::Matrix4d TransformationEstimationPhaser::ComputeTransformation(
     T.block<3, 3>(0, 0) = geometry::Geometry3D::GetRotationMatrixFromXYZ( {rota[0], rota[1], -rota[2]});
     std::cout << "\n 🐢 o3d Bingham rotation: " << rota.transpose() * 180.0 / M_PI << std::endl;
     T.block<3, 1>(0, 3) = res0.getTranslation();
-    return T;
+    return vresult;
 }
 //  BAH, copy ICP version, should work fine for PHASER
 //       TODO: verify

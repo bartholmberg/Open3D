@@ -32,6 +32,8 @@
 #include "open3d/utility/Logging.h"
 #include "open3d/utility/Parallel.h"
 #include "open3d/utility/Random.h"
+#include "phaser/controller/cloud-controller.h"
+#include "phaser/controller/TapPoint.h"
 #include <iostream>
 
 namespace open3d {
@@ -126,7 +128,7 @@ RegistrationResult EvaluateRegistration(
             pcd, target, kdtree, max_correspondence_distance, transformation);
 }
 //BAH, add in Global registration implementation here
-RegistrationResult RegistrationGlobal(
+phaser_core::RegistrationResult RegistrationGlobal(
         const geometry::PointCloud &source,
         const geometry::PointCloud &target,
         double max_correspondence_distance,
@@ -166,7 +168,8 @@ RegistrationResult RegistrationGlobal(
     // Eigen::Matrix4d update = estimation.ComputeTransformation(
     //            source, target, result.correspondence_set_);
     //    return result;
-    return result;
+    phaser_core::RegistrationResult vres;
+    return vres;
 };
 
 
