@@ -34,7 +34,8 @@
 #include "open3d/pipelines/registration/TransformationEstimation.h"
 #include "open3d/utility/Eigen.h"
 #include "open3d/utility/Optional.h"
-
+#include "phaser/controller/cloud-controller.h"
+#include "phaser/controller/TapPoint.h"
 namespace open3d {
 
 namespace geometry {

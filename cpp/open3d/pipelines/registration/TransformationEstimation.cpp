@@ -46,7 +46,7 @@
 #include <memory>
 #include <type_traits>  // for enable_if_t
 
-#include "open3d/Open3D.h"
+//#include "open3d/Open3D.h"
 #include "open3d/geometry/Geometry3D.h"
 #include "open3d/geometry/KDTreeSearchParam.h"
 #include "open3d/utility/Optional.h"
