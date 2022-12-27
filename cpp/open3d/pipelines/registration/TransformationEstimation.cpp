@@ -35,7 +35,7 @@
 #include <Eigen/Dense>
 // #include <filesystem>
 #include <fmt/format.h>
-#include <open3d/Open3D.h>
+//#include <open3d/Open3D.h>
 #include <open3d/geometry/PointCloud.h>
 #include <phaser/common/point-types.h>
 

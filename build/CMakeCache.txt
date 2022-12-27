@@ -87,7 +87,7 @@ CCACHE:FILEPATH=CCACHE-NOTFOUND
 CMAKE_AR:FILEPATH=C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.34.31933/bin/Hostx64/x64/lib.exe
 
 //ASM_NASM compiler
-CMAKE_ASM_NASM_COMPILER:STRING=C:/Program Files/NASM/nasm.exe
+CMAKE_ASM_NASM_COMPILER:STRING=C:/repo/vcpkg/installed/x64-windows/tools/yasm/yasm.exe
 
 //Flags used by the ASM_NASM compiler during all build types.
 CMAKE_ASM_NASM_FLAGS:STRING=
@@ -593,14 +593,17 @@ VCPKG_SETUP_CMAKE_PROGRAM_PATH:BOOL=ON
 //Vcpkg target triplet (ex. x86-windows)
 VCPKG_TARGET_TRIPLET:STRING=x64-windows
 
+//Trace calls to find_package()
+VCPKG_TRACE_FIND_PACKAGE:BOOL=OFF
+
 //Enables messages from the VCPKG toolchain for debugging purposes.
 VCPKG_VERBOSE:BOOL=OFF
 
 //Path to a file.
-VULKAN_INCLUDE_DIR:PATH=C:/VulkanSDK/Include
+VULKAN_INCLUDE_DIR:PATH=VULKAN_INCLUDE_DIR-NOTFOUND
 
 //Path to a library.
-VULKAN_LIBRARY:FILEPATH=C:/VulkanSDK/Lib/vulkan-1.lib
+VULKAN_LIBRARY:FILEPATH=VULKAN_LIBRARY-NOTFOUND
 
 //Path to a library.
 VULKAN_STATIC_LIBRARY:FILEPATH=VULKAN_STATIC_LIBRARY-NOTFOUND
@@ -622,10 +625,7 @@ X_VCPKG_APPLOCAL_DEPS_INSTALL:BOOL=OFF
 X_VCPKG_APPLOCAL_DEPS_SERIALIZED:BOOL=OFF
 
 //Path to a program.
-Z_VCPKG_BUILTIN_POWERSHELL_PATH:FILEPATH=C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe
-
-//Path to a program.
-Z_VCPKG_PWSH_PATH:FILEPATH=Z_VCPKG_PWSH_PATH-NOTFOUND
+Z_VCPKG_PWSH_PATH:FILEPATH=C:/Program Files/PowerShell/7/pwsh.exe
 
 //The directory which contains the installed libraries for each
 // triplet
@@ -841,11 +841,9 @@ FIND_PACKAGE_MESSAGE_DETAILS_OpenMP_C:INTERNAL=[-openmp][v2.0()]
 //Details about finding OpenMP_CXX
 FIND_PACKAGE_MESSAGE_DETAILS_OpenMP_CXX:INTERNAL=[-openmp][v2.0()]
 //Details about finding Python3
-FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[C:/repo/vcpkg/installed/x64-windows/tools/python3/python.exe][optimized;C:/repo/vcpkg/installed/x64-windows/lib/python310.lib;debug;C:/repo/vcpkg/installed/x64-windows/debug/lib/python310_d.lib][C:/repo/vcpkg/installed/x64-windows/include/python3.10][cfound components: Interpreter Development Development.Module Development.Embed ][v3.10.5(3.6)]
+FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[C:/repo/vcpkg/installed/x64-windows/tools/python3/python.exe][optimized;C:/repo/vcpkg/installed/x64-windows/lib/python310.lib;debug;C:/repo/vcpkg/installed/x64-windows/debug/lib/python310_d.lib][C:/repo/vcpkg/installed/x64-windows/include/python3.10][cfound components: Interpreter Development Development.Module Development.Embed ][v3.10.7(3.6)]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
-//Details about finding Vulkan
-FIND_PACKAGE_MESSAGE_DETAILS_Vulkan:INTERNAL=[C:/VulkanSDK/Lib/vulkan-1.lib][C:/VulkanSDK/Include][v()]
 //Test FLAG_DYNAMICBASE
 FLAG_DYNAMICBASE:INTERNAL=1
 //Test FLAG_GS
@@ -928,7 +926,7 @@ VULKAN_STATIC_LIBRARY-ADVANCED:INTERNAL=1
 //Making sure VCPKG_MANIFEST_MODE doesn't change
 Z_VCPKG_CHECK_MANIFEST_MODE:INTERNAL=OFF
 //The path to the PowerShell implementation to use.
-Z_VCPKG_POWERSHELL_PATH:INTERNAL=C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe
+Z_VCPKG_POWERSHELL_PATH:INTERNAL=C:/Program Files/PowerShell/7/pwsh.exe
 //Vcpkg root directory
 Z_VCPKG_ROOT_DIR:INTERNAL=C:/repo/vcpkg
 //CMAKE_INSTALL_PREFIX during last run
@@ -941,8 +939,10 @@ _Python3_DEVELOPMENT_MODULE_SIGNATURE:INTERNAL=ae84116287175ccd79932e6380b9e648
 _Python3_EXECUTABLE:INTERNAL=C:/repo/vcpkg/installed/x64-windows/tools/python3/python.exe
 _Python3_INCLUDE_DIR:INTERNAL=C:/repo/vcpkg/installed/x64-windows/include/python3.10
 //Python3 Properties
-_Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;10;5;64;;cp310-win_amd64;C:\repo\vcpkg\installed\x64-windows\tools\python3\Lib;C:\repo\vcpkg\installed\x64-windows\tools\python3\Lib;C:\repo\vcpkg\installed\x64-windows\tools\python3\Lib\site-packages;C:\repo\vcpkg\installed\x64-windows\tools\python3\Lib\site-packages
+_Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;10;7;64;;cp310-win_amd64;c:\Python310\Lib;c:\Python310\Lib;c:\Python310\Lib\site-packages;c:\Python310\Lib\site-packages
 _Python3_INTERPRETER_SIGNATURE:INTERNAL=5dc861c9bb07a84ca4d68b54698c9a07
+//Interpreter reason failure
+_Python3_Interpreter_REASON_FAILURE:INTERNAL=
 //Path to a library.
 _Python3_LIBRARY_DEBUG:INTERNAL=C:/repo/vcpkg/installed/x64-windows/debug/lib/python310_d.lib
 //Path to a library.

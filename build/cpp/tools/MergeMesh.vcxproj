@@ -132,7 +132,7 @@
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/repo/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/repo/Open3D/build/bin/Debug/MergeMesh.exe -installedDir C:/repo/vcpkg/installed/x64-windows/debug/bin -OutVariable out
+"C:\Program Files\PowerShell\7\pwsh.exe" -noprofile -executionpolicy Bypass -file C:/repo/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/repo/Open3D/build/bin/Debug/MergeMesh.exe -installedDir C:/repo/vcpkg/installed/x64-windows/debug/bin -OutVariable out
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -203,7 +203,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/repo/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/repo/Open3D/build/bin/Release/MergeMesh.exe -installedDir C:/repo/vcpkg/installed/x64-windows/bin -OutVariable out
+"C:\Program Files\PowerShell\7\pwsh.exe" -noprofile -executionpolicy Bypass -file C:/repo/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/repo/Open3D/build/bin/Release/MergeMesh.exe -installedDir C:/repo/vcpkg/installed/x64-windows/bin -OutVariable out
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -274,7 +274,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/repo/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/repo/Open3D/build/bin/MinSizeRel/MergeMesh.exe -installedDir C:/repo/vcpkg/installed/x64-windows/bin -OutVariable out
+"C:\Program Files\PowerShell\7\pwsh.exe" -noprofile -executionpolicy Bypass -file C:/repo/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/repo/Open3D/build/bin/MinSizeRel/MergeMesh.exe -installedDir C:/repo/vcpkg/installed/x64-windows/bin -OutVariable out
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -344,7 +344,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/repo/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/repo/Open3D/build/bin/RelWithDebInfo/MergeMesh.exe -installedDir C:/repo/vcpkg/installed/x64-windows/bin -OutVariable out
+"C:\Program Files\PowerShell\7\pwsh.exe" -noprofile -executionpolicy Bypass -file C:/repo/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/repo/Open3D/build/bin/RelWithDebInfo/MergeMesh.exe -installedDir C:/repo/vcpkg/installed/x64-windows/bin -OutVariable out
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
