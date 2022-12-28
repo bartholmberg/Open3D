@@ -95,9 +95,8 @@ public:
     virtual phaser_core::RegistrationResult ComputeTransformationV(
             const geometry::PointCloud &source,
             const geometry::PointCloud &target,
-            const phaser_core::TapPoint &select) {
-        return 0;
-    };
+            const phaser_core::TapPoint &select);
+
 };
 
 /// \class TransformationEstimationPointToPoint
@@ -202,6 +201,10 @@ public:
             const geometry::PointCloud &source,
             const geometry::PointCloud &target,
             const CorrespondenceSet &corres) const override;
+    phaser_core::RegistrationResult ComputeTransformationV(
+            const geometry::PointCloud &source,
+            const geometry::PointCloud &target,
+            const phaser_core::TapPoint &select) ;
 
 public:
     /// \brief Set to True to estimate scaling, False to force scaling to be 1.

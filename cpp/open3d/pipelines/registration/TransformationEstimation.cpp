@@ -214,6 +214,44 @@ Eigen::Matrix4d TransformationEstimationPhaser::ComputeTransformation(
     //return vresult;
     return T;
 }
+
+phaser_core::RegistrationResult  TransformationEstimationPhaser::ComputeTransformationV(
+        // phaser_core::RegistrationResult
+        // TransformationEstimationPhaser::ComputeTransformation(
+        const geometry::PointCloud &source,
+        const geometry::PointCloud &target,
+        const phaser_core::TapPoint &select)  {
+    // BAH, 12/4 got a crash here instantiating the CloudController
+    //      ??? .  Pick it up here after making chili
+    auto ctrl = std::make_unique<phaser_core::CloudController>("sph-opt");
+    model::PointCloudPtr s0 = MakeModelCloud(source);
+    model::PointCloudPtr t0 = MakeModelCloud(target);
+    // model::RegistrationResult res0 = ctrl->registerPointCloud(t0, s0);
+
+    // BAH, 🎚️ 🛸 🍯 add support for tap-off points to phaser.  Use variant return
+    // type,  and tap point selector 🎚️ input
+    phaser_core::RegistrationResult vresult = ctrl->registerPointCloud(
+            t0, s0, phaser_core::TapPoint::fullRegistration);
+    auto res0 = std::get<model::RegistrationResult>(vresult);
+    std::cout << "Registration: " << std::endl;
+    common::PointCloud_tPtr b = res0.getRegisteredCloud()->getRawCloud();
+    int N = b->points_.size();
+    Eigen::MatrixXd resmat(3, N);
+    for (size_t i = 0; i < N; i++) {
+        resmat.block<3, 1>(0, i) = b->points_[i];
+    }
+
+    Eigen::Vector3d rota = res0.getRotation();
+    // BAH, ⛏️ transformation (rot) matrix between Phaser and o3d(below)
+    //          is 📎 different.  Sign difference in Tz
+    Eigen::Matrix4d T = Eigen::Matrix4d::Identity();
+    T.block<3, 3>(0, 0) = geometry::Geometry3D::GetRotationMatrixFromXYZ(
+            {rota[0], rota[1], -rota[2]});
+    std::cout << "\n 🐢 o3d Bingham rotation: "
+              << rota.transpose() * 180.0 / M_PI << std::endl;
+    T.block<3, 1>(0, 3) = res0.getTranslation();
+    return vresult;
+}
 //  BAH, copy ICP version, should work fine for PHASER
 //       TODO: verify
 double TransformationEstimationPhaser::ComputeRMSE(
