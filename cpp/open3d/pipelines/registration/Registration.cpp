@@ -128,7 +128,7 @@ RegistrationResult EvaluateRegistration(
             pcd, target, kdtree, max_correspondence_distance, transformation);
 }
 //BAH, add in Global registration implementation here
-phaser_core::RegistrationResult RegistrationGlobal(
+RegistrationResult RegistrationGlobal(
         const geometry::PointCloud &source,
         const geometry::PointCloud &target,
         double max_correspondence_distance,
@@ -168,8 +168,8 @@ phaser_core::RegistrationResult RegistrationGlobal(
     // Eigen::Matrix4d update = estimation.ComputeTransformation(
     //            source, target, result.correspondence_set_);
     //    return result;
-    phaser_core::RegistrationResult vres;
-    return vres;
+    //phaser_core::RegistrationResult vres;
+    return result;
 };
 
 

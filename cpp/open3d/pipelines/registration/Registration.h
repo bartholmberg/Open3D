@@ -34,8 +34,8 @@
 #include "open3d/pipelines/registration/TransformationEstimation.h"
 #include "open3d/utility/Eigen.h"
 #include "open3d/utility/Optional.h"
-#include "phaser/controller/cloud-controller.h"
-#include "phaser/controller/TapPoint.h"
+//#include "phaser/controller/cloud-controller.h"
+//#include "phaser/controller/TapPoint.h"
 namespace open3d {
 
 namespace geometry {
@@ -44,6 +44,7 @@ class PointCloud;
 
 namespace pipelines {
 namespace registration {
+ 
 class Feature;
 
 /// \class ICPConvergenceCriteria
@@ -167,7 +168,7 @@ RegistrationResult EvaluateRegistration(
 ///  Default value: array([[1., 0., 0., 0.], [0., 1., 0., 0.], [0., 0., 1., 0.],
 ///  [0., 0., 0., 1.]])
 /// \param estimation Estimation method.
-phaser_core::RegistrationResult RegistrationGlobal(
+RegistrationResult RegistrationGlobal(
         const geometry::PointCloud &source,
         const geometry::PointCloud &target,
         double max_correspondence_distance,

@@ -46,7 +46,7 @@
 #include <memory>
 #include <type_traits>  // for enable_if_t
 
-//#include "open3d/Open3D.h"
+#include "open3d/Open3D.h"
 #include "open3d/geometry/Geometry3D.h"
 #include "open3d/geometry/KDTreeSearchParam.h"
 #include "open3d/utility/Optional.h"
@@ -177,7 +177,8 @@ Eigen::Matrix4d TransformationEstimationPointToPoint::ComputeTransformation(
 //  TransformationEstimation.cpp// BAH, stub out for out for now. Calling phaser registration directly.
 // 
 //      BAH, NEW NOTES add Aprikus call here
-phaser_core::RegistrationResult TransformationEstimationPhaser::ComputeTransformation(
+Eigen::Matrix4d TransformationEstimationPhaser::ComputeTransformation(
+        //phaser_core::RegistrationResult TransformationEstimationPhaser::ComputeTransformation(
         const geometry::PointCloud &source,
         const geometry::PointCloud &target,
         const CorrespondenceSet &corres) const {
@@ -210,7 +211,8 @@ phaser_core::RegistrationResult TransformationEstimationPhaser::ComputeTransform
     T.block<3, 3>(0, 0) = geometry::Geometry3D::GetRotationMatrixFromXYZ( {rota[0], rota[1], -rota[2]});
     std::cout << "\n 🐢 o3d Bingham rotation: " << rota.transpose() * 180.0 / M_PI << std::endl;
     T.block<3, 1>(0, 3) = res0.getTranslation();
-    return vresult;
+    //return vresult;
+    return T;
 }
 //  BAH, copy ICP version, should work fine for PHASER
 //       TODO: verify
