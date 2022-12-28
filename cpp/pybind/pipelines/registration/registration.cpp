@@ -173,6 +173,10 @@ void pybind_registration_classes(py::module &m) {
            "target"_a, "corres"_a,
            "Compute transformation from source to target point cloud given "
            "correspondences.");
+    te.def("compute_transformation",
+           &TransformationEstimation::ComputeTransformationV, "source"_a,
+           "target"_a, "select"_a,
+           "Compute transformation from source to target point cloud given ");
     docstring::ClassMethodDocInject(
             m, "TransformationEstimation", "compute_rmse",
             {{"source", "Source point cloud."},

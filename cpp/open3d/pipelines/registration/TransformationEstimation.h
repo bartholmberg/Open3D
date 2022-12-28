@@ -33,8 +33,8 @@
 #include <vector>
 //#include "open3d/Open3D.h"
 #include "open3d/pipelines/registration/RobustKernel.h"
-//#include "phaser/controller/cloud-controller.h"
-//#include "phaser/controller/TapPoint.h"
+#include "phaser/controller/cloud-controller.h"
+#include "phaser/controller/TapPoint.h"
 namespace open3d {
 
 namespace geometry {
@@ -87,7 +87,17 @@ public:
     virtual Eigen::Matrix4d ComputeTransformation(
             const geometry::PointCloud &source,
             const geometry::PointCloud &target,
-            const CorrespondenceSet &corres) const = 0;
+            const CorrespondenceSet &corres)const=0;
+    // BAH, note the pybind registration.cpp requires different names for the 
+    // base class functions.
+    // Maybe there is a way to combine these???, but seems difficult due to
+    // different in argument list
+    virtual phaser_core::RegistrationResult ComputeTransformationV(
+            const geometry::PointCloud &source,
+            const geometry::PointCloud &target,
+            const phaser_core::TapPoint &select) {
+        return 0;
+    };
 };
 
 /// \class TransformationEstimationPointToPoint
