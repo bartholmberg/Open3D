@@ -226,7 +226,7 @@
       <BufferSecurityCheck>true</BufferSecurityCheck>
       <ControlFlowGuard>Guard</ControlFlowGuard>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <DisableSpecificWarnings>4201;4310;4505;4127;4146;4189;4324;4706;4100;4702;4244;4245;4267;4305;4819</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4239;4201;4310;4505;4127;4146;4189;4324;4706;4100;4702;4244;4245;4267;4305;4819</DisableSpecificWarnings>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>

@@ -115,9 +115,9 @@ def regpair(source=o3d.geometry.PointCloud(),target=o3d.geometry.PointCloud(),in
                                                           relative_rmse=1e-18,
                                                           max_iteration=max_iteration)
     #icp_fine = o3d.pipelines.registration.registration_phaser( source, target, coarse_max, init, RegType)  
-    icp_fine = o3d.pipelines.registration.registration_phaser( source, target,  RegType)
-    #icp_fine = o3d.pipelines.registration.registration_phaser( source, target)
-    aaa=o3d.pipelines.registration.evaluate_registration(source,target,fine_max,icp_fine.transformation)
+    #icp_fine = o3d.pipelines.registration.registration_phaser( source, target,  RegType)
+    icp_fine = o3d.pipelines.registration.registration_phaser( source, target)
+    #aaa=o3d.pipelines.registration.evaluate_registration(source,target,fine_max,icp_fine.transformation)
     corr=np.asarray(aaa.correspondence_set);
     #print("icp fine: " ,icp_fine)
     transformation_icp = icp_fine.transformation

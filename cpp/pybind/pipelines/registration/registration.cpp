@@ -237,7 +237,8 @@ Sets :math:`c = 1` if ``with_scaling`` is ``False``.
                    "distance.");
     py::detail::bind_copy_functions<TransformationEstimationPhaser>(
             te_phaser);
-    te_phaser.def(py::init([](bool with_scaling) {
+   
+            te_phaser.def(py::init([](bool with_scaling) {
                    return new TransformationEstimationPhaser(
                            with_scaling);
                }),
@@ -254,6 +255,7 @@ Sets :math:`c = 1` if ``with_scaling`` is ``False``.
                     "with_scaling",
                     &TransformationEstimationPhaser::with_scaling_,
                     R"(Set to True to estimate scaling, False to force scaling to be 1)");
+    
     // open3d.registration.TransformationEstimationPointToPlane:
     // TransformationEstimation
     py::class_<TransformationEstimationPointToPlane,
@@ -648,10 +650,11 @@ void pybind_registration_methods(py::module &m) {
     //
     //BAH, add phaser in as global registration method
     //   , add variant here
+    // NOTE: remove third/last input for testing
+    //         "estimation_method"_a = TransformationEstimationPhaser(false) );
     m.def("registration_phaser", &RegistrationGlobal,
           py::call_guard<py::gil_scoped_release>(),
-          "Function for Phaser registration", "source"_a, "target"_a,
-          "estimation_method"_a = TransformationEstimationPhaser(false) );
+          "Function for Phaser registration", "source"_a, "target"_a);
     docstring::FunctionDocInject(m, "registration_phaser",
                                  map_shared_argument_docstrings);
 

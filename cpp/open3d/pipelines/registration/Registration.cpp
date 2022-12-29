@@ -130,10 +130,11 @@ RegistrationResult EvaluateRegistration(
 //BAH, add in Global registration implementation here
 RegistrationResult RegistrationGlobal(
         const geometry::PointCloud &source,
-        const geometry::PointCloud &target,
-        TransformationEstimation &estimation){
+        const geometry::PointCloud &target){
     int iteration =1;
    
+    TransformationEstimation &estimation=TransformationEstimationPhaser(false);
+    
     if ( estimation.GetTransformationEstimationType() == TransformationEstimationType::Phaser ) {
         std::cout << "phaser global registration method" << std::endl;
         }
@@ -141,7 +142,7 @@ RegistrationResult RegistrationGlobal(
     geometry::KDTreeFlann kdtree;
     kdtree.SetGeometry(target);
     geometry::PointCloud pcd = source;
-    
+
     // RegistrationResult result;
     RegistrationResult result;
     phaser_core::TapPoint select = phaser_core::TapPoint::fullRegistration;

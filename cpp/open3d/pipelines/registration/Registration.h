@@ -168,11 +168,10 @@ RegistrationResult EvaluateRegistration(
 ///  Default value: array([[1., 0., 0., 0.], [0., 1., 0., 0.], [0., 0., 1., 0.],
 ///  [0., 0., 0., 1.]])
 /// \param estimation Estimation method.
-RegistrationResult RegistrationGlobal(
-        const geometry::PointCloud &source,
-        const geometry::PointCloud &target,
-        const TransformationEstimation &estimation =
-                TransformationEstimationPhaser(false)); 
+RegistrationResult RegistrationGlobal(const geometry::PointCloud &source,
+                                      const geometry::PointCloud &target);
+//        const TransformationEstimation &estimation =
+//                TransformationEstimationPhaser(false)); 
 
 /// \brief Functions for ICP registration.
 ///
