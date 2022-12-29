@@ -131,37 +131,28 @@ RegistrationResult EvaluateRegistration(
 RegistrationResult RegistrationGlobal(
         const geometry::PointCloud &source,
         const geometry::PointCloud &target,
-        double max_correspondence_distance,
-        const Eigen::Matrix4d &init ,
-        const TransformationEstimation &estimation){
+        TransformationEstimation &estimation){
     int iteration =1;
-    if (max_correspondence_distance <= 0.0) {
-        utility::LogError("Invalid max_correspondence_distance.");
-        }
+   
     if ( estimation.GetTransformationEstimationType() == TransformationEstimationType::Phaser ) {
         std::cout << "phaser global registration method" << std::endl;
         }
-    Eigen::Matrix4d transformation = init;
+    Eigen::Matrix4d transformation;
     geometry::KDTreeFlann kdtree;
     kdtree.SetGeometry(target);
     geometry::PointCloud pcd = source;
-    if (!init.isIdentity()) {
-        pcd.Transform(init);
-    }
-
+    
     // RegistrationResult result;
     RegistrationResult result;
-    result = GetRegistrationResultAndCorrespondences(
-            pcd, target, kdtree, max_correspondence_distance, transformation);  
-    utility::LogDebug("ICP Iteration #{:d}: Fitness {:.4f}, RMSE {:.4f}", 
-                          result.fitness_, result.inlier_rmse_);
-    Eigen::Matrix4d update = estimation.ComputeTransformation(
-                pcd, target, result.correspondence_set_);
-    transformation = update * transformation;
-    pcd.Transform(update);
+    phaser_core::TapPoint select = phaser_core::TapPoint::fullRegistration;
+    phaser_core::RegistrationResult res0 = estimation.ComputeTransformationV(pcd, target,select);
+    //utility::LogDebug("ICP Iteration #{:d}: Fitness {:.4f}, RMSE {:.4f}",
+    //                  result.fitness_, result.inlier_rmse_);
+    //transformation = update * transformation;
+    //pcd.Transform(update);
     RegistrationResult backup = result;
     result = GetRegistrationResultAndCorrespondences(
-                pcd, target, kdtree, max_correspondence_distance,
+                pcd, target, kdtree, 1.0,
                 transformation);
 
     result.transformation_ = transformation;    

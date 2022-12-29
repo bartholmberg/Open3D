@@ -228,6 +228,7 @@ Sets :math:`c = 1` if ``with_scaling`` is ``False``.
     // open3d.registration.TransformationEstimationPhaser:
     // TransformationEstimation
     /// BAH, bind in phaser registration 
+    ///      add variant here
     py::class_<TransformationEstimationPhaser,
                PyTransformationEstimation<TransformationEstimationPhaser>,
                TransformationEstimation>
@@ -646,12 +647,10 @@ void pybind_registration_methods(py::module &m) {
                                  map_shared_argument_docstrings);
     //
     //BAH, add phaser in as global registration method
-    //
+    //   , add variant here
     m.def("registration_phaser", &RegistrationGlobal,
           py::call_guard<py::gil_scoped_release>(),
           "Function for Phaser registration", "source"_a, "target"_a,
-          "max_correspondence_distance"_a,
-          "init"_a = Eigen::Matrix4d::Identity(),
           "estimation_method"_a = TransformationEstimationPhaser(false) );
     docstring::FunctionDocInject(m, "registration_phaser",
                                  map_shared_argument_docstrings);

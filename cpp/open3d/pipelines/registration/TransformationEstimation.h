@@ -95,7 +95,9 @@ public:
     virtual phaser_core::RegistrationResult ComputeTransformationV(
             const geometry::PointCloud &source,
             const geometry::PointCloud &target,
-            const phaser_core::TapPoint &select);
+            const phaser_core::TapPoint &select) {
+        return 0;
+    };
 
 };
 
@@ -204,7 +206,7 @@ public:
     phaser_core::RegistrationResult ComputeTransformationV(
             const geometry::PointCloud &source,
             const geometry::PointCloud &target,
-            const phaser_core::TapPoint &select) ;
+            const phaser_core::TapPoint &select) override ;
 
 public:
     /// \brief Set to True to estimate scaling, False to force scaling to be 1.

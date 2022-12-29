@@ -171,8 +171,6 @@ RegistrationResult EvaluateRegistration(
 RegistrationResult RegistrationGlobal(
         const geometry::PointCloud &source,
         const geometry::PointCloud &target,
-        double max_correspondence_distance,
-        const Eigen::Matrix4d &init = Eigen::Matrix4d::Identity(),
         const TransformationEstimation &estimation =
                 TransformationEstimationPhaser(false)); 
 
