@@ -169,7 +169,8 @@ RegistrationResult EvaluateRegistration(
 ///  [0., 0., 0., 1.]])
 /// \param estimation Estimation method.
 RegistrationResult RegistrationGlobal(const geometry::PointCloud &source,
-                                      const geometry::PointCloud &target);
+                                      const geometry::PointCloud &target,
+                                      const TransformationEstimationPhaser &est);
 //        const TransformationEstimation &estimation =
 //                TransformationEstimationPhaser(false)); 
 

@@ -235,26 +235,21 @@ Sets :math:`c = 1` if ``with_scaling`` is ``False``.
             te_phaser(m, "TransformationEstimationPhaser",
                    "Class to estimate a transformation Phaser "
                    "distance.");
-    py::detail::bind_copy_functions<TransformationEstimationPhaser>(
-            te_phaser);
+    py::detail::bind_copy_functions<TransformationEstimationPhaser>(te_phaser);
    
-            te_phaser.def(py::init([](bool with_scaling) {
-                   return new TransformationEstimationPhaser(
-                           with_scaling);
-               }),
-               "with_scaling"_a = false)
-            .def("__repr__",
-                 [](const TransformationEstimationPhaser &te) {
-                     return std::string(
-                                    "TransformationEstimationPhaser ") +
-                            (te.with_scaling_
-                                     ? std::string("with scaling.")
-                                     : std::string("without scaling."));
-                 })
-            .def_readwrite(
-                    "with_scaling",
-                    &TransformationEstimationPhaser::with_scaling_,
-                    R"(Set to True to estimate scaling, False to force scaling to be 1)");
+            te_phaser
+            .def(py::init([]() {
+                TransformationEstimationPhaser *ptr =new TransformationEstimationPhaser();
+                //return new TransformationEstimationPhaser();
+                return ptr;
+            }))
+
+
+
+            .def("__repr__", [](const TransformationEstimationPhaser &te) {
+                return std::string("TransformationEstimationPhaser ");
+            });
+
     
     // open3d.registration.TransformationEstimationPointToPlane:
     // TransformationEstimation
@@ -654,7 +649,8 @@ void pybind_registration_methods(py::module &m) {
     //         "estimation_method"_a = TransformationEstimationPhaser(false) );
     m.def("registration_phaser", &RegistrationGlobal,
           py::call_guard<py::gil_scoped_release>(),
-          "Function for Phaser registration", "source"_a, "target"_a);
+          "Function for Phaser registration", "source"_a, "target"_a,
+          "estimation_method"_a = new TransformationEstimationPhaser());
     docstring::FunctionDocInject(m, "registration_phaser",
                                  map_shared_argument_docstrings);
 

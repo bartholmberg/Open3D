@@ -60,9 +60,15 @@ enum class TransformationEstimationType {
 /// Base class that estimates a transformation between two point clouds
 /// The virtual function ComputeTransformation() must be implemented in
 /// subclasses.
+///     
+
 class TransformationEstimation {
+protected:
+    inline const static TransformationEstimation *this_=NULL;
+
 public:
     /// \brief Default Constructor.
+    //TransformationEstimation *this_ = NULL;
     TransformationEstimation() {}
     virtual ~TransformationEstimation() {}
 
@@ -95,9 +101,8 @@ public:
     virtual phaser_core::RegistrationResult ComputeTransformationV(
             const geometry::PointCloud &source,
             const geometry::PointCloud &target,
-            const phaser_core::TapPoint &select) {
-        return 0;
-    };
+            const phaser_core::TapPoint &select) const ;
+
 
 };
 
@@ -181,17 +186,25 @@ private:
 /// BAH, Place holder and here only to Phaser registration types.
 ///      For now all computation is done in Aprikus code base. 
 ///      No known requirement to support _kernel
+/// 
+
+static int constructCnt = 0;
 class TransformationEstimationPhaser : public TransformationEstimation {
-public:
-    /// \brief Parameterized Constructor.
-    ///
-    /// \param with_scaling Set to True to estimate scaling, False to force
-    /// scaling to be 1.
-    TransformationEstimationPhaser(bool with_scaling = false)
-        : with_scaling_(with_scaling) {}
-    ~TransformationEstimationPhaser() override {}
+
 
 public:
+    /// \brief  Constructor.
+    //TransformationEstimation *this_;
+    TransformationEstimationPhaser() { 
+        if (this_ != NULL) return;
+        constructCnt++;
+        this_=this; }
+    ~TransformationEstimationPhaser() override {}
+
+
+
+public:
+
     TransformationEstimationType GetTransformationEstimationType()
             const override {
         return type_;
@@ -206,7 +219,7 @@ public:
     phaser_core::RegistrationResult ComputeTransformationV(
             const geometry::PointCloud &source,
             const geometry::PointCloud &target,
-            const phaser_core::TapPoint &select) override ;
+            const phaser_core::TapPoint &select) const override ;
 
 public:
     /// \brief Set to True to estimate scaling, False to force scaling to be 1.
@@ -215,12 +228,12 @@ public:
     /// T = [ cR t]\n
     ///    [0   1]\n
     /// Sets 𝑐=1 if with_scaling is False.
-    bool with_scaling_ = false;
+    //bool with_scaling_ = false;
 
 private:
     const TransformationEstimationType type_ =
             TransformationEstimationType::Phaser;
-
+    //const bool b
 };
 }  // namespace registration
 }  // namespace pipelines

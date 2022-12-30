@@ -130,23 +130,24 @@ RegistrationResult EvaluateRegistration(
 //BAH, add in Global registration implementation here
 RegistrationResult RegistrationGlobal(
         const geometry::PointCloud &source,
-        const geometry::PointCloud &target){
+        const geometry::PointCloud &target,
+        const TransformationEstimationPhaser &est) {
     int iteration =1;
-   
-    TransformationEstimation &estimation=TransformationEstimationPhaser(false);
-    
-    if ( estimation.GetTransformationEstimationType() == TransformationEstimationType::Phaser ) {
+
+   // TransformationEstimationPhaser &estimation = est;
+
+    //TransformationEstimation &estimation=TransformationEstimationPhaser();
+    if ( est.GetTransformationEstimationType() == TransformationEstimationType::Phaser ) {
         std::cout << "phaser global registration method" << std::endl;
         }
     Eigen::Matrix4d transformation;
     geometry::KDTreeFlann kdtree;
     kdtree.SetGeometry(target);
     geometry::PointCloud pcd = source;
-
     // RegistrationResult result;
     RegistrationResult result;
     phaser_core::TapPoint select = phaser_core::TapPoint::fullRegistration;
-    phaser_core::RegistrationResult res0 = estimation.ComputeTransformationV(pcd, target,select);
+    phaser_core::RegistrationResult res0 = est.ComputeTransformationV(pcd, target,select);
     //utility::LogDebug("ICP Iteration #{:d}: Fitness {:.4f}, RMSE {:.4f}",
     //                  result.fitness_, result.inlier_rmse_);
     //transformation = update * transformation;
