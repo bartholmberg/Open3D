@@ -26,6 +26,7 @@
 
 #pragma once
 
+// open3c_pybind.h has stl.h with variant
 #include "pybind/open3d_pybind.h"
 
 namespace open3d {

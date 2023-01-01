@@ -168,9 +168,11 @@ RegistrationResult EvaluateRegistration(
 ///  Default value: array([[1., 0., 0., 0.], [0., 1., 0., 0.], [0., 0., 1., 0.],
 ///  [0., 0., 0., 1.]])
 /// \param estimation Estimation method.
-RegistrationResult RegistrationGlobal(const geometry::PointCloud &source,
-                                      const geometry::PointCloud &target,
-                                      const TransformationEstimationPhaser &est);
+phaser_core::RegistrationResult RegistrationGlobal(
+        const geometry::PointCloud &source,
+        const geometry::PointCloud &target,
+        const phaser_core::TapPoint &select,
+        const TransformationEstimationPhaser &est );
 //        const TransformationEstimation &estimation =
 //                TransformationEstimationPhaser(false)); 
 

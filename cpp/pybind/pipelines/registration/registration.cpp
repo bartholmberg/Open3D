@@ -67,7 +67,15 @@ public:
         PYBIND11_OVERLOAD_PURE(Eigen::Matrix4d, TransformationEstimationBase,
                                source, target, corres);
     }
+    phaser_core::RegistrationResult ComputeTransformationV(
+            const geometry::PointCloud &source,
+            const geometry::PointCloud &target,
+            const phaser_core::TapPoint &select) const override {
+        PYBIND11_OVERLOAD_PURE(phaser_core::RegistrationResult , TransformationEstimationBase,
+                               source, target, select);
+    }
 };
+
 
 template <class CorrespondenceCheckerBase = CorrespondenceChecker>
 class PyCorrespondenceChecker : public CorrespondenceCheckerBase {
@@ -173,7 +181,7 @@ void pybind_registration_classes(py::module &m) {
            "target"_a, "corres"_a,
            "Compute transformation from source to target point cloud given "
            "correspondences.");
-    te.def("compute_transformation",
+    te.def("compute_transformation_v",
            &TransformationEstimation::ComputeTransformationV, "source"_a,
            "target"_a, "select"_a,
            "Compute transformation from source to target point cloud given ");
@@ -189,7 +197,12 @@ void pybind_registration_classes(py::module &m) {
              {"target", "Target point cloud."},
              {"corres",
               "Correspondence set between source and target point cloud."}});
-
+    docstring::ClassMethodDocInject(
+            m, "TransformationEstimation", "compute_transformation_v",
+            {{"source", "Source point cloud."},
+             {"target", "Target point cloud."},
+             {"select",
+              "select intermediate output from phaser global registration"}});
     // open3d.registration.TransformationEstimationPointToPoint:
     // TransformationEstimation
     py::class_<TransformationEstimationPointToPoint,
@@ -229,6 +242,7 @@ Sets :math:`c = 1` if ``with_scaling`` is ``False``.
     // TransformationEstimation
     /// BAH, bind in phaser registration 
     ///      add variant here
+
     py::class_<TransformationEstimationPhaser,
                PyTransformationEstimation<TransformationEstimationPhaser>,
                TransformationEstimation>
@@ -590,7 +604,38 @@ must hold true for all edges.)");
                         rr.fitness_, rr.inlier_rmse_,
                         rr.correspondence_set_.size());
             });
+    // open3d.registration.RegistrationResultV
+    py::class_<phaser_core::RegistrationResult> registration_result_v(
+            m, "RegistrationResultV",
+            "Class that contains the registration results.");
+    py::detail::bind_default_constructor<phaser_core::RegistrationResult>(
+            registration_result_v);
+    py::detail::bind_copy_functions<phaser_core::RegistrationResult>(
+            registration_result_v);
+    registration_result_v
+            .def_readwrite("index which result is it",
+                           &model::RegistrationResult::getRotation,
+                           "int index"
+                           "variant index")
+            .def_readwrite("index which result is it",
+                           &model::RegistrationResult::getTranslation,
+                           "int index"
+                           "variant index")
+ //           .def_readwrite("index which result is it",
+ //                          &std::get<2>( phaser_core::RegistrationResult),
+ //                          "int index"
+//                           "variant index")
+            .def_readwrite("get registered cloud",
+                           &model::RegistrationResult::getRegisteredCloud,
+                           "registed cloud"
+                           "blah blah")
+            .def("__repr__", [](const phaser_core::RegistrationResult &rr) {
+                return fmt::format(
+                        "RegistrationResult with ");
+            });
 }
+
+
 
 // Registration functions have similar arguments, sharing arg docstrings
 static const std::unordered_map<std::string, std::string>
@@ -650,6 +695,7 @@ void pybind_registration_methods(py::module &m) {
     m.def("registration_phaser", &RegistrationGlobal,
           py::call_guard<py::gil_scoped_release>(),
           "Function for Phaser registration", "source"_a, "target"_a,
+          "select"_a,
           "estimation_method"_a = new TransformationEstimationPhaser());
     docstring::FunctionDocInject(m, "registration_phaser",
                                  map_shared_argument_docstrings);

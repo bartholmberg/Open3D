@@ -116,7 +116,10 @@ def regpair(source=o3d.geometry.PointCloud(),target=o3d.geometry.PointCloud(),in
                                                           max_iteration=max_iteration)
     #icp_fine = o3d.pipelines.registration.registration_phaser( source, target, coarse_max, init, RegType)  
     #icp_fine = o3d.pipelines.registration.registration_phaser( source, target,  RegType)
-    icp_fine = o3d.pipelines.registration.registration_phaser( source, target)
+    a=o3d.pipelines.registration.TransformationEstimationPhaser()
+    tp= o3d.pipelines.registration.TapPoint()
+    tp=1
+    icp_fine = o3d.pipelines.registration.registration_phaser( source, target,tp)
     #aaa=o3d.pipelines.registration.evaluate_registration(source,target,fine_max,icp_fine.transformation)
     corr=np.asarray(aaa.correspondence_set);
     #print("icp fine: " ,icp_fine)
@@ -137,6 +140,8 @@ def foo( in0= int() ):
     return a
 def main():
     aaa=foo(1)
+    tp= o3d.cpu.pybind.pipelines.registration.TransformationEstimationPhaser()
+    a=o3d.pipelines.registration.TransformationEstimationPhaser()
     RyCw75 = np.eye(4)
 
     RyCw75[:3,:3] = o3d.geometry.PointCloud().get_rotation_matrix_from_xyz( (0,75.0*np.pi/180.0, 0) )

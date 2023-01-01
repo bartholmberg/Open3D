@@ -128,9 +128,10 @@ RegistrationResult EvaluateRegistration(
             pcd, target, kdtree, max_correspondence_distance, transformation);
 }
 //BAH, add in Global registration implementation here
-RegistrationResult RegistrationGlobal(
+phaser_core::RegistrationResult RegistrationGlobal(
         const geometry::PointCloud &source,
         const geometry::PointCloud &target,
+        const phaser_core::TapPoint &select,
         const TransformationEstimationPhaser &est) {
     int iteration =1;
 
@@ -146,7 +147,7 @@ RegistrationResult RegistrationGlobal(
     geometry::PointCloud pcd = source;
     // RegistrationResult result;
     RegistrationResult result;
-    phaser_core::TapPoint select = phaser_core::TapPoint::fullRegistration;
+    //phaser_core::TapPoint select = phaser_core::TapPoint::fullRegistration;
     phaser_core::RegistrationResult res0 = est.ComputeTransformationV(pcd, target,select);
     //utility::LogDebug("ICP Iteration #{:d}: Fitness {:.4f}, RMSE {:.4f}",
     //                  result.fitness_, result.inlier_rmse_);
@@ -162,7 +163,7 @@ RegistrationResult RegistrationGlobal(
     //            source, target, result.correspondence_set_);
     //    return result;
     //phaser_core::RegistrationResult vres;
-    return result;
+    return res0;
 };
 
 
