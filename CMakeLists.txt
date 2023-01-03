@@ -11,7 +11,7 @@ cmake_minimum_required(VERSION 3.20)
 #
 # CMake 3.20+ is required to:
 # - detect IntelLLVM compiler for SYCL
-
+set(CMAKE_CXX_STANDARD 17)
 if (APPLE)
 set (CMAKE_OSX_DEPLOYMENT_TARGET "10.15" CACHE STRING
     "Minimum OS X deployment version" FORCE)
@@ -284,11 +284,11 @@ endif()
 
 # Global flag to set CXX standard.
 # This does not affect 3rd party libraries.
-if (BUILD_SYCL_MODULE)
-    set(CMAKE_CXX_STANDARD 17)
-else()
-    set(CMAKE_CXX_STANDARD 14)
-endif()
+#if (BUILD_SYCL_MODULE)
+set(CMAKE_CXX_STANDARD 17)
+#else()
+#    set(CMAKE_CXX_STANDARD 14)
+#endif()
 
 # FIXME: Remove this workaround once a fixed Visual Studio 16.10 version is released.
 if (BUILD_CUDA_MODULE

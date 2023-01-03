@@ -40,7 +40,46 @@
 #include "open3d/utility/Logging.h"
 #include "pybind/docstring.h"
 #include "pybind/pipelines/registration/registration.h"
+#include "Python.h"
+#include <pybind11/stl.h>
+#include <pybind11/eval.h>
+#include <pybind11/pybind11.h>
+#include "constructor_stats.h"
+#include "pybind11_tests.h"
+namespace fooxxx {
+class atest_initializer {
+    using aInitializer = void (*)(py::module_ &);
 
+public:
+    explicit atest_initializer(aInitializer init);
+    atest_initializer(const char *submodule_name, aInitializer init);
+};
+#define ATEST_SUBMODULE(name, variable)                    \
+    void atest_submodule_##name(py::module_ &);            \
+    atest_initializer name(#name, atest_submodule_##name); \
+    void atest_submodule_##name(py::module_ &(variable))
+
+namespace py = pybind11;
+using namespace pybind11::literals;
+// using std::variant;
+struct avisitor {
+    using result_type = const char *;
+
+    result_type operator()(int) { return "int"; }
+    result_type operator()(const std::string &) { return "std::string"; }
+    result_type operator()(double) { return "double"; }
+    result_type operator()(std::nullptr_t) { return "std::nullptr_t"; }
+    result_type operator()(std::monostate) { return "std::monostate"; }
+};
+
+//ATEST_SUBMODULE(aload_variant, m) {
+ //   m.def("aload_variant",
+ //         [](const std::variant<int, std::string, double, std::nullptr_t> &v) {
+ //             return py::detail::visit_helper<std::variant>::call(avisitor(),
+ //                                                                 v);
+//          });
+//};
+}  // namespace aprivatenamespace
 namespace open3d {
 namespace pipelines {
 namespace registration {
@@ -258,7 +297,12 @@ Sets :math:`c = 1` if ``with_scaling`` is ``False``.
                 return ptr;
             }))
 
-
+            .def("aload_variant", [](const std::variant<int, std::string,
+                                                        double, std::nullptr_t>
+                                             &v) {
+                return fooxxx::py::detail::visit_helper<std::variant>::call(
+                        fooxxx::avisitor(), v);
+            })
 
             .def("__repr__", [](const TransformationEstimationPhaser &te) {
                 return std::string("TransformationEstimationPhaser ");
@@ -605,6 +649,7 @@ must hold true for all edges.)");
                         rr.correspondence_set_.size());
             });
     // open3d.registration.RegistrationResultV
+ 
     py::class_<phaser_core::RegistrationResult> registration_result_v(
             m, "RegistrationResultV",
             "Class that contains the registration results.");
@@ -612,27 +657,37 @@ must hold true for all edges.)");
             registration_result_v);
     py::detail::bind_copy_functions<phaser_core::RegistrationResult>(
             registration_result_v);
-    registration_result_v
-            .def_readwrite("index which result is it",
-                           &model::RegistrationResult::getRotation,
-                           "int index"
-                           "variant index")
-            .def_readwrite("index which result is it",
-                           &model::RegistrationResult::getTranslation,
-                           "int index"
-                           "variant index")
+    /*
+    registration_result_v .def(
+            "aload_variant", [](const std::variant<int, std::string, double,
+                                                   std::nullptr_t> &v) {
+                return fooxxx::py::detail::visit_helper<std::variant>::call(fooxxx::avisitor(),
+                                                                    v);
+            });
+
+
+*/
+ //           .def_readwrite("index which result is it",
+ //                          &model::RegistrationResult::getRotation,
+ //                          "int index"
+ //                          "variant index")
+ //           .def_readwrite("index which result is it",
+ //                          &model::RegistrationResult::getTranslation,
+ //                          "int index"
+ //                          "variant index");
  //           .def_readwrite("index which result is it",
  //                          &std::get<2>( phaser_core::RegistrationResult),
  //                          "int index"
 //                           "variant index")
-            .def_readwrite("get registered cloud",
-                           &model::RegistrationResult::getRegisteredCloud,
-                           "registed cloud"
-                           "blah blah")
-            .def("__repr__", [](const phaser_core::RegistrationResult &rr) {
-                return fmt::format(
-                        "RegistrationResult with ");
-            });
+//            .def_readwrite("get registered cloud",
+//                           &model::RegistrationResult::getRegisteredCloud,
+//                           "registed cloud"
+//                           "blah blah")
+//            .def("__repr__", [](const phaser_core::RegistrationResult &rr) {
+//                return fmt::format(
+//                        "RegistrationResult with ");
+//            }
+//              );
 }
 
 
