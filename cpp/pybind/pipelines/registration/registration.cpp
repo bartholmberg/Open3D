@@ -47,6 +47,7 @@
 #include "constructor_stats.h"
 #include "pybind11_tests.h"
 namespace fooxxx {
+class RegUtil {};
 class atest_initializer {
     using aInitializer = void (*)(py::module_ &);
 
@@ -83,6 +84,10 @@ struct avisitor {
 namespace open3d {
 namespace pipelines {
 namespace registration {
+
+template <class RegUtilBase = fooxxx::RegUtil>
+class PyRegUtil : RegUtilBase {
+};
 
 template <class TransformationEstimationBase = TransformationEstimation>
 class PyTransformationEstimation : public TransformationEstimationBase {
@@ -131,6 +136,19 @@ public:
 
 void pybind_registration_classes(py::module &m) {
     // open3d.registration.ICPConvergenceCriteria
+    py::class_<fooxxx::RegUtil> cast_util(m, "RegUtil",
+            "Class that defines RegUtil "
+            "algorithm "
+            "blah"
+            "iteration number exceeds ``max_iteration``.");
+    py::detail::bind_copy_functions<fooxxx::RegUtil>(cast_util);
+    cast_util
+        .def(
+            "aload_variant", [](const std::variant<int, std::string, double,
+                                                   std::nullptr_t> &v) {
+                return fooxxx::py::detail::visit_helper<std::variant>::call(
+                        fooxxx::avisitor(), v);
+            });
     py::class_<ICPConvergenceCriteria> convergence_criteria(
             m, "ICPConvergenceCriteria",
             "Class that defines the convergence criteria of ICP. ICP "
