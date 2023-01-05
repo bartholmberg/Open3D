@@ -46,8 +46,9 @@
 #include <pybind11/pybind11.h>
 #include "constructor_stats.h"
 #include "pybind11_tests.h"
-namespace fooxxx {
-class RegUtil {};
+namespace py = pybind11;
+using namespace pybind11::literals;
+//namespace fooxxx {
 class atest_initializer {
     using aInitializer = void (*)(py::module_ &);
 
@@ -60,9 +61,8 @@ public:
     atest_initializer name(#name, atest_submodule_##name); \
     void atest_submodule_##name(py::module_ &(variable))
 
-namespace py = pybind11;
-using namespace pybind11::literals;
 // using std::variant;
+using std::variant;
 struct avisitor {
     using result_type = const char *;
 
@@ -72,6 +72,24 @@ struct avisitor {
     result_type operator()(std::nullptr_t) { return "std::nullptr_t"; }
     result_type operator()(std::monostate) { return "std::monostate"; }
 };
+class RegUtil {
+public:
+    RegUtil(int a, int b) {
+        a_ = a;
+        b_ = b;
+    };
+    //std::variant<int, std::string, double, std::nullptr_t> 
+    auto foo(const variant<int, std::string, double, std::nullptr_t> &v) {
+        //static is so debugger stops
+        static auto z = py::detail::visit_helper<variant>::call(avisitor(), v);
+        
+        return z;
+    };
+ public:
+    int a_;
+    int b_;
+};
+
 
 //ATEST_SUBMODULE(aload_variant, m) {
  //   m.def("aload_variant",
@@ -80,12 +98,12 @@ struct avisitor {
  //                                                                 v);
 //          });
 //};
-}  // namespace aprivatenamespace
+//}  // namespace aprivatenamespace
 namespace open3d {
 namespace pipelines {
 namespace registration {
 
-template <class RegUtilBase = fooxxx::RegUtil>
+template <class RegUtilBase = RegUtil>
 class PyRegUtil : RegUtilBase {
 };
 
@@ -136,19 +154,37 @@ public:
 
 void pybind_registration_classes(py::module &m) {
     // open3d.registration.ICPConvergenceCriteria
-    py::class_<fooxxx::RegUtil> cast_util(m, "RegUtil",
+    py::class_<RegUtil> reg_util(
+            m, "RegUtil",
             "Class that defines RegUtil "
             "algorithm "
             "blah"
             "iteration number exceeds ``max_iteration``.");
-    py::detail::bind_copy_functions<fooxxx::RegUtil>(cast_util);
-    cast_util
-        .def(
+    py::detail::bind_copy_functions<RegUtil>(reg_util);
+    reg_util.def(py::init([](int a, int b) {
+                     return new RegUtil(a, b);
+                 }),
+                 "a"_a = 1, "b"_a = 2)
+            .def_readwrite("a", &RegUtil::a_,
+                           "blah"
+                           "blah");
+    reg_util.def("foo", &RegUtil::foo);//,"in"_a );
+    reg_util.def("foo2", [](const std::variant<int, std::string, double,
+                                               std::nullptr_t> &v) {
+        RegUtil a(1,2);  //use static so the debugger stops
+        static auto zz = a.foo(v);
+
+        return zz ;
+        }
+    );  //,"in"_a );
+    reg_util.def(
             "aload_variant", [](const std::variant<int, std::string, double,
                                                    std::nullptr_t> &v) {
-                return fooxxx::py::detail::visit_helper<std::variant>::call(
-                        fooxxx::avisitor(), v);
+                int a = 1;
+                return py::detail::visit_helper<std::variant>::call(
+                        avisitor(), v);
             });
+        
     py::class_<ICPConvergenceCriteria> convergence_criteria(
             m, "ICPConvergenceCriteria",
             "Class that defines the convergence criteria of ICP. ICP "
@@ -318,8 +354,8 @@ Sets :math:`c = 1` if ``with_scaling`` is ``False``.
             .def("aload_variant", [](const std::variant<int, std::string,
                                                         double, std::nullptr_t>
                                              &v) {
-                return fooxxx::py::detail::visit_helper<std::variant>::call(
-                        fooxxx::avisitor(), v);
+                return py::detail::visit_helper<std::variant>::call(
+                        avisitor(), v);
             })
 
             .def("__repr__", [](const TransformationEstimationPhaser &te) {
