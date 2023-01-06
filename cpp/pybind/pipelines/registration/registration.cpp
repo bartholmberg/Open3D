@@ -91,14 +91,6 @@ public:
 };
 
 
-//ATEST_SUBMODULE(aload_variant, m) {
- //   m.def("aload_variant",
- //         [](const std::variant<int, std::string, double, std::nullptr_t> &v) {
- //             return py::detail::visit_helper<std::variant>::call(avisitor(),
- //                                                                 v);
-//          });
-//};
-//}  // namespace aprivatenamespace
 namespace open3d {
 namespace pipelines {
 namespace registration {
@@ -171,7 +163,8 @@ void pybind_registration_classes(py::module &m) {
     reg_util.def("foo", &RegUtil::foo);//,"in"_a );
     reg_util.def("foo2", [](const std::variant<int, std::string, double,
                                                std::nullptr_t> &v) {
-        RegUtil a(1,2);  //use static so the debugger stops
+        RegUtil a(1,2);  
+       //use static so the debugger stops
         static auto zz = a.foo(v);
 
         return zz ;
@@ -274,6 +267,8 @@ void pybind_registration_classes(py::module &m) {
            "target"_a, "corres"_a,
            "Compute transformation from source to target point cloud given "
            "correspondences.");
+
+    //BAH, TODO, don't think this .def is required.  Need to verify
     te.def("compute_transformation_v",
            &TransformationEstimation::ComputeTransformationV, "source"_a,
            "target"_a, "select"_a,
@@ -801,13 +796,23 @@ void pybind_registration_methods(py::module &m) {
     //   , add variant here
     // NOTE: remove third/last input for testing
     //         "estimation_method"_a = TransformationEstimationPhaser(false) );
-    m.def("registration_phaser", &RegistrationGlobal,
-          py::call_guard<py::gil_scoped_release>(),
-          "Function for Phaser registration", "source"_a, "target"_a,
-          "select"_a,
-          "estimation_method"_a = new TransformationEstimationPhaser());
+
+
+    m.def("registration_phaser", [](const geom::PointCloud &source,
+                                    const geom::PointCloud &target,
+                                    const int iselect) {
+        static int a = 1;
+        TransformationEstimationPhaser est;
+        auto res = registration::RegistrationGlobal( source, target, (phaser_core::TapPoint)iselect,est);
+        return res;
+    },
+            py::call_guard<py::gil_scoped_release>(),
+            "Function for Phaser registration",
+             "source"_a, "target"_a,
+             "select"_a);
+            //          "estimation_method"_a = new TransformationEstimationPhaser());
     docstring::FunctionDocInject(m, "registration_phaser",
-                                 map_shared_argument_docstrings);
+                               map_shared_argument_docstrings);
 
     m.def("registration_icp", &RegistrationICP,
           py::call_guard<py::gil_scoped_release>(),

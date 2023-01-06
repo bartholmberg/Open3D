@@ -117,7 +117,7 @@ def regpair(source=o3d.geometry.PointCloud(),target=o3d.geometry.PointCloud(),in
     #icp_fine = o3d.pipelines.registration.registration_phaser( source, target, coarse_max, init, RegType)  
     #icp_fine = o3d.pipelines.registration.registration_phaser( source, target,  RegType)
     a=o3d.pipelines.registration.TransformationEstimationPhaser()
-    tp= o3d.pipelines.registration.TapPoint()
+    #tp= o3d.pipelines.registration.TapPoint()
     tp=1
     icp_fine = o3d.pipelines.registration.registration_phaser( source, target,tp)
     #aaa=o3d.pipelines.registration.evaluate_registration(source,target,fine_max,icp_fine.transformation)
