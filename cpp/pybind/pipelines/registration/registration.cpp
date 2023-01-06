@@ -804,7 +804,8 @@ void pybind_registration_methods(py::module &m) {
         static int a = 1;
         TransformationEstimationPhaser est;
         auto res = registration::RegistrationGlobal( source, target, (phaser_core::TapPoint)iselect,est);
-        return res;
+        auto res0 = std::get<model::RegistrationResult>(res);
+        return res0;
     },
             py::call_guard<py::gil_scoped_release>(),
             "Function for Phaser registration",

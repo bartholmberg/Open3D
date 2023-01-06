@@ -242,6 +242,7 @@ phaser_core::RegistrationResult  TransformationEstimationPhaser::ComputeTransfor
     }
 
     Eigen::Vector3d rota = res0.getRotation();
+    Eigen::Vector3d trana = res0.getTranslation();
     // BAH, ⛏️ transformation (rot) matrix between Phaser and o3d(below)
     //          is 📎 different.  Sign difference in Tz
     Eigen::Matrix4d T = Eigen::Matrix4d::Identity();
@@ -249,7 +250,7 @@ phaser_core::RegistrationResult  TransformationEstimationPhaser::ComputeTransfor
             {rota[0], rota[1], -rota[2]});
     std::cout << "\n 🐢 o3d Bingham rotation: "
               << rota.transpose() * 180.0 / M_PI << std::endl;
-    T.block<3, 1>(0, 3) = res0.getTranslation();
+    T.block<3, 1>(0, 3) = trana;
     return vresult;
 }
 //  BAH, copy ICP version, should work fine for PHASER
