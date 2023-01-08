@@ -445,6 +445,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="C:\repo\Open3D\cpp\pybind\pipelines\registration\global_optimization.cpp" />
     <ClCompile Include="C:\repo\Open3D\cpp\pybind\pipelines\registration\registration.cpp">
       <ObjectFileName>$(IntDir)/pipelines/registration/registration.cpp.obj</ObjectFileName>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Disabled</Optimization>
     </ClCompile>
     <ClCompile Include="C:\repo\Open3D\cpp\pybind\pipelines\registration\robust_kernels.cpp" />
     <ClCompile Include="C:\repo\Open3D\cpp\pybind\t\t.cpp" />
