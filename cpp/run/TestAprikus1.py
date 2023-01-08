@@ -120,6 +120,8 @@ def regpair(source=o3d.geometry.PointCloud(),target=o3d.geometry.PointCloud(),in
     #tp= o3d.pipelines.registration.TapPoint()
     tp=1
     icp_fine = o3d.pipelines.registration.registration_phaser( source, target,tp)
+    a=icp_fine.getRawCloud()
+    o3d.visualization.draw_geometries([a], zoom=1/5, front=[0.0, 0.0, -1.0], lookat=[0.0, 1.0, 0.0], up=[0.0, -1, 0])
     #aaa=o3d.pipelines.registration.evaluate_registration(source,target,fine_max,icp_fine.transformation)
     corr=np.asarray(aaa.correspondence_set);
     #print("icp fine: " ,icp_fine)

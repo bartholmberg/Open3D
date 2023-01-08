@@ -708,9 +708,14 @@ must hold true for all edges.)");
             //                          "``4 x 4`` float64 numpy array: The
             //                          estimated " "transformation matrix.")
             .def("getRotUncertaintyEstimate",
-                           &model::RegistrationResult::getRotUncertaintyEstimate,
-                           "blah"
-                           "blah2")
+                 &model::RegistrationResult::getRotUncertaintyEstimate,
+                 "blah"
+                 "blah2")
+            .def("getRawCloud",
+                 [](model::RegistrationResult a) {
+                   static int c=1;
+                   return a.getRegisteredCloud()->getRawCloud();
+                  })
             .def("getRotation",
                            &model::RegistrationResult::getRotation,
                            "blah"
