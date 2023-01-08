@@ -262,7 +262,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\repo\apricus\phaser_pre\include;C:\repo\apricus\phaser_common\include;C:\repo\apricus\phaser_core\include;C:\repo\Open3D\cpp\pybind\..;C:\repo\Open3D\cpp;C:\repo\Open3D\build\_deps\ext_pybind11-src\include;C:\Python310\include;C:\repo\Open3D\3rdparty\glew\include;C:\repo\Open3D\3rdparty\glfw\include;C:\repo\Open3D\build\fmt\include;C:\repo\Open3D\build\filament\src\ext_filament\include;C:\repo\Open3D\build\eigen\src\ext_eigen;C:\repo\Open3D\build\parallelstl\src\ext_parallelstl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\repo\pybind11\include;C:\repo\pybind11\tests;C:\repo\apricus\phaser_pre\include;C:\repo\apricus\phaser_common\include;C:\repo\apricus\phaser_core\include;C:\repo\Open3D\cpp\pybind\..;C:\repo\Open3D\cpp;C:\repo\Open3D\build\_deps\ext_pybind11-src\include;C:\Python310\include;C:\repo\Open3D\3rdparty\glew\include;C:\repo\Open3D\3rdparty\glfw\include;C:\repo\Open3D\build\fmt\include;C:\repo\Open3D\build\filament\src\ext_filament\include;C:\repo\Open3D\build\eigen\src\ext_eigen;C:\repo\Open3D\build\parallelstl\src\ext_parallelstl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BufferSecurityCheck>true</BufferSecurityCheck>
