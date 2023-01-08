@@ -163,7 +163,8 @@ phaser_core::RegistrationResult RegistrationGlobal(
     //            source, target, result.correspondence_set_);
     //    return result;
     //phaser_core::RegistrationResult vres;
-    return res0;
+    auto res1 = std::get<model::RegistrationResult>(res0);
+    return res1;
 };
 
 

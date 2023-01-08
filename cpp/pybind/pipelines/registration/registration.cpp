@@ -267,8 +267,6 @@ void pybind_registration_classes(py::module &m) {
            "target"_a, "corres"_a,
            "Compute transformation from source to target point cloud given "
            "correspondences.");
-
-    //BAH, TODO, don't think this .def is required.  Need to verify
     te.def("compute_transformation_v",
            &TransformationEstimation::ComputeTransformationV, "source"_a,
            "target"_a, "select"_a,
@@ -697,25 +695,44 @@ must hold true for all edges.)");
                         rr.fitness_, rr.inlier_rmse_,
                         rr.correspondence_set_.size());
             });
-    // open3d.registration.RegistrationResultV
- 
-    py::class_<phaser_core::RegistrationResult> registration_result_v(
-            m, "RegistrationResultV",
-            "Class that contains the registration results.");
-    py::detail::bind_default_constructor<phaser_core::RegistrationResult>(
-            registration_result_v);
-    py::detail::bind_copy_functions<phaser_core::RegistrationResult>(
-            registration_result_v);
-    /*
-    registration_result_v .def(
-            "aload_variant", [](const std::variant<int, std::string, double,
-                                                   std::nullptr_t> &v) {
-                return fooxxx::py::detail::visit_helper<std::variant>::call(fooxxx::avisitor(),
-                                                                    v);
-            });
+    // Aprikus Registration Result
+    py::class_<model::RegistrationResult> aprikus_registration_result(
+            m, "AprikusRegistrationResult",
+            "Class that contains the Aprikus registration results.");
+    py::detail::bind_default_constructor<model::RegistrationResult>(
+            aprikus_registration_result);
+    py::detail::bind_copy_functions<model::RegistrationResult>(aprikus_registration_result);
+    aprikus_registration_result
+            //           .def_readwrite("transformation",
+            //                          &model::RegistrationResult::transformation_,
+            //                          "``4 x 4`` float64 numpy array: The
+            //                          estimated " "transformation matrix.")
+            .def("getRotUncertaintyEstimate",
+                           &model::RegistrationResult::getRotUncertaintyEstimate,
+                           "blah"
+                           "blah2")
+            .def("getRotation",
+                           &model::RegistrationResult::getRotation,
+                           "blah"
+                           "blah2")
+            .def( "getTranslation", 
+                     &model::RegistrationResult::getTranslation,
+                    "blah"
+                    "blah2");             
+ //           .def("__repr__", [](const model::RegistrationResult &rr) {
+ //               return fmt::format(
+//                        "RegistrationResult with "
+//                        "fitness={:e}"
+//                        ", inlier_rmse={:e}"
+//                        ", and correspondence_set size of {:d}"
+//                        "\nAccess transformation to get result.",
+//                        rr.getStateAsVec, rr.inlier_rmse_,
+//                        rr.correspondence_set_.size()); }
 
 
-*/
+   
+
+
  //           .def_readwrite("index which result is it",
  //                          &model::RegistrationResult::getRotation,
  //                          "int index"
@@ -805,6 +822,7 @@ void pybind_registration_methods(py::module &m) {
         TransformationEstimationPhaser est;
         auto res = registration::RegistrationGlobal( source, target, (phaser_core::TapPoint)iselect,est);
         auto res0 = std::get<model::RegistrationResult>(res);
+        //res0.getRegisteredCloud();
         return res0;
     },
             py::call_guard<py::gil_scoped_release>(),
