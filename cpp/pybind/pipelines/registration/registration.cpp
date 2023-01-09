@@ -707,6 +707,20 @@ must hold true for all edges.)");
             //                          &model::RegistrationResult::transformation_,
             //                          "``4 x 4`` float64 numpy array: The
             //                          estimated " "transformation matrix.")
+            .def("getTransform",
+                 [](model::RegistrationResult a) {
+                     static int c = 1;
+                     Eigen::Vector3d rota = a.getRotation();
+                     Eigen::Vector3d trana = a.getTranslation();
+                     // BAH, ⛏️ transformation (rot) matrix between Phaser and
+                     // o3d(below)
+                     //          is 📎 different.  Sign difference in Tz
+                     Eigen::Matrix4d T = Eigen::Matrix4d::Identity();
+                     T.block<3, 3>(0, 0) = geometry::Geometry3D::GetRotationMatrixFromXYZ({rota[0], rota[1], -rota[2]});
+                     //std::cout << "\n 🐢 o3d Bingham rotation: "<< rota.transpose() * 180.0 / M_PI << std::endl;
+                     T.block<3, 1>(0, 3) = trana;
+                     return T;
+                 })
             .def("getRotUncertaintyEstimate",
                  [](model::RegistrationResult a) {
                      static int c = 1;
@@ -717,7 +731,7 @@ must hold true for all edges.)");
             .def("getRegisteredCloud",
                  [](model::RegistrationResult a) {
                    static int c=1;
-                   return a.getRegisteredCloud()->getRawCloud();
+                   return a.getRegisteredCloud()->getRawCloudScaledColor();
                   })
             .def("getRotation",
                            &model::RegistrationResult::getRotation,
