@@ -703,10 +703,9 @@ must hold true for all edges.)");
             aprikus_registration_result);
     py::detail::bind_copy_functions<model::RegistrationResult>(aprikus_registration_result);
     aprikus_registration_result
-            //           .def_readwrite("transformation",
-            //                          &model::RegistrationResult::transformation_,
-            //                          "``4 x 4`` float64 numpy array: The
-            //                          estimated " "transformation matrix.")
+            //          
+            // BAH, NOTE: the static ints for debugger.  Doesn't stop otherwise.  
+            // 
             .def("getTransform",
                  [](model::RegistrationResult a) {
                      static int c = 1;
@@ -721,6 +720,13 @@ must hold true for all edges.)");
                      T.block<3, 1>(0, 3) = trana;
                      return T;
                  })
+            .def("getRotationCorrelation",
+                 [](model::RegistrationResult a) {
+                     std::vector<double> rotCorr =a.getRotationCorrelation();
+                     int c=1;
+                     return rotCorr;                     
+                 }
+                )
             .def("getRotUncertaintyEstimate",
                  [](model::RegistrationResult a) {
                      static int c = 1;
