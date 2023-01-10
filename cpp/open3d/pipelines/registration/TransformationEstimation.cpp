@@ -71,7 +71,7 @@ DEFINE_string(reg_cloud,
 //          similarly(not identical) named inputs _spherical_bandwidth
 //          in phaser core lib source, why?
 DEFINE_int32(phaser_core_spherical_bandwidth,
-             150,
+             30,
              "spherical bandwidth");  // 150 original
 DEFINE_int32(phaser_core_spherical_zero_padding, 10, "zero pad");
 DEFINE_int32(phaser_core_spherical_low_pass_lower_bound,
@@ -230,6 +230,7 @@ phaser_core::RegistrationResult  TransformationEstimationPhaser::ComputeTransfor
 
     // BAH, 🎚️ 🛸 🍯 add support for tap-off points to phaser.  Use variant return
     // type,  and tap point selector 🎚️ input
+
     phaser_core::RegistrationResult vresult = ctrl->registerPointCloud(
             t0, s0, phaser_core::TapPoint::fullRegistration);
     auto res0 = std::get<model::RegistrationResult>(vresult);

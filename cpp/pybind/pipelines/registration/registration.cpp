@@ -710,7 +710,13 @@ must hold true for all edges.)");
                  [](model::RegistrationResult a) {
                      static int c = 1;
                      Eigen::Vector3d rota = a.getRotation();
-                     Eigen::Vector3d trana = a.getTranslation();
+                     Eigen::Vector3d trana = Eigen::Vector3d::Zero();
+                     auto tmp=    a.getTranslation();
+
+                     // BAH, fix up for NaNs 
+                     for (int i = 0; i < 3; i++) {
+                         if (tmp[i] > 0.01) trana[i] = tmp[i];
+                     }
                      // BAH, ⛏️ transformation (rot) matrix between Phaser and
                      // o3d(below)
                      //          is 📎 different.  Sign difference in Tz
@@ -737,6 +743,7 @@ must hold true for all edges.)");
             .def("getRegisteredCloud",
                  [](model::RegistrationResult a) {
                    static int c=1;
+                   //return a.getRegisteredCloud()->getRawCloud();
                    return a.getRegisteredCloud()->getRawCloudScaledColor();
                   })
             .def("getRotation",
