@@ -71,7 +71,7 @@ DEFINE_string(reg_cloud,
 //          similarly(not identical) named inputs _spherical_bandwidth
 //          in phaser core lib source, why?
 DEFINE_int32(phaser_core_spherical_bandwidth,
-             30,
+             50,
              "spherical bandwidth");  // 150 original
 DEFINE_int32(phaser_core_spherical_zero_padding, 10, "zero pad");
 DEFINE_int32(phaser_core_spherical_low_pass_lower_bound,

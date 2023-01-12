@@ -12,7 +12,7 @@ from pyk4a import Config, PyK4A, calibration
 #from k4aSession import GetK4aPointCloud, SetView
 from register_fragments import  draw_registration_result
 from PointCloudPairs import sparse_registration,pairwise_registration
-from TestAprikus1 import KnnPair
+from TestAprikus1 import KnnPair, GetPair
 import timeit
 import threading
 import copy as cp
@@ -22,7 +22,7 @@ import sys
 #
 #
 #
-def GetPair( index = [1,2] ):
+def GetPairA( index = [1,2] ):
     FlipX = np.eye(4)
     FlipZ = np.eye(4)
     FlipY = np.eye(4)
@@ -37,38 +37,20 @@ def GetPair( index = [1,2] ):
     dataDir='C://repo//bart//demo//room3//' 
     #dataDir='C://repo//bart//demo//room4//'
     #for i in  index:
-    pcs=o3d.io.read_point_cloud(dataDir + 'pcd_' + str(index[0]).zfill(4)+'.pcd')
+    pcs=o3d.io.read_point_cloud(dataDir + 'pc_' + str(index[0]).zfill(4)+'.pcd')
+    #pcs=pcs.uniform_down_sample(17); # also ,
+    pcs=pcs.voxel_down_sample(44)
     pcs.estimate_normals(o3d.geometry.KDTreeSearchParamKNN( knn=10))
-    pct=o3d.io.read_point_cloud(dataDir + 'pcd_' + str(index[1]).zfill(4)+'.pcd')
+    pct=o3d.io.read_point_cloud(dataDir + 'pc_' + str(index[1]).zfill(4)+'.pcd')
+    #pct=pct.uniform_down_sample(17); 
+    pct=pct.voxel_down_sample(44)
     pct.estimate_normals(o3d.geometry.KDTreeSearchParamKNN( knn=10))
         #pcd.transform(FlipZ)
         #pcd.transform(FlipY)
     pcld.append(pcs)
     pcld.append(pct)
     return pcld
-def regpair(source=o3d.geometry.PointCloud(),target=o3d.geometry.PointCloud(),init=np.identity(4), coarse_max=60, fine_max=30, max_iteration=3,RegType=o3d.pipelines.registration.TransformationEstimationPointToPlane()):
-    cc=o3d.pipelines.registration.ICPConvergenceCriteria(relative_fitness=1e-18,
-                                                          relative_rmse=1e-18,
-                                                          max_iteration=max_iteration)
 
-    a=o3d.pipelines.registration.TransformationEstimationPhaser()
-    #tp= o3d.pipelines.registration.TapPoint()
-    tp=1
-    icp_fine = o3d.pipelines.registration.registration_phaser( source, target,tp)
-    a=icp_fine.getRegisteredCloud()
-    T=icp_fine.getTransform()
-    rota = icp_fine.getRotation()
-    trana = icp_fine.getTranslation()
-    rotc = icp_fine.getRotationCorrelation()
-    o3d.visualization.draw_geometries([a], zoom=1/5, front=[0.0, 0.0, -1.0], lookat=[0.0, 1.0, 0.0], up=[0.0, -1, 0])
-    #aaa=o3d.pipelines.registration.evaluate_registration(source,target,fine_max,icp_fine.transformation)
-    corr=np.asarray(aaa.correspondence_set);
-    #print("icp fine: " ,icp_fine)
-    transformation_icp = icp_fine.transformation
-    information_icp = o3d.pipelines.registration.get_information_matrix_from_point_clouds( source, target, fine_max,icp_fine.transformation )
-    #draw_registration_result(source, target, icp_fine.transformation)
-    #return transformation_icp, information_icp
-    return icp_fine,corr
 
 
 def main():
@@ -82,15 +64,16 @@ def main():
 
     RyCw75[:3,:3] = o3d.geometry.PointCloud().get_rotation_matrix_from_xyz( (0,75.0*np.pi/180.0, 0) )
 
-    index = [22,17]
-    #index = [3,3]
+    #index = [10,7]
+    index = [4,4]
 
     #regType=o3d.pipelines.registration.TransformationEstimationPointToPlane()
-    regType=o3d.pipelines.registration.TransformationEstimationPhaser()
-    pcld = GetPair(index)
+    #regType=o3d.pipelines.registration.TransformationEstimationPhaser()
+    #pcld = GetPairA( [11,13])
+    pcld = GetPair( index)
+    pglob = o3d.pipelines.registration.registration_phaser( pcld[0], pcld[1],1)
     pcld[0].paint_uniform_color([1, 0.706, 0])
     pcld[1].paint_uniform_color([0.4, 0.3, 0.2])
-    pglob = o3d.pipelines.registration.registration_phaser( pcld[0], pcld[1],1)
     a=pglob.getRegisteredCloud()
     T=pglob.getTransform()
     rota = pglob.getRotation()
