@@ -71,22 +71,24 @@ DEFINE_string(reg_cloud,
 //          similarly(not identical) named inputs _spherical_bandwidth
 //          in phaser core lib source, why?
 DEFINE_int32(phaser_core_spherical_bandwidth,
-             50,
+             35,
              "spherical bandwidth");  // 150 original
-DEFINE_int32(phaser_core_spherical_zero_padding, 10, "zero pad");
+DEFINE_int32(phaser_core_spherical_zero_padding, 20, "zero pad");
 DEFINE_int32(phaser_core_spherical_low_pass_lower_bound,
-             0,
+             100,
              "low pass - lower band");
 DEFINE_int32(phaser_core_spherical_low_pass_upper_bound,
-             10000,
+             1000,
              "low pass - upper band");
 
 DEFINE_int32(phaser_core_spatial_n_voxels, 201, "");
 DEFINE_int32(phaser_core_spatial_discretize_lower, -50, "");
 DEFINE_int32(phaser_core_spatial_discretize_upper, 50, "");
 DEFINE_int32(phaser_core_spatial_zero_padding, 0, "");
-DEFINE_int32(phaser_core_spatial_low_pass_lower_bound, 85, "");
+DEFINE_int32(phaser_core_spatial_low_pass_lower_bound, 25, "");
+//original, 85
 DEFINE_int32(phaser_core_spatial_low_pass_upper_bound, 115, "");
+// original, 115
 // namespace phaser_core
 }  // namespace phaser_core
 
