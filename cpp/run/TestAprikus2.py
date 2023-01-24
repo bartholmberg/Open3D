@@ -89,9 +89,9 @@ def main():
 
     #regType=o3d.pipelines.registration.TransformationEstimationPointToPlane()
     #regType=o3d.pipelines.registration.TransformationEstimationPhaser()
-    pcld = GetPairA( [15,20])
+    #pcld = GetPairA( [13,20])
     #pcld = GetPairA( [37,45])
-
+    pcld = GetPairA( [38,44])
     #pcld = GetPair( [4,4])
     o3d.visualization.draw_geometries(pcld, zoom=1/5, front=[0.0, 0.0, -1.0], lookat=[0.0, 1.0, 0.0], up=[0.0, -1, 0])
 
@@ -104,7 +104,7 @@ def main():
     trana = pglob.getTranslation()
     rotc = pglob.getRotationCorrelation()
     rotsig= pglob.getRotUncertaintyEstimate()
-    #o3d.visualization.draw_geometries(pcld, zoom=1/5, front=[0.0, 0.0, -1.0], lookat=[0.0, 1.0, 0.0], up=[0.0, -1, 0])
+    o3d.visualization.draw_geometries([a], zoom=1/5, front=[0.0, 0.0, -1.0], lookat=[0.0, 1.0, 0.0], up=[0.0, -1, 0])
 
 
 
