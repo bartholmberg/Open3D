@@ -1,4 +1,4 @@
-import pyk4a
+#import pyk4a
 import cv2
 import numpy as np
 import open3d as o3d
@@ -6,7 +6,7 @@ import open3d.visualization as vis
 import copy
 import msvcrt as m
 import matplotlib.pyplot as plt
-from pyk4a import Config, PyK4A, calibration
+#from pyk4a import Config, PyK4A, calibration
 #from customized_visualization import custom_draw_geometry_with_key_callback
 #from matplotlib import pyplot as plt
 #from k4aSession import GetK4aPointCloud, SetView
